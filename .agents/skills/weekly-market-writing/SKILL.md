@@ -14,3 +14,5 @@ description: Turn existing research or a current draft into story structure, an 
 更新數字後，同時修正相關標題、推理及結尾，不能只換數字。全篇重順或局部修改的範圍、敘事與刪重依共用框架。修後將口白寫回唯一正式稿並讀回；來源、查證及製作資訊另存。若涉及現有 Canva 人工稿，先按 [交付規則](../market-video-story/SKILL.md) 讀回正式內容再動筆；這是取得輸入，不是要求製作階段重寫稿件。
 
 當次只改本地稿就完成並回報；已授權同步備註、畫面或文件時，把修改位置及正式稿交製作階段更新受影響項目，不重新跑完整流程。
+
+完成與版本同步依工作區 [AGENTS.md](../../../AGENTS.md)。
