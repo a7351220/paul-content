@@ -1,0 +1,104 @@
+First quantum-safe Bitcoin transaction mined on mainnet
+Skip to content
+Menu
+Quantum
+Privacy
+Starknet
+Developers
+Cairo
+StarkWare Labs
+Proving Stack
+STARK 101
+Resources
+StarkWare Blog
+Integrity Matters Blog
+Bitcoin research
+STARK
+Company
+Vision and Mission
+About Us
+Careers
+Media Kit
+Contact Us
+join our newsletter
+Home » StarkWare Blog » The first quantum-safe Bitcoin transaction has been mined
+Published on: August 26, 2026
+The first quantum-safe Bitcoin transaction has been mined
+Aug 26, 2026
+Share
+Avihu Levy’s Quantum-Safe Bitcoin (QSB) method went from research paper to mainnet today. It required no change to Bitcoin’s consensus rules.
+A quantum-safe transaction was mined on the Bitcoin mainnet today that holds up against an adversary running a working quantum computer. Bitcoin holders now have a way to move coins into storage a quantum computer cannot open.
+Avihu Levy, researcher and General Manager of Applications at StarkWare, designed the method and published the research in April 2026. He built it on his own time, after years spent in the Bitcoin ecosystem. StarkWare engineer Tomer Giladi continued the work to reach the final stretch of a working transaction. Today’s quantum-safe transaction is the first time anyone has run it on mainnet.
+People have long assumed that protecting Bitcoin holdings from a quantum adversary would require changing the Bitcoin protocol. Today shows otherwise. A soft fork is still the better long-term answer, as StarkWare has argued for consistently, but it is no longer the only option.
+What QSB does
+Bitcoin’s signatures rest on elliptic curve cryptography. Shor’s algorithm, running on a large enough quantum computer, will be able to solve that class of mathematical problem quickly, so the puzzle protecting a coin will no longer be sufficient to protect it.
+A public key is meant to be public. Publishing one is safe today, because no machine can work backwards from a public key to the private key that made it. A quantum computer can. Once quantum computers exist, every published public key is a private key waiting to be recovered.
+Most Bitcoin’s addresses are hashes of a public key, so the key stays out of sight until you spend from that address. The signature reveals it, and the transaction then sits in the mempool in the open until a miner includes it. It is in that window that a quantum adversary could act: read the public key, derive the private key, and spend the same coins first.
+QSB closes the window for this type of attack by adding a second quantum-resistant lock alongside the existing one, built on hash functions instead of elliptic curves. Shor’s algorithm cannot break hash functions. The best-known quantum attack on a hash would be to speed up brute-force guessing, but this is not nearly enough to finish the job.
+QSB uses signature grinding, a technique that allows you to create a valid Bitcoin signature without a private key, and it works on Bitcoin exactly as Bitcoin exists today. The sender spends computational effort searching for a spending transaction whose hash happens to be a validly formatted signature. Bitcoin accepts it, and the transaction’s security then depends on the difficulty of reversing a hash rather than the secrecy of a private key. That work happens offchain, before broadcast. The approach, which currently costs several hundred dollars, draws heavily on Binohash, developed by BitVM creator Robin Linus.
+QSB does not make Bitcoin itself quantum-safe. What happened today is that a specific construction worked on mainnet, and the network is unchanged. The QSB transaction delivers quantum resistance by moving coins into an output that relies on hashes rather than elliptic curves. It would not help an address whose public key was published before the transaction was sent, because an adversary would have time to derive the private key before the transaction was broadcast. Notably, QSB transactions use nonstandard formats, so they will not travel through the ordinary mempool and currently need a direct path to a miner. MARA Slipstream provided that mining path.
+How this relates to StarkWare’s work
+While StarkWare’s technology is based on ZK-STARKs, which are post-quantum secure, QSB does not use STARKs. It runs entirely inside Bitcoin, built from tools Bitcoin already has. Avihu could have created a solution based on STARKs, which rely on hash functions rather than elliptic curves, but he built what worked on Bitcoin instead.
+Every chain faces the same quantum deadline at roughly the same time. Starknet starts with an advantage because STARKs, its proving system, have never depended on elliptic-curve assumptions. Native account abstraction lets a Starknet account change its signature scheme to a quantum-resistant one without a protocol change, which makes migration an account-level decision rather than a governance fight. And post-quantum accounts are already live on Starknet mainnet.
+None of that means Starknet is quantum-ready today. StarkWare published a three-phase roadmap in June. Phase one secures all new activity by replacing the elliptic-curve-dependent hashing that remains in state commitments, contract address derivation, and network configuration; parts of it have shipped and parts have not. Phase two extends the same protection to existing contracts. Phase three moves in step with Ethereum, because the bridge that carries messages and assets, and the data availability layer where Starknet posts its data, both still inherit elliptic curve cryptography from L1. The full roadmap is at quantum.starkware.co.
+StarkWare CEO Eli Ben-Sasson said, “Avihu took this on after hours, as a passion project, and has now shown that Bitcoin has no expiration date. I still want Bitcoin to choose to do a soft fork and I expect we will get one. What today’s successful transaction offers Bitcoin is a reassurance that holdings can be protected before that happens.”
+The paper, Quantum-Safe Bitcoin Transactions Without Softforks, is at https://github.com/avihu28/Quantum-Safe-Bitcoin-Transactions/blob/main/paper/QSB.pdf.
+The open-source implementation is at https://github.com/avihu28/Quantum-Safe-Bitcoin-Transactions.
+ON THIS PAGE
+More From The Starkware Collection
+STARK
+How STARKs Work: Part 3
+Read Part 1 and Part 2 before beginning Part 3 in the…
+May 5, 2026
+Post-Quantum security
+StarkWare and Bitcoin Journalist Pete Rizzo Launch the Quantum Bitcoin Countdown Podcast
+Co-produced by StarkWare and Pete Rizzo, the series brings together the world’s…
+July 29, 2026
+Privacy
+PriPay with STRK20: Confidential Onchain Payroll
+Public stablecoins and traditional onchain payroll systems are public by default, meaning…
+June 16, 2026
+Subscribe to our mailing list
+Follow us
+Twitter
+LinkedIn
+Youtube
+Github
+Starknet
+Starknet Documentation
+Quantum
+Privacy
+Case studies
+StarkEx
+StarkEx Ecosystem
+STARK 101
+StarkWare Delegation Program
+Vision and Mission
+About Us
+Careers
+StarkWare-Blog
+Media Kit
+Cairo for Developers
+Open Source License
+Licenses
+Terms of Use
+Privacy Policy
+Starknet
+StarkEx
+Careers
+Cairo-lang.org
+StarkWare-Blog
+STARK
+StarkWare Delegation Program
+About Us
+Media Kit
+Terms of Use
+Privacy Policy
+© 2025 All Rights Reserved
+© 2026 StarkWare • Built with GeneratePress
+Contact us
+Full name
+Email
+Topic
+Choose TopicMarketing/EventsCustomers/Partner InquiriesBug Report
+Your message

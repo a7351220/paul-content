@@ -1,0 +1,33 @@
+{
+  "checked_on": "2026-10-14",
+  "period_start": "2026-09-16",
+  "period_end": "2026-10-13",
+  "trading_days": 20,
+  "method": "arithmetic mean of regular-session Close, not Adj. Close or intraday quote",
+  "price_sources": {
+    "AVGO": "https://stockanalysis.com/stocks/avgo/history/",
+    "NVDA": "https://stockanalysis.com/stocks/nvda/history/"
+  },
+  "forecast_sources": {
+    "AVGO": "https://stockanalysis.com/stocks/avgo/forecast/",
+    "NVDA": "https://stockanalysis.com/stocks/nvda/forecast/"
+  },
+  "AVGO": {
+    "close_sum": "7132.9700",
+    "mean_close": "356.6485",
+    "EPS": "19.39",
+    "EPS_fiscal_year": 2027,
+    "EPS_last_updated": "2026-10-02",
+    "PE": "18.39342444559051057246003094",
+    "EPS_minus_20pct_PE": "22.99178055698813821557503868"
+  },
+  "NVDA": {
+    "close_sum": "4566.3900",
+    "mean_close": "228.3195",
+    "EPS": "15.91",
+    "EPS_fiscal_year": 2028,
+    "EPS_last_updated": "2026-10-09",
+    "PE": "14.35069138906348208673790069"
+  },
+  "comparability_note": "Fiscal periods and adjusted-earnings treatments differ. These are separate specified-period valuation estimates, not an identical-basis NTM comparison. Detail omitted from narration at user request."
+}

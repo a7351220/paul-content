@@ -1,0 +1,111 @@
+{
+  "mode": "merge-principle-and-expand-research",
+  "page_count": 20,
+  "baseline_before_edit": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/合併原理補研究前-20261020-003314/逐字稿.md",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "total_before": 5724,
+  "total_after": 5835,
+  "note": "第4至8頁內容前移，新增第9頁；各頁數字非相同內容逐頁比較。",
+  "pages": [
+    {
+      "page": 1,
+      "before": 238,
+      "after": 238
+    },
+    {
+      "page": 2,
+      "before": 294,
+      "after": 294
+    },
+    {
+      "page": 3,
+      "before": 223,
+      "after": 264
+    },
+    {
+      "page": 4,
+      "before": 244,
+      "after": 247
+    },
+    {
+      "page": 5,
+      "before": 247,
+      "after": 290
+    },
+    {
+      "page": 6,
+      "before": 290,
+      "after": 289
+    },
+    {
+      "page": 7,
+      "before": 289,
+      "after": 298
+    },
+    {
+      "page": 8,
+      "before": 298,
+      "after": 285
+    },
+    {
+      "page": 9,
+      "before": 285,
+      "after": 314
+    },
+    {
+      "page": 10,
+      "before": 267,
+      "after": 267
+    },
+    {
+      "page": 11,
+      "before": 293,
+      "after": 293
+    },
+    {
+      "page": 12,
+      "before": 231,
+      "after": 231
+    },
+    {
+      "page": 13,
+      "before": 296,
+      "after": 296
+    },
+    {
+      "page": 14,
+      "before": 291,
+      "after": 291
+    },
+    {
+      "page": 15,
+      "before": 291,
+      "after": 291
+    },
+    {
+      "page": 16,
+      "before": 290,
+      "after": 290
+    },
+    {
+      "page": 17,
+      "before": 329,
+      "after": 329
+    },
+    {
+      "page": 18,
+      "before": 287,
+      "after": 287
+    },
+    {
+      "page": 19,
+      "before": 307,
+      "after": 307
+    },
+    {
+      "page": 20,
+      "before": 434,
+      "after": 434
+    }
+  ]
+}

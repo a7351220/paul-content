@@ -1,0 +1,18 @@
+{
+  "title": "比特幣會被量子計算攻破嗎？",
+  "page_count": 35,
+  "script": "逐字稿.md",
+  "images": "20 existing images plus 15 new images in 視覺素材/35頁版",
+  "generation": "built-in image_gen; 20 unique illustrations; targeted repairs for invented charts/addresses",
+  "prompts": "製作紀錄/visual-plan.json",
+  "pptx": "輸出/比特幣量子風險_35頁.pptx",
+  "canva_design_id": "DAHYpWSd8Lk",
+  "canva_url": "https://www.canva.com/design/DAHYpWSd8Lk/jE2vMd7ghtZ4DzPz7_7NXw/edit",
+  "notes": "Google Doc 35-page exact narration; no rewrite",
+  "font": "First-page editable title verified and restored to 可画榜书 in Canva toolbar",
+  "branding": "Original template object retained in PPTX; Canva 20-page fill corrected from exact template render crop, preserving geometry",
+  "canva_status": "saved;35 pages;all35 presenter notes exactly match Google Doc;15 new images;final page image corrected and verified",
+  "proof": "輸出/Canva35頁完成.png",
+  "template": "/Users/xieminghua/.codex/skills/market-video-story/assets/template.pptx",
+  "sun_source": "https://www.techflowpost.com/article/34662"
+}

@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "title_verified": true,
+  "seven_sections_preserved": true,
+  "slides": 35,
+  "han_total": 3735,
+  "han_average": 106.7,
+  "narration_contains_urls": false,
+  "narration_contains_production_notes": false,
+  "slide_sources_mapped": true,
+  "price_basis": "2026-10-12 US regular-session close",
+  "valuation": [
+    {
+      "ticker": "AVGO",
+      "price_date": "2026-10-12",
+      "price_usd": 354.73,
+      "fiscal_year": "FY2027",
+      "consensus_updated": "2026-10-02",
+      "adjusted_eps_usd": 19.39,
+      "calculated_pe": 18.2945
+    },
+    {
+      "ticker": "NVDA",
+      "price_date": "2026-10-12",
+      "price_usd": 226.32,
+      "fiscal_year": "FY2028",
+      "consensus_updated": "2026-10-09",
+      "adjusted_eps_usd": 15.91,
+      "calculated_pe": 14.225
+    },
+    {
+      "ticker": "MRVL",
+      "price_date": "2026-10-12",
+      "price_usd": 265.86,
+      "fiscal_year": "FY2028",
+      "consensus_updated": "2026-10-07",
+      "adjusted_eps_usd": 7.28,
+      "calculated_pe": 36.5192
+    }
+  ],
+  "timing": "14-17 minutes estimated; no recorded reading performed",
+  "delivery_stage": "first narration draft; no slides generated"
+}

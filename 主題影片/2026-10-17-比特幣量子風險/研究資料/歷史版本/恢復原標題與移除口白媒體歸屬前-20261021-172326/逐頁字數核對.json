@@ -1,0 +1,113 @@
+{
+  "mode": "replace-repeated-price-conclusions-with-substantive-disagreements",
+  "page_count": 20,
+  "slide_map_revision": 17,
+  "script_revision": 24,
+  "baseline_before_edit": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/第5至9頁改為實質分歧前-20261021-170827/逐字稿.md",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "total_before": 6066,
+  "total_after": 6187,
+  "ratio": 1.0199,
+  "pages": [
+    {
+      "page": 1,
+      "before": 279,
+      "after": 279
+    },
+    {
+      "page": 2,
+      "before": 293,
+      "after": 293
+    },
+    {
+      "page": 3,
+      "before": 285,
+      "after": 285
+    },
+    {
+      "page": 4,
+      "before": 275,
+      "after": 275
+    },
+    {
+      "page": 5,
+      "before": 296,
+      "after": 256
+    },
+    {
+      "page": 6,
+      "before": 286,
+      "after": 326
+    },
+    {
+      "page": 7,
+      "before": 290,
+      "after": 350
+    },
+    {
+      "page": 8,
+      "before": 277,
+      "after": 331
+    },
+    {
+      "page": 9,
+      "before": 320,
+      "after": 327
+    },
+    {
+      "page": 10,
+      "before": 322,
+      "after": 322
+    },
+    {
+      "page": 11,
+      "before": 278,
+      "after": 278
+    },
+    {
+      "page": 12,
+      "before": 272,
+      "after": 272
+    },
+    {
+      "page": 13,
+      "before": 313,
+      "after": 313
+    },
+    {
+      "page": 14,
+      "before": 278,
+      "after": 278
+    },
+    {
+      "page": 15,
+      "before": 279,
+      "after": 279
+    },
+    {
+      "page": 16,
+      "before": 330,
+      "after": 330
+    },
+    {
+      "page": 17,
+      "before": 301,
+      "after": 301
+    },
+    {
+      "page": 18,
+      "before": 385,
+      "after": 385
+    },
+    {
+      "page": 19,
+      "before": 318,
+      "after": 318
+    },
+    {
+      "page": 20,
+      "before": 389,
+      "after": 389
+    }
+  ]
+}

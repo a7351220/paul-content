@@ -1,0 +1,90 @@
+How close is AI to breaking cryptography? - a16z crypto
+SubscribeSign in
+How close is AI to breaking cryptography?
+When FUD abounds, what’s real and what’s not
+a16z crypto
+Oct 10, 2026
+38
+1
+4
+Share
+AI is getting better at solving hard math problems — so what does that mean for the cryptography protecting everything from private messages to healthcare to banking and crypto wallets?
+After OpenAI’s math results sparked some warnings from industry folks that AI could break the cryptography we all rely on, we asked cryptographers from Stanford and a16z crypto what’s fact and what’s assumption, what causes worry and what doesn’t.
+Guests:
+Dan Boneh — professor at Stanford University who heads the applied cryptography group and co-directs the computer security lab; also special research advisor at a16z crypto
+Eddy Lazzarin — general partner at a16z crypto
+Justin Thaler — research partner at a16z crypto and associate professor of computer science at Georgetown University
+Liz Harkavy — investment partner at a16z crypto
+Sonal Chokshi — editor in chief at a16z crypto
+Highlights:
+00:37 — What sparked the FUD
+01:35 — What the math can and can’t tell us
+05:29 — Why cryptography depends on open problems
+09:25 — Why the stakes are bigger than blockchains
+10:43 — How AI could actually help strengthen confidence in cryptography
+13:50 — Considerations for users and institutions
+20:10 — Mapping the threats, AI vs. quantum
+23:59 — Hash-based versus lattice-based cryptography
+33:07 — Opportunities for builders and better security tools
+38:14 — What comes next if there’s a cryptographic break?
+Plus, six takeaways:
+1. AI’s math progress leaves the central cryptography question open
+Recently published results showed impressive progress across mathematics and computer science, but they didn’t contain cryptography results.
+“This is incredible progress in mathematics, in computer science, but there are no questions here on cryptography. … So you might wonder, well, does that mean the models are really bad at cryptography? We don’t know.”
+— Dan Boneh, 03:00
+“We didn’t learn that elliptic curves are vulnerable in a way that they weren’t before. We didn’t learn that any specific cryptographic assumptions have less security than they did before.”
+— Eddy Lazzarin, 15:19
+2. Even a smarter AI can’t find an algorithm that doesn’t exist
+Much of modern cryptography rests on the assumption that certain mathematical problems have no efficient solution. This may also be true for increasingly capable AI.
+“We generally believe there is no efficient algorithm for these problems. It’s not that we think there might be and humans just aren’t smart enough to find it. We think there is not one. And so if there is not one, it doesn’t matter how smart the AI is. It cannot find the nonexistent algorithm.”
+— Justin Thaler, 16:12
+“We have to assume that certain problems are hard. The reason we can’t prove that those problems are hard is because that’s related to a famous open problem in computer science called the P versus NP problem.
+“In some sense, we first have to resolve that problem before we can actually argue that certain cryptographic problems really, really are hard. … None of the problems that were posted this week come even close to resolving the P versus NP problem. We still have to keep making assumptions in cryptography, right?”
+— Dan Boneh, 06:00
+3. AI could compress years of cryptographic scrutiny
+Trying to break cryptography is part of how researchers build confidence in it. A design that survives sustained, serious attacks earns trust. AI could change how quickly that scrutiny happens.
+“In the past, when someone would make an assumption and build a system based on it, we’d have to wait like 10 years before that system could be deployed — to gain confidence, to give people enough time to analyze the assumption. … And now, all of a sudden, we can accelerate this process tremendously using these models. … Now we can just let a model run for a month, try to break it, and if the model can’t break it, boy, do we have a lot of confidence that the assumption is valid.”
+— Dan Boneh, 12:10
+4. Quantum prep offers a head start on some AI risks
+While these recent concerns are about AI, some of the same systems are already the subject of migration efforts because of quantum computing. That overlap has limits.
+“Because of fears of the quantum threat, people have already begun to treat elliptic curve cryptography as something that may be vulnerable soon. So we have already actually engaged in and prepared and deployed many of the mitigations you’d need for those exact concerns for a different threat.”
+— Eddy Lazzarin, 20:52
+“The AI threat in some sense is broader, in that it could actually also look at our post-quantum systems and potentially weaken them in some way, maybe break them altogether.”
+— Dan Boneh, 22:08
+5. Cryptographic agility gives systems a way to adapt when weaknesses emerge
+Cryptographic agility refers to a system’s ability to change its cryptographic methods when evidence or requirements change. It gives engineers a way to respond to discoveries they can’t predict in advance.
+“We deploy systems that can quickly switch from one type of design to another if the design that’s being used turns out to be insecure. Cryptoagility is in some sense our friend for defending against the unexpected.”
+— Dan Boneh, 22:47
+Dan points to internet connections that already combine different cryptographic methods:
+“They are actually using agile cryptography. They’re encrypted using elliptic curves and lattices at the same time. If you break elliptic curves, it doesn’t matter because it’s also encrypted under a lattice-based system.”
+— Dan Boneh, 38:40
+6. The immediate opportunity: finding more flaws before software ships
+For builders, one of the clearest opportunities is bringing more security testing into development.
+Discussing complex cryptographic systems, Justin notes:
+“The surface area for bugs just gets very large, and yes, I’m very optimistic that the same AI tools that are scaring people about cryptography will also help us get all the bugs out. That’s a very hard problem.”
+— Justin Thaler, 28:56
+“After it’s deployed, it gets a lot of attention from cryptographers, and that’s kind of the wrong time to attack a cryptosystem. Whereas now, because we control these AI models, any startup or any software shop that’s deploying a new crypto capability or actually even deploying any software at all can now have these models analyze its cryptography and analyze its general software for bugs.”
+— Dan Boneh, 35:05
+“Vulnerabilities can be removed. They can be designed away, they can be mitigated, and the primary resource we dedicate to mitigating them is a thing that’s getting radically cheaper every couple months. And that’s AI capabilities.”
+— Eddy Lazzarin, 37:10
+Quotations have been lightly edited for clarity. Ellipses indicate omitted passages.
+38
+1
+4
+Share
+PreviousNext
+Discussion about this post
+CommentsRestacks
+KarimOct 10Edited
+Liked by a16z crypto
+Excellent episode with well-grounded and insightful views. No one can claim that whoever wished them "may you live in interesting times" didn't have a direct line to "God's ear." For anyone feeling overwhelmed after hearing this episode, there's still a silver-lining and an opportunity to come out of this expected turbulence with more secure and resilient systems. I wrote it up in a short article about "Jevons Paradox Analogies in Cryptography" https://substack.com/home/post/p-219676366
+Reply
+Share
+TopLatestDiscussions
+No posts
+Ready for more?
+Subscribe
+© 2026 a16z crypto · Privacy ∙ Terms ∙ Collection notice
+Start your SubstackGet the app
+Substack is the home for great culture
+This site requires JavaScript to run correctly. Please turn on JavaScript or unblock scripts

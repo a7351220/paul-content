@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "title_verified": true,
+  "seven_sections_preserved": true,
+  "slides": 20,
+  "han_total": 1807,
+  "han_average": 90.3,
+  "narration_contains_urls": false,
+  "narration_contains_production_notes": false,
+  "slide_sources_mapped": true,
+  "price_basis": "2026-10-12 US regular-session close",
+  "valuation": [
+    {
+      "ticker": "AVGO",
+      "price_date": "2026-10-12",
+      "price_usd": 354.73,
+      "fiscal_year": "FY2027",
+      "consensus_updated": "2026-10-02",
+      "adjusted_eps_usd": 19.39,
+      "calculated_pe": 18.2945
+    },
+    {
+      "ticker": "NVDA",
+      "price_date": "2026-10-12",
+      "price_usd": 226.32,
+      "fiscal_year": "FY2028",
+      "consensus_updated": "2026-10-09",
+      "adjusted_eps_usd": 15.91,
+      "calculated_pe": 14.225
+    },
+    {
+      "ticker": "MRVL",
+      "price_date": "2026-10-12",
+      "price_usd": 265.86,
+      "fiscal_year": "FY2028",
+      "consensus_updated": "2026-10-07",
+      "adjusted_eps_usd": 7.28,
+      "calculated_pe": 36.5192
+    }
+  ],
+  "timing": "Not recorded; previous 35-page timing estimate no longer applies",
+  "delivery_stage": "20-page narration and slide suggestions; native editable PPTX plus verified Canva image edition",
+  "version": "20-page beginner language revision",
+  "page_limit": [
+    15,
+    20
+  ],
+  "source_page_mapping_updated": true,
+  "previous_version": "版本/逐字稿-段落銜接調整前.txt",
+  "current_script_sha256": "ef908bd3de038bd9801986666581f73592f5a67a0a0939f21cbce46fe838d596",
+  "final_readback_complete": true,
+  "future_deployments_distinguished_from_reported_revenue": true,
+  "seven_outline_sections_mapped": true,
+  "visible_revision_file": "逐字稿-開場與銜接修訂版.txt",
+  "restored_revision_readback_verified": true,
+  "spoken_ticker_introductions_removed": true,
+  "opening_han": 118,
+  "progressive_reveal_reviewed": true,
+  "opening_ai_context_before_company": true,
+  "one_or_two_knowledge_points_per_page": true,
+  "all_19_page_transitions_reviewed": true,
+  "duplicate_script_contents_identical": true,
+  "unused_valuation_background_tickers": [
+    "MRVL"
+  ],
+  "company_roles_explained_at_first_use": true,
+  "unneeded_jargon_removed": true,
+  "key_financial_values_preserved": true,
+  "source_periods_preserved": true,
+  "manny_style_comparison_file": "MannyPro風格對照.txt",
+  "skill_updated_files": [
+    "/Users/xieminghua/.codex/skills/market-video-story/SKILL.md",
+    "/Users/xieminghua/.codex/skills/market-video-story/references/research-writing.md"
+  ],
+  "skill_frontmatter_validation": "passed",
+  "canva_design_id": "DAHX7zjhLsI",
+  "deck_delivery_verified": true
+}

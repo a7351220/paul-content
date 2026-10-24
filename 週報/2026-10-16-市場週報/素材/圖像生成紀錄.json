@@ -1,0 +1,186 @@
+{
+  "mode": "built-in image_gen",
+  "slide_count": 20,
+  "slides": [
+    {
+      "slide": 1,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center. This is an agenda content illustration. A single large open ivory notebook seen directly from above, laid flat, one navy fountain pen along right edge, tiny orange tab and very small chip and Bitcoin sketches confined to bottom margin. Four spacious lines, each may wrap once, bold legible Traditional Chinese exact strings: 「AI 投資像賭博？這週市場在怕什麼？」 「台積電又大賺，AI 需求還有多強？」 「AI 開始替人做事，AMD 想搶哪一塊生意？」 「Strategy 可能被踢出指數，買幣模式會受影響嗎？」. Do not add agenda heading, numbering, dates, data, labels or any other words. Text is dominant and aligned left, with ample line spacing, illustrations understated. Notebook lays flat so all text stays perfectly horizontal, no angled perspective on typography.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-459e8e55-e12f-4060-8a28-df507c311ab1.png",
+      "target": "素材/slide-01.png",
+      "title": "本週大綱",
+      "notes": "嗨大家，歡迎來到保羅投資基地，我是保羅\n今天這一集是我們的投資週報\n每週日我都會幫大家整理最新的投資資訊\n把市場在發生什麼事情，用白話拆解給你聽\n讓你更全面掌握幣圈、美股，甚至是整個全球市場的變化\n\n在開始之前，請先幫我按讚訂閱，想在幣圈學投資交易的朋友，下方布告欄有保羅LINE官方好友連結，點進去有交易VIP群可以加，免費加入免費學習，每週都有課程、分析，我也會不定時在群裡發紅包給群友們。如果是舊用戶想要換邀請碼也請私訊官方好友。",
+      "used_in_final": false
+    },
+    {
+      "slide": 2,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center. Flat straight-on analytical composition. Draw a spacious horizontal diverging bar chart, with a shared zero baseline, equal bar thickness and a single linear scale. Three labels and exact week-return values: 「標普500」 「−1.9%」, 「那斯達克」 「−4.5%」, 「道瓊」 「+0.7%」. The two negative bars extend left, the positive one right. Relative bar lengths 1.9:4.5:0.7 precisely. All negative bars brick orange, positive navy. Sparse axes labeled only 「0%」 and small period 「10/9–10/16」. No stock-price curve. Very faint small etched semiconductor wafer at far edge as contextual detail without interfering with chart. Chart fills 75% image width with generous whitespace. No extra headline.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-e2921760-b05d-4143-9447-2e24cee88730.png",
+      "target": "素材/slide-02.png",
+      "title": "AI 投資像賭博？這週市場在怕什麼？",
+      "notes": "這週，美股的壓力明顯集中在科技股。標普五百指數累計跌約 1.9%，科技股比重較高的那斯達克累計跌約 4.5%，道瓊這週卻仍上漲約 0.7%。市場對不同公司的態度開始分化。前面帶動行情的 AI 股票，這次遇到哪些疑慮？",
+      "used_in_final": true
+    },
+    {
+      "slide": 3,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center. Intimate side-view close-up of a thoughtful middle-aged Asian semiconductor CEO silhouette at a lectern, with one hand placing a plain chip-shaped token on a minimal gaming table at foreground. This is clearly an editorial metaphor, not a photograph of an event. Only short text 「AI 投資」 and larger two-line question 「花出去的錢\\n賺得回來嗎？」. No quoted speech, no casino brand, no playing card symbols, no stock chart. Lower-left small hand-drawn semiconductor processor, large open negative space on right for question. Composition based on human gesture, not equipment blocks.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-11b6c1ec-ecfb-4de4-a9d5-e142fd4a5ff7.png",
+      "target": "素材/slide-03.png",
+      "title": "AI 投資像賭博？這週市場在怕什麼？",
+      "notes": "市場擔心的第一件事，是 AI 花出去的錢到底能賺回多少。10 月 12 日，AI 晶片大廠博通的執行長陳福陽，把許多 AI 投資人比作賭徒。他質疑部分投資人期待很高，卻不理解自己押注的生意。這番話也被市場拿來解釋本週晶片股的賣壓，焦點落在未來獲利能否跟上期待。",
+      "used_in_final": true
+    },
+    {
+      "slide": 4,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.A huge close-up of a gasoline pump nozzle, curved hose and a small grocery receipt without any fake fine print, drawn from low side angle across lower-left. On the right, dominant exact type 「9 月美國 CPI」, 「年增 3.7%」 and 「月增 0.6%」. Near the orange nozzle, smaller but clear 「汽油月漲 9.1%」. Date period only 「2026 年 9 月」. Data is bold type, not a quantitative chart, no invented scale. Only these strings. The nozzle and hose form one coherent physical scene; no cards or panels.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-ac1484b5-7081-4003-81bc-0e30de4e4e1d.png",
+      "target": "素材/slide-04.png",
+      "title": "AI 投資像賭博？這週市場在怕什麼？",
+      "notes": "另一個可能相關的因素，是通膨又升溫。10 月 14 日公布的美國 9 月消費者物價，年增 3.7%，單月上漲 0.6%。汽油一個月漲了 9.1%，貢獻超過一半的整體月漲幅。這讓市場對利率維持高檔、甚至繼續上升的疑慮更難消退。",
+      "used_in_final": true
+    },
+    {
+      "slide": 5,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Overhead editorial desk scene: a single financing contract sheet, a large hand placing an orange coin beside a blueprint of a data-center expansion. Do not draw readable fake contract text. Prominent type near the top 「核心通膨年增」. Below, draw two plain upright bars on the same zero baseline at heights exactly proportional 2.4:2.6, flat and nonperspective. Labels 「8 月 2.4%」 and 「9 月 2.6%」. A separate short meaningful caption 「資金成本壓力」 near the coin and blueprint, no other words or numbers. The bars are navy and orange respectively, illustration placed at lower-right; clearly a data chart embedded in the ink drawing, all generated at once.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-77da4fd5-8169-4506-b0c9-23175b254df5.png",
+      "target": "素材/slide-05.png",
+      "title": "AI 投資像賭博？這週市場在怕什麼？",
+      "notes": "把食品和能源拿掉，9 月核心通膨年增 2.6%，也高於 8 月的 2.4%。高利率拖得越久，企業借錢蓋機房、買設備的負擔就越重。AI 投資人原本期待客戶繼續大筆花錢，現在同時面對投資回報和借錢成本的問題，這可能是科技股本週比較弱的一個原因。",
+      "used_in_final": true
+    },
+    {
+      "slide": 6,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Two enormous etched coin-like medallions lying on ivory paper, viewed from directly above. Left medallion carries only a simple letter B and nearby exact text 「比特幣」 「−1.3%」. Right medallion carries an abstract Ethereum diamond and nearby 「以太幣」 「−2.6%」. Coins identical physical size: this is a price-return comparison, not market cap. A thin drawn desk edge and orange loose thread lead across the bottom, no graph, no arrows. Small period 「10/9–10/16」. Very bold data, much whitespace. No extra headline.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-4be77a39-c3b7-4b04-bb5f-3d02b853916f.png",
+      "target": "素材/slide-06.png",
+      "title": "AI 投資像賭博？這週市場在怕什麼？",
+      "notes": "幣圈這週也反覆震盪，以太幣表現比比特幣弱。比特幣這週約跌 1.3%，以太幣約跌 2.6%。利率與資金成本的疑慮，也可能壓抑這類風險資產；槓桿則會放大過程中的波動。帶著市場這週的擔心，接著看台積電交出的實際成績。",
+      "used_in_final": true
+    },
+    {
+      "slide": 7,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Macro close-up of a gloved semiconductor technician's hand holding a single silicon wafer edge, rich engraved linework without showing the technician's face. The wafer occupies left third, right two-thirds have very large exact data typography 「台積電第三季」 「每股盈餘 29.43 元」 「稅後獲利年增 68.7%」. Period 「2026 年第三季」. Monetary unit is 新台幣 implicitly via 元 and company context; do not add dollars or other numbers. No stock graph. Strong orange emphasis only on 29.43 and 68.7%, navy labels. No extra heading.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-d7c1afdf-2a42-4903-ada5-e93f03080d47.png",
+      "target": "素材/slide-07.png",
+      "title": "台積電又大賺，AI 需求還有多強？",
+      "notes": "台積電 10 月 15 日公布第三季財報，每股賺 29.43 元，稅後獲利比去年同期增加 68.7%。市場正在擔心 AI 投資回報，晶片製造端卻已經把客戶的需求變成獲利。這也是台積電在這波討論裡很重要的地方：它手上有已經做出來的成績。",
+      "used_in_final": true
+    },
+    {
+      "slide": 8,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Technical sectional cutaway through a semiconductor fabrication chamber, front-facing interior engineering drawing at right, no external factory skyline. At left huge 「毛利率 66.4%」 with smaller exact line 「季減 1.3 個百分點」. Short caption on a precise sectional callout 「二奈米初期成本」. Small period 「2026 年第三季」. A single orange wafer platform surrounded by navy mechanisms shows initial production setup. No numerical chart and no other numbers. Most white space at left so exact labels breathe.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-c9a024c9-8fba-4eaf-9193-f666aeca7a8c.png",
+      "target": "素材/slide-08.png",
+      "title": "台積電又大賺，AI 需求還有多強？",
+      "notes": "台積電這季的成本壓力，主要來自二奈米剛開始放量。新製程出貨增加的初期，會拖累整體毛利率。第三季毛利率是 66.4%，比上一季少了 1.3 個百分點。客戶需求很強，但台積電也正在負擔新一代製程起步的成本，這會影響營收最後能留下多少利潤。",
+      "used_in_final": true
+    },
+    {
+      "slide": 9,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Completely flat analytical overhead illustration of ONE circular silicon wafer whose surface also reads as a pie chart: exactly 8% is orange wedge, remaining 92% ivory with navy engraved dies. NO perspective on circle and no 3D. Adjacent huge text 「二奈米」 「晶圓營收占比 8%」. Only other caption 「第四季加速放量」 and small period 「2026 年第三季」. Precise 28.8 degree orange wedge, boundaries clear, navy lines must not imply further categories. Simple close-up focal graphic, no machinery or hands.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-ad6c81fa-07f4-409a-987c-723a0e673d4e.png",
+      "target": "素材/slide-09.png",
+      "title": "台積電又大賺，AI 需求還有多強？",
+      "notes": "二奈米已經開始貢獻收入，第三季占晶圓營收的 8%。台積電預估，第四季還會加速放量。這次成長值得注意的地方，是新一代製程已經接上生意，之後出貨增加，就有機會把前面的投入逐步賺回來。台積電的下一段成長，也跟著客戶的新產品一起往前走。",
+      "used_in_final": true
+    },
+    {
+      "slide": 10,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Low-angle cinematic engineering-ink view down the side of a chip shipment loading dock, workers small, neatly arranged shipping containers without labels, orange beam of light on loaded pallets. Large open ivory space upper-right with exact text 「第四季營收預估」 「523–543 億美元」 「中間值季增約 14%」. Period 「2026 年第四季」. This is a company forecast: preserve 預估. No invented financial data, no chart. Containers carry only discreet 「台積電」 text, not fabricated logos. Different from a wafer close-up.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-44718957-12bb-4cff-9b5c-eb78f875b39b.png",
+      "target": "素材/slide-10.png",
+      "title": "台積電又大賺，AI 需求還有多強？",
+      "notes": "台積電預估，第四季營收落在 523 億到 543 億美元，中間值比第三季增加約 14%。公司還提到，能替人做事的 AI，會帶動更多 CPU 和網路晶片需求。需求不只延續，也開始往更多種晶片擴展。這正好接到 AMD 本週想搶的新生意。",
+      "used_in_final": true
+    },
+    {
+      "slide": 11,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Over-the-shoulder desk scene of an office employee viewing an AI work checklist on a laptop, with receipts on desk. A single unified workflow illustration in the laptop display, legible few words only: 「讀收據」 「核對規定」 「完成報帳」 in a vertical sequence with checkmarks. At right large short text 「AI 開始替人做事」. Paper texture and deeply drawn hand, all screen content is clearly an illustrative example, not actual software interface. No numerical data. No technical server drawing. Avoid tiny UI buttons and illegible fake text.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-bcdba59f-2950-4866-ab69-f0f2b0e336ca.png",
+      "target": "素材/slide-11.png",
+      "title": "AI 開始替人做事，AMD 想搶哪一塊生意？",
+      "notes": "AMD 想搶的，是 AI 從回答問題走到替人完成工作。像是幫公司處理報帳，AI 要讀收據、核對規定、填資料，遇到缺漏還得查詢。這種會連續執行步驟、使用工具的 AI，通常叫 AI 代理。它每完成一件事，背後要做的工作也跟著變多。",
+      "used_in_final": true
+    },
+    {
+      "slide": 12,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.A clean split technical cutaway across one workstation motherboard, straight-on flat engineering diagram. One large processor on left labeled 「GPU」 with short caption 「模型運算」; another on right labeled 「CPU」 with 「執行工作」. Between them a single hand-drawn work folder passed between two hands showing collaboration, not a factory. No pipes, no duplicate machinery. Emphasize different duties within one system, not competition. Only specified text, no performance numbers. Large quiet ivory spaces separate two roles, no cards.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-c7470fe0-a0be-46ff-87ab-b5bd7c141967.png",
+      "target": "素材/slide-12.png",
+      "title": "AI 開始替人做事，AMD 想搶哪一塊生意？",
+      "notes": "這些工作，讓 CPU 的角色更重要。GPU 適合跑大型 AI 模型；AI 決定下一步後，還要執行程式、使用工具、存取資料，這些又需要 CPU 配合。AMD 同時有這兩種處理器，可以把模型運算和後續執行一起安排，讓客戶依工作需求選擇配置。",
+      "used_in_final": true
+    },
+    {
+      "slide": 13,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Exploded engineering view of ONE AMD server rack blueprint, seen from three-quarter right with separated rack modules aligned physically, navy linework and orange highlights. Exact labels 「Helion」 「CPU 為主」 「CPU＋GPU 整合」 with callouts to two possible module arrangements, not simultaneous products inside one mandatory setup. Big bottom line 「預計 11 月提供配置」. Small understated 「AMD」 text on blueprint margin, no official logo. No chip factory, no numeric performance claims. One integrated blueprint scene, not tiled UI.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-729dcaa4-b418-46f8-8657-b36f6d07aefa.png",
+      "target": "素材/slide-13.png",
+      "title": "AI 開始替人做事，AMD 想搶哪一塊生意？",
+      "notes": "AMD 這週推出的 Helion，就是把這種分工做成機櫃設計。客戶可以選以 CPU 為主的機櫃，接上另外的 AI 模型運算設備；企業也能選 CPU、GPU 整合在一起的配置。AMD 預計十一月提供相關配置，讓不同客戶按照自己的工作量與電力條件來搭配。",
+      "used_in_final": true
+    },
+    {
+      "slide": 14,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Low-angle human-scale view of two technicians in a server integration workshop fitting a large rack, showing side panel open with power bus and cooling loop exposed. Bright ivory background, navy etched mechanics, orange accents on a cooling component. Exact text 「緯穎」 and two large labels 「機櫃整合」 「散熱」. Taiwan supply-chain story, no fake company logos, no manufacturing semiconductor wafers, no extra technical labels, no digits. Composition emphasizes hands at work and real rack scale rather than isometric machines.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-fe155c04-2c94-46ac-8838-10fcc0bc9a00.png",
+      "target": "素材/slide-14.png",
+      "title": "AI 開始替人做事，AMD 想搶哪一塊生意？",
+      "notes": "台灣的機會，也延伸到整套設備怎麼做出來。伺服器廠緯穎參與 AMD 這次合作，提供機櫃整合與散熱能力。處理器、網路、供電和散熱要一起配好，客戶才能把系統用起來。我認為這是台灣供應鏈值得留意的新需求。",
+      "used_in_final": true
+    },
+    {
+      "slide": 15,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Very spare flat comparative data image. At left a bold etched paper stock certificate with only 「Strategy」; at right one smaller etched Bitcoin coin. A large horizontal 2-row negative bar chart sits across lower half on same zero baseline, negative bars extend left. Exact labels and week-return values 「Strategy −11.3%」 and 「比特幣 −1.3%」. Correct bar-length ratio 11.3:1.3, equal width bars, common zero line, flat perspective and no arbitrary stock curve. Big period 「10/9–10/16」. One small plain document label 「MSCI 新規則」 near certificate, no other text. Numeric data and chart fully generated.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-7bc3dd1e-d512-4768-a739-ae08a0a011f0.png",
+      "target": "素材/slide-15.png",
+      "title": "Strategy 可能被踢出指數，買幣模式會受影響嗎？",
+      "notes": "再來看 Strategy，這週股價累計跌了約 11.3%，比比特幣的 1.3% 跌得更重。這週它還多了一個壓力：MSCI 公布的新規則，讓它面臨被移出股票指數的風險。",
+      "used_in_final": true
+    },
+    {
+      "slide": 16,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Overhead view of a policy analyst's hands sorting a single paper certificate marked 「Strategy」 with a magnifying glass, beside two open document trays. One tray labeled 「經營事業」 contains a small factory and product-order illustration. Other tray labeled 「持有投資資產」 contains a Bitcoin coin illustration. Clear prominent short text 「MSCI 資格審查」. The Strategy certificate is held BETWEEN trays: outcome is not decided, no rejection stamp and no checkmark assigning it definitively to one tray. No flowchart boxes, no tiny documents, no numbers. A short single line 「投資工具不符合收錄資格」 below the second tray explains the rule.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-0e6f9af6-bf1b-419c-b006-9684f4648d47.png",
+      "target": "素材/slide-16.png",
+      "title": "Strategy 可能被踢出指數，買幣模式會受影響嗎？",
+      "notes": "MSCI 的這類股票指數，本來就不收投資基金。新規則要排除的，是那些雖然掛牌上市，卻主要持有投資資產、缺少實際營運的公司。Strategy 手上大量的比特幣，讓它碰上這條規則：如果審查認為它更接近一個比特幣投資工具，就不符合這類股票指數的收錄資格。",
+      "used_in_final": true
+    },
+    {
+      "slide": 17,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Side-on close-up of an institutional portfolio manager's hand removing ONE stock certificate labeled 「Strategy」 from a thin folder marked 「追蹤指數基金」 and passing it toward the market. Adjacent small blank certificates remain in folder; do not put fake text on them. Large exact short labels 「調整持股」 and 「額外賣壓」. Include small but clear conditional phrase 「若移出指數」 so this remains a possible future effect, not already completed sales. No stock price curve, no money figures, no Bitcoin selling depiction. One meaningful physical action, ample ivory negative space.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-f4725022-30c4-4fa1-acff-5a3c9b3fb9b4.png",
+      "target": "素材/slide-17.png",
+      "title": "Strategy 可能被踢出指數，買幣模式會受影響嗎？",
+      "notes": "一旦 Strategy 被移出，追蹤相關指數的基金就得賣出它的股票。原本按指數配置的資金會退出，市場得接下這批股票，股價就可能承受額外賣壓。",
+      "used_in_final": true
+    },
+    {
+      "slide": 18,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Front-on close-up of an open corporate ledger on paper, drawn in navy engraving style; show only TWO wide readable lines: 「買幣支出 2,150 萬美元」 and 「發股募資 2,100 萬美元」. Above ledger small period 「10/5–10/11」. On the right a hand fans out paper share certificates with no tiny text, beside one Bitcoin coin. Short bottom caption 「同樣募資金額，需發更多股」 and small condition 「股價較低時」. This scene explains financing and dilution; no invented additional numeric data or percentage, no quantitative bar comparison. Printed bold Traditional Chinese, not fake handwriting.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-5e8ac5d3-87dc-4046-907a-b30b65c0e510.png",
+      "target": "素材/slide-18.png",
+      "title": "Strategy 可能被踢出指數，買幣模式會受影響嗎？",
+      "notes": "股價承壓，接著影響的是發股募資。Strategy 在 10 月 12 日公告，前一週買幣花了 2,150 萬美元，其中 2,100 萬來自發行新股。股價越低，籌到同樣金額就得發更多股票，原有股東的持股比例也會被稀釋得更多。",
+      "used_in_final": true
+    },
+    {
+      "slide": 19,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.A horizontal desk-calendar timeline, straight-on graphic of two large paper calendar leaves, no UI cards. Left exact date 「11/11」 with caption 「最終名單」; right exact date 「11/30」 with caption 「收盤後生效」. Navy line physically connects their centers as a timeline, one orange binder clip. Below, a simple overhead group of several small share certificates arranged around a single Bitcoin coin, caption 「總持幣增加」 and 「每股未必同步增加」. No number of coins implied, no percentage, no price chart. Two important messages: official dates and shareholder perspective. Keep typography spacious and clear.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-3f74821f-193c-434d-a078-44221b9dc84f.png",
+      "target": "素材/slide-19.png",
+      "title": "Strategy 可能被踢出指數，買幣模式會受影響嗎？",
+      "notes": "MSCI 會在十一月十一日公布最終受影響名單，十一月三十日收盤後生效。我對 Strategy 會更審慎：如果擴張得靠更多新股支撐，公司買到的比特幣增加，每股對應的比特幣卻未必同步增加。公司規模變大，和股東得到更多，是兩件事。",
+      "used_in_final": true
+    },
+    {
+      "slide": 20,
+      "prompt": "Create a single finished 16:9 landscape illustration, 1920x1080 or larger, for a Traditional Chinese investment-video slide content area. Warm ivory fibrous paper, crisp deep navy #0C1B2F ink outlines, fine engraved crosshatching, restrained brick orange #B75A38 accents, a few pale engineering construction lines. Elegant hand-drawn editorial engineering illustration with very bold readable Traditional Chinese typography. Illustration, labels, precise numbers and any chart must be generated together as one image. No collage, no pasted-looking graph, no glossy 3D, no neon, no dashboard tiles, no tiny fake text, no logo, no owl, no outer frame, no footer, no slide number. Keep all important marks and text inside a 6% safe margin. Only render text and values explicitly specified. Each composition is distinct; do not default to an isometric data center.Closing editorial scene: a wide slightly elevated workbench, left side shows a customer hand paying an orange coin for a semiconductor chip and one neatly prepared server component, right side shows another hand offering paper share certificates for cash. One continuous coherent composition without boxed panels. Exact brief text only: near left 「台積電」 「已有獲利」 and 「AMD」 「新需求」; near right 「Strategy」 「募資壓力」. Main large line across upper-center 「更看好靠客戶付錢的成長」. Do not add investment instructions, buy/sell icons, stock price forecast, checks or percentages. Support a clear investment opinion while keeping the illustration elegant and quiet.",
+      "source": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-34c8c715-76eb-46f5-92ea-74053effd67d.png",
+      "target": "素材/slide-20.png",
+      "title": "本週總結",
+      "notes": "這週科技股雖然下跌，我對 AI 供應鏈仍偏正面，尤其是台積電這種已經賺到錢的公司。AMD 的新方向，則讓我看到 AI 需求還有繼續擴大的空間。資金成本還高，我更看好客戶願意付錢、能持續把生意做大的公司；Strategy 更依賴市場出錢支持，這也是我對它更保守的原因。",
+      "used_in_final": true
+    }
+  ]
+}

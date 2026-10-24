@@ -1,0 +1,42 @@
+[
+  {
+    "page": 2,
+    "prompt": "Overhead editorial still life with one semiconductor sample and one enterprise software design notebook, both drawn in navy ink and brick orange. Compose the large text INTO the scene, not a blank reserved area. Exact text only:「半導體」「約 70%」「企業軟體」「約 30%」「2026 財年第三季營收占比」. The percentages identify the two businesses. NO bar chart, pie chart, extra numbers or logos."
+  },
+  {
+    "page": 8,
+    "prompt": "Revenue ledger with a custom chip and network connector, viewed diagonally. Strong large typography integrated into the paper composition. Exact text only:「AI 相關營收」「167 億美元」「年增 221%」「占全公司收入約 56%」「2026 財年第三季」. Do NOT draw a trend chart, money amounts on the ledger, or any additional text. These four supplied financial figures are the entire content."
+  },
+  {
+    "page": 9,
+    "prompt": "Closeup cash and open company ledger in navy ink hatching, restrained orange details. Large typography integrated with the scene, not a reserved empty area. Exact text only:「全公司自由現金流」「137 億美元」「相當於營收 46%」「2026 財年第三季」. Blank ledger lines. No fake charts, additional financial figures or illegible microtext."
+  },
+  {
+    "page": 10,
+    "prompt": "A complete integrated financial chart illustration drawn directly onto cream engineering paper beside a small quarterly calendar and chip sample tray. Draw TWO precise vertical bars with dark navy outlines and fine diagonal ink hatching; first navy, second brick orange. SAME width, SHARED horizontal zero baseline, no perspective, no 3D. Value167 bar height334 units, value217 bar height434 units so first is exactly76.96% of second. Exact labels above bars「167」「217」. Below bars「第三季實際」「第四季公司預估」. Integrated large statement「下一季 AI 營收，再多 50 億」. Bottom note「2026 財年，單位：億美元」. All chart, text and illustration must be in this single image, no empty placeholders. Do not add other data."
+  },
+  {
+    "page": 11,
+    "prompt": "A complete integrated precise two-column chart on cream paper with small product development notebooks at the margin. Navy ink outlines and fine hatching, orange accent. BOTH are forecasts. Same-width bars on one common zero baseline; first height220, second height440, EXACT 1:2 ratio. Values above bars「1,150」「2,300」. Labels underneath「2027 財年」「2028 財年」. Large integrated phrase「AI 年營收，預估再翻倍」. Bottom text「兩年皆為公司預估，單位：億美元」. All chart and typography generated together as one cohesive technical editorial drawing. No perspective bars, no extra values or fake finance sheets."
+  },
+  {
+    "page": 15,
+    "prompt": "A complete integrated HORIZONTAL earnings comparison chart on a textured cream engineering notebook page, with a pencil and orange binder clip at margins. TWO bars start from the SAME vertical zero baseline, both have same thickness, first navy hatching, second orange hatching. First bar value11.66 length350, second19.39 length582.03, exact ratio0.60134. Next to each row keep exact year and value:「2026 財年預估」「11.66」and「2027 財年預估」「19.39」. Large integrated phrase「每股獲利，預估成長六成多」. Bottom note「分析師預估，單位：美元」. Generous space around values, no wrapping digits. Chart+labels+paper+illustration must all be in one generated image. No other numbers."
+  },
+  {
+    "page": 16,
+    "prompt": "A complete integrated valuation risk comparison on cream paper, navy ink hatching and restrained brick orange. A hand holds an earnings estimate sheet beside magnifying glass. Two big clearly connected printed values on the same paper, exact text「估值風險：獲利低於預期」「原獲利預估」「約 18 倍」「獲利少兩成（假設）」「約 23 倍」「同樣股價」「二十個交易日均價，2027 財年獲利估計」. NO bar chart necessary on this page; use an editorial comparison arrangement with large values integrated into the scene. No stock-buying instructions, no additional caveats or figures."
+  },
+  {
+    "page": 17,
+    "prompt": "A complete integrated HORIZONTAL valuation chart on cream engineering paper beside two physical chip samples. Navy outlines and fine hatching, orange second row. Two bars with same thickness and common vertical zero baseline, no perspective. Exact underlying values18.3934244456 and14.3506913891 determine lengths: first width550, second width429.113; display ONLY rounded value labels「約 18 倍」「約 14 倍」. Each row label「博通」「輝達」. Large integrated statement「博通的估值，沒有比輝達便宜」. Bottom note「二十日均價，博通 2027 財年、輝達 2028 財年獲利預估」. Every text, chart and illustration generated as a single image, no reserved blank regions, no other data."
+  },
+  {
+    "page": 18,
+    "prompt": "A complete integrated precise customer concentration comparison with five client folders and a schedule, textured cream paper, navy ink and brick orange. Two vertical bars of SAME WIDTH on common horizontal ZERO baseline. First40% height280, second55% height385 so exact40:55 ratio. Values above「40%」「55%」, labels below「去年同期」「本季」. Bold integrated lead「風險：收入集中在少數大客戶」. Supporting text「前五大客戶占全公司營收比例」. Bottom note「2026 財年第三季」. All chart labels and illustration integrated in one generated image. No other values, chart axes can be omitted except zero baseline, no perspective bars."
+  },
+  {
+    "page": 19,
+    "prompt": "A complete integrated lease guarantee risk illustration, hands signing a contract and AI SERVER equipment cabinet beside a shipping crate, no construction vehicles. Navy ink hatching, cream paper, brick orange emphasis. Include all exact large text in the scene:「風險：替客戶租金當保人」「290 億美元」「擔保責任上限」「五年設備租賃」「客戶違約時，得補錢」「設備全部投入使用後的上限」. The290 figure is a conditional maximum guarantee, NOT current loss or debt. Do not add financial caveats, numbers, fake contract details, bar charts or microtext."
+  }
+]

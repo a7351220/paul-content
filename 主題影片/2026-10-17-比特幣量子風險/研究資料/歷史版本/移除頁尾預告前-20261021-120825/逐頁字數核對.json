@@ -1,0 +1,113 @@
+{
+  "mode": "remove-editorial-transition-explanations",
+  "page_count": 20,
+  "slide_map_revision": 12,
+  "script_revision": 14,
+  "baseline_before_edit": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/刪除刻意銜接說明前-20261021-115625/逐字稿.md",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "total_before": 5878,
+  "total_after": 5898,
+  "ratio": 1.0034,
+  "pages": [
+    {
+      "page": 1,
+      "before": 238,
+      "after": 238
+    },
+    {
+      "page": 2,
+      "before": 285,
+      "after": 288
+    },
+    {
+      "page": 3,
+      "before": 258,
+      "after": 258
+    },
+    {
+      "page": 4,
+      "before": 308,
+      "after": 332
+    },
+    {
+      "page": 5,
+      "before": 280,
+      "after": 289
+    },
+    {
+      "page": 6,
+      "before": 296,
+      "after": 291
+    },
+    {
+      "page": 7,
+      "before": 293,
+      "after": 295
+    },
+    {
+      "page": 8,
+      "before": 297,
+      "after": 292
+    },
+    {
+      "page": 9,
+      "before": 287,
+      "after": 287
+    },
+    {
+      "page": 10,
+      "before": 301,
+      "after": 301
+    },
+    {
+      "page": 11,
+      "before": 295,
+      "after": 300
+    },
+    {
+      "page": 12,
+      "before": 292,
+      "after": 292
+    },
+    {
+      "page": 13,
+      "before": 309,
+      "after": 296
+    },
+    {
+      "page": 14,
+      "before": 284,
+      "after": 292
+    },
+    {
+      "page": 15,
+      "before": 278,
+      "after": 264
+    },
+    {
+      "page": 16,
+      "before": 297,
+      "after": 297
+    },
+    {
+      "page": 17,
+      "before": 290,
+      "after": 289
+    },
+    {
+      "page": 18,
+      "before": 294,
+      "after": 294
+    },
+    {
+      "page": 19,
+      "before": 297,
+      "after": 297
+    },
+    {
+      "page": 20,
+      "before": 399,
+      "after": 406
+    }
+  ]
+}

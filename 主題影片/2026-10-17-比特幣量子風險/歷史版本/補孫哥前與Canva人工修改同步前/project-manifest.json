@@ -1,0 +1,17 @@
+{
+  "title": "比特幣會被量子計算攻破嗎？",
+  "page_count": 20,
+  "script": "逐字稿.md",
+  "images": "視覺素材/slide_01.png … slide_20.png",
+  "generation": "built-in image_gen; 20 unique illustrations; targeted repairs for invented charts/addresses",
+  "prompts": "製作紀錄/visual-plan.json",
+  "pptx": "輸出/比特幣會被量子計算攻破嗎.pptx",
+  "canva_design_id": "DAHYpWSd8Lk",
+  "canva_url": "https://www.canva.com/design/DAHYpWSd8Lk/jE2vMd7ghtZ4DzPz7_7NXw/edit",
+  "notes": "20 pages match approved narration, whitespace normalized",
+  "font": "First-page editable title verified and restored to 可画榜书 in Canva toolbar",
+  "branding": "Original template object retained in PPTX; Canva 20-page fill corrected from exact template render crop, preserving geometry",
+  "canva_status": "saved; final grid readback confirms 20 distinct pages",
+  "proof": "輸出/Canva完成預覽.png",
+  "template": "/Users/xieminghua/.codex/skills/market-video-story/assets/template.pptx"
+}

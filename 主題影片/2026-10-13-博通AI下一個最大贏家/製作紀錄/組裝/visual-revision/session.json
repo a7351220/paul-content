@@ -1,0 +1,666 @@
+{
+  "jobs": [
+    {
+      "page": 2,
+      "prompt": "BUSINESS OVERVIEW, quiet asymmetric editorial diptych with a thin vertical drafting line dividing left 45% from right55%. Left: a single large angled semiconductor package close-up, pins and tiny etched circuit pattern, no wafer/factory. Right: an architectural cutaway of a compact enterprise computer room with ONE management screen above showing server allocation using simple rectangles, not a financial chart. Both objects grounded on paper, NOT connected. Clear headings above objects: left「半導體」right「企業軟體」. Chip design is hardware, software manages computing resources. No title sentence.",
+      "src": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-376a2593-cec3-4b7e-a097-d7448b1c7658.png"
+    },
+    {
+      "page": 3,
+      "prompt": "SHARED DESIGN BLUEPRINT composition, view from directly above a single large unfolded engineering drawing lying diagonally across paper, filling center. A large navy outlined chip schematic drawn ON the document. Two human hands enter opposite edges: one pointing at a short requirements checklist, one using a burnt orange drafting pencil to refine chip circuitry. Only partial hands, no full people or faces. Text on left margin「客戶提出需求」and on right margin「博通協助實現」. The paper drawing is the focal object. This is design collaboration, not physical chip manufacturing. No computer desk scene, machines or assembly line.",
+      "src": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-4d5ff1d8-1afa-4d35-a64d-2995227b895e.png"
+    },
+    {
+      "page": 4,
+      "prompt": "AI USAGE COST, striking macro composition: a very large tilted simple chat window occupies upper left 60%, with two speech bubbles ONLY, first「幫我整理重點」second「AI 正在回答」. Lower right an oversized physical electricity meter dial with orange needle and a simple coin silhouette beside it. No plotted scale values. A small inset under chat shows one microchip outline, enough to associate answer with computation, no server room. Headline at upper right「每次回答，都要運算」. Strong diagonal balance, large empty cream gap. Cost increases with repeated use; show no invented amount or efficiency.",
+      "src": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-32d40bb0-69fe-4b6a-a2b7-d000d08322b8.png"
+    },
+    {
+      "page": 5,
+      "prompt": "CUSTOM CHIP, macro exploded engineering cutaway, one large semiconductor package centered-right, its top layer lifted diagonally above exposing a single orange task-optimized circuit block in a larger navy circuit layout. Three thin dotted vertical alignment guides, no pipes. Left side clear large two-line Chinese label「為特定工作」「設計晶片」. One small dimensionless inset at bottom shows same task repeated as three tiny identical document symbols (no numbers, no charts). Technical illustration not physically literal processor architecture. Clear one strong focal object, no four corner nodes, no workstation.",
+      "src": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-3887a80b-133b-473d-b8aa-0844cb34d277.png"
+    },
+    {
+      "page": 6,
+      "prompt": "UPFRONT COST AND REPEATED USE, overhead editorial accounting desk arrangement, not perspective machinery. Left third: a thick closed development notebook, a drafting pencil and a small compact stack of coins grouped under heading「先投入開發」. Right two thirds: an open cream ledger sheet with an elegant array of twelve repeated small identical task symbols in 3 rows of4, an orange underline below the group, heading「再大量使用」. Bottom short label「用得夠多，才值得算」. No dollar amounts, no chart curves, no claim of guaranteed cheaper cost, no arrow pipeline, no server racks. One diagonal notebook and large contrasting rectangular ledger create asymmetry.",
+      "src": "/Users/xieminghua/.codex/generated_images/01a130c7-618e-77a3-b62f-13809eb6fc4a/exec-dc0202c0-b809-402a-919d-ef72c6b40f2d.png"
+    }
+  ],
+  "beforePages": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"items\":[{\"id\":\"PB3YxWNQCP67vDVL\",\"index\":1,\"page_number\":1,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-976720131/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAM9Fnac9TOkqNaiuAoIWxZRBMxifqFRlPa47HSBzK3Ji&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0001.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T112746Z%26X-Amz-Expires%3D58658%26X-Amz-Signature%3D308be4aac451794b8355577ac81106c2c0cb0a83eac6d3e5c2be3a55d000de03%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAI_mVGnqTfYte6GGlGPrsmlqp5p6sXoV9YriDzi_BUyP&page=1&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBqz5NqRP0rmLq98\",\"index\":2,\"page_number\":2,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-1942251228/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAADcWUA02FDVtJ8W1MdiMqEhYyJCpoOMyD1CyPBAc3mEu&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0002.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T181000Z%26X-Amz-Expires%3D34524%26X-Amz-Signature%3D602225a3ec6d14326f05a04959cb67139cd1da5d1fd8f985841ee770c2190af9%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAGM24riRng-JNR5v1oWamBxaNy7FzToko2idFx7d9WBv&page=2&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBv01mccX1yZR5Yx\",\"index\":3,\"page_number\":3,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:1975426013/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAF4zj9lvAsS3up9FDvzjDDbmPrftxeITbl2BYqJYi1YS&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0003.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T081331Z%26X-Amz-Expires%3D70313%26X-Amz-Signature%3De60a51258debd00a9c7a718f183e118fa1024f45c4be0f64c3a2e266e46766c9%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAEroPyNEuoUmX2WOSUdnIsDGrGrrrRkZwSWvD-1GeYw8&page=3&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBjJFVFwdrffctFz\",\"index\":4,\"page_number\":4,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:752882875/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAKMHxNjK6-cTPd7AdslibmoNmNHxhpTGtrk1XXgUlfgr&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0004.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T183138Z%26X-Amz-Expires%3D33226%26X-Amz-Signature%3D2414bc8352ad189cda89240a3b53509745df76c0d06c1fc41c765f56967a8758%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAH4OgT01I086LIUDtA3pbboUvJAIfozfBPTOtRBf63NP&page=4&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PByjQ2npTY0td0JY\",\"index\":5,\"page_number\":5,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-1980198364/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAJqrNsN1_k4G8y1sELYrm7fWckKtfO0Fq-G7U3dViG0-&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0005.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T053340Z%26X-Amz-Expires%3D79904%26X-Amz-Signature%3Dcca06c1721ae520b753db8053599d4c4daf47c398da743d248b9968559893707%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAKoCssIiaZWv0u5_BcJnkagVbi0EF1SBYM43DDY25sA4&page=5&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBJcGZZCKrc109Wz\",\"index\":6,\"page_number\":6,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:1430411473/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAIAYR-4hso4EVf1YX5dQGzrLpzrWeh5ndOmsBnm4F7he&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0006.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T043846Z%26X-Amz-Expires%3D83198%26X-Amz-Signature%3Df06b88088cfab5f7dada8a9d9a23325dd102f37b39dce633e767c829a34facfb%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAACY4p0cJivr_i95txL4WwUlApFGtWYmDv9wT_vxUW16J&page=6&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBQljVKVv1Tvn4Vy\",\"index\":7,\"page_number\":7,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-1294605530/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAPW2zTVuwIXv0CvBmG5NvswXCF3YMe6oF2QhGVvZBQI0&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0007.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T165844Z%26X-Amz-Expires%3D38800%26X-Amz-Signature%3D2b25e34890ef7f9ece5310d96c0f9f7db338ec79a1b2a4378770ba4a978493a0%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAAbzuO6Lvwo8W0yeF9qR2nLbR1of5nBXq9wA6cIoi2wo&page=7&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBRFBz0dl3t8vPBG\",\"index\":8,\"page_number\":8,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:179092271/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAIWM-C8CP4ym3dhtK1pSKh1X-ixowQYEsjRy2EMm3ubk&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0008.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T220342Z%26X-Amz-Expires%3D20502%26X-Amz-Signature%3Dfb7931d5c1f72adfb5f6f37157c21ae13392a7954e0f6775f7cbdb6c8384af2c%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAKPf0wwl8JZNwf2j-0dmrPZdwwqYeBESdmhV4bKngjdV&page=8&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBL9y1K1JqjZxfnT\",\"index\":9,\"page_number\":9,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:151222422/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAFCICLkYFHdMd5C8ZnmM6QxxR0es2VhWHb1tsyEXftZk&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0009.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T034308Z%26X-Amz-Expires%3D86536%26X-Amz-Signature%3Dfc8d3f751ecb8b82c36eff0fa61c54db9c8d64d0a16bce16c60fb642abe76a7a%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAD861PNFJ8o-PMSYLlD4ZJU0p6KGyZwHLMQYPTsPikEa&page=9&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PB8bFgQppLCqB6G4\",\"index\":10,\"page_number\":10,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-218582464/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAHaCjNN2RddP2dWDI4DyDkR1JTbJc7HAw-qjZSw9ecF6&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0010.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261014%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261014T013551Z%26X-Amz-Expires%3D7773%26X-Amz-Signature%3D262a24f1409aa5a2be895d5ac70247945ba305a612f19f6305f1441eab722dcb%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAOL1CFxZeMI2JDMUEEMMbevsoLM4C7UEdSI7gXyFMwWV&page=10&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBgSGgPk40g99mw8\",\"index\":11,\"page_number\":11,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-1143185877/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAANicV-gIYsfXBGzbdbok3zWSXdoRl7296MfJSgrAEW3F&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0011.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T103548Z%26X-Amz-Expires%3D61776%26X-Amz-Signature%3D746f1ae89d879fc9ec7e49ed9f6326a1fdf9f3d7427fad7b28e776f5b8816019%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAFm9Rw-Szzm48laWJJWb5j1gSGpU16vWWpx9Jy64QiLf&page=11&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBNnQ8PNWTQRrJWL\",\"index\":12,\"page_number\":12,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:1456171862/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAB6DVg5p1YGLgff9nTj6ol6jm1P-n3xoe0mVc3SNG_oU&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0012.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T215227Z%26X-Amz-Expires%3D21177%26X-Amz-Signature%3De848546dfc95715ba61aa92f2ad83284ef6804821a5e57c4e8e6a27e4dfd197f%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAALh80r3PzbDkqU8prULslFcUCCB44ITrgwe1tWiuvtIf&page=12&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBb91mpMS3ShWmK7\",\"index\":13,\"page_number\":13,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-1090056288/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAADO4lKhH22dG_6BEyvav9U0yL3Xu2oY15yWk1g1ojwrs&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0013.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T185435Z%26X-Amz-Expires%3D31849%26X-Amz-Signature%3D673ba372f0163947249835792eb951418b6f272b1118cafe3fd90672d7b688b2%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAIkvotuY6tFsgIcN8SNIuRVdjaLRTbH7rgYYZ6HfuxX5&page=13&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBb8rvs4VNVwqr0Z\",\"index\":14,\"page_number\":14,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-1492216575/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAABt6jJf2aFVeQmpNQ7W5Onk9WMYoVaLyz2PbGGm8nn3T&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0014.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T101057Z%26X-Amz-Expires%3D63267%26X-Amz-Signature%3D3f13e89999b175c5e3220e21b21971567879fac1a1e08012a94d954a43053cad%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAOyJb0p8u0f3NvbGF_U3011s3S7lH9aJUgm00TmjqJgV&page=14&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBd1tm9Qwtnk8tFc\",\"index\":15,\"page_number\":15,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-1808130178/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAALefRWM3Vc-EfuYelQ_siteMCmMzV5c9D8uM1h6-QhYW&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0015.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T053305Z%26X-Amz-Expires%3D79939%26X-Amz-Signature%3D472f836afcfd1f2709afa52dbbab7d4ea8d9459c268e402f62ac91659a8f15f4%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAOh8WafLkDN2Yiz2IweJ9yAARfIdgfNXh1G3wDKJo4UV&page=15&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBKs0kNnbZYVVVcw\",\"index\":16,\"page_number\":16,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-942642756/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAFnCZGM5AWa2gNiKec0_ifCuoo7UkaOPa-ijAkkii7MW&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0016.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T175311Z%26X-Amz-Expires%3D35533%26X-Amz-Signature%3D6e180e352a73bde6336075a99229da1c398e8b83dddddce3d84139a129927528%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAD8_5PAPO7b8_I00SX5H22g_F7n7D_SuUfUk66AchGcD&page=16&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBCwDxJtVs7DsHvQ\",\"index\":17,\"page_number\":17,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-250098917/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAFgUpiCEVy3RdlxDiknxO1j60ZROx0mrH-YedIMTLNuS&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0017.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T032314Z%26X-Amz-Expires%3D87730%26X-Amz-Signature%3Dd255ed60f9da229928e8e01f79731247a2bccd3ea02181015a537a47273dc090%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAADlqg-e43uQVCzkZV5fK35jKhti8K8G6T07D-tHz0_th&page=17&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PB2PFbLcRqvXBYb0\",\"index\":18,\"page_number\":18,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-40101013/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAD8GowvpgJkRqqXGdt0DFtkZId8JYKuzGKRMkkrH_FVq&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0018.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261014%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261014T003359Z%26X-Amz-Expires%3D11485%26X-Amz-Signature%3D4637a9442dbdeca539367db738927a0af5856b29447c9579129fbfdd217247ef%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAEoPSbwy5tRM9JQ8HGez8cGY1hiKa9XHCH8VjXHHGwq7&page=18&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBkjp6s6VW1Ysk4z\",\"index\":19,\"page_number\":19,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:803218234/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAAFPkJtAK8RxPBaY9TU1tLOaVxSN0sTlPse7ErYZsy4s1&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0019.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T105100Z%26X-Amz-Expires%3D60864%26X-Amz-Signature%3D69ff6ff1c126face814f7bc4069e533d923419b83fcafaa3c0cf06a17dbb5395%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAInsLeBxAC_Me-qS5dX_G8xPtgjkUVmLfc7eVjwmlJaM&page=19&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"},{\"id\":\"PBZx8Q4hCR0bMC60\",\"index\":20,\"page_number\":20,\"dimensions\":{\"width\":1920,\"height\":1080},\"thumbnail\":{\"width\":596,\"height\":335,\"url\":\"https://media.canva.com/v2/document-image/hash:-1957799583/height:335/id:DAHX7zjhLsI/type:B/width:596?brand=BAFCLx2ciK4&csig=AAAAAAAAAAAAAAAAAAAAALO2IcSkMhbbsbat0c8CZf_x0_mPTkD0bvbKDs0eOuRE&disableexport=T&exp=1791946824&fallback=https%3A%2F%2Fs3.amazonaws.com%2Fdocument-export-us1.canva.com%2FjhLsI%2FDAHX7zjhLsI%2F1%2Fthumbnail%2F0020.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQYCGKMUHUBTCC4VT%252F20261013%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20261013T172725Z%26X-Amz-Expires%3D37079%26X-Amz-Signature%3D3796d5967cdc41b817e796b9c9f9d106ec24f80d79b90fdb01e672a5890b267c%26X-Amz-SignedHeaders%3Dhost%26response-expires%3DWed%252C%252014%2520Oct%25202026%252003%253A45%253A24%2520GMT&osig=AAAAAAAAAAAAAAAAAAAAAL9fZOwXweLIl11G6CLy7b_Q61xF0788oE367EuRIm8t&page=20&signed=brand%2Cdisableexport%2Cfallback%2Cpage%2Cversion&signer=document-rpc&version=1\"},\"design_type\":\"presentation\"}]}"
+      }
+    ],
+    "isError": false
+  },
+  "beforeNotes": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"page_id\":\"PB3YxWNQCP67vDVL\",\"page_number\":1,\"notes\":\"AI 的發展，讓科技大廠不斷投入資金，擴大運算能力。講到這波投資的受惠者，大家最熟悉的就是賣 AI 晶片的輝達。但大廠持續加碼，接下來還有哪些公司，有機會成為這一輪的大贏家？今天我想聊的是博通，一家做晶片和企業軟體的公司。為什麼我看好它，甚至認為它有機會成為 AI 下一個最大贏家？\"},{\"page_id\":\"PBqz5NqRP0rmLq98\",\"page_number\":2,\"notes\":\"博通主要有兩大業務：晶片，以及幫企業管理電腦資源的軟體。這次 AI 帶來的成長機會，主要在晶片這一塊。它的客戶會建置資料中心，也就是集中擺放大量電腦、進行運算的地方。博通則提供這些電腦需要的晶片和資料傳輸設備。\"},{\"page_id\":\"PBv01mccX1yZR5Yx\",\"page_number\":3,\"notes\":\"在晶片開發上，客戶和博通各有分工。客戶知道自己的 AI 要做哪些工作，也能決定晶片該怎麼設計；博通則協助把設計做成實際可用的晶片。可是，大廠為什麼願意花資源開發自己的晶片？這就和它們每天使用 AI 的成本有關。\"},{\"page_id\":\"PBjJFVFwdrffctFz\",\"page_number\":4,\"notes\":\"像我們每次請 AI 回答問題，背後的電腦就要運算、產生答案，這個過程叫推論。使用者愈多，這些運算就會不斷累積。對大型 AI 公司來說，除了服務好不好用，也要考慮每次回答花多少錢。因此，降低運算成本，就成了一個很實際的需求。\"},{\"page_id\":\"PByjQ2npTY0td0JY\",\"page_number\":5,\"notes\":\"客製化 AI 晶片，就是針對客戶常做的工作來設計，希望用更有效率的方式完成運算。對客戶的吸引力在於，如果能把大量重複運算做得更省電、更有效率，長期下來就有機會降低成本。\"},{\"page_id\":\"PBJcGZZCKrc109Wz\",\"page_number\":6,\"notes\":\"不過，開發晶片也要先付出成本。使用量夠大，後面累積的節省，才值得前面的投入。所以，這門生意特別適合有大量運算需求的大客戶。對博通來說，這些公司願不願意投入開發，就會影響它能取得多少合作機會。\"},{\"page_id\":\"PBQljVKVv1Tvn4Vy\",\"page_number\":7,\"notes\":\"推出 AI 聊天工具 ChatGPT 的 OpenAI，就是一個例子。今年 6 月，它和博通發表專用的 AI 晶片，由 OpenAI 提出設計，博通協助把設計做成實際產品。這讓前面說的分工具體了起來。而這類需求，究竟已經替博通帶來多少生意？我們可以從財報看到。\"},{\"page_id\":\"PBRFBz0dl3t8vPBG\",\"page_number\":8,\"notes\":\"在截至今年 8 月初的季度財報裡，博通的 AI 晶片相關業務營收達到 167 億美元，比去年同期增加 221%，也就是成長到原來的三倍多。這裡包含前面說的專用晶片和網路產品。AI 已經帶來實際收入；接著要看的是，公司能留下多少現金。\"},{\"page_id\":\"PBL9y1K1JqjZxfnT\",\"page_number\":9,\"notes\":\"同一季，博通留下約 137 億美元的自由現金流，也就是日常經營留下的現金，扣掉設備等投資支出後剩下的金額。對投資人來說，這有助於判斷公司的生意，是否也帶來現金收入。而市場接下來的期待，則放在這份成長能不能延續。\"},{\"page_id\":\"PB8bFgQppLCqB6G4\",\"page_number\":10,\"notes\":\"博通預估，接下來一季的 AI 晶片相關業務營收，會增加到 217 億美元。公司預期下一季的規模還會擴大。這是近期可以追蹤的進度，而公司對未來兩年的預估，則讓我們看到它認為這門生意能走到多大。\"},{\"page_id\":\"PBgSGgPk40g99mw8\",\"page_number\":11,\"notes\":\"博通在 9 月向投資人說明，依照公司每年計算業績的期間，預估 2027 年度 AI 晶片相關業務營收達到 1,150 億美元，2028 年度再到 2,300 億美元。這是根據客戶建置進度和產品供貨安排提出的預估。要做到這個規模，博通得持續拿到合作，也就避不開同業競爭。\"},{\"page_id\":\"PBNnQ8PNWTQRrJWL\",\"page_number\":12,\"notes\":\"另一家晶片公司 Marvell，也在爭取這些生意，Google 就是它的合作客戶之一。這說明同一個大客戶會找不同夥伴，博通每一代都得繼續爭取訂單。除了協助開發晶片，博通提供的網路產品，也是我們評估競爭力的一個重點。\"},{\"page_id\":\"PBb91mpMS3ShWmK7\",\"page_number\":13,\"notes\":\"很多顆晶片一起做運算時，要不斷交換資料。傳輸跟不上，運算就得等待。這就是資料中心為什麼需要好的網路連接。博通提供資料傳輸需要的設備與晶片，參與的正是這一部分：客戶增加運算能力，也得一起處理資料傳輸。\"},{\"page_id\":\"PBb8rvs4VNVwqr0Z\",\"page_number\":14,\"notes\":\"到了這裡，博通的吸引力就比較清楚了：它能參與晶片開發，也能提供電腦之間的資料傳輸技術。OpenAI 和博通的合作，也規劃了接下來幾代的產品。這種持續共同開發的機會，是我看好它的理由。但生意有成長空間，買進價格也得一起考慮。\"},{\"page_id\":\"PBd1tm9Qwtnk8tFc\",\"page_number\":15,\"notes\":\"評估價格，可以先看本益比。假設股價 200 元，一年每股賺 10 元，就是 20 倍本益比。它是在比較，現在付出的價格，相當於多少倍的獲利。如果改用未來的獲利估計，就是預估本益比。我們也可以用這個角度看博通。\"},{\"page_id\":\"PBKs0kNnbZYVVVcw\",\"page_number\":16,\"notes\":\"以 10 月 12 日收盤價，搭配分析師對博通 2027 年度的獲利估計來算，預估本益比約 18 倍。這份估計排除了部分費用等項目。也就是說，我們看到的倍數，建立在公司未來能賺多少錢；如果實際獲利不如預期，價格是否合理就得重新看。\"},{\"page_id\":\"PBCwDxJtVs7DsHvQ\",\"page_number\":17,\"notes\":\"用同樣方法計算，輝達約 14 倍。兩家公司計算一年業績的期間不一樣，計算獲利時排除的項目也有差異，所以只能先做粗略比較。不過它提醒我們，看好博通的成長，還不能直接說它比較便宜。接下來要看，哪些事情會讓獲利低於期待。\"},{\"page_id\":\"PB2PFbLcRqvXBYb0\",\"page_number\":18,\"notes\":\"其中一個關鍵，是大客戶的進度。博通前五大終端客戶，也就是最後使用產品的公司，約占第三季總營收的 55%。生意集中在少數客戶身上，大客戶延後建置，就會影響業績。所以追蹤合作時，除了看規模，也要看設備能不能照計畫投入使用。\"},{\"page_id\":\"PBkjp6s6VW1Ysk4z\",\"page_number\":19,\"notes\":\"博通還替一項 AI 設備租賃提供保證：客戶租設備卻沒照約定付款時，博通可能需要補款。設備全數投入使用後，這項安排的最大潛在責任約 290 億美元，實際金額還要看違約條件，以及設備能賣回多少錢。財報揭露時，博通尚未因此付款。\"},{\"page_id\":\"PBZx8Q4hCR0bMC60\",\"page_number\":20,\"notes\":\"回到開場，為什麼我看好博通？大廠開發自己的 AI 晶片、擴大資料中心，都替它帶來生意，而且已經反映在收入和現金裡。晶片與網路兩項能力，讓它有機會持續參與這輪投資。至於投資人能不能賺到錢，還要看公司未來能不能賺到預期的獲利，以及我們付出的價格。\"}]"
+      }
+    ],
+    "isError": false
+  },
+  "tx": {
+    "transaction": {
+      "status": "open",
+      "transaction_id": "4885798608660444705"
+    },
+    "edit_design_url": "https://www.canva.com/d/QDAsQxUgnjh0czy",
+    "richtexts": [],
+    "fills": [
+      {
+        "type": "image",
+        "asset_id": "MAHX72fGPlI",
+        "page_index": 1,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PB3YxWNQCP67vDVL-LBX0mvj8Xyfl0xKN"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX7y8iTMU",
+        "page_index": 2,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBqz5NqRP0rmLq98-LBmFNsHNGX6dds13"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX744UlQ8",
+        "page_index": 3,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBv01mccX1yZR5Yx-LBS4B5xj4dj5lSv6"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX78T1CmE",
+        "page_index": 4,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBjJFVFwdrffctFz-LBs3C3qJ1hvkkvC1"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX7wXgKpY",
+        "page_index": 5,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PByjQ2npTY0td0JY-LBgLFvPhKp68PH0B"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX750Gm4E",
+        "page_index": 6,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBJcGZZCKrc109Wz-LB8VbQztJcpksycp"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX75vmBd4",
+        "page_index": 7,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBQljVKVv1Tvn4Vy-LBkCM4YC56ZPHHtf"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX75-n9Z4",
+        "page_index": 8,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBRFBz0dl3t8vPBG-LBRRlws1xvXySrdc"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX7wfXehU",
+        "page_index": 9,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBL9y1K1JqjZxfnT-LBJB5fT1WRBNtC43"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX738puLc",
+        "page_index": 10,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PB8bFgQppLCqB6G4-LB9jfr3VZftVm7BX"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX75-IKc0",
+        "page_index": 11,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBgSGgPk40g99mw8-LBYL1HnVyssvq2ln"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX7y_1SAs",
+        "page_index": 12,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBNnQ8PNWTQRrJWL-LBKfRxShqDK2fYtV"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX7yL1l8A",
+        "page_index": 13,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBb91mpMS3ShWmK7-LBNlbPG6nNDfDYBn"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX79_0zhc",
+        "page_index": 14,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBb8rvs4VNVwqr0Z-LB9ShZf908M55pCz"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX72AVyKw",
+        "page_index": 15,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBd1tm9Qwtnk8tFc-LBFZFlwkPMThTw49"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX7wIiptk",
+        "page_index": 16,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBKs0kNnbZYVVVcw-LBSHX4KDKMLq4xGK"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX7zyzKBQ",
+        "page_index": 17,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBCwDxJtVs7DsHvQ-LB6w8l9BdxLZwH8j"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX7x9DvNE",
+        "page_index": 18,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PB2PFbLcRqvXBYb0-LBZQVMzBjX7JlN5v"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX70jQxTk",
+        "page_index": 19,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBkjp6s6VW1Ysk4z-LB6X8yrHF3TzkSbj"
+      },
+      {
+        "type": "image",
+        "asset_id": "MAHX7zLxYWc",
+        "page_index": 20,
+        "editable": true,
+        "containerElement": {
+          "type": "SHAPE",
+          "position": {
+            "top": 0,
+            "left": 0
+          },
+          "dimension": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "element_id": "PBZx8Q4hCR0bMC60-LBvbYcLj4sJsgq1W"
+      }
+    ],
+    "thumbnails": [
+      {
+        "width": -1,
+        "height": -1,
+        "url": "https://export-download.canva.com/d8d1170e-0349-4edc-9adf-dd3d73de9311/0/0001-955282031926429872.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261013%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261013T055846Z&X-Amz-Expires=82237&X-Amz-Signature=aee697e8fe3b9906822a9b5ad3dd5186c2b6318d4e59c0a8c7a099750463e964&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2014%20Oct%202026%2004%3A49%3A23%20GMT"
+      }
+    ],
+    "pages": [
+      {
+        "page_id": "PB3YxWNQCP67vDVL",
+        "page_number": 1,
+        "notes": "AI 的發展，讓科技大廠不斷投入資金，擴大運算能力。講到這波投資的受惠者，大家最熟悉的就是賣 AI 晶片的輝達。但大廠持續加碼，接下來還有哪些公司，有機會成為這一輪的大贏家？今天我想聊的是博通，一家做晶片和企業軟體的公司。為什麼我看好它，甚至認為它有機會成為 AI 下一個最大贏家？",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBqz5NqRP0rmLq98",
+        "page_number": 2,
+        "notes": "博通主要有兩大業務：晶片，以及幫企業管理電腦資源的軟體。這次 AI 帶來的成長機會，主要在晶片這一塊。它的客戶會建置資料中心，也就是集中擺放大量電腦、進行運算的地方。博通則提供這些電腦需要的晶片和資料傳輸設備。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBv01mccX1yZR5Yx",
+        "page_number": 3,
+        "notes": "在晶片開發上，客戶和博通各有分工。客戶知道自己的 AI 要做哪些工作，也能決定晶片該怎麼設計；博通則協助把設計做成實際可用的晶片。可是，大廠為什麼願意花資源開發自己的晶片？這就和它們每天使用 AI 的成本有關。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBjJFVFwdrffctFz",
+        "page_number": 4,
+        "notes": "像我們每次請 AI 回答問題，背後的電腦就要運算、產生答案，這個過程叫推論。使用者愈多，這些運算就會不斷累積。對大型 AI 公司來說，除了服務好不好用，也要考慮每次回答花多少錢。因此，降低運算成本，就成了一個很實際的需求。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PByjQ2npTY0td0JY",
+        "page_number": 5,
+        "notes": "客製化 AI 晶片，就是針對客戶常做的工作來設計，希望用更有效率的方式完成運算。對客戶的吸引力在於，如果能把大量重複運算做得更省電、更有效率，長期下來就有機會降低成本。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBJcGZZCKrc109Wz",
+        "page_number": 6,
+        "notes": "不過，開發晶片也要先付出成本。使用量夠大，後面累積的節省，才值得前面的投入。所以，這門生意特別適合有大量運算需求的大客戶。對博通來說，這些公司願不願意投入開發，就會影響它能取得多少合作機會。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBQljVKVv1Tvn4Vy",
+        "page_number": 7,
+        "notes": "推出 AI 聊天工具 ChatGPT 的 OpenAI，就是一個例子。今年 6 月，它和博通發表專用的 AI 晶片，由 OpenAI 提出設計，博通協助把設計做成實際產品。這讓前面說的分工具體了起來。而這類需求，究竟已經替博通帶來多少生意？我們可以從財報看到。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBRFBz0dl3t8vPBG",
+        "page_number": 8,
+        "notes": "在截至今年 8 月初的季度財報裡，博通的 AI 晶片相關業務營收達到 167 億美元，比去年同期增加 221%，也就是成長到原來的三倍多。這裡包含前面說的專用晶片和網路產品。AI 已經帶來實際收入；接著要看的是，公司能留下多少現金。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBL9y1K1JqjZxfnT",
+        "page_number": 9,
+        "notes": "同一季，博通留下約 137 億美元的自由現金流，也就是日常經營留下的現金，扣掉設備等投資支出後剩下的金額。對投資人來說，這有助於判斷公司的生意，是否也帶來現金收入。而市場接下來的期待，則放在這份成長能不能延續。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PB8bFgQppLCqB6G4",
+        "page_number": 10,
+        "notes": "博通預估，接下來一季的 AI 晶片相關業務營收，會增加到 217 億美元。公司預期下一季的規模還會擴大。這是近期可以追蹤的進度，而公司對未來兩年的預估，則讓我們看到它認為這門生意能走到多大。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBgSGgPk40g99mw8",
+        "page_number": 11,
+        "notes": "博通在 9 月向投資人說明，依照公司每年計算業績的期間，預估 2027 年度 AI 晶片相關業務營收達到 1,150 億美元，2028 年度再到 2,300 億美元。這是根據客戶建置進度和產品供貨安排提出的預估。要做到這個規模，博通得持續拿到合作，也就避不開同業競爭。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBNnQ8PNWTQRrJWL",
+        "page_number": 12,
+        "notes": "另一家晶片公司 Marvell，也在爭取這些生意，Google 就是它的合作客戶之一。這說明同一個大客戶會找不同夥伴，博通每一代都得繼續爭取訂單。除了協助開發晶片，博通提供的網路產品，也是我們評估競爭力的一個重點。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBb91mpMS3ShWmK7",
+        "page_number": 13,
+        "notes": "很多顆晶片一起做運算時，要不斷交換資料。傳輸跟不上，運算就得等待。這就是資料中心為什麼需要好的網路連接。博通提供資料傳輸需要的設備與晶片，參與的正是這一部分：客戶增加運算能力，也得一起處理資料傳輸。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBb8rvs4VNVwqr0Z",
+        "page_number": 14,
+        "notes": "到了這裡，博通的吸引力就比較清楚了：它能參與晶片開發，也能提供電腦之間的資料傳輸技術。OpenAI 和博通的合作，也規劃了接下來幾代的產品。這種持續共同開發的機會，是我看好它的理由。但生意有成長空間，買進價格也得一起考慮。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBd1tm9Qwtnk8tFc",
+        "page_number": 15,
+        "notes": "評估價格，可以先看本益比。假設股價 200 元，一年每股賺 10 元，就是 20 倍本益比。它是在比較，現在付出的價格，相當於多少倍的獲利。如果改用未來的獲利估計，就是預估本益比。我們也可以用這個角度看博通。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBKs0kNnbZYVVVcw",
+        "page_number": 16,
+        "notes": "以 10 月 12 日收盤價，搭配分析師對博通 2027 年度的獲利估計來算，預估本益比約 18 倍。這份估計排除了部分費用等項目。也就是說，我們看到的倍數，建立在公司未來能賺多少錢；如果實際獲利不如預期，價格是否合理就得重新看。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBCwDxJtVs7DsHvQ",
+        "page_number": 17,
+        "notes": "用同樣方法計算，輝達約 14 倍。兩家公司計算一年業績的期間不一樣，計算獲利時排除的項目也有差異，所以只能先做粗略比較。不過它提醒我們，看好博通的成長，還不能直接說它比較便宜。接下來要看，哪些事情會讓獲利低於期待。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PB2PFbLcRqvXBYb0",
+        "page_number": 18,
+        "notes": "其中一個關鍵，是大客戶的進度。博通前五大終端客戶，也就是最後使用產品的公司，約占第三季總營收的 55%。生意集中在少數客戶身上，大客戶延後建置，就會影響業績。所以追蹤合作時，除了看規模，也要看設備能不能照計畫投入使用。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBkjp6s6VW1Ysk4z",
+        "page_number": 19,
+        "notes": "博通還替一項 AI 設備租賃提供保證：客戶租設備卻沒照約定付款時，博通可能需要補款。設備全數投入使用後，這項安排的最大潛在責任約 290 億美元，實際金額還要看違約條件，以及設備能賣回多少錢。財報揭露時，博通尚未因此付款。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      },
+      {
+        "page_id": "PBZx8Q4hCR0bMC60",
+        "page_number": 20,
+        "notes": "回到開場，為什麼我看好博通？大廠開發自己的 AI 晶片、擴大資料中心，都替它帶來生意，而且已經反映在收入和現金裡。晶片與網路兩項能力，讓它有機會持續參與這輪投資。至於投資人能不能賺到錢，還要看公司未來能不能賺到預期的獲利，以及我們付出的價格。",
+        "dimension": {
+          "width": 1920,
+          "height": 1080
+        },
+        "is_responsive": false,
+        "is_empty": false,
+        "is_editable": true
+      }
+    ]
+  }
+}

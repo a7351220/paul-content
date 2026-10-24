@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "presentation-finalization.v1",
+  "finalSha256": "33ec7852a2f2940af2e08ca22ae24e3202a189e1c8fd0e1d12d50e8c97044d75",
+  "byteCount": 82961524,
+  "packageIntegrity": {
+    "chart_count": 0,
+    "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
+    "finding_count": 0,
+    "findings": [],
+    "notes_parts_skipped": 20,
+    "relationship_part_count": 55,
+    "slide_count": 20,
+    "status": "pass",
+    "exitCode": 0,
+    "findingCount": 0,
+    "warnings": []
+  },
+  "presentationLayout": {
+    "finding_count": 0,
+    "findings": [],
+    "font_policy": {
+      "checked_text_script_count": 46,
+      "native_font_rendering_verified": false,
+      "observed_font_families": [
+        "可画榜书"
+      ],
+      "observed_font_use_counts": {
+        "可画榜书": 46
+      },
+      "passed": true,
+      "performed": true
+    },
+    "slide_count": 20,
+    "slide_size_in": [
+      20,
+      11.25
+    ],
+    "warning_count": 0,
+    "warnings": [],
+    "exitCode": 0,
+    "findingCount": 0,
+    "fontPolicy": {
+      "checked_text_script_count": 46,
+      "native_font_rendering_verified": false,
+      "observed_font_families": [
+        "可画榜书"
+      ],
+      "observed_font_use_counts": {
+        "可画榜书": 46
+      },
+      "passed": true,
+      "performed": true
+    }
+  },
+  "fontSelection": {
+    "basis": "reference",
+    "approvedFamilies": [
+      "可画榜书"
+    ],
+    "scriptFonts": {},
+    "referenceSha256": "3bc380bef7888005de9ea5aeaa369003a781258c0b3e94e28cb60f1b2eb62ac9",
+    "referenceFontsVerifiedInEncodedText": true,
+    "checked_text_script_count": 46,
+    "native_font_rendering_verified": false,
+    "observed_font_families": [
+      "可画榜书"
+    ],
+    "observed_font_use_counts": {
+      "可画榜书": 46
+    },
+    "passed": true,
+    "performed": true
+  },
+  "firstPartyImport": {
+    "performed": true,
+    "passed": true,
+    "slideCount": 20,
+    "sha256": "33ec7852a2f2940af2e08ca22ae24e3202a189e1c8fd0e1d12d50e8c97044d75",
+    "runtimeNodeModules": "/Users/xieminghua/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules",
+    "nodeExecutable": "/Users/xieminghua/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+  },
+  "nativeTableArithmetic": {
+    "performed": true,
+    "checked_column_count": 0,
+    "checks": [],
+    "claim_boundary": "Displayed-value arithmetic with rounding tolerance; not source-data verification.",
+    "eligible_table_count": 0,
+    "finding_count": 0,
+    "findings": [],
+    "native_table_count": 0,
+    "passed": true,
+    "schema_version": "presentation-native-table-arithmetic.v1",
+    "skipped_tables": [],
+    "slide_count": 20,
+    "warning_count": 0,
+    "warnings": []
+  },
+  "nativeChartTitles": {
+    "performed": true,
+    "checks": [],
+    "finding_count": 0,
+    "findings": [],
+    "native_chart_count": 0,
+    "native_powerpoint_verified": false,
+    "passed": true,
+    "presentation_sha256": "33ec7852a2f2940af2e08ca22ae24e3202a189e1c8fd0e1d12d50e8c97044d75",
+    "schema_version": "presentation-native-chart-titles.v1",
+    "slide_count": 20,
+    "source_text_emitted": false,
+    "unresolved_linked_title_count": 0
+  },
+  "sourceDerivedPolicyFlags": [
+    "--expected-slide-size-emu",
+    "18288000,10287000",
+    "--cover-role",
+    "none",
+    "--expected-slide-count",
+    "20",
+    "--approved-font-family",
+    "可画榜书"
+  ],
+  "nativeChartValidation": {
+    "detectedOwnerSlides": [],
+    "detectedChartCount": 0,
+    "targetApplication": "portable",
+    "sourceChartOwnersExplicitlyDeclared": true,
+    "validatorRan": false,
+    "passed": true
+  }
+}

@@ -1,0 +1,708 @@
+{
+  "schema_version": "1.0",
+  "project_id": "2026-10-09-weekly-revision",
+  "research_cutoff": "2026-10-09",
+  "created_at": "2026-10-09T12:00:00+08:00",
+  "created_by": "Codex",
+  "source_pack_version": "revision-2",
+  "script_version": "approved-22-pages",
+  "items": [
+    {
+      "evidence_id": "morgan-eps",
+      "slide_id": "weekly-revision-04",
+      "slide_title": "Morgan Stanley holds its Micron stock price target",
+      "claim_id": "morgan-eps-claim",
+      "claim_text": "EPS surprise 20–40% versus 5%",
+      "key_number_id": "morgan-eps-number",
+      "key_number": "20–40%; 5%",
+      "product": "Non-GAAP EPS surprise",
+      "market_scope": "global",
+      "quote_type": "media cites broker",
+      "data_date": "2026-10-01",
+      "forecast_period": null,
+      "unit": "%",
+      "claim_class": "estimate",
+      "status": "verified",
+      "status_reason": "Compared source claim with approved narration and final slide at intended size",
+      "conditions_to_resolve": [],
+      "key_number_ids": [
+        "morgan-eps-number"
+      ],
+      "source": {
+        "source_id": "morgan-eps-source",
+        "publisher": "TheStreet",
+        "publisher_type": "media",
+        "title": "Morgan Stanley holds its Micron stock price target",
+        "published_at": "2026-10-05",
+        "accessed_at": "2026-10-09T12:00:00+08:00",
+        "document_type": "web article",
+        "page_or_section": "claim paragraph or title",
+        "raw_locator": "morgan-loaded.jpg",
+        "source_scope_note": "Media reproduces broker view; original broker PDF not obtained",
+        "access_status": "full",
+        "canonical_url": "https://www.thestreet.com/investing/stocks/mu-morgan-stanley-maintains-micron-stock-price-target-ai-memory-growth",
+        "local_path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/raw/morgan-loaded.jpg"
+      },
+      "capture": {
+        "source_kind": "web",
+        "raw": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/raw/morgan-eps.jpg",
+          "captured_at": "2026-10-09T12:00:00+08:00",
+          "capture_scope": "source page rendered by browser; PDF raster for investor slides",
+          "width_px": 1280,
+          "height_px": 11504,
+          "checksum": "aac6f50845f26eca0564373b37eb39dda2ad841e3b35ee3fb0d4c9bd9428f4fb"
+        },
+        "cropped": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/cropped/morgan-eps.png",
+          "crop_box": [
+            480,
+            4463,
+            1142,
+            4535
+          ],
+          "preserved_context": [
+            "claim text",
+            "period and publisher in adjacent caption",
+            "source raw retained"
+          ]
+        },
+        "annotated": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/annotated/morgan-eps.png",
+          "annotation_type": "box",
+          "highlight_box": [
+            3,
+            3,
+            659,
+            69
+          ],
+          "annotation_label": ""
+        },
+        "composition": {
+          "type": "single_crop",
+          "disclosure_text": "",
+          "parts": []
+        },
+        "transformation_log": [
+          {
+            "operation": "crop",
+            "box": [
+              480,
+              4463,
+              1142,
+              4535
+            ]
+          },
+          {
+            "operation": "annotation_box",
+            "box": [
+              3,
+              3,
+              659,
+              69
+            ],
+            "color": "#B85F3D"
+          }
+        ]
+      },
+      "verification": {
+        "exact_claim_visible": true,
+        "source_scope_matches_claim": true,
+        "annotation_points_to_evidence": true,
+        "checked_against_research_pack": true,
+        "readability_checked_at_slide_size": true,
+        "generated_content_present": false,
+        "exact_value_match": true,
+        "source_identity_visible": "caption",
+        "date_or_period_visible": "caption",
+        "product_visible": true,
+        "unit_visible": "caption",
+        "axis_legend_visible": "not_applicable",
+        "quote_type_confirmed": true,
+        "stitch_disclosed": "not_applicable",
+        "reviewer_notes": "Original source pixels reviewed. Publisher and date supplied in adjacent slide caption; source excerpt is not a simulated broker report. Holdings chart retained complete, including source and discussion-purpose disclaimer."
+      }
+    },
+    {
+      "evidence_id": "ls-hbm",
+      "slide_id": "weekly-revision-05",
+      "slide_title": "LS Securities lowers HBM profitability forecast",
+      "claim_id": "ls-hbm-claim",
+      "claim_text": "2027 HBM operating profit margin forecast lowered from 80% to 60%",
+      "key_number_id": "ls-hbm-number",
+      "key_number": "80%; 60%",
+      "product": "HBM operating profit margin",
+      "market_scope": "global",
+      "quote_type": "media cites broker",
+      "data_date": "2027",
+      "forecast_period": "2027",
+      "unit": "%",
+      "claim_class": "forecast",
+      "status": "verified",
+      "status_reason": "Compared source claim with approved narration and final slide at intended size",
+      "conditions_to_resolve": [],
+      "key_number_ids": [
+        "ls-hbm-number"
+      ],
+      "source": {
+        "source_id": "ls-hbm-source",
+        "publisher": "Asia Economy",
+        "publisher_type": "media",
+        "title": "LS Securities lowers HBM profitability forecast",
+        "published_at": "2026-08-31",
+        "accessed_at": "2026-10-09T12:00:00+08:00",
+        "document_type": "web article",
+        "page_or_section": "claim paragraph or title",
+        "raw_locator": "ls.jpg",
+        "source_scope_note": "Media reproduces broker view; original broker PDF not obtained",
+        "access_status": "full",
+        "canonical_url": "https://view.asiae.co.kr/en/article/2026083110472079875",
+        "local_path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/raw/ls.jpg"
+      },
+      "capture": {
+        "source_kind": "web",
+        "raw": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/raw/ls-hbm.jpg",
+          "captured_at": "2026-10-09T12:00:00+08:00",
+          "capture_scope": "source page rendered by browser; PDF raster for investor slides",
+          "width_px": 1280,
+          "height_px": 7940,
+          "checksum": "ce6da43ec02eae38012a6b5b70f65bb5eadaa94ad29c9fe9a74a4e63d8b562a9"
+        },
+        "cropped": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/cropped/ls-hbm.png",
+          "crop_box": [
+            330,
+            3880,
+            950,
+            3997
+          ],
+          "preserved_context": [
+            "claim text",
+            "period and publisher in adjacent caption",
+            "source raw retained"
+          ]
+        },
+        "annotated": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/annotated/ls-hbm.png",
+          "annotation_type": "box",
+          "highlight_box": [
+            3,
+            3,
+            617,
+            114
+          ],
+          "annotation_label": ""
+        },
+        "composition": {
+          "type": "single_crop",
+          "disclosure_text": "",
+          "parts": []
+        },
+        "transformation_log": [
+          {
+            "operation": "crop",
+            "box": [
+              330,
+              3880,
+              950,
+              3997
+            ]
+          },
+          {
+            "operation": "annotation_box",
+            "box": [
+              3,
+              3,
+              617,
+              114
+            ],
+            "color": "#B85F3D"
+          }
+        ]
+      },
+      "verification": {
+        "exact_claim_visible": true,
+        "source_scope_matches_claim": true,
+        "annotation_points_to_evidence": true,
+        "checked_against_research_pack": true,
+        "readability_checked_at_slide_size": true,
+        "generated_content_present": false,
+        "exact_value_match": true,
+        "source_identity_visible": "caption",
+        "date_or_period_visible": "caption",
+        "product_visible": true,
+        "unit_visible": "caption",
+        "axis_legend_visible": "not_applicable",
+        "quote_type_confirmed": true,
+        "stitch_disclosed": "not_applicable",
+        "reviewer_notes": "Original source pixels reviewed. Publisher and date supplied in adjacent slide caption; source excerpt is not a simulated broker report. Holdings chart retained complete, including source and discussion-purpose disclaimer."
+      }
+    },
+    {
+      "evidence_id": "dram-asp",
+      "slide_id": "weekly-revision-09",
+      "slide_title": "Samsung Securities DRAM average selling price forecast",
+      "claim_id": "dram-asp-claim",
+      "claim_text": "2027 DRAM blended ASP forecast to increase 40% year over year",
+      "key_number_id": "dram-asp-number",
+      "key_number": "40%",
+      "product": "DRAM average selling price",
+      "market_scope": "global",
+      "quote_type": "media cites broker",
+      "data_date": "2027",
+      "forecast_period": "2027",
+      "unit": "% YoY",
+      "claim_class": "forecast",
+      "status": "verified",
+      "status_reason": "Compared source claim with approved narration and final slide at intended size",
+      "conditions_to_resolve": [],
+      "key_number_ids": [
+        "dram-asp-number"
+      ],
+      "source": {
+        "source_id": "dram-asp-source",
+        "publisher": "Yonhap Infomax",
+        "publisher_type": "media",
+        "title": "Samsung Securities DRAM average selling price forecast",
+        "published_at": "2026-10-08",
+        "accessed_at": "2026-10-09T12:00:00+08:00",
+        "document_type": "web article",
+        "page_or_section": "claim paragraph or title",
+        "raw_locator": "dram.jpg",
+        "source_scope_note": "Media reproduces broker view; original broker PDF not obtained",
+        "access_status": "full",
+        "canonical_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438371",
+        "local_path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/raw/dram.jpg"
+      },
+      "capture": {
+        "source_kind": "web",
+        "raw": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/raw/dram-asp.jpg",
+          "captured_at": "2026-10-09T12:00:00+08:00",
+          "capture_scope": "source page rendered by browser; PDF raster for investor slides",
+          "width_px": 1280,
+          "height_px": 4044,
+          "checksum": "b09fca66c8dc5972a9ceda3ebe58a56c7a4df51e17644848b2ea0f34bafcfe95"
+        },
+        "cropped": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/cropped/dram-asp.png",
+          "crop_box": [
+            166,
+            981,
+            826,
+            1065
+          ],
+          "preserved_context": [
+            "claim text",
+            "period and publisher in adjacent caption",
+            "source raw retained"
+          ]
+        },
+        "annotated": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/annotated/dram-asp.png",
+          "annotation_type": "box",
+          "highlight_box": [
+            3,
+            3,
+            657,
+            81
+          ],
+          "annotation_label": ""
+        },
+        "composition": {
+          "type": "single_crop",
+          "disclosure_text": "",
+          "parts": []
+        },
+        "transformation_log": [
+          {
+            "operation": "crop",
+            "box": [
+              166,
+              981,
+              826,
+              1065
+            ]
+          },
+          {
+            "operation": "annotation_box",
+            "box": [
+              3,
+              3,
+              657,
+              81
+            ],
+            "color": "#B85F3D"
+          }
+        ]
+      },
+      "verification": {
+        "exact_claim_visible": true,
+        "source_scope_matches_claim": true,
+        "annotation_points_to_evidence": true,
+        "checked_against_research_pack": true,
+        "readability_checked_at_slide_size": true,
+        "generated_content_present": false,
+        "exact_value_match": true,
+        "source_identity_visible": "caption",
+        "date_or_period_visible": "caption",
+        "product_visible": true,
+        "unit_visible": "caption",
+        "axis_legend_visible": "not_applicable",
+        "quote_type_confirmed": true,
+        "stitch_disclosed": "not_applicable",
+        "reviewer_notes": "Original source pixels reviewed. Publisher and date supplied in adjacent slide caption; source excerpt is not a simulated broker report. Holdings chart retained complete, including source and discussion-purpose disclaimer."
+      }
+    },
+    {
+      "evidence_id": "samsung-wallet",
+      "slide_id": "weekly-revision-15",
+      "slide_title": "Samsung Wallet to Bring Stablecoin Access to Eligible Galaxy Users in the US",
+      "claim_id": "samsung-wallet-claim",
+      "claim_text": "US stablecoin feature scheduled for final week of October",
+      "key_number_id": "samsung-wallet-number",
+      "key_number": "October launch",
+      "product": "Samsung Wallet",
+      "market_scope": "United States",
+      "quote_type": "issuer original",
+      "data_date": "2026-10",
+      "forecast_period": "2026-10",
+      "unit": "launch date",
+      "claim_class": "guidance",
+      "status": "verified",
+      "status_reason": "Compared source claim with approved narration and final slide at intended size",
+      "conditions_to_resolve": [],
+      "key_number_ids": [
+        "samsung-wallet-number"
+      ],
+      "source": {
+        "source_id": "samsung-wallet-source",
+        "publisher": "Samsung",
+        "publisher_type": "company",
+        "title": "Samsung Wallet to Bring Stablecoin Access to Eligible Galaxy Users in the US",
+        "published_at": "2026-10-07",
+        "accessed_at": "2026-10-09T12:00:00+08:00",
+        "document_type": "web article",
+        "page_or_section": "claim paragraph or title",
+        "raw_locator": "wallet.jpg",
+        "source_scope_note": "Issuer publication; not independent market conclusion",
+        "access_status": "full",
+        "canonical_url": "https://news.samsung.com/us/samsung-wallet-bring-stablecoin-access-eligible-galaxy-users-us/",
+        "local_path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/raw/wallet.jpg"
+      },
+      "capture": {
+        "source_kind": "web",
+        "raw": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/raw/samsung-wallet.jpg",
+          "captured_at": "2026-10-09T12:00:00+08:00",
+          "capture_scope": "source page rendered by browser; PDF raster for investor slides",
+          "width_px": 1280,
+          "height_px": 6794,
+          "checksum": "0c95977e91d784c6364c6e398ffee50c236021079dad4cb7e8451345a06506a5"
+        },
+        "cropped": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/cropped/samsung-wallet.png",
+          "crop_box": [
+            312,
+            265,
+            968,
+            712
+          ],
+          "preserved_context": [
+            "claim text",
+            "period and publisher in adjacent caption",
+            "source raw retained"
+          ]
+        },
+        "annotated": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/annotated/samsung-wallet.png",
+          "annotation_type": "box",
+          "highlight_box": [
+            3,
+            3,
+            653,
+            444
+          ],
+          "annotation_label": ""
+        },
+        "composition": {
+          "type": "single_crop",
+          "disclosure_text": "",
+          "parts": []
+        },
+        "transformation_log": [
+          {
+            "operation": "crop",
+            "box": [
+              312,
+              265,
+              968,
+              712
+            ]
+          },
+          {
+            "operation": "annotation_box",
+            "box": [
+              3,
+              3,
+              653,
+              444
+            ],
+            "color": "#B85F3D"
+          }
+        ]
+      },
+      "verification": {
+        "exact_claim_visible": true,
+        "source_scope_matches_claim": true,
+        "annotation_points_to_evidence": true,
+        "checked_against_research_pack": true,
+        "readability_checked_at_slide_size": true,
+        "generated_content_present": false,
+        "exact_value_match": true,
+        "source_identity_visible": "caption",
+        "date_or_period_visible": "caption",
+        "product_visible": true,
+        "unit_visible": "caption",
+        "axis_legend_visible": "not_applicable",
+        "quote_type_confirmed": true,
+        "stitch_disclosed": "not_applicable",
+        "reviewer_notes": "Original source pixels reviewed. Publisher and date supplied in adjacent slide caption; source excerpt is not a simulated broker report. Holdings chart retained complete, including source and discussion-purpose disclaimer."
+      }
+    },
+    {
+      "evidence_id": "bitmine-cover",
+      "slide_id": "weekly-revision-19",
+      "slide_title": "Crypto Bull Underway This Cycle likely the largest",
+      "claim_id": "bitmine-cover-claim",
+      "claim_text": "Tom Lee bullish view; company investor presentation",
+      "key_number_id": "bitmine-cover-number",
+      "key_number": "largest cycle opinion",
+      "product": "crypto market outlook",
+      "market_scope": "global",
+      "quote_type": "issuer original",
+      "data_date": "2026-10-07",
+      "forecast_period": null,
+      "unit": "opinion",
+      "claim_class": "interpretation",
+      "status": "verified",
+      "status_reason": "Compared source claim with approved narration and final slide at intended size",
+      "conditions_to_resolve": [],
+      "key_number_ids": [
+        "bitmine-cover-number"
+      ],
+      "source": {
+        "source_id": "bitmine-cover-source",
+        "publisher": "Bitmine",
+        "publisher_type": "company",
+        "title": "Crypto Bull Underway This Cycle likely the largest",
+        "published_at": "2026-10-07",
+        "accessed_at": "2026-10-09T12:00:00+08:00",
+        "document_type": "investor presentation",
+        "page_or_section": "claim paragraph or title",
+        "raw_locator": "bitmine-cover.png",
+        "source_scope_note": "Issuer publication; not independent market conclusion",
+        "access_status": "full",
+        "canonical_url": "https://www.bitminetech.io/investor-relations",
+        "local_path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/raw/bitmine-cover.png"
+      },
+      "capture": {
+        "source_kind": "image",
+        "raw": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/raw/bitmine-cover.png",
+          "captured_at": "2026-10-09T12:00:00+08:00",
+          "capture_scope": "source page rendered by browser; PDF raster for investor slides",
+          "width_px": 2000,
+          "height_px": 1125,
+          "checksum": "69d0d2c12aae7c670dc51f03b6e432d7cfb1dabdb155b508741aef072dc1d7f1"
+        },
+        "cropped": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/cropped/bitmine-cover.png",
+          "crop_box": [
+            0,
+            0,
+            2000,
+            1125
+          ],
+          "preserved_context": [
+            "claim text",
+            "period and publisher in adjacent caption",
+            "source raw retained"
+          ]
+        },
+        "annotated": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/annotated/bitmine-cover.png",
+          "annotation_type": "box",
+          "highlight_box": [
+            3,
+            3,
+            1997,
+            1122
+          ],
+          "annotation_label": ""
+        },
+        "composition": {
+          "type": "single_crop",
+          "disclosure_text": "",
+          "parts": []
+        },
+        "transformation_log": [
+          {
+            "operation": "crop",
+            "box": [
+              0,
+              0,
+              2000,
+              1125
+            ]
+          },
+          {
+            "operation": "annotation_box",
+            "box": [
+              3,
+              3,
+              1997,
+              1122
+            ],
+            "color": "#B85F3D"
+          }
+        ]
+      },
+      "verification": {
+        "exact_claim_visible": true,
+        "source_scope_matches_claim": true,
+        "annotation_points_to_evidence": true,
+        "checked_against_research_pack": true,
+        "readability_checked_at_slide_size": true,
+        "generated_content_present": false,
+        "exact_value_match": true,
+        "source_identity_visible": "caption",
+        "date_or_period_visible": "caption",
+        "product_visible": true,
+        "unit_visible": "caption",
+        "axis_legend_visible": "not_applicable",
+        "quote_type_confirmed": true,
+        "stitch_disclosed": "not_applicable",
+        "reviewer_notes": "Original source pixels reviewed. Publisher and date supplied in adjacent slide caption; source excerpt is not a simulated broker report. Holdings chart retained complete, including source and discussion-purpose disclaimer."
+      }
+    },
+    {
+      "evidence_id": "bitmine-holdings",
+      "slide_id": "weekly-revision-20",
+      "slide_title": "Alchemy of 5%: ETH holdings history",
+      "claim_id": "bitmine-holdings-claim",
+      "claim_text": "Original company figure shows ETH holdings reaching about six million by September 2026",
+      "key_number_id": "bitmine-holdings-number",
+      "key_number": "6 million",
+      "product": "ETH holdings",
+      "market_scope": "global",
+      "quote_type": "issuer original",
+      "data_date": "2025-07 to 2026-09",
+      "forecast_period": null,
+      "unit": "ETH tokens",
+      "claim_class": "actual",
+      "status": "verified",
+      "status_reason": "Compared source claim with approved narration and final slide at intended size",
+      "conditions_to_resolve": [],
+      "key_number_ids": [
+        "bitmine-holdings-number"
+      ],
+      "source": {
+        "source_id": "bitmine-holdings-source",
+        "publisher": "Bitmine",
+        "publisher_type": "company",
+        "title": "Alchemy of 5%: ETH holdings history",
+        "published_at": "2026-10-07",
+        "accessed_at": "2026-10-09T12:00:00+08:00",
+        "document_type": "investor presentation",
+        "page_or_section": "page 76",
+        "raw_locator": "bitmine-holdings.png",
+        "source_scope_note": "Issuer publication; not independent market conclusion",
+        "access_status": "full",
+        "canonical_url": "https://ap-south-1.graphassets.com/cmcvvg9jt0fra07o6drxw4i5b/cmuy4g9kq1ruy06pie07m4se0",
+        "local_path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/raw/bitmine-holdings.png"
+      },
+      "capture": {
+        "source_kind": "image",
+        "raw": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/raw/bitmine-holdings.png",
+          "captured_at": "2026-10-09T12:00:00+08:00",
+          "capture_scope": "source page rendered by browser; PDF raster for investor slides",
+          "width_px": 2400,
+          "height_px": 1350,
+          "checksum": "5b0c4a5046da2b91a07362427d29b89f5b7d2c11edd4051f0788297cbcbcb554"
+        },
+        "cropped": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/cropped/bitmine-holdings.png",
+          "crop_box": [
+            0,
+            0,
+            2400,
+            1350
+          ],
+          "preserved_context": [
+            "claim text",
+            "period and publisher in adjacent caption",
+            "source raw retained"
+          ]
+        },
+        "annotated": {
+          "path": "/Users/xieminghua/Documents/保羅內容/2026-10-09-市場週報/來源證據/verified/annotated/bitmine-holdings.png",
+          "annotation_type": "box",
+          "highlight_box": [
+            3,
+            3,
+            2397,
+            1347
+          ],
+          "annotation_label": ""
+        },
+        "composition": {
+          "type": "single_crop",
+          "disclosure_text": "",
+          "parts": []
+        },
+        "transformation_log": [
+          {
+            "operation": "crop",
+            "box": [
+              0,
+              0,
+              2400,
+              1350
+            ]
+          },
+          {
+            "operation": "annotation_box",
+            "box": [
+              3,
+              3,
+              2397,
+              1347
+            ],
+            "color": "#B85F3D"
+          }
+        ]
+      },
+      "verification": {
+        "exact_claim_visible": true,
+        "source_scope_matches_claim": true,
+        "annotation_points_to_evidence": true,
+        "checked_against_research_pack": true,
+        "readability_checked_at_slide_size": true,
+        "generated_content_present": false,
+        "exact_value_match": true,
+        "source_identity_visible": "caption",
+        "date_or_period_visible": "caption",
+        "product_visible": true,
+        "unit_visible": "caption",
+        "axis_legend_visible": true,
+        "quote_type_confirmed": true,
+        "stitch_disclosed": "not_applicable",
+        "reviewer_notes": "Original source pixels reviewed. Publisher and date supplied in adjacent slide caption; source excerpt is not a simulated broker report. Holdings chart retained complete, including source and discussion-purpose disclaimer."
+      }
+    }
+  ],
+  "slide_map_revision": "weekly-revision-22-v2"
+}

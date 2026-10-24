@@ -1,0 +1,110 @@
+{
+  "mode": "topic-led-full-narration",
+  "page_count": 20,
+  "baseline_before_edit": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/恢復主題開頭前-20261020-002403/逐字稿.md",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "total_before": 5530,
+  "total_after": 5560,
+  "pages": [
+    {
+      "page": 1,
+      "before": 219,
+      "after": 238
+    },
+    {
+      "page": 2,
+      "before": 250,
+      "after": 294
+    },
+    {
+      "page": 3,
+      "before": 252,
+      "after": 179
+    },
+    {
+      "page": 4,
+      "before": 243,
+      "after": 264
+    },
+    {
+      "page": 5,
+      "before": 258,
+      "after": 258
+    },
+    {
+      "page": 6,
+      "before": 278,
+      "after": 278
+    },
+    {
+      "page": 7,
+      "before": 286,
+      "after": 286
+    },
+    {
+      "page": 8,
+      "before": 294,
+      "after": 294
+    },
+    {
+      "page": 9,
+      "before": 274,
+      "after": 274
+    },
+    {
+      "page": 10,
+      "before": 275,
+      "after": 275
+    },
+    {
+      "page": 11,
+      "before": 276,
+      "after": 276
+    },
+    {
+      "page": 12,
+      "before": 273,
+      "after": 268
+    },
+    {
+      "page": 13,
+      "before": 265,
+      "after": 265
+    },
+    {
+      "page": 14,
+      "before": 274,
+      "after": 288
+    },
+    {
+      "page": 15,
+      "before": 266,
+      "after": 266
+    },
+    {
+      "page": 16,
+      "before": 274,
+      "after": 274
+    },
+    {
+      "page": 17,
+      "before": 314,
+      "after": 310
+    },
+    {
+      "page": 18,
+      "before": 262,
+      "after": 261
+    },
+    {
+      "page": 19,
+      "before": 300,
+      "after": 300
+    },
+    {
+      "page": 20,
+      "before": 397,
+      "after": 412
+    }
+  ]
+}

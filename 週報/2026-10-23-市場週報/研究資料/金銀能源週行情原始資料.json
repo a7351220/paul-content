@@ -1,0 +1,114 @@
+{
+  "GC=F": {
+    "source": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=1792108800&period2=1792713600&interval=1d",
+    "name": "Gold Dec 26",
+    "currency": "USD",
+    "daily": [
+      {
+        "date": "2026-10-16",
+        "close": 4181.10009765625
+      },
+      {
+        "date": "2026-10-19",
+        "close": 4160.10009765625
+      },
+      {
+        "date": "2026-10-20",
+        "close": 4142.60009765625
+      },
+      {
+        "date": "2026-10-21",
+        "close": 4150.0
+      },
+      {
+        "date": "2026-10-22",
+        "close": 4060.39990234375
+      }
+    ],
+    "change_pct": -2.886804728261816
+  },
+  "SI=F": {
+    "source": "https://query1.finance.yahoo.com/v8/finance/chart/SI%3DF?period1=1792108800&period2=1792713600&interval=1d",
+    "name": "Silver Dec 26",
+    "currency": "USD",
+    "daily": [
+      {
+        "date": "2026-10-16",
+        "close": 56.994998931884766
+      },
+      {
+        "date": "2026-10-19",
+        "close": 56.9739990234375
+      },
+      {
+        "date": "2026-10-20",
+        "close": 57.70600128173828
+      },
+      {
+        "date": "2026-10-21",
+        "close": 57.422000885009766
+      },
+      {
+        "date": "2026-10-22",
+        "close": 54.763999938964844
+      }
+    ],
+    "change_pct": -3.9143767606456326
+  },
+  "BZ=F": {
+    "source": "https://query1.finance.yahoo.com/v8/finance/chart/BZ%3DF?period1=1792108800&period2=1792713600&interval=1d",
+    "name": "Brent Crude Oil Last Day Financ",
+    "currency": "USD",
+    "daily": [
+      {
+        "date": "2026-10-16",
+        "close": 109.86000061035156
+      },
+      {
+        "date": "2026-10-19",
+        "close": 109.55000305175781
+      },
+      {
+        "date": "2026-10-20",
+        "close": 108.79000091552734
+      },
+      {
+        "date": "2026-10-21",
+        "close": 108.81999969482422
+      },
+      {
+        "date": "2026-10-22",
+        "close": 113.16999816894531
+      }
+    ],
+    "change_pct": 3.0129233025708357
+  },
+  "CL=F": {
+    "source": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?period1=1792108800&period2=1792713600&interval=1d",
+    "name": "Crude Oil Dec 26",
+    "currency": "USD",
+    "daily": [
+      {
+        "date": "2026-10-16",
+        "close": 101.41000366210938
+      },
+      {
+        "date": "2026-10-19",
+        "close": 103.66000366210938
+      },
+      {
+        "date": "2026-10-20",
+        "close": 101.79000091552734
+      },
+      {
+        "date": "2026-10-21",
+        "close": 97.1500015258789
+      },
+      {
+        "date": "2026-10-22",
+        "close": 99.47000122070312
+      }
+    ],
+    "change_pct": -1.9130286671423358
+  }
+}

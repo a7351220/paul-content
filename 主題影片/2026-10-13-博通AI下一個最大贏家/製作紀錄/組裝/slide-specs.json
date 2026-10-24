@@ -1,0 +1,241 @@
+[
+  {
+    "page": 1,
+    "type": "image",
+    "job": "AI 投資背景帶到下一個受惠者",
+    "labels": [
+      "AI 投資",
+      "下一個贏家？"
+    ],
+    "source": "E03、E04；作者引題",
+    "visual": "伺服器群與帶問號的晶片；保留懸念。"
+  },
+  {
+    "page": 2,
+    "type": "image",
+    "job": "博通的兩大業務與資料中心角色",
+    "labels": [
+      "晶片",
+      "企業軟體"
+    ],
+    "source": "E03、E04、E07",
+    "visual": "兩台等角工程機組：左方晶片與電腦機架，右方管理電腦資源的控制台。讓兩門業務可辨認，不加入產品代號。",
+    "scene": "A coherent isometric engineering composition showing two connected business machines: a processor and data-center rack at left, and an enterprise computer-management console at right. The two large labels are '晶片' and '企業軟體'. No UI cards or charts."
+  },
+  {
+    "page": 3,
+    "type": "image",
+    "job": "客戶提出需求，博通協助落實",
+    "labels": [
+      "客戶需求",
+      "博通",
+      "可用晶片"
+    ],
+    "source": "E04",
+    "visual": "設計圖 → 博通工程機台 → 實體晶片，三個具體物件形成分工。",
+    "scene": "A three-stage isometric engineering workbench: customer blueprint at left, a precision engineering machine at center, and a finished processor at right, connected by a subtle conveyor. Labels exactly '客戶需求', '博通', '可用晶片'. Focus on roles, not a manufacturing fab; Broadcom engineering machine must look like design validation, not wafer foundry."
+  },
+  {
+    "page": 4,
+    "type": "image",
+    "job": "每次使用 AI 都產生運算成本",
+    "labels": [
+      "AI 回答",
+      "運算成本"
+    ],
+    "source": "E04、E06；作者機制說明",
+    "visual": "聊天問答流入伺服器，旁邊電力表與成本；不畫金額或成本曲線。",
+    "scene": "A large generic chat terminal sending simple speech bubbles through a cable into an isometric server, with a visible electricity-meter object attached. Two large labels only 'AI 回答', '運算成本'. No numeric costs, no literal chat UI screenshot, no invented text in speech bubbles."
+  },
+  {
+    "page": 5,
+    "type": "image",
+    "job": "專用晶片配合特定工作，追求效率",
+    "labels": [
+      "特定工作",
+      "專用晶片"
+    ],
+    "source": "E04、E06",
+    "visual": "工作模組與專用晶片對接；不畫保證省電百分比。",
+    "scene": "A custom-designed processor with socket shapes matching a few repeated task modules, arranged as a single engineering assembly. Convey a chip tailored to specific tasks. Large labels '特定工作' and '專用晶片'. No performance percentages, no proof of universal superiority."
+  },
+  {
+    "page": 6,
+    "type": "image",
+    "job": "前期開發投入和大量使用的取捨",
+    "labels": [
+      "開發投入",
+      "大量使用"
+    ],
+    "source": "E03、E04；作者分析",
+    "visual": "一端開發工作台、一端大量運算機架；兩端由工程路徑相連。",
+    "scene": "An isometric engineering composition linking a chip-design workbench on the left to a large row of operating server units on the right. A small brick-orange resource pile by the workbench symbolizes upfront spending. Labels only '開發投入' and '大量使用'. Do not draw currency amounts, payoff curves or guaranteed savings."
+  },
+  {
+    "page": 7,
+    "type": "image",
+    "job": "OpenAI 與博通的實際合作分工",
+    "labels": [
+      "OpenAI／ChatGPT",
+      "博通",
+      "專用晶片"
+    ],
+    "source": "E04；2026/06 發表",
+    "visual": "OpenAI 設計需求和博通工程協作共同連到晶片；不使用虛構官方公告。",
+    "scene": "Two isometric engineering stations collaborate on one processor: the left station is labeled 'OpenAI／ChatGPT', the right station '博通', and the jointly developed processor is labeled '專用晶片'. These are plain word labels, no fabricated company logos or official document screenshots. Clear relationship, no exclusivity claim."
+  },
+  {
+    "page": 8,
+    "type": "figureImage",
+    "job": "AI 收入已實現",
+    "labels": [
+      "167 億美元",
+      "+221%"
+    ],
+    "source": "E01；FY2026 Q3，截至2026/08/02",
+    "visual": "左側原生大數字 167 億美元，年增 221%；右側晶片及收入工程插畫。",
+    "scene": "An isometric processor-and-network-equipment assembly at the RIGHT 40% of the image, with a small brick-orange collection tray symbolizing business revenue. Leave the LEFT 55% clean cream paper with only a faint engineering grid for editable figures added later. No text or numbers anywhere."
+  },
+  {
+    "page": 9,
+    "type": "figureImage",
+    "job": "自由現金流成果",
+    "labels": [
+      "137 億美元",
+      "自由現金流"
+    ],
+    "source": "E01；FY2026 Q3，全公司",
+    "visual": "左側原生大數字 137 億美元；右側現金流入儲存槽，避免把現金流畫成 AI 專屬。",
+    "scene": "A coherent isometric cash reservoir receiving a pipe from a generic business machine at the RIGHT 40%, simple abstract brick-orange coin shapes without currency numbers. Leave the LEFT 55% clean cream paper with faint grid for editable financial figures. No words, no numbers, no company logos."
+  },
+  {
+    "page": 10,
+    "type": "chart",
+    "job": "下一季公司指引",
+    "labels": [
+      "第三季 167",
+      "第四季預估 217"
+    ],
+    "source": "E01；AI 半導體營收，億美元",
+    "visual": "原生兩柱長條，167 與 217 比例精確；第四季明標公司預估。"
+  },
+  {
+    "page": 11,
+    "type": "chart",
+    "job": "未來兩年展望",
+    "labels": [
+      "2027 年度 1,150",
+      "2028 年度 2,300"
+    ],
+    "source": "E02；公司預估，AI 年度營收，億美元",
+    "visual": "原生兩柱長條，兩年均標公司預估；依博通會計年度，非已確認訂單。"
+  },
+  {
+    "page": 12,
+    "type": "image",
+    "job": "同一客戶也找競爭者",
+    "labels": [
+      "Google",
+      "博通",
+      "Marvell"
+    ],
+    "source": "E08、E09",
+    "visual": "Google 客戶機架連到博通與 Marvell 兩個工程節點；不以大小暗示市占。",
+    "scene": "One customer server tower at top center labeled 'Google', linked by separate engineering cables to two equally sized generic processor-design stations below, labeled '博通' and 'Marvell'. Balanced nodes indicate multiple partners, NOT market share or interchangeable products. No logos, percentages, exclusive arrows or victory symbols."
+  },
+  {
+    "page": 13,
+    "type": "image",
+    "job": "資料傳輸也會限制運算",
+    "labels": [
+      "共同運算",
+      "資料傳輸"
+    ],
+    "source": "E06、E07",
+    "visual": "多顆晶片以資料管線連接；一個管線節點突顯傳輸，無數值速度。",
+    "scene": "A cluster of four isometric processors connected by thick engineered data conduits with one central network switching device. Show clear paths between chips, a restrained brick-orange emphasis on the data link. Labels only '共同運算' and '資料傳輸'. No speeds, no fake performance benchmarks."
+  },
+  {
+    "page": 14,
+    "type": "image",
+    "job": "晶片與連接能力形成持續合作機會",
+    "labels": [
+      "晶片開發",
+      "資料傳輸",
+      "持續合作"
+    ],
+    "source": "E04、E07；作者看法",
+    "visual": "兩種能力在共同工作台整合，前後兩代產品簡潔呈現，無鎖定訂單暗示。",
+    "scene": "An engineering collaboration workbench integrates a custom processor module and a network-link module into a working system. Two succeeding processor prototypes on the same workbench indicate ongoing joint development without dates or guaranteed orders. Labels exactly '晶片開發', '資料傳輸', '持續合作'. No trophy, no monopolistic moat symbols."
+  },
+  {
+    "page": 15,
+    "type": "formula",
+    "job": "本益比白話例子",
+    "labels": [
+      "股價 200 元",
+      "每股賺 10 元",
+      "20 倍"
+    ],
+    "source": "作者假設，非博通股價",
+    "visual": "可編輯原生文字算式 200 ÷ 10 = 20；附一行假設例子，無其他數據。"
+  },
+  {
+    "page": 16,
+    "type": "figureImage",
+    "job": "博通預估本益比",
+    "labels": [
+      "約 18 倍",
+      "預估本益比"
+    ],
+    "source": "E11、E14；10/12收盤、FY2027調整後EPS",
+    "visual": "左側原生 18 倍，右側價格標籤與獲利計算器；日期及排除費用的口徑保留在主圖小註解。",
+    "scene": "At the RIGHT 38%, an isometric price tag connected to a simple mechanical calculator and a generic processor, suggesting price relative to future earnings. Calculator display BLANK, no currency values. Leave LEFT 58% cream paper blank with faint grid for large editable ratio. One tiny label allowed on right '獲利預估'; no other text or numbers."
+  },
+  {
+    "page": 17,
+    "type": "chart",
+    "job": "與輝達初步估值比較",
+    "labels": [
+      "博通 約18倍",
+      "輝達 約14倍"
+    ],
+    "source": "E01、E10–E12、E14–E15",
+    "visual": "原生兩柱長條、比例精確；保留股價日期及兩家公司預估年度起訖、調整項目不同的註解。"
+  },
+  {
+    "page": 18,
+    "type": "chart",
+    "job": "前五大終端客戶集中度",
+    "labels": [
+      "55%",
+      "前五大終端客戶"
+    ],
+    "source": "E03；FY2026 Q3全公司營收",
+    "visual": "原生 55/45 圓環；分母為全公司當季收入，不能誤寫為 AI 客戶占比。"
+  },
+  {
+    "page": 19,
+    "type": "figureImage",
+    "job": "設備租賃的條件式保證責任",
+    "labels": [
+      "290 億美元",
+      "最大潛在責任"
+    ],
+    "source": "E03；設備全數部署後上限；申報未付款",
+    "visual": "左側原生數字和條件註解；右側租賃設備、合約及條件式補款關係。",
+    "scene": "At RIGHT 40%, an isometric server equipment leasing scene: a lease contract, server rack, and small guarantee shield connected by a dotted line. This represents conditional financial responsibility, not a loss already paid. Leave LEFT 55% blank cream paper for editable amount and conditions. No text, numbers, warning disaster, or bankruptcy imagery."
+  },
+  {
+    "page": 20,
+    "type": "image",
+    "job": "生意成長與買進價格一起判斷",
+    "labels": [
+      "生意成長",
+      "買進價格"
+    ],
+    "source": "前述證據綜合；作者投資觀點",
+    "visual": "晶片與資料傳輸設備在一端，另一端為價格標籤，工程天平平衡兩邊；不畫股價上漲箭頭。",
+    "scene": "A single isometric engineering balance apparatus compares an operating processor-and-network assembly on one side with a plain purchase-price tag on the other. Stable balanced composition, not a guaranteed gain. Labels exactly '生意成長' and '買進價格'. No stock-price curves, rockets, winner trophies or currency figures."
+  }
+]

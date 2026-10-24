@@ -1,0 +1,62 @@
+[
+  {
+    "file": "S20-a16z-ai.html",
+    "url": "https://a16zcrypto.substack.com/p/can-ai-really-break-cryptography",
+    "status": "saved",
+    "bytes": 160692
+  },
+  {
+    "file": "S21-starkware-qsb.html",
+    "url": "https://starkware.co/blog/the-first-quantum-safe-bitcoin-transaction-has-been-mined/",
+    "status": "saved",
+    "bytes": 98381
+  },
+  {
+    "file": "S21-QSB.pdf",
+    "url": "https://raw.githubusercontent.com/avihu28/Quantum-Safe-Bitcoin-Transactions/main/paper/QSB.pdf",
+    "status": "saved",
+    "bytes": 512894
+  },
+  {
+    "file": "S21-tx-status.json",
+    "url": "https://mempool.space/api/tx/305a24ffea912b9cf428f29ebf952321c96dab5bab284fc0d0801562f5abab07/status",
+    "status": "saved",
+    "bytes": 144
+  },
+  {
+    "file": "S22-blockstream.html",
+    "url": "https://blog.blockstream.com/quantum-computing-and-bitcoin-eli5/",
+    "status": "saved",
+    "bytes": 102278
+  },
+  {
+    "file": "S23-chaincode.pdf",
+    "url": "https://chaincode.com/bitcoin-post-quantum.pdf",
+    "status": "saved",
+    "bytes": 2895922
+  },
+  {
+    "file": "S24-gri.html",
+    "url": "https://globalriskinstitute.org/publication/quantum-threat-timeline-report-2025b/",
+    "status": "saved",
+    "bytes": 254418
+  },
+  {
+    "file": "S25-coinbase.html",
+    "url": "https://www.coinbase.com/blog/coinbase-quantum-advisory-council-post-quantum-migration-and-abandoned-coins",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1082)>"
+  },
+  {
+    "file": "S26-thaler.html",
+    "url": "https://a16zcrypto.com/posts/article/quantum-computing-misconceptions-realities-blockchains-planning-migrations/",
+    "status": "saved",
+    "bytes": 108250
+  },
+  {
+    "file": "S27-bitcoindev.html",
+    "url": "https://groups.google.com/g/bitcoindev/c/JA3kDl8AmQg",
+    "status": "saved",
+    "bytes": 2109429
+  }
+]

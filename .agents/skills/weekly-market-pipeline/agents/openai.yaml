@@ -1,0 +1,4 @@
+interface:
+  display_name: "Weekly Market Pipeline"
+  short_description: "Route weekly market tasks across research and writing."
+  default_prompt: "Use $weekly-market-pipeline to route this weekly market task through the correct workflow."

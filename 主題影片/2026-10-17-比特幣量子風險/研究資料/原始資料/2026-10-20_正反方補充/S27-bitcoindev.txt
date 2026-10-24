@@ -1,0 +1,1768 @@
+In defense of a PQ output type
+Groups
+Groups
+Conversations
+All groups and messages
+Send feedback to Google
+Help
+Training
+Sign in
+Groups
+Groups
+Bitcoin Development Mailing List
+Conversations
+AboutPrivacy • Terms
+
+
+
+
+In defense of a PQ output type
+1,133 views
+Skip to first unread message
+
+Antoine Poinsotunread,
+Apr 10, 2026, 3:06:19 AMApr 10
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Bitcoin Development Mailing List
+Many of us appear to be in favour of introducing post-quantum signatures to
+Bitcoin via a new Tapscript operation, conditioning the CRQC resistance on a
+future invalidation of Taproot key spends. I would like to offer an argument in
+favour of introducing such post-quantum signatures as a new output type instead,
+that does not depend on invalidating a spending path on existing outputs.
+First of all, it's important to clarify what we are trying to achieve. We need
+to accept that, by virtue of being faced with an uncertain existential threat to
+the network, there are scenarios, however unlikely, in which the network does
+not survive. Not all plausible futures are worth optimizing for. For instance,
+one in which PoW ends up broken only a few years after EC crypto, or one where
+the entire Bitcoin userbase *must* migrate within a handful of years.
+I think there are two futures worth optimizing for primarily:
+- a CRQC never materializes and users can continue benefiting from the
+properties of a Bitcoin network relying on classical cryptographic
+assumptions;
+- a CRQC materializes on a long enough timeframe that PQ signature schemes that
+maintain today's properties can be designed, vetted and adopted, and the vast
+majority of the userbase migrated.
+And because hope is not a strategy, it's important to also have a "break glass"
+emergency plan in case a CRQC emerges on a shorter (yet still reasonable)
+timeframe. I think the current proposals for hash-based PQ schemes fit this
+category. If they became the only safe option available, it would certainly make
+Bitcoin a lot less attractive. But having them around is good risk mitigation
+*regardless* of whether a CRQC emerges.
+It's often argued that a freeze will be necessary anyways, therefore we might as
+well disable the Taproot keyspend path simultaneously and simply introduce the
+PQ scheme today in Tapscript. I personally reject the premise, but more
+importantly i think we should separate the concerns of 1) making a PQ scheme
+available and 2) freezing vulnerable coins. Yet introducing a PQ scheme inside
+vulnerable Taproot outputs locks us onto the path of eventually freezing
+vulnerable coins, as it will inevitably turn users of the PQ scheme into
+supporters of a freeze.
+This approach would tie the availability of a PQ scheme to reaching consensus on
+a future freeze. Frankly, i do not believe the latter is achievable, let alone
+at this stage with so little evidence that a CRQC will materialize anytime soon.
+By contrast, there is a much stronger case for introducing a PQ scheme in the
+near term purely as a risk mitigation measure.  Coupling the two decisions would
+necessarily delay the deployment of a PQ scheme, unnecessarily exacerbating
+risks whether or not CRQCs become a reality.
+Another drawback of the PQ output type approach is that it would make those
+outputs distinguishable from Taproot ones, which is suboptimal in the event that
+a CRQC never materializes. But i would argue that even in this case, the cost is
+minimal. The users most likely to adopt PQ outputs today (those securing large
+amounts of BTC with a small set of keys) already have vastly different usage
+patterns from Taproot users: they often reuse addresses and use legacy output
+types (and show little interest in upgrading).
+Best,
+Antoine Poinsot
+Dplusplusunread,
+Apr 10, 2026, 4:34:22 AMApr 10
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Bitcoin Development Mailing List
+Antoine,
+Yes, +1 on decoupling the PQ signature discussion from the "freeze" discussion.
+As one example of what this could look like, P2Q (https://github.com/casey/bips/blob/280fb529b27949b42721bfbf5f255e67b9a1103b/bip-p2q.md) formalizes that decoupling. P2Q is a new SegWit version (v3) with spending rules identical to Taproot today, but with an explicit roadmap: a future soft fork could disable key-path spending for v3 outputs only, without touching existing P2TR UTXOs.
+Users who send to a P2Q address are deliberately opting in to that future possibility. The cryptographic decision and the social decision about unmigrated coins become cleanly separable. It also preserves Schnorr's benefits (FROST, MuSig2, Taproot channels, etc.) for everyone who wants to continue using them in the meantime, while P2MR does not.
+The part that feels strange to me is the assumption I keep seeing that SegWit v1 key-path spending will "simply" be disabled in a future soft fork. That bakes confiscation into the roadmap without ever asking users to opt in. Whether "freeze" ultimately wins is a decision for the market to make on its own timeline.
+D++
+
+Olaoluwa Osuntokununread,
+Apr 10, 2026, 5:24:51 AMApr 10
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Antoine Poinsot, Bitcoin Development Mailing List
+Hi Antoine,
+TL;DR: "¿Por qué no los dos?"
+IMO it isn't really either or re a new PQ output type vs disabling certain
+vulnerable spending types with various flavors of a pq secure escape hatch.
+Adding a new PQ op codes and/or output types would be a precautionary soft fork
+(ppl to migrate at their leisure), while disabling certain spending paths w/ an
+escape hatch would be an emergency softfork.
+Even in the face of the emergency soft fork, PQ safe signature types are still
+needed, otherwise you don't have a "safe" place to sweep those vulnerable
+outputs into. Also note that it's possible to create safe escape hatches for
+non-Taproot output types as well (assuming a hash function was used to derive
+the private scalar from a seed, commonly BIP-32).
+IMO Taproot (in addition to a new type ofc), is still an attractive target as
+there's already so much wallet+signing infrastructure built up around it. So
+far the newly proposed output type variants seem to keep much of the bsae of
+Taproot which is great, as that'll speed up adoption, but we've already seen
+first hand how long it can take a new output type to be adopted.
+> I think there are two futures worth optimizing for primarily:
+There's also a third future in which there's some _classical_ advancement in
+the ECDLP problem, that prompts a move away from EC crypto even without an
+actual quantum attacker.
+> i think we should separate the concerns of 1) making a PQ scheme available
+> and 2) freezing vulnerable coins By contrast, there is a much stronger case
+> for introducing a PQ scheme in the near term purely as a risk mitigation
+> measure.  Coupling the two decisions would necessarily delay the deployment
+> of a PQ scheme, unnecessarily exacerbating risks whether or not CRQCs become
+> a reality.
+I totally agree that a precautionary fork and an emergency for need not be tied
+together. The technical question of which signature scheme(s) to add is much
+more straight forward than the politically tinged question of which output
+types/utxos to disable spending for.
+IMO an important reason to have background development on the "PQ rescue" fork
+details is that invariably there'll be laggards in the adoption of a PQ output
+type even if it was made available _today_.
+Consider how many exchanges and custodians rely on variants of HSMs for secure
+signing. If we look at popular offerings like AWS CloudHSM, they now have
+support for secp256k1 [1][2], but AFAICT, that was added only around 2019 or so
+(can anyone confirm?). Taproot has been active for many years now, but because
+it uses a bespoke signature type (on a relative basis), major providers like
+AWS don't have _direct_ support (tho one could prob emulate it with a Nitro
+Enclave).
+Even if these popular HSM providers had support today (IIRC AWS KMS added
+ML-DSA support last year, but not SLH-DSA yet) for the NIST PQ schemes, it
+would likely be some time until they added whichever variant(s) (eg: composite
+hash based, hash based with non-standard params for smaller sigs, lattice based
+variants that support BIP-32 hardened derivation) that Bitcoin selects in the
+end.
+-- Laolu
+[1]: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-key-types.html
+[2]: https://docs.aws.amazon.com/kms/latest/developerguide/symm-asymm-choose-key-spec.html
+
+
+--
+You received this message because you are subscribed to the Google Groups "Bitcoin Development Mailing List" group.
+To unsubscribe from this group and stop receiving emails from it, send an email to bitcoindev+...@googlegroups.com.
+To view this discussion visit https://groups.google.com/d/msgid/bitcoindev/0vqF88LoOnY4GiUB4vf-MdeZpTAtR70tokS3cLwt2DX0e6_fD1X_wyhPwWEdIdm6R88AULObIU08CWsb5QfeoaM5c4yXPqN5wHyCrqMCtfQ%3D%40protonmail.com.
+Matt Corallounread,
+Apr 10, 2026, 8:34:00 AMApr 10
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Antoine Poinsot, Bitcoin Development Mailing List
+On 4/9/26 2:58 PM, 'Antoine Poinsot' via Bitcoin Development Mailing List wrote:
+> Many of us appear to be in favour of introducing post-quantum signatures to
+> Bitcoin via a new Tapscript operation, conditioning the CRQC resistance on a
+> future invalidation of Taproot key spends.I would like to offer an argument in
+You've missed the much-more-important thing that cannot be extricated from disabling insecure spend
+paths - the ability to recover from a seedphrase. In any world where a CRQC exists, whether it is
+next year or a century from now, there will be a million or two bitcoin in lost-key-wallets and a
+nontrivial amount in wallets people haven't touched in ten years but still have keys for. Given a
+goal of any migration strategy should be to enable the absolute maximum number of coins to be
+retained by their owners (I think this is basically the *only* goal?), enabling seedphrase proof
+recovery is pretty critical. Sadly the only way that can be done is through disabling insecure spend
+proofs.
+But you've also confused unrelated concerns here - whether a hash-based signature is added as a
+tapscript opcode or not is not strictly tied to whether a new output type is created. If BIP 360 is
+the way bitcoin goes, it *still* needs a new hash-based opcode in tapscript. Maybe more
+interestingly, a new taproot "version" could be added which has identical semantics to today's
+taproot but signals through an alternative version number (or maybe there's a cleverer way to encode
+a bit somewhere that we should prefer) that a PQC pubkey exist in a taproot leaf somewhere so the
+insecure spend path should be disabled.
+> This approach would tie the availability of a PQ scheme to reaching consensus on
+> a future freeze. Frankly, i do not believe the latter is achievable, let alone
+> at this stage with so little evidence that a CRQC will materialize anytime soon.
+> By contrast, there is a much stronger case for introducing a PQ scheme in the
+> near term purely as a risk mitigation measure.  Coupling the two decisions would
+> necessarily delay the deployment of a PQ scheme, unnecessarily exacerbating
+> risks whether or not CRQCs become a reality.
+Adding a PQ output type which no one will use (eg one where use of the hash-based signature is
+mandatory, which drives fees up hugely and has all the drawbacks you mention) is not a risk
+mitigation strategy - it does not materially allow for any migration and doesn't accomplish much of
+anything. But as mentioned above I do not see why any addition of hash based signatures to tapscript
+should require any kind of community consensus on future disablement of insecure spend paths - not
+only is it a likely prerequisite for an alternative output type, but its also (obviously?) not
+possible to have any kind of "consensus" on what the future bitcoin community will do. Thus it would
+be rather impossible to do *anything* if that were a requirement.
+
+conduitionunread,
+Apr 11, 2026, 1:47:12 AMApr 11
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Matt Corallo, Antoine Poinsot, Bitcoin Development Mailing List
+Hi List,
+I second Antoine's position. We can have two distinct fields of R&D proceeding concurrently:
+1. Proactive: BIP360/P2MR; PQ signature opcodes; QSB & other scripting tricks
+2. Retroactive: Freezing; Hourglass; Rescue protocols like BIP32 STARKs and commit/reveal
+The two should be independent, because (1) need not affect inactive holders and legacy coins at all, whereas (2) necessarily does.
+In my humble opinion, the proactive field (1) is the much more pressing issue. The sooner we settle on at least one address format and wallet structure for long-term hodling, the sooner PQ-vulnerable UTXOs can start migrating, and the fewer will be stolen or need rescue protocols later.
+Though planning ahead for (2) is also important long-term. Laolu's recent development work building and benchmarking concrete BIP32 STARK proofs [1] is a great example. Through this, or a commit/reveal equivalent, maybe combined with an ownership proof used for non-BIP32 hashed addresses, I for one am confident we can catch a majority of exposed bitcoin in a safety net.
+> But as mentioned above I do not see why any addition of hash based signatures to tapscript should require any kind of community consensus on future disablement of insecure spend paths
+I think Antoine's point here is that if we introduce a PQC opcode to tapscript but choose NOT to deploy P2MR, and then encourage people to use that opcode in P2TR script leaves, then we are locking ourselves into the assumption that the community will later disable P2TR key-path spending - otherwise those addresses will be compromised by a CRQC and the PQC leaf script is useless.
+> Adding a PQ output type which no one will use (eg one where use of the hash-based signature is mandatory, which drives fees up hugely and has all the drawbacks you mention) is not a risk mitigation strategy - it does not materially allow for any migration and doesn't accomplish much of anything. But as mentioned above I do not see why any addition of hash based signatures to tapscript
+I don't think anyone is suggesting deployment of an output type with mandatory hash-based signatures. That would be borderline unusable for anyone but large companies and wealthy elites.
+Every decent proposal I've seen has suggested using PQC in tandem with ECC across multiple tapscript leaves, whether in some bastardized variant of P2TR, or in BIP360's P2MR.
+My favorite idea is using hash-based sigs as a fallback escape hatch, because as a highly conservative field of cryptography, hash-based keys can be a fallback not just for ECC but for any future FancySig PQC algorithm we adopt in the future: lattice, isogeny, multivariate, whatevs. I posted an idea recently [2] for how to construct drop-in BIP32 replacement algorithms under this exact context.
+regards,
+conduition
+[1]: https://groups.google.com/g/bitcoindev/c/Q06piCEJhkI
+[2]: https://groups.google.com/g/bitcoindev/c/5tLKm8RsrZ0
+
+> --
+> You received this message because you are subscribed to the Google Groups "Bitcoin Development Mailing List" group.
+> To unsubscribe from this group and stop receiving emails from it, send an email to bitcoindev+...@googlegroups.com.
+> To view this discussion visit https://groups.google.com/d/msgid/bitcoindev/cba894e1-f830-4ad5-9498-09f04faaadf7%40mattcorallo.com.
+>
+
+publickey - conduition@proton.me - 0x474891AD.asc
+
+
+signature.asc
+
+Matt Corallounread,
+Apr 11, 2026, 7:10:20 AMApr 11
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to conduition, Antoine Poinsot, Bitcoin Development Mailing List
+On 4/10/26 1:03 PM, conduition wrote:
+>> But as mentioned above I do not see why any addition of hash based signatures to tapscript should require any kind of community consensus on future disablement of insecure spend paths
+>
+> I think Antoine's point here is that if we introduce a PQC opcode to tapscript but choose NOT to deploy P2MR, and then encourage people to use that opcode in P2TR script leaves, then we are locking ourselves into the assumption that the community will later disable P2TR key-path spending - otherwise those addresses will be compromised by a CRQC and the PQC leaf script is useless.
+Right, but you cut my quote off and appear to be responding to a point I didn't make? The very next
+few words that you cut were "not only is it a likely prerequisite for an alternative output type".
+Yes, we have to figure out what kind of output type we want, whether P2MR (360), P2TRv2 or just
+P2TR. There are strong arguments for each. But none of that has any bearing on whether we add hash
+based signatures to tapscript. We have to add hash based signatures to tapscript first no matter
+what output type we want!
+>> Adding a PQ output type which no one will use (eg one where use of the hash-based signature is mandatory, which drives fees up hugely and has all the drawbacks you mention) is not a risk mitigation strategy - it does not materially allow for any migration and doesn't accomplish much of anything. But as mentioned above I do not see why any addition of hash based signatures to tapscript
+>
+> I don't think anyone is suggesting deployment of an output type with mandatory hash-based signatures. That would be borderline unusable for anyone but large companies and wealthy elites.
+>
+> Every decent proposal I've seen has suggested using PQC in tandem with ECC across multiple tapscript leaves, whether in some bastardized variant of P2TR, or in BIP360's P2MR.
+IMO even something like P2MR's additional cost will strongly discourage adoption. We have a very
+long history with Bitcoin wallets not only refusing to adopt new features but actively making some
+of the worst possible design decisions from a Bitcoin PoV. IMO we should very strongly not give them
+any excuse, even if that's just fees.
+Matt
+Ethan Heilmanunread,
+Apr 11, 2026, 8:33:54 AMApr 11
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Matt Corallo, conduition, Antoine Poinsot, Bitcoin Development Mailing List
+>
+IMO even something like P2MR's additional cost will strongly discourage adoption.
+I don't agree.
+Over time as quantum attacks become a bigger and bigger concern for holders, wallets will want to show that they can offer security against CRQCs. This is especially true for wallets focused on high value Bitcoin outputs. Even if someone thinks there is only a 2% chance they lose all their Bitcoin because of a quantum computer, that 2% chance will keep them up at night.
+P2MR would have 17.25 more vBytes, an 11% overhead.
+P2TR 1 input, 2 output - key path spend. 154 vbytes
+P2MR
+1 input, 2 output - spending a schnorr sig leaf of a P2MR output with two leafs: 1. PQ sig leaf and 2. Schnorr sig leaf. 171.25 vbytes
+I'm stacking the deck against P2MR here. Under some circumstances P2MR has lower fees than P2TR.
+It is hard to imagine someone holding significant quantities of Bitcoin not wanting to pay 50 sats to ensure their Bitcoin isn't stolen by a quantum computer.
+
+
+--
+You received this message because you are subscribed to the Google Groups "Bitcoin Development Mailing List" group.
+To unsubscribe from this group and stop receiving emails from it, send an email to bitcoindev+...@googlegroups.com.
+To view this discussion visit https://groups.google.com/d/msgid/bitcoindev/765490aa-5df3-4619-86cc-17570b6d3e99%40mattcorallo.com.
+Hayashiunread,
+Apr 11, 2026, 9:06:55 AMApr 11
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Bitcoin Development Mailing List
+Hi Conduition, Matt and Ethan
+> an ownership proof used for non-BIP32 hashed addresses
+I’m concerned that shared xpubs could become an attack vector if we allow ZKP of hash preimages for unused addresses (excluding P2PK/P2TR). Given that, are there alternative methods for publishing proof of ownership that we should consider?
+It seems the current default stance is effectively "do not freeze," because preserving the status quo is the only path if we cannot reach consensus (and if we do not chose hardfork). However, by formalizing a freezing plan—either through a new BIP or an amendment to BIP361—I believe we gain several strategic advantages:
+Clarity on P2MR discussion: It would clarify the ongoing P2MR and P2TR discussions by defining how P2TR will be treated (I personally prefer P2MR).
+Incentivized Migration: Establishing a clear future plan encourages users to migrate to BIP32-hardened addresses with longer time period which eventually maximize recovery.
+Advance Planning for CRQCs: We will not panic on the edge case scenario that CRQCs arrive earlier than PQ signature scheme adoption or when we find out we cannot allow enough migration period after PQ signature scheme adoption (I strongly believe we also have to prepare for this future).
+While further R&D is required, we likely have sufficient information to formalize a framework now. We can also disable or modify the defined freezing plan if the threat landscape changes significantly.
+Hayashi
+2026年4月11日土曜日 8:33:54 UTC+8 Ethan Heilman:
+
+Antoine Riardunread,
+Apr 11, 2026, 9:28:27 AMApr 11
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Bitcoin Development Mailing List
+Hi,
+Thanks for rolling up the ball forward on this topic.
+I'm +1 on disentangling the introduction of a PQ safe scheme from
+the more fuzzy idea of freezing coins based on output types.
+Even the idea of "freezing" coins, the goal of why is still unclear.
+It sounds the motivations are blurred between ensuring coins are
+staying in the hands of their legitimate owners, a goal I can share
+but I don't see how freezing help here, from the more loose idea of
+ensuring there is no crash in the bitcoin price vs fiat in the face
+of CQRC-enabled attacks, which sounds to me a pandora box.
+Even in this eventuality, if there is a general concern on the network
+disruptions that might be induced by CRQC attacks (e.g chain instability
+due to reorgs by competing CRQC attackers), I believe there are still
+intermediary technical solutions, e.g rate-limiting the number of output
+types that can be spent by difficulty periods to minimize the risks of
+disruptions, while not technically confiscating anyone coin.
+Back to introducing a PQ safe scheme, I don't think in this thread
+the question is raised to enable to secure one's coin under double
+classic cryptogrraphic assumption and PQ assumption, i.e "hybrid"
+security (more for the risk of a cryptanalysis break of any PQ safe
+scheme that would be introduced at the consensus-level). It might
+more a real engineering burden, though I believe it's giving more
+flexibility for technically savy bitcoin users to secure one's stack.
+Anyway, I think it's good to have a scheme ready early on given
+the development cycle to have stuff available on HW wallets and
+HSMs. E.g BIP32 support was added in 2018 on Gemalto's HSM i.e a
+mere 6 years after the standard introduction (which is not that
+bad given that blockchain were recents actors in the hardware
+industry at the time).
+Best,
+Antoine
+OTS hash: 6d7c2f5ab01bcdda4ec27d4c21198a9b13ce1dfd138c4a2e6dfaedee9458f6c0
+
+Matt Corallounread,
+Apr 13, 2026, 10:23:31 PMApr 13
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Ethan Heilman, conduition, Antoine Poinsot, Bitcoin Development Mailing List
+On 4/10/26 8:20 PM, Ethan Heilman wrote:
+>  > IMO even something like P2MR's additional cost will strongly discourage adoption.
+>
+> I don't agree.
+>
+> Over time as quantum attacks become a bigger and bigger concern for holders, wallets will want to
+> show that they can offer security against CRQCs. This is especially true for wallets focused on high
+> value Bitcoin outputs. Even if someone thinks there is only a 2% chance they lose all their Bitcoin
+> because of a quantum computer, that 2% chance will keep them up at night.
+>
+> P2MR would have 17.25 more vBytes, an 11% overhead.
+>
+> P2TR 1 input, 2 output - key path spend. 154 vbytes
+> P2MR 1 input, 2 output - spending a schnorr sig leaf of a P2MR output with two leafs: 1. PQ sig leaf
+> and 2. Schnorr sig leaf. 171.25 vbytes
+>
+> I'm stacking the deck against P2MR here. Under some circumstances P2MR has lower fees than P2TR.
+>
+> It is hard to imagine someone holding significant quantities of Bitcoin not wanting to pay 50
+> sats to ensure their Bitcoin isn't stolen by a quantum computer.
+Right, but I think we're focusing on two very different groups. The "holds significant quantities of
+Bitcoin" group I'm much less worried about vs the "holds some quantity of Bitcoin in an average
+consumer Bitcoin wallet". The first group includes institutions, funds, and people relatively "into"
+bitcoin - they're paying attention, (hopefully) using decent wallet software, holding funds in cold
+storage, and aren't fee-sensitive. But this group is going to have no problem migrating no matter
+what the solution is - the institutions and funds camp can migrate in a few days in an urgent
+scenario and the long-term holder with a significant portion of their net-wroth in Bitcoin is also,
+likely, paying reasonably close attention to Bitcoin and can react quickly.
+Because those groups are quite capable of reacting quickly, I don't really buy that they're the
+"target market" for short-term PQC in Bitcoin. Our goal is to get as many wallets migrated as
+possible, which really means focusing on the wallets that are likely to take the longest to migrate.
+That includes both "consumer" wallets which may be infrequently used by people who bought a pile of
+bitcoin and touch it once every few years as well as those who are quantum-skeptical and will see no
+reason to upgrade until its urgent. Importantly, the decisions here are made by the developers of
+the software, generally not the actual end users holding Bitcoin.
+To put it a different way, the goal of adding PQC to Bitcoin is *not* to "give people an option to
+migrate" but rather to "make use of the PQC scheme the default" across the ecosystem. The former may
+get the migration process started, yes, but it does not ease the future community's difficulties
+materially - the slower-to-migrate coins will still be just as stuck as before and just as much
+Bitcoin will be available to steal by a theoretical CRQC. Thus, ISTM the focus *has* to be on
+something that has minimal drawbacks - not losing the script policy privacy of P2TR, low or no fee
+overhead, etc.
+Of course that isn't to say that P2MR might not also make sense in addition, but focusing only on
+that misunderstands the goal.
+Matt
+Hayashiunread,
+Apr 13, 2026, 10:23:36 PMApr 13
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Bitcoin Development Mailing List
+Hi Antonie,
+>I'm +1 on disentangling the introduction of a PQ safe scheme from
+>the more fuzzy idea of freezing coins based on output types.
+I agree with separating them, but I think we should not shy away from whether to deprecate EC signatures or not.
+>Even the idea of "freezing" coins, the goal of why is still unclear.
+>It sounds the motivations are blurred between ensuring coins are
+>staying in the hands of their legitimate owners, a goal I can share
+>but I don't see how freezing help here
+By disabling insecure signature, recovery with ZKP of xpriv will be possible even from pubkey-exposed addresses (some may not call it "freeze" though).
+Address reuse is common and sharing xpub is also common (I cannot blame them because it is "public" key).
+Putting aside P2PK, a combination of deprecating EC signatures and activation of ZKP recovery will, I believe, result in maximum ownership preservation in the face of CRQC.
+Hayashi
+2026年4月11日土曜日 9:28:27 UTC+8 Antoine Riard:
+
+conduitionunread,
+Apr 14, 2026, 9:52:39 AMApr 14
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Matt Corallo, Ethan Heilman, Antoine Poinsot, Bitcoin Development Mailing List
+Hi Matt,
+> Yes, we have to figure out what kind of output type we want, whether P2MR (360), P2TRv2 or just P2TR. There are strong arguments for each. But none of that has any bearing on whether we add hash based signatures to tapscript. We have to add hash based signatures to tapscript first no matter what output type we want!
+Apologies, there must be some mixup. I think we agree with each other about this - adding a new PQ opcode to tapscript is always going to be necessary, and our choice of PQ output type doesn't affect that 👍
+My earlier clarification was that we must go further: We must add a new output type in order to disentangle opt-in PQC opcodes from any confiscatory soft fork that disables P2TR key-spending. Otherwise, if we only enable the hash-based opcode and do nothing else, then we must disable key spending later or else the opcode is useless.
+So the two concepts are not completely independent. Adding hash-based signatures to tapscript necessitates a new opt-in output type that we can standardize quantum-resistant wallets under. Similarly, adding a quantum-resistant output type doesn't seem very useful without a quantum safe way to authorize spending.
+=======
+At the risk of this thread further devolving into a debate around P2MR and P2TRv2...
+> Our goal is to get as many wallets migrated as possible, which really means focusing on the wallets that are likely to take the longest to migrate.
+I can't speak for others, but my goal is to design and deploy a secure and efficient soft-fork upgrade package so that myself and other bitcoin users may retain control of our bitcoins in a world where the future security of the ECDLP is uncertain. Encouraging adoption is a secondary goal which follows immediately if we design the upgrade well.
+I personally don't see P2TRv2 as a suitable path towards this goal, because it still depends on ECDLP. At best, P2TRv2 PROMISES to be quantum-secure later, at the chaotic whim of the future Bitcoin community. Personally, I would rather keep my coins on P2WPKH than on P2TRv2. No: If we are going to have a PQ soft fork, it should be conclusive, self-contained, and require no follow up. Otherwise, we haven't actually fixed the core uncertainty we need to address.
+> That includes both "consumer" wallets which may be infrequently used by people who bought a pile of bitcoin and touch it once every few years as well as those who are quantum-skeptical and will see no reason to upgrade until its urgent.
+Low-frequency users aren't fee sensitive, almost by definition, so I don't see them caring much about the minor witness size increase of P2MR compared to P2TR.
+As for quantum-skeptical users, I see no reason why they would migrate their coins to ANY quantum-resistant output type, whether P2TRv2 or P2MR. To someone who today sees quantum computers as 100% FUD with zero room for doubt, they will see any PQ output type as a slightly worse version of whatever they use today. So I don't really understand why it would be so important to encourage this class of user to migrate. They won't - not until their world-view about the quantum threat changes.
+If and when their attitude does change, then a few vbytes of overhead compared to P2TR won't deter them - not with an existential threat motivating them to migrate. If fees DO deter them, then they're probably an active high-frequency user like a miner or exchange, who can keep tabs on the situation and continue to grind savings out of P2TR until the very last minute [^1].
+It is a mistake to compromise on long-term design choices [^2] to please quantum-skeptics, because:
+1. If the quantum threat is indeed real, then sooner or later, whether by theft or migration, this class of bitcoin user will no longer exist.
+2. On the other hand, if CRQCs turn out to be not-so-relevant after all, then everyone becomes a quantum-skeptic, and we can all return to P2TR while the new PQ output type slowly fades into obscurity.
+Note in scenario (2), P2MR actually still has utility: P2MR can be used as a more-efficient way to construct script-path-only addresses, without the need to commit to a NUMS point. P2TRv2 has no such secondary utility.
+regards,
+conduition
+[^1]: By the way Matt, I think it's a mistake to assume that large corporate users are not fee-sensitive. If anything they are more fee-sensitive than Joe-Average - When you conduct thousands of transactions per day, 10% larger witnesses could mean a lot.
+[^2]: P2TRv2 is a compromise in the long-term compared to P2MR, because after key-spending is disabled, P2TRv2 is strictly worse than P2MR: It would have worse performance and larger witnesses, more cryptographic complexity, and it commits us to carry legacy ECC as cruft well into the future.
+
+> --
+> You received this message because you are subscribed to the Google Groups "Bitcoin Development Mailing List" group.
+> To unsubscribe from this group and stop receiving emails from it, send an email to bitcoindev+...@googlegroups.com.
+> To view this discussion visit https://groups.google.com/d/msgid/bitcoindev/6d075872-0db8-4e7b-ac2a-452624c991ad%40mattcorallo.com.
+>
+
+publickey - conduition@proton.me - 0x474891AD.asc
+
+
+signature.asc
+
+Thomas Suauunread,
+Apr 14, 2026, 9:54:45 PMApr 14
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Bitcoin Development Mailing List
+Hi Antoine, list,
++1 on separating PQ availability from the freeze question.
+conduition put it well — adding a PQ opcode to tapscript and adding a new output type aren't independent decisions. A PQ opcode alone doesn't remove the key-path, so the output key remains a bare curve point on-chain, vulnerable at rest. We'd still need to bump the witness version to disable it. P2MR (BIP 360) does exactly this without requiring any new opcode, and PQ opcodes can come later through OP_SUCCESSx. Both are needed, I think the question is more about sequencing — P2MR addresses long exposure with a smaller consensus change.
+In the meantime, wallets can already construct P2TR with a NUMS internal key to force script-path spending. Same effect as P2MR — output key becomes unspendable, signing key stays hash-protected until spend time — but at the wallet level, no soft fork. You lose key-path efficiency, and it requires proper key rotation (unique HD derivation per script leaf, not just per address), but the mechanism is specified in BIP-341 and can ship today.
+Regards,
+Thomas Suau
+
+conduitionunread,
+Apr 14, 2026, 11:54:16 PMApr 14
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Thomas Suau, Bitcoin Development Mailing List
+Hi Thomas,
+I just want to clarify a misconception in your email there:
+In the meantime, wallets can already construct P2TR with a NUMS internal key to force script-path spending. Same effect as P2MR — output key becomes unspendable, signing key stays hash-protected until spend time — but at the wallet level, no soft fork.
+CRQCs can spend NUMS point addresses with the key-spend path, even if nobody else can. So P2TR + NUMS is not equivalent to P2MR in security.
+A NUMS point is a point P produced by hashing some fixed public data and finding a point on the curve with the resulting hash as an x-coordinate. For instance, BIP341 suggests using SHA256 to hash the secp256k1 generator point.
+P = lift_x(sha256(G))​
+This process used to create a NUMS point makes it unlikely for anyone to have the secret key of that NUMS point, because we assume it is hard to find a collision between the hash function and secp256k1 point multiplication.
+Quantum computers break that assumption, because they don't need to find a collision. A CRQC can compute a hash, find the curve point, and then use Shor's algo to find that point's discrete log (secret key) with respect to the generator point G. Once they have it, they could key-spend from any P2TR (or P2TRv2) address which uses this trick, provided they also know the corresponding tap script tree merkle roots.
+regards,
+conduition
+
+
+To view this discussion visit https://groups.google.com/d/msgid/bitcoindev/34cb87e2-4d4e-4403-91ce-d1f1328ddb98n%40googlegroups.com.
+
+publickey - conduition@proton.me - 0x474891AD.asc
+
+
+signature.asc
+
+Matt Corallounread,
+Apr 14, 2026, 11:54:37 PMApr 14
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to conduition, Ethan Heilman, Antoine Poinsot, Bitcoin Development Mailing List
+On 4/13/26 9:45 PM, conduition wrote:
+> =======
+>
+> At the risk of this thread further devolving into a debate around P2MR and P2TRv2...
+>
+>> Our goal is to get as many wallets migrated as possible, which really means focusing on the wallets that are likely to take the longest to migrate.
+>
+> I can't speak for others, but my goal is to design and deploy a secure and efficient soft-fork upgrade package so that myself and other bitcoin users may retain control of our bitcoins in a world where the future security of the ECDLP is uncertain. Encouraging adoption is a secondary goal which follows immediately if we design the upgrade well.
+>
+> I personally don't see P2TRv2 as a suitable path towards this goal, because it still depends on ECDLP. At best, P2TRv2 PROMISES to be quantum-secure later, at the chaotic whim of the future Bitcoin community. Personally, I would rather keep my coins on P2WPKH than on P2TRv2. No: If we are going to have a PQ soft fork, it should be conclusive, self-contained, and require no follow up. Otherwise, we haven't actually fixed the core uncertainty we need to address.
+Right but you didn't contend with my point at all, only ignored it. Its great that you can move your
+coins into something so that your coins aren't stolen but...who cares? If a huge % of outstanding
+bitcoin supply is being stolen that impacts you just as much as if your own coins were being stolen!
+Pieter put this very well in his "The limitations of cryptographic agility in Bitcoin" thread.
+>> That includes both "consumer" wallets which may be infrequently used by people who bought a pile of bitcoin and touch it once every few years as well as those who are quantum-skeptical and will see no reason to upgrade until its urgent.
+>
+> Low-frequency users aren't fee sensitive, almost by definition, so I don't see them caring much about the minor witness size increase of P2MR compared to P2TR.
+>
+> As for quantum-skeptical users, I see no reason why they would migrate their coins to ANY quantum-resistant output type, whether P2TRv2 or P2MR. To someone who today sees quantum computers as 100% FUD with zero room for doubt, they will see any PQ output type as a slightly worse version of whatever they use today. So I don't really understand why it would be so important to encourage this class of user to migrate. They won't - not until their world-view about the quantum threat changes.
+>
+> If and when their attitude does change, then a few vbytes of overhead compared to P2TR won't deter them - not with an existential threat motivating them to migrate. If fees DO deter them, then they're probably an active high-frequency user like a miner or exchange, who can keep tabs on the situation and continue to grind savings out of P2TR until the very last minute [^1].
+But what about someone who sees quantum computers as 90% FUD that might happen eventually but won't
+for 50 years but still gets users nagging them about it and support for importing some new
+seedphrase format that derives a SHRINCS key in addition to the EC ones? That's much less of a straw
+man and way more realistic - and also a place where someone might do the work (or, well, merge a PR
+if its done for them) but probably won't if they're building a consumer wallet that is used by some
+to transact regularly (but, let's face it, used primarily by some people who put some money in and
+then forgot about it for five years).
+> It is a mistake to compromise on long-term design choices [^2] to please quantum-skeptics, because:
+Again, you ignore that the impact is global, not local. Yes, quantum-skeptics have to be brought
+along over time if you want to have any hope of bitcoin actually being relevant.
+> 1. If the quantum threat is indeed real, then sooner or later, whether by theft or migration, this class of bitcoin user will no longer exist.
+And with them they will take bitcoin's value...
+> 2. On the other hand, if CRQCs turn out to be not-so-relevant after all, then everyone becomes a quantum-skeptic, and we can all return to P2TR while the new PQ output type slowly fades into obscurity.
+>
+> Note in scenario (2), P2MR actually still has utility: P2MR can be used as a more-efficient way to construct script-path-only addresses, without the need to commit to a NUMS point. P2TRv2 has no such secondary utility.
+>
+> regards,
+> conduition
+>
+>
+> [^1]: By the way Matt, I think it's a mistake to assume that large corporate users are not fee-sensitive. If anything they are more fee-sensitive than Joe-Average - When you conduct thousands of transactions per day, 10% larger witnesses could mean a lot.
+Sure, their hot wallet that is probably true, but also not super interesting - they can/will migrate
+their hot wallet over the course of an hour if/when Q-day starts to be a real threat.
+> [^2]: P2TRv2 is a compromise in the long-term compared to P2MR, because after key-spending is disabled, P2TRv2 is strictly worse than P2MR: It would have worse performance and larger witnesses, more cryptographic complexity, and it commits us to carry legacy ECC as cruft well into the future.
+Sure, but any short term hash-based signature migration path is really not intended as the final
+state anyway - if Bitcoin is stuck with only hash based signatures and a CRQC exists in 20 years
+that's a pretty terrible outcome. Hopefully by the time a CRQC becomes a real threat we have much
+more confidence in lattice-based systems (or whatever PQC is popular then) and we can add whatever
+output type makes sense at that point.
+Matt
+thomas suauunread,
+Apr 14, 2026, 11:54:42 PMApr 14
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to conduition, bitco...@googlegroups.com
+Hi conduition,
+Ah yes, indeed NUMS is broken as well I missed that. Big difference and big break.
+So basically every P2TR is vulnerable, since script-path only enforcement relies on NUMS point?
+I’ve read that using a different generator wouldn’t help either, Schor solves the dlog directly on the curve. Even a secret point would be broken?
+In that’s case P2TR is just quantum dead…
+Conduition, do you think P2MR is a good natural solution? Looks like the closest to Taproot logic, just removing the key-path spend.
+Regards,
+Thomas
+On 14 Apr 2026, at 16:51, conduition <condu...@proton.me> wrote:
+﻿
+
+<publickey - condu...@proton.me - 0x474891AD.asc>
+conduitionunread,
+Apr 15, 2026, 3:02:18 AMApr 15
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Matt Corallo, Ethan Heilman, Antoine Poinsot, Bitcoin Development Mailing List
+Hi Matt,
+> Right but you didn't contend with my point at all, only ignored it. Its great that you can move your coins into something so that your coins aren't stolen but...who cares? If a huge % of outstanding bitcoin supply is being stolen that impacts you just as much as if your own coins were being stolen!
+I don't think I ignored anything, but maybe I just didn't understand your point.
+To me, your point seems to be (I'm summarizing here) that "Nobody will migrate to P2MR before Q-day because it is slightly worse than P2TR until Q-day". And your conclusion is, in your own words:
+> Thus, ISTM the focus *has* to be on something that has minimal drawbacks - not losing the script policy privacy of P2TR, low or no fee overhead, etc.
+This seems to imply you're arguing that at least some of those same people (who wouldn't use P2MR) WOULD migrate to P2TRv2, because it is exactly as good as P2TR until Q-Day.
+I respectfully disagree with this argument, and I gave my reasoning as to why in my last reply. To review:
+- P2MR is quantum-secure by default.
+- P2MR is more efficient long-term.
+- P2MR does not commit us to carrying legacy crypto cruft past its shelf-life.
+- P2MR and P2TRv2 are both equivalent to quantum-skeptics, who have no incentive to migrate either way.
+- The short-term efficiency difference in P2MR and P2TRv2 is a negligible trade-off to anyone who ISN'T a total quantum-skeptic.
+- Fee-sensitive users are online and adaptive, and can use P2TR until Q-day; They do not need P2TRv2 any more than fee-insensitive users.
+- P2MR has utility even if Q-day never comes.
+- Also, I failed to make this point in my last reply: P2MR and P2TRv2 have the same privacy profile AFAICT, assuming both commit to a hash-based fallback leaf script.
+Therefore, P2MR is the better long-term choice.
+If we assume Bitcoin will survive long into the future after CRQCs appear, then we should favor the best long-term design choices over short-term compromises. Thus, we should deploy P2MR and NOT deploy P2TRv2.
+> But what about someone who sees quantum computers as 90% FUD that might happen eventually but won't for 50 years but still gets users nagging them about it and support for importing some new seedphrase format that derives a SHRINCS key in addition to the EC ones? That's much less of a straw man and way more realistic - and also a place where someone might do the work (or, well, merge a PR if its done for them) but probably won't if they're building a consumer wallet that is used by some to transact regularly (but, let's face it, used primarily by some people who put some money in and then forgot about it for five years).
+Very specific. You're talking about wallet developers here, right? Exchanges? Bitcoin businesses in general etc? And you're saying that the people running these businesses and building the wallets - those who are being "nagged" to implement something that the rest of the cryptographic world has already starting rolling out in production [1] - You're saying that a subclass of these people - those who are "mostly" skeptical of quantum hype - WOULD implement P2TRv2, but WOULDN'T implement P2MR?
+It's debatable how big that subclass would be, especially given the current landscape. But even if one confidently sees CRQCs as 50 years away, then I'd refer back to my earlier response, and argue that any such skeptical developer has no reason to implement either P2MR or P2TRv2 today, apart from compatibility with other software which DOES implement them. If "nagging" is the only motivation a dev or business owner has to implement a PQ output type, then one need not distinguish between the two. They'd just implement whatever is standardized to please their users, and carry on with their day.
+If I'm being a little more realistic, most wallet devs will follow whatever is standardized just to get more market share. I somehow doubt devs will turn up their noses and say "it's not efficient enough, I won't implement that even if a large chunk of my customers are clamoring for it."
+I think this reveals the source of our disagreement. In your arguments, you are placing a lot of weight on the importance of pre-quantum fee-efficiency in the new output type, so much so that you seem to think devs would willingly ignore a potential existential threat to save users a few sats per transaction.
+But maybe look at it this way:
+- Whether quantum computers are 5, 10, 50 years or more away, anyone who truly cares about a few extra sats per TX can continue to use P2TR when actively transacting pre-Q-Day, and use P2MR for high-security cold storage. The result is mostly the same as if we deployed P2TRv2. Yes, there is some risk of being caught with your pants down on Q-day, but the same is true of P2TRv2 because we might not time the key-spend disabling follow-up fork correctly.
+- Mining fees are a part of everyday life for Bitcoiners, and the pre-quantum fee difference between P2TR and P2MR is NOTHING compared to the fee spike we'll all have to endure after Q-day, no matter what fancy cryptography we may end up using by then. There are far more important things we can optimize.
+> Again, you ignore that the impact is global, not local. Yes, quantum-skeptics have to be brought along over time if you want to have any hope of bitcoin actually being relevant.
+Our job is not to proselytize and convince people that the quantum threat is real, nor is it even to encourage migration by design. Our job is to prepare an optimal migration path in case the threat is real. If CRQCs do appear, everyone will want to migrate to PQC sooner or later. If they do not, everyone moves on with their lives and the new output type becomes a relic (in P2MR's case, an occasionally useful one).
+Even if you feel your job IS to convince and migrate as many users as possible, I would argue it'll be hard to convince anyone to migrate to an address format that isn't PQ-safe by default. Bitcoiners trust code, not promises, and P2TRv2 is only PQ-safe if you trust its promise of a future soft fork, while its code would be PQ-vulnerable by default. And the only benefit to accepting this risk seems to be a trivial discount in fees pre-Q-day. I don't speak for everyone of course, but personally I'd rather keep my cold-storage coins on a P2WSH address than on P2TRv2, because at least then I know for sure a CRQC will have a hard time stealing my coins regardless of what upgrades the community does or doesn't deploy in the future.
+> Sure, but any short term hash-based signature migration path is really not intended as the final state anyway - if Bitcoin is stuck with only hash based signatures and a CRQC exists in 20 years that's a pretty terrible outcome. Hopefully by the time a CRQC becomes a real threat we have much more confidence in lattice-based systems (or whatever PQC is popular then) and we can add whatever output type makes sense at that point.
+I agree about hash-based sigs not being the endgame. Though, this doesn't mean P2MR isn't. We're talking about output types here, not opcodes. I would argue P2MR remains useful regardless of the cryptography we use: lattice, isogeny, hash-based, multivariate, whatever. Merkle trees have been around for almost 50 years and seem hard to beat.
+For instance, we could reconstruct P2TR using isogenies [2], but would we really want to? Using today's witness discount levels, it would actually be MORE efficient overall to spend with SQIsign inside a P2MR tree, than it would be to use SQIsign to key-spend with some hypothetical "Pay-to-supersingular-curve" output type [^3]. I realize I'm kinda trashing my own research by saying this, but it shows how hard it is to beat P2MR, even if you can accept new cryptographic assumptions and the accompanying performance penalties.
+Even if we do someday find some novel cryptosystem which permits rerandomization, and we design a new output type as efficient and performant as P2TR but in a post-quantum context, is the systemic risk really worth saving a few vbytes - a small fraction of the entire witness? If so, how many decades or centuries need to pass for everyone else to share that confidence?
+Personally I think we should learn our lesson from this P2TR debacle, and encourage users to hide public keys behind hash functions from now on, and to bolster riskier algorithms with hash-based fallback keys, so that we always have at least one layer of protection between keys and any novel cryptanalytic breakthroughs. Posting our plain pubkeys on-chain does sometimes have fun benefits, but the drawbacks are deadly serious.
+Until SHA256 collision resistance is broken, I'd expect P2MR is probably the pinnacle of secure PQ address formats, and even then we'd probably end up reimplementing P2MR with some newer hash function. Hopefully someday someone proves me wrong, but we can only engineer with what we know today, and today P2MR seems the most optimal conservative option for long-term security and cryptographic agility.
+> And with them they will take bitcoin's value...
+If you're really worried about a supply glut caused by CRQCs stealing and dumping them, then debating about P2TRv2 and P2MR is a distraction. IMO, most coins will probably not migrate before Q-Day regardless of what output types we deploy, because many coins are held by dead hands, or by living hands who just don't read the news.
+If this concerns you (and it concerns me too), then saving a few vbytes per spend pre-Q-day is trivial by comparison, and optimizing it will make little impact on the integrity of the UTXO set after Q-day. I would instead suggest you pursue the retroactive area of research (rescue protocols, quantum canaries, hourglass, exposure statistics, etc). This is a domain where real impact can be made to mitigate the risk of a supply glut when/if CRQCs appear. Opportunities abound. We would be glad of the help :)
+========
+Anyways, I appreciate the good-spirited debate, but to save myself time I don't think I'll continue replying. I've laid out my argument for P2MR pretty clearly and I feel it is as convincing as I can make it. I'd be happy to acknowledge any misunderstanding I may have had about your earlier points in favor of P2TRv2.
+As to the original subject of the email thread, and Antoine's original points, seems like we are all in agreement.
+regards,
+conduition
+[1]: https://blog.cloudflare.com/pq-2025/
+[2]: https://conduition.io/cryptography/isogenies-intro/
+[^3]: SQIsign signatures are 148 bytes, pubkeys are 65 bytes. Situation 1, key-spending P2SC: a 65 byte pubkey goes on-chain in a witness program, and the spender provides a 148 byte signature in the witness. Total weight: 65*4 + 148 = 408, AKA 102 vbytes. Situation 2, script-spending with P2MR: a 32 byte merkle root goes on-chain in a witness program, and the spender provides a 67 byte script (65 byte pubkey + 2 bytes of script), a 32-byte merkle node (for alternative script spend paths), and a 148 byte signature in the witness. Total weight: 32*4 + 67 + 32 + 148 = 375 = 93.75 vbytes. Notice in situation 1 the user who creates the output actually pays MORE in fees than user who spends the output.
+Smart business owners listen to what the market demands, and leave their personal opinions at the door. If the market demands they add quantum-safe addresses, they'll do it sooner or later.
+This... seems like a lot of "what-if". I think it maybe reveals the source of our disagreement. In your arguments, you are placing a lot of weight on the importance of pre-quantum fee-efficiency, whereas in my arguments, I am placing more weight on conclusive quantum-security and long-term fee-efficiency.
+
+
+publickey - conduition@proton.me - 0x474891AD.asc
+
+
+signature.asc
+
+conduitionunread,
+Apr 15, 2026, 3:15:12 AMApr 15
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to thomas suau, bitco...@googlegroups.com
+Hi Thomas,
+So basically every P2TR is vulnerable, since script-path only enforcement relies on NUMS point?
+Exactly. Unless we enact some future (contentious) soft-fork to disable key-path spending and possibly replace it with something else like a commit/reveal or STARK-based rescue protocol, then every P2TR would be vulnerable to a CRQC.
+Conduition, do you think P2MR is a good natural solution? Looks like the closest to Taproot logic, just removing the key-path spend.
+Absolutely. P2MR has all the advantages of P2TR's script tree commitment structure, with none of the vulnerable cryptography. It does have slightly larger witnesses than P2TR when using BIP340 key-spending, but for script-path spending, P2MR is always more efficient than P2TR.
+But P2MR is not the only option - As Matt has pointed out, we could also deploy a clone of P2TR with a new segwit version number, called P2TRv2. The only technical difference between P2TR and P2TRv2 is that P2TRv2 explicitly opts into a future soft fork that disables key-spending, and so it should become quantum safe at an undefined future time. Personally I think that's a short-sighted solution, for reasons I outlined in prior emails.
+regards,
+conduition
+
+
+To view this discussion visit https://groups.google.com/d/msgid/bitcoindev/3E7B6DB3-7DF3-47F1-AA88-D0DC1CC9502D%40gmail.com.
+
+publickey - conduition@proton.me - 0x474891AD.asc
+
+
+signature.asc
+
+Matt Corallounread,
+Apr 15, 2026, 4:05:43 AMApr 15
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to conduition, Ethan Heilman, Antoine Poinsot, Bitcoin Development Mailing List
+I'm gonna top-post because I think we're too far in the weeds and the high-level argument is getting
+lost. No, of course I do not thing that our job is to "convince" any quantum skeptics. What is our
+job is making sure the *bitcoin system* is ready in case a CRQC does become a reality. That means
+looking at the system as a whole, not individuals. Notably, this means that if the decisions we make
+result in a bitcoin where some people who are super worried about a CRQC have migrated but everyone
+else hasn't, and a CRQC becomes an imminent reality, *we've failed*. In such a world, bitcoin
+becomes largely value-less and the paranoid folks who migrated long ago and paid for it have
+accomplished absolutely nothing. I hope we can at least agree on this point.
+On 4/14/26 2:56 PM, conduition wrote:
+> Hi Matt,
+>
+>> Right but you didn't contend with my point at all, only ignored it. Its great that you can move your coins into something so that your coins aren't stolen but...who cares? If a huge % of outstanding bitcoin supply is being stolen that impacts you just as much as if your own coins were being stolen!
+>
+> I don't think I ignored anything, but maybe I just didn't understand your point.
+>
+> To me, your point seems to be (I'm summarizing here) that "Nobody will migrate to P2MR before Q-day because it is slightly worse than P2TR until Q-day". And your conclusion is, in your own words:
+>
+>> Thus, ISTM the focus *has* to be on something that has minimal drawbacks - not losing the script policy privacy of P2TR, low or no fee overhead, etc.
+>
+> This seems to imply you're arguing that at least some of those same people (who wouldn't use P2MR) WOULD migrate to P2TRv2, because it is exactly as good as P2TR until Q-Day.
+Yes, exactly.
+> I respectfully disagree with this argument, and I gave my reasoning as to why in my last reply. To review:
+>
+> - P2MR is quantum-secure by default.
+> - P2MR is more efficient long-term.
+This assumes a CRQC.
+> - P2MR does not commit us to carrying legacy crypto cruft past its shelf-life.
+Nor does P2TRv2? No one is suggesting P2TRv2 becomes some standard that all wallets use forever. No
+matter what we do we carry the "cruft" of P2TR in Bitcoin forever (+/-), P2TRv2 has literally zero
+additional cruft.
+> - P2MR and P2TRv2 are both equivalent to quantum-skeptics, who have no incentive to migrate either way.
+See below
+> - The short-term efficiency difference in P2MR and P2TRv2 is a negligible trade-off to anyone who ISN'T a total quantum-skeptic.
+> - Fee-sensitive users are online and adaptive, and can use P2TR until Q-day; They do not need P2TRv2 any more than fee-insensitive users.
+I disagree very strongly with this. This would be true if everyone had their own custom-built wallet
+that they designed to meet their goals exactly. In the real world people pick wallets based on many
+other factors, and developers build wallets for many different users, some of which may be fee
+sensitive and some of which may not be, all of whom will use the same default configuration.
+> - P2MR has utility even if Q-day never comes.
+I disagree. The overall utility to the Bitcoin system of something like P2TR is also the global
+default that is strongly baked in which results in
+> - Also, I failed to make this point in my last reply: P2MR and P2TRv2 have the same privacy profile AFAICT, assuming both commit to a hash-based fallback leaf script.
+I don't see how this is true in practice. Maybe in a world where everyone uses P2MR with a single
+left-hand leaf at depth one with a single EC schnorr key which is musig2, but....come on. The value
+of taproot is that its design natively adds this *for free* to every contracting protocol, and not
+only adds it for free but *forces* every contracting protocol to carry at least some of the cost if
+they decline to do this. This results in a massive net privacy win across the entire Bitcoin
+ecosystem, and I don't see how you can argue that these things are equivalent in practice, just
+because they could in theory be used in a way where they are in theory.
+> Therefore, P2MR is the better long-term choice.
+>
+> If we assume Bitcoin will survive long into the future after CRQCs appear, then we should favor the best long-term design choices over short-term compromises. Thus, we should deploy P2MR and NOT deploy P2TRv2.
+Not only do I disagree with most of your points here, but I disagree that we should be optimizing
+for a "long-term design" which we intend to be *the* design we use in the face of an imminent CRQC.
+We already know we're not doing that - we're not using lattices or isogenies or whatever we'll
+actually end up using because those things aren't ready. They likely will be by the time a CQRC is
+imminent. If they aren't, we'll almost certainly be back to the drawing board on witness discounts
+and whatever else which will mandate a new address format anyway. There is basically zero chance
+that whatever we do today will be what we end up using "normally" in a world with a CRQC.
+>> But what about someone who sees quantum computers as 90% FUD that might happen eventually but won't for 50 years but still gets users nagging them about it and support for importing some new seedphrase format that derives a SHRINCS key in addition to the EC ones? That's much less of a straw man and way more realistic - and also a place where someone might do the work (or, well, merge a PR if its done for them) but probably won't if they're building a consumer wallet that is used by some to transact regularly (but, let's face it, used primarily by some people who put some money in and then forgot about it for five years).
+>
+> Very specific. You're talking about wallet developers here, right? Exchanges? Bitcoin businesses in general etc? And you're saying that the people running these businesses and building the wallets - those who are being "nagged" to implement something that the rest of the cryptographic world has already starting rolling out in production [1] - You're saying that a subclass of these people - those who are "mostly" skeptical of quantum hype - WOULD implement P2TRv2, but WOULDN'T implement P2MR?
+>
+> It's debatable how big that subclass would be, especially given the current landscape.
+I don't think this is "very specific" at all? In fact I think this is the *dominant* case. By coin
+volume, yes, the biggest wallet is Coinbase's custody product. By wallet count, the biggest wallet
+is probably something like Trust Wallet. Its trash, doesn't care about Bitcoin, makes many terrible
+design decisions which are actively hostile to its users, and yet they are the ones who actually
+decide in what way most bitcoin are stored! I don't know what their particular view on quantum is,
+but my sense of most developers is that the view is generally "well, it'll happen at some point, but
+its not totally urgent". Meanwhile, people are almost without question going to nag some wallets for
+"quantum security" once its a thing.
+You might reasonably disagree with whether they would implement P2TRv2 vs P2MR, I think its
+definitely a subtle argument, but I don't think you can reasonably disagree that these are exactly
+the most important constituent here.
+> But even if one confidently sees CRQCs as 50 years away, then I'd refer back to my earlier
+response, and argue that any such skeptical developer has no reason to implement either P2MR or
+P2TRv2 today, apart from compatibility with other software which DOES implement them. If "nagging"
+is the only motivation a dev or business owner has to implement a PQ output type, then one need not
+distinguish between the two. They'd just implement whatever is standardized to please their users,
+and carry on with their day.>
+> If I'm being a little more realistic, most wallet devs will follow whatever is standardized just to get more market share. I somehow doubt devs will turn up their noses and say "it's not efficient enough, I won't implement that even if a large chunk of my customers are clamoring for it."
+>
+> I think this reveals the source of our disagreement. In your arguments, you are placing a lot of weight on the importance of pre-quantum fee-efficiency in the new output type, so much so that you seem to think devs would willingly ignore a potential existential threat to save users a few sats per transaction.
+It is far from only "pre-quantum fee-effeciency", its also the value for the entire Bitcoin system
+of the privacy taproot offers. But I think the more important argument specifically here is the
+question of what they will make the *default*. In a world with P2MR I could absolutely see them
+implementing a P2MR option which you can opt into in the settings. That fails to accomplish our
+goals entirely. Maybe they also would do the same for P2TR/P2TRv2, but I at least think that's
+somewhat less likely, but in any case better for the bitcoin system overall if that's where we land.
+> But maybe look at it this way:
+>
+> - Whether quantum computers are 5, 10, 50 years or more away, anyone who truly cares about a few extra sats per TX can continue to use P2TR when actively transacting pre-Q-Day, and use P2MR for high-security cold storage. The result is mostly the same as if we deployed P2TRv2. Yes, there is some risk of being caught with your pants down on Q-day, but the same is true of P2TRv2 because we might not time the key-spend disabling follow-up fork correctly.
+> - Mining fees are a part of everyday life for Bitcoiners, and the pre-quantum fee difference between P2TR and P2MR is NOTHING compared to the fee spike we'll all have to endure after Q-day, no matter what fancy cryptography we may end up using by then. There are far more important things we can optimize.
+>
+>> Again, you ignore that the impact is global, not local. Yes, quantum-skeptics have to be brought along over time if you want to have any hope of bitcoin actually being relevant.
+>
+> Our job is not to proselytize and convince people that the quantum threat is real, nor is it even to encourage migration by design. Our job is to prepare an optimal migration path in case the threat is real. If CRQCs do appear, everyone will want to migrate to PQC sooner or later. If they do not, everyone moves on with their lives and the new output type becomes a relic (in P2MR's case, an occasionally useful one).
+>
+> Even if you feel your job IS to convince and migrate as many users as possible, I would argue it'll be hard to convince anyone to migrate to an address format that isn't PQ-safe by default. Bitcoiners trust code, not promises, and P2TRv2 is only PQ-safe if you trust its promise of a future soft fork, while its code would be PQ-vulnerable by default. And the only benefit to accepting this risk seems to be a trivial discount in fees pre-Q-day. I don't speak for everyone of course, but personally I'd rather keep my cold-storage coins on a P2WSH address than on P2TRv2, because at least then I know for sure a CRQC will have a hard time stealing my coins regardless of what upgrades the community does or doesn't deploy in the future.
+See intro. I don't really see how you can reasonably conclude that our goal is only to enable a
+small subset of people to migrate. That way leas only to a total failure of the bitcoin system.
+>> Sure, but any short term hash-based signature migration path is really not intended as the final state anyway - if Bitcoin is stuck with only hash based signatures and a CRQC exists in 20 years that's a pretty terrible outcome. Hopefully by the time a CRQC becomes a real threat we have much more confidence in lattice-based systems (or whatever PQC is popular then) and we can add whatever output type makes sense at that point.
+>
+> I agree about hash-based sigs not being the endgame. Though, this doesn't mean P2MR isn't. We're talking about output types here, not opcodes. I would argue P2MR remains useful regardless of the cryptography we use: lattice, isogeny, hash-based, multivariate, whatever. Merkle trees have been around for almost 50 years and seem hard to beat.
+>
+> For instance, we could reconstruct P2TR using isogenies [2], but would we really want to? Using today's witness discount levels, it would actually be MORE efficient overall to spend with SQIsign inside a P2MR tree, than it would be to use SQIsign to key-spend with some hypothetical "Pay-to-supersingular-curve" output type [^3]. I realize I'm kinda trashing my own research by saying this, but it shows how hard it is to beat P2MR, even if you can accept new cryptographic assumptions and the accompanying performance penalties.
+Yes, we probably would. Not because of efficiency but because a goal of taproot is *privacy* while
+offering efficiency for the common (all-sign) case. That is generally true across contracting
+protocols and makes things net-cheaper with a taproot-style system where you hit the common case
+often. This is another reason why P2MR is quite a loss -
+> Even if we do someday find some novel cryptosystem which permits rerandomization, and we design a new output type as efficient and performant as P2TR but in a post-quantum context, is the systemic risk really worth saving a few vbytes - a small fraction of the entire witness? If so, how many decades or centuries need to pass for everyone else to share that confidence?
+>
+> Personally I think we should learn our lesson from this P2TR debacle, and encourage users to hide public keys behind hash functions from now on, and to bolster riskier algorithms with hash-based fallback keys, so that we always have at least one layer of protection between keys and any novel cryptanalytic breakthroughs. Posting our plain pubkeys on-chain does sometimes have fun benefits, but the drawbacks are deadly serious.
+>
+> Until SHA256 collision resistance is broken, I'd expect P2MR is probably the pinnacle of secure PQ address formats, and even then we'd probably end up reimplementing P2MR with some newer hash function. Hopefully someday someone proves me wrong, but we can only engineer with what we know today, and today P2MR seems the most optimal conservative option for long-term security and cryptographic agility.
+As mentioned above if we end up in this situation we're almost certainly going to be discussing a
+P2MRv2 with an additional witness discount, so...
+>> And with them they will take bitcoin's value...
+>
+> If you're really worried about a supply glut caused by CRQCs stealing and dumping them, then debating about P2TRv2 and P2MR is a distraction. IMO, most coins will probably not migrate before Q-Day regardless of what output types we deploy, because many coins are held by dead hands, or by living hands who just don't read the news.
+>
+> If this concerns you (and it concerns me too), then saving a few vbytes per spend pre-Q-day is trivial by comparison, and optimizing it will make little impact on the integrity of the UTXO set after Q-day. I would instead suggest you pursue the retroactive area of research (rescue protocols, quantum canaries, hourglass, exposure statistics, etc). This is a domain where real impact can be made to mitigate the risk of a supply glut when/if CRQCs appear. Opportunities abound. We would be glad of the help :)
+This is fair, and we should do this too, but I don't see how it implies we should not also be
+concerned with ensuring maximum possible migration.
+> Anyways, I appreciate the good-spirited debate, but to save myself time I don't think I'll continue replying. I've laid out my argument for P2MR pretty clearly and I feel it is as convincing as I can make it. I'd be happy to acknowledge any misunderstanding I may have had about your earlier points in favor of P2TRv2.
+Fair enough. I continue to think we're talking past each other somewhat but ultimately I think my
+concern is for ensuring bitcoin survives, while you're more concerned with giving those who are
+concerned an option to feel warm and fuzzy :).
+> As to the original subject of the email thread, and Antoine's original points, seems like we are all in agreement.
+Indeed.
+Matt Corallounread,
+Apr 15, 2026, 11:22:34 PMApr 15
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to conduition, Ethan Heilman, Antoine Poinsot, Bitcoin Development Mailing List
+Oh, apologies, I was in a bit of a rush yesterday and forgot the most important reason why P2MR
+doesn't help at all - address reuse.
+In practice the "long tail" of Bitcoin wallets (which, as noted below are most of what we care
+about) do strict address reuse. Mostly a consequence of address-based blockchain systems its become
+an expected feature that the address displayed in a wallet is static and does not change. As such,
+P2MR with a EC-based key for short-term efficiency reasons has the same quantum security as P2TR or
+P2TRv2.
+Matt
+
+Ethan Heilmanunread,
+Apr 15, 2026, 11:22:44 PMApr 15
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Matt Corallo, conduition, Antoine Poinsot, Bitcoin Development Mailing List
+The proposal is P2MR with PQ sigs and no Schnorr address reuse. Address reuse in this setting should be treated as security vulnerability.
+> As such, P2MR with a EC-based key for short-term efficiency reasons has the same quantum security as P2TR or P2TRv2.
+This is incorrect.
+1. As long as the Schnorr pubkey has not been leaked by the wallet. The wallet is PQ safe.
+2. Even if the Schnorr pubkey has been leaked by the wallet, if the PQ leaf hash is not publicly known it is safe against long exposure attacks.
+P2TR is **always** vulnerable to short and long exposure attacks. There is no better wallet hygiene that can fix this.
+You are comparing:
+P2MR + PQ signatures:  A wallet messing up their implementation of PQ safe transactions and introducing a vulnerability and weakening a subset of outputs. If implemented correctly 100% of the outputs are safe.
+vs.
+P2TR: A design where 100% of outputs are vulnerable even if the implementation is perfect.
+These aren't the same thing at all, nor do they provide the same security.
+
+Matt Corallounread,
+Apr 15, 2026, 11:23:23 PMApr 15
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Ethan Heilman, conduition, Antoine Poinsot, bitco...@googlegroups.com
+On Apr 15, 2026, at 10:36, Ethan Heilman <eth...@gmail.com> wrote:
+﻿
+The proposal is P2MR with PQ sigs and no Schnorr address reuse. Address reuse in this setting should be treated as security vulnerability.
+The context was a discussion of using P2MR with a EX fallback “until it’s time”. This avoids the substantial fee and functionality-loss overhead of hash-based signatures “until it’s time”.
+Yes, of course people could opt to not do that, but then we’re back to where we started - not solving a useful problem for those who the problem actually impacts.
+> As such, P2MR with a EC-based key for short-term efficiency reasons has the same quantum security as P2TR or P2TRv2.
+This is incorrect.
+1. As long as the Schnorr pubkey has not been leaked by the wallet. The wallet is PQ safe.
+Right, the context is a “normal” wallet which transacts occasionally. A pure receive-only wallet is fine but that’s such a narrow use-case I’m not even sure it’s worth discussing?
+2. Even if the Schnorr pubkey has been leaked by the wallet, if the PQ leaf hash is not publicly known it is safe against long exposure attacks.
+Huh? If the address is reused as-is (as is the case the most popular Bitcoin wallets today) a CRQC can trivially steal the funds with the EC key. What am I missing?
+P2TR is **always** vulnerable to short and long exposure attacks. There is no better wallet hygiene that can fix this.
+You are comparing:
+P2MR + PQ signatures:  A wallet messing up their implementation of PQ safe transactions and introducing a vulnerability and weakening a subset of outputs. If implemented correctly 100% of the outputs are safe.
+vs.
+P2TR: A design where 100% of outputs are vulnerable even if the implementation is perfect.
+These aren't the same thing at all, nor do they provide the same security.
+No, I’m comparing a realistic deployment of P2MR for the wallets which are relevant to the “we should give them maximum time to migrate” discussion in a world where they use P2MR to a world without. Yes, there are wallets that would use P2MR “right”, but those wallets literally do not matter for a discussion around what we need to get in place as soon as possible - large custodians who won’t make any mistakes with their cold storage are just as capable of making no mistakes later as they are today.
+For the actual wallets that we want to get migrating as soon as possible we’re talking about things that aren’t going to pay a 10x cost increase and are going to continue using a single static address.
+Matt
+
+Ethan Heilmanunread,
+Apr 16, 2026, 12:30:10 AMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Matt Corallo, conduition, Antoine Poinsot, Bitcoin Development Mailing List
+I believe we are talking about exactly the same thing. A P2MR output that can be spent with a EC leaf or a PQ leaf. Is that not what you mean?
+
+Matt Corallounread,
+Apr 16, 2026, 12:30:14 AMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Ethan Heilman, conduition, Antoine Poinsot, Bitcoin Development Mailing List
+Yes, that is what I'm thinking of. Specifically as deployed by a wallet that reuses a single address
+for ~all transactions, as those are the "marginal" wallets which we want to encourage to move (see
+my goals post which I just sent).
+Matt
+On 4/15/26 12:01 PM, Ethan Heilman wrote:
+> I believe we are talking about exactly the same thing. A P2MR output that can be spent with a EC
+> leaf or a PQ leaf. Is that not what you mean?
+>
+> On Wed, Apr 15, 2026, 11:17 Matt Corallo <lf-l...@mattcorallo.com <mailto:lf-
+> li...@mattcorallo.com>> wrote:
+
+
+Ethan Heilmanunread,
+Apr 16, 2026, 12:30:21 AMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Matt Corallo, conduition, Antoine Poinsot, Bitcoin Development Mailing List
+The response below is not me being rude, but an attempt to be as clear as possible since either you are misunderstanding me or I am misunderstanding you.
+As far as I can tell, no one is proposing P2MR + PQ with address reuse other than you. I agree that your proposal to use P2MR in this way has the problems you point out. This is why, I am **not** proposing to use P2MR+PQ with address reuse, but instead P2MR+PQ without address reuse.
+The design choices are:
+P2MR without address reuse. There will be work here to ensure wallets don't mess this up.
+P2TRv2 that allows address reuse because the EC spend path could be disallowed in a future softfork. There will be work here to ensure wallets don't mess this up.
+P2TRv2 seems risker to me because it requires rushing to activate a softfork just before an event, where no one can agree on when the event will happen and it may happen in secret. I suspect many large custodians and small holders will not want to trust that the softfork gets the timeline right.
+
+Matt Corallounread,
+Apr 16, 2026, 12:51:41 AMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Ethan Heilman, conduition, Antoine Poinsot, bitco...@googlegroups.com
+Right, so I’m not proposing address reuse is a good thing, maybe that’s the misunderstanding. Of course not. Personally I’d rather we’d have banned address reuse in consensus in 2010, but that ship has sailed. Rather, that address reuse, at this point, is a fact of life for the “marginal” wallets we care about - the middle of the balance distribution wallets that are not going to be guaranteed first-movers on the PQ front, and the ones I, thus, think were forced to optimize for.
+Matt
+On Apr 15, 2026, at 12:30, Ethan Heilman <eth...@gmail.com> wrote:
+﻿
+
+Antoine Poinsotunread,
+Apr 16, 2026, 2:47:42 AMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to dplu...@gmail.com, Matt Corallo, Olaoluwa Osuntokun, Bitcoin Development Mailing List
+D++, Laolu, Matt,
+Thank you for your responses. Since you raise related points i'll reply in a
+single email.
+I think the disagreement boils down to what we are trying to achieve. The debate
+on output types is downstream of this, so i think it's worth pinning down the
+goal(s) first. My view is that we should mitigate short term risks to consensus
+in the event CRQCs never materialize, and minimize the amount of BTC (as well
+as UTxOs, ideally) at risk by the time they start being practical in the event
+they do. And, importantly, do so without creating more risks to Bitcoin's
+perceived value.
+This explicityly rules out some theoretically possible scenarios, which i
+believe can't be realistically addressed but are fortunately extremely unlikely.
+Another thing i'd like to address is how some replies appear to interpret my
+post as a defense of BIP 360. I think their approach of keeping Taproot's Merkle
+tree of BIP 342 Scripts is a fine design, but my argument applies to an output
+type that enables a hash-based PQ signature scheme, and preferably disables EC
+opcodes. BIP 360 as it stands does neither.
+Both D++ and Matt pointed out how my argument that introducing the PQ scheme in
+Taproot would create perverse incentives with regard to the later decision of
+freezing could be addressed by using a new Segwit version for PQ-Taproot, with a
+social expectation that the key path of such outputs may be disabled. Fair
+point, but i still think this is a weak guarantee. If usage of this new output
+type became popular for unrelated and unforeseen reasons, this could make
+disabling EC spending paths as murky as for regular Taproot.
+Another argument someone gave me in meatspace was that users of PQ schemes would
+turn into supporters of a freeze nonetheless, once they obtain the safety of a
+PQ output type for their own coins. That's plausible, but far from a certainty.
+I don't see much push for disabling the SHA1 operation today. And even if the
+share of BTC protected by EC operations was substantial enough to be a systemic
+risk, users of a PQ output type may prefer some amount of risk to the certain
+undermining of their asset's value proposition.
+Laolu, in response to the three futures i laid down that i think we should be
+optimising for, you pointed there is also a possible future in which there is
+classical advances in breaking the ECDLP problem. Sure, but i don't see why this
+should suddenly become a future we optimise for.
+Both Laolu and Matt pointed (in different languages) that a PQ output type is
+not mutually exclusive with a Taproot embedded version. It probably wouldn't
+hurt to also introduce a PQ scheme inside Taproot, unless we think that
+making the take-up of CRQC outputs publicly visible is a desirable property. But
+it's not clear to me that it would achieve much next to a PQ output type.
+Presumably, concerned large holders would favour the assurance of an
+actually CRQC-resistant output type, unless they believe the CRQC risk is lower
+than that of leaving their secure signing environment *and* they give credit to
+the social-signaling claim that such Taproot-v2 outputs will have their key path
+spend eventually be frozen. Same for laggards, why would they bear the cost of
+upgrading to a Taproot-v2 output if they assess the CRQC risk to be low enough?
+And once they believe it is high enough, why not use the CRQC-resistant output
+type instead? It seems to me that outside of newly created wallets, the case for
+a Taproot embedded PQ scheme is stronger *in place* of a PQ output type. If
+large holders have to use it in order to get access to a PQ spend path, then we
+can reasonably expect them to keep using the EC spend path until it gets
+disabled, thereby reducing their onchain footprint. However this alternative
+does weaken the risk mitigation(s), because one would have to believe the key
+spend path actually gets frozen eventually..
+Matt, you stated the (only) goal of a migration strategy should be to enable the
+maximum number of coins to be retained by their owner, and that this is only
+possible by disabling EC spend path(s) and (i guess hard-)forking a ZK-proof
+spend path for those fortunate users that happened to use a common key
+derivation standard. First of all, this is only true for those owners that are
+somehow unable to make a transaction until the advent of CRQCs, as any other
+owner could simply migrate to a PQ output type instead. And therefore, this is
+also incompatible with a higher-version-Taproot-output design that allows users
+to opt into a future EC spend path(s) freeze. Which are you arguing for?
+More importantly, i think your goal statement goes to the heart of the issue.
+Maximizing the amount of coins to be retained by their owner is of course
+desirable, but it can't be the only goal. Especially if it comes at the cost of
+consensus changes that risk burning other users' coins.
+Finally, Matt you also asserted that a PQ output type alone is not a migration
+strategy since it would not achieve much. I think that if you spell out the
+argument behind this statement, the case is actually weaker than it seems. The
+burden associated with using a hash-based PQ scheme would certainly slow down
+adoption for those users that have less at stake, or whose usage patterns would
+be particularly impacted. But it's only natural that holders with different
+stakes and risk profiles make different risk assessments. Each may migrate to
+the new output type as the assurance it provides comes to outweigh its
+associated costs.
+Best,
+Antoine
+On Thursday, April 9th, 2026 at 3:06 PM, 'Antoine Poinsot' via Bitcoin Development Mailing List <bitco...@googlegroups.com> wrote:
+> Many of us appear to be in favour of introducing post-quantum signatures to
+> Bitcoin via a new Tapscript operation, conditioning the CRQC resistance on a
+> future invalidation of Taproot key spends. I would like to offer an argument in
+
+> This approach would tie the availability of a PQ scheme to reaching consensus on
+> a future freeze. Frankly, i do not believe the latter is achievable, let alone
+> at this stage with so little evidence that a CRQC will materialize anytime soon.
+> By contrast, there is a much stronger case for introducing a PQ scheme in the
+> near term purely as a risk mitigation measure.  Coupling the two decisions would
+> necessarily delay the deployment of a PQ scheme, unnecessarily exacerbating
+> risks whether or not CRQCs become a reality.
+>
+> Another drawback of the PQ output type approach is that it would make those
+> outputs distinguishable from Taproot ones, which is suboptimal in the event that
+> a CRQC never materializes. But i would argue that even in this case, the cost is
+> minimal. The users most likely to adopt PQ outputs today (those securing large
+> amounts of BTC with a small set of keys) already have vastly different usage
+> patterns from Taproot users: they often reuse addresses and use legacy output
+> types (and show little interest in upgrading).
+>
+> Best,
+> Antoine Poinsot
+>
+> --
+> You received this message because you are subscribed to the Google Groups "Bitcoin Development Mailing List" group.
+> To unsubscribe from this group and stop receiving emails from it, send an email to bitcoindev+...@googlegroups.com.
+> To view this discussion visit https://groups.google.com/d/msgid/bitcoindev/0vqF88LoOnY4GiUB4vf-MdeZpTAtR70tokS3cLwt2DX0e6_fD1X_wyhPwWEdIdm6R88AULObIU08CWsb5QfeoaM5c4yXPqN5wHyCrqMCtfQ%3D%40protonmail.com.
+>
+Antoine Poinsotunread,
+Apr 16, 2026, 3:07:12 AMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Antoine Riard, Bitcoin Development Mailing List
+Hi,
+I don't think in this thread the question is raised to enable to secure one's coin under double classic cryptogrraphic assumption and PQ assumption, i.e "hybrid" security
+Yes. I'm assuming that a hash-based scheme would be reasonable to introduce on its own (as opposed to more fancy schemes). But i'm also not sure it's possible to guarantee that hybrid security is used, since a user can always choose to use a dummy secret for one of the two signature challenges.
+Best,
+Antoine
+
+
+To view this discussion visit https://groups.google.com/d/msgid/bitcoindev/459bd81c-584f-4adf-9112-bb733d381c99n%40googlegroups.com.
+Erik Aronestyunread,
+Apr 16, 2026, 3:23:47 AMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Antoine Poinsot, Antoine Riard, Bitcoin Development Mailing List
+100% we shouldn't be forcing hybrid on people.   but it should be supported preferred and "Default".  this is RFC language.  "quantum secure protocols should use hybrid signature schemes" etc
+
+
+To view this discussion visit https://groups.google.com/d/msgid/bitcoindev/3PuZlWnztVG7MIcejfM8UHiKB9GNqaGsQX4JmsfLMINPs84FaAp7OZ7EdTxPYV-O2XUJQWM_eYUND3Pm-fHnBcv9QXdHKasHjgacNrE-K-o%3D%40protonmail.com.
+محمد الوصابي‎unread,
+Apr 16, 2026, 4:41:29 AMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Erik Aronesty, Antoine Poinsot, Antoine Riard, Bitcoin Development Mailing List
+Hi everyone,
+As a developer building localized payment integrations and automated systems, I’ve been following this discussion on P2MR and BIP360 closely. I’d like to add a perspective from the "application layer" side.
+While I appreciate the rigorous security of P2MR, I lean towards Matt’s point regarding adoption. For developers in regions where infrastructure and fee-sensitivity are major factors, a "forced" or highly complex migration could lead to fragmentation. If the barrier to entry for Quantum-safe addresses is too high—either in terms of script complexity or transaction fees—many users will simply stay on legacy formats, leaving the network vulnerable.
+I believe the focus should be on "Invisible Security." If BIP360 can offer a seamless transition where the complexity is handled by libraries, it would be much more effective than a mandatory shift that might alienate non-technical users.
+Looking forward to hearing more on how we can balance this "sovereignty" with practical usability.
+Best regards,
+Mohammed Al-Wasabi
+
+
+To view this discussion visit https://groups.google.com/d/msgid/bitcoindev/CAJowKgJeQA0AkDMYHiobjvk%3DKuWV38yT6KyaSiC0ZVvH1Q9zvg%40mail.gmail.com.
+Anthony Townsunread,
+Apr 16, 2026, 4:41:50 AMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Matt Corallo, Bitcoin Development Mailing List
+On Tue, Apr 14, 2026 at 04:04:02PM -0400, Matt Corallo wrote:
+> I'm gonna top-post because I think we're too far in the weeds and the
+> high-level argument is getting lost. No, of course I do not thing that our
+> job is to "convince" any quantum skeptics. What is our job is making sure
+> the *bitcoin system* is ready in case a CRQC does become a reality. That
+> means looking at the system as a whole, not individuals. Notably, this means
+> that if the decisions we make result in a bitcoin where some people who are
+> super worried about a CRQC have migrated but everyone else hasn't, and a
+> CRQC becomes an imminent reality, *we've failed*.
+I think those views are contradictory. Preparing for a post-quantum
+world is not free: even if you come up with a new address scheme that
+imposes zero overhead to make a PQ spending path available, there are
+still switching costs associated with moving to that new address scheme,
+so the only way you get the people who aren't super worried about CRQC
+to migrate beforehand is precisely to "convince" them that the (low)
+risk is worth the (low) cost.
+If the outcome of not doing something is that you've "failed", then
+doing that thing is your "job".
+> In such a world, bitcoin
+> becomes largely value-less and the paranoid folks who migrated long ago and
+> paid for it have accomplished absolutely nothing. I hope we can at least
+> agree on this point.
+I don't believe that's necessarily true either though.
+A path forward in such a scenario (30%-95% of BTC held in CRQC-vulnerable
+addresses, CRQC is believed by the public to exist, and willingness to
+hold BTC when large portions of supply are CRQC-vulnerable is already low
+or dropping fast) could be to create a hard-fork the chain, preserving
+the UTXO set, but making all quantum-vulnerable addresses only spendable
+via a scheme like roasbeef's recent demo (ie, provide a PQ ZK proof of
+a hardened derivation path to the pubkey that links that knowledge to
+a new quantum-safe pubkey).
+Of course, there are plenty of difficulties with such a path, notably:
+* deployment (chain forks have been done before, but they're
+not easy)
+* post-quantum cryptography implementation (there's a whole host
+of new crypto needed, relative to bitcoin today)
+* market agreement on *which* new hard fork coin is the winner (if
+there's one such fork that gains any traction, there will certainly
+be many clones launched at a similar time, some of which may have
+meaningful technical/economic differences)
+* avoiding capture by a "hardfork core team" via an ongoing sequence
+of mandatory hard fork upgrades (traditionally chain splits have
+resulted in multiple followup consensus changes, eg to tweak PoW rules)
+But if the only alternative is the end of Satoshi's grand experiment,
+then it sure seems worth trying.
+The "Q-day hard-fork" approach has a few benefits too:
+* it's a clean split; people who still don't believe in quantum risk
+can ignore it
+* if done prematurely, it's equally irrelevant to all other hard forks
+* as a hard fork, adding new spending paths to old coins is a viable
+option, rather than freezing everything being the only choice
+* it's a voluntary, opt-in solution, where everyone gets coins under
+both the old and the new rules that they can spend or save as they
+see fit
+In a scenario like that, the people who migrated long ago benefit by
+retaining immediate access to their coins on the hard fork chain with only
+minor updates to their systems; the people who didn't, instead need to
+retool and perhaps extract private keys in order to generate the ZK proofs
+that will allow them to regain access to their funds on the fork chain.
+Personally, I'm skeptical that there'll be any agreement on disabling
+spending paths without a concrete CRQC to analyse: it seems to me there's
+likely significant risk that you'll either freeze spending paths too
+early (someone gets lucky and triggers the freezing condition 10 years
+early, even though it turns out scaling CRQC is harder than expected)
+or too late (eg, after significant funds have already been stolen).
+I also don't think there's much point discussing disabling spending paths
+when there isn't any other way to spend funds. From what I've seen,
+there have been demo Winternitz implementations in bllsh (~4,000 WU)
+and GSR (~24,000 WU), and a SHRINCS implementation in Simplicity deployed
+on Liquid (~36,000 WU??).
+Cheers,
+aj
+Matt Corallounread,
+Apr 16, 2026, 6:45:29 AMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Anthony Towns, Bitcoin Development Mailing List
+On 4/15/26 4:19 PM, Anthony Towns wrote:
+> On Tue, Apr 14, 2026 at 04:04:02PM -0400, Matt Corallo wrote:
+>> I'm gonna top-post because I think we're too far in the weeds and the
+>> high-level argument is getting lost. No, of course I do not thing that our
+>> job is to "convince" any quantum skeptics. What is our job is making sure
+>> the *bitcoin system* is ready in case a CRQC does become a reality. That
+>> means looking at the system as a whole, not individuals. Notably, this means
+>> that if the decisions we make result in a bitcoin where some people who are
+>> super worried about a CRQC have migrated but everyone else hasn't, and a
+>> CRQC becomes an imminent reality, *we've failed*.
+>
+> I think those views are contradictory. Preparing for a post-quantum
+> world is not free: even if you come up with a new address scheme that
+> imposes zero overhead to make a PQ spending path available, there are
+> still switching costs associated with moving to that new address scheme,
+> so the only way you get the people who aren't super worried about CRQC
+> to migrate beforehand is precisely to "convince" them that the (low)
+> risk is worth the (low) cost.
+>
+> If the outcome of not doing something is that you've "failed", then
+> doing that thing is your "job".
+I mean I agree with everything you said but I think that's also what I said above. Yes, some people
+may never migrate but because many people think the risk is low the cost has to be similarly low.
+And then the fact that many users will (rightly or wrongly) be asking about PQC make the wallets
+willing to put in the effort (as long as its low!) to get users to shut up.
+Oh we're very much on the same page here. Such an outcome sucks but its better than literally
+nothing. My point was more that some people do have to migrate because the proof costs to do such a
+fork (which is definitely not a hard fork, technically, even if it is maybe in a philosophical sense
+and maybe should be for the same reason) will be high enough that transacting in bitcoin might
+borderline stall. Also many of these users have a balance in the $100 range, a recovery transaction
+fee of $50 is kinda not really useful for them. Maybe we can "just do a commit-reveal scheme" but
+there are plenty of practical issues with that too.
+> The "Q-day hard-fork" approach has a few benefits too:
+>
+>   * it's a clean split; people who still don't believe in quantum risk
+>     can ignore it
+>   * if done prematurely, it's equally irrelevant to all other hard forks
+>   * as a hard fork, adding new spending paths to old coins is a viable
+>     option, rather than freezing everything being the only choice
+>   * it's a voluntary, opt-in solution, where everyone gets coins under
+>     both the old and the new rules that they can spend or save as they
+>     see fit
+>
+> In a scenario like that, the people who migrated long ago benefit by
+> retaining immediate access to their coins on the hard fork chain with only
+> minor updates to their systems; the people who didn't, instead need to
+> retool and perhaps extract private keys in order to generate the ZK proofs
+> that will allow them to regain access to their funds on the fork chain.
+>
+> Personally, I'm skeptical that there'll be any agreement on disabling
+> spending paths without a concrete CRQC to analyse: it seems to me there's
+> likely significant risk that you'll either freeze spending paths too
+> early (someone gets lucky and triggers the freezing condition 10 years
+> early, even though it turns out scaling CRQC is harder than expected)
+> or too late (eg, after significant funds have already been stolen).
+Not only do I agree with you but I think anything else would be a pretty substantial philosophical
+failure for bitcoin!
+> I also don't think there's much point discussing disabling spending paths
+> when there isn't any other way to spend funds. From what I've seen,
+> there have been demo Winternitz implementations in bllsh (~4,000 WU)
+> and GSR (~24,000 WU), and a SHRINCS implementation in Simplicity deployed
+> on Liquid (~36,000 WU??).
+Yep, all the more reason to add OP_SHRINCS or whatever, which I think all of this discussion largely
+assumes.
+Matt
+Anthony Townsunread,
+Apr 16, 2026, 7:34:27 AMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Matt Corallo, Bitcoin Development Mailing List
+On Wed, Apr 15, 2026 at 05:50:31PM -0400, Matt Corallo wrote:
+> On 4/15/26 4:19 PM, Anthony Towns wrote:
+> > On Tue, Apr 14, 2026 at 04:04:02PM -0400, Matt Corallo wrote:
+> > > I'm gonna top-post because I think we're too far in the weeds and the
+> > > high-level argument is getting lost. No, of course I do not thing that our
+> > > job is to "convince" any quantum skeptics. What is our job is making sure
+> > > the *bitcoin system* is ready in case a CRQC does become a reality. That
+> > > means looking at the system as a whole, not individuals. Notably, this means
+> > > that if the decisions we make result in a bitcoin where some people who are
+> > > super worried about a CRQC have migrated but everyone else hasn't, and a
+> > > CRQC becomes an imminent reality, *we've failed*.
+> >
+> > I think those views are contradictory. Preparing for a post-quantum
+> > world is not free: even if you come up with a new address scheme that
+> > imposes zero overhead to make a PQ spending path available, there are
+> > still switching costs associated with moving to that new address scheme,
+> > so the only way you get the people who aren't super worried about CRQC
+> > to migrate beforehand is precisely to "convince" them that the (low)
+> > risk is worth the (low) cost.
+> >
+> > If the outcome of not doing something is that you've "failed", then
+> > doing that thing is your "job".
+>
+> I mean I agree with everything you said but I think that's also what I said
+> above.
+Well, I imagine you're not lean4 validated, so I guess holding
+contradictory views is your right...
+> > A path forward in such a scenario
+> >   (30%-95% of BTC held in CRQC-vulnerable
+> >    addresses, CRQC is believed by the public to exist, and willingness
+> >    to hold BTC when large portions of supply are CRQC-vulnerable is
+> >    already low or dropping fast)
+> > could be to create a hard-fork the chain,
+> >    preserving the UTXO set, but
+> >    making all quantum-vulnerable addresses only spendable
+> >    via a scheme like roasbeef's recent demo
+> >       (ie, provide a PQ ZK proof of a hardened derivation path
+> >        to the pubkey that links that knowledge to a new
+> >        quantum-safe pubkey).
+> Oh we're very much on the same page here. Such an outcome sucks but its
+> better than literally nothing. My point was more that some people do have to
+> migrate because the proof costs to do such a fork (which is definitely not a
+> hard fork, [...]
+Making existing UTXOs ("all quantum-vulnerable addresses") spendable
+via a previously non-existant quantum safe path is a hard fork. Sorry
+if I didn't phrase that clearly enough.
+> Also many of these users have a balance in
+> the $100 range, a recovery transaction fee of $50 is kinda not really useful
+> for them.
+At at my last utxo set (height 923,997) there's about 20k BTC ($1.5B)
+in utxos between 100k sats ($75) and 300k sats ($225), across about 11M
+utxos. There's about 25M utxos with more than 300k sats.
+Another advantage of a hard-fork approach is you could relatively easily
+include an increased blocksize to mitigate some of the impact of larger
+signature sizes.
+> > I also don't think there's much point discussing disabling spending paths
+> > when there isn't any other way to spend funds. From what I've seen,
+> > there have been demo Winternitz implementations in bllsh (~4,000 WU)
+> > and GSR (~24,000 WU), and a SHRINCS implementation in Simplicity deployed
+> > on Liquid (~36,000 WU??).
+> Yep, all the more reason to add OP_SHRINCS or whatever, which I think all of
+> this discussion largely assumes.
+The 36kB withness size was for the "stateful signature transaction /
+normal operation" case (which AIUI should have been perhaps ~500 WU),
+not just the fallback. I don't understand it at all, but also haven't
+tried decoding the simplicity source code.
+I'm personally a bit skeptical of the dedicated opcode approach, given
+how fast things move here, both in new improvements being invented and
+old ideas getting broken.
+Cheers,
+aj
+Matt Corallounread,
+Apr 16, 2026, 7:44:07 PMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Anthony Towns, Bitcoin Development Mailing List
+Could you be more clear? I don't see a particularly contradictory view here.
+>>> A path forward in such a scenario
+>>>    (30%-95% of BTC held in CRQC-vulnerable
+>>>     addresses, CRQC is believed by the public to exist, and willingness
+>>>     to hold BTC when large portions of supply are CRQC-vulnerable is
+>>>     already low or dropping fast)
+>>> could be to create a hard-fork the chain,
+>>>     preserving the UTXO set, but
+>>>     making all quantum-vulnerable addresses only spendable
+>>>     via a scheme like roasbeef's recent demo
+>>>        (ie, provide a PQ ZK proof of a hardened derivation path
+>>>         to the pubkey that links that knowledge to a new
+>>>         quantum-safe pubkey).
+>
+>> Oh we're very much on the same page here. Such an outcome sucks but its
+>> better than literally nothing. My point was more that some people do have to
+>> migrate because the proof costs to do such a fork (which is definitely not a
+>> hard fork, [...]
+>
+> Making existing UTXOs ("all quantum-vulnerable addresses") spendable
+> via a previously non-existant quantum safe path is a hard fork. Sorry
+> if I didn't phrase that clearly enough.
+Right but you could also make it an additional requirement rather than an entirely new spend path.
+In fact that's likely how you want to do it for simplicity anyway - run the normal scripts with EC
+and whatever and accumulate a list of pubkeys used in checksigs and then require an additional
+(segwit style storage) zk proof for each pubkey (or, really, a batched one). Again whether or not
+this *should* be a soft fork I leave as an exercise to the reader.
+>> Also many of these users have a balance in
+>> the $100 range, a recovery transaction fee of $50 is kinda not really useful
+>> for them.
+>
+> At at my last utxo set (height 923,997) there's about 20k BTC ($1.5B)
+> in utxos between 100k sats ($75) and 300k sats ($225), across about 11M
+> utxos. There's about 25M utxos with more than 300k sats.
+>
+> Another advantage of a hard-fork approach is you could relatively easily
+> include an increased blocksize to mitigate some of the impact of larger
+> signature sizes.
+segwit-style additional data also avoids this issue. Might also even require miners to batch the
+proofs into one ZKP, though the additional CPU cost to miners may be unpaletable.
+>>> I also don't think there's much point discussing disabling spending paths
+>>> when there isn't any other way to spend funds. From what I've seen,
+>>> there have been demo Winternitz implementations in bllsh (~4,000 WU)
+>>> and GSR (~24,000 WU), and a SHRINCS implementation in Simplicity deployed
+>>> on Liquid (~36,000 WU??).
+>> Yep, all the more reason to add OP_SHRINCS or whatever, which I think all of
+>> this discussion largely assumes.
+>
+> The 36kB withness size was for the "stateful signature transaction /
+> normal operation" case (which AIUI should have been perhaps ~500 WU),
+> not just the fallback. I don't understand it at all, but also haven't
+> tried decoding the simplicity source code.
+IIUC the stateful version of shrincs is in the 300-500 byte range, depending on particular parameters.
+> I'm personally a bit skeptical of the dedicated opcode approach, given
+> how fast things move here, both in new improvements being invented and
+> old ideas getting broken.
+It might well make sense to do some kind of more generic hashtree opcode to allow for whatever
+particular hash-based signature construction someone might come up with in the future, indeed.
+Matt
+Garlo Niconunread,
+Apr 16, 2026, 7:44:33 PMApr 16
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Anthony Towns, Matt Corallo, Bitcoin Development Mailing List
+> Making existing UTXOs ("all quantum-vulnerable addresses") spendable via a previously non-existant quantum safe path is a hard fork. Sorry if I didn't phrase that clearly enough.
+It is a soft-fork, if you need both: the old signature from secp256k1, and the new one. Then, producing the first part can be as trivial, as if old coins would sit on OP_TRUE, and the second part actually decides, where the coins should go.
+And then, as usual, old nodes can receive only the secp256k1 part, while new nodes can receive everything. Just like the whole Segwit works like OP_TRUE for all pre-Segwit nodes.
+> Another advantage of a hard-fork approach is you could relatively easily include an increased blocksize to mitigate some of the impact of larger signature sizes.
+I think it is better to make it sigops-based. For each and every OP_CHECKSIG call, or its equivalent, you need a new signature, in a separate space, counted separately, and never shared with the old nodes. Then, you can fairly compare different quantum proposals, regardless of their signature sizes. Because why old nodes should even process quantum signatures in the first place? They don't have the code to validate it anyway, and they will treat it as OP_TRUE, or something similar.
+Which means, that if you have 80k sigops limit, then the new maximum size for "quantum signature stack" would be 80k, multiplied by the size of the new signature, depending on the chosen algorithm.
+
+
+--
+You received this message because you are subscribed to the Google Groups "Bitcoin Development Mailing List" group.
+To unsubscribe from this group and stop receiving emails from it, send an email to bitcoindev+...@googlegroups.com.
+To view this discussion visit https://groups.google.com/d/msgid/bitcoindev/aeAfnufGvf1pG85h%40erisian.com.au.
+Matt Corallounread,
+Apr 20, 2026, 6:08:48 AMApr 20
+
+
+
+Reply to author
+Sign in to reply to author
+Forward
+Sign in to forward
+Delete
+You do not have permission to delete messages in this group
+Copy link
+Report message
+Show original message
+Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message
+to Antoine Poinsot, dplu...@gmail.com, Olaoluwa Osuntokun, Bitcoin Development Mailing List
+The problem is the entity who owns the coins is not the one making this decision. There is some
+wallet developer who is going to decide what code to write based on their understanding of their
+target market. Users are then going to decide which wallet to use based on recommendations from
+their friends, random websites, or an app store. No one is carefully weighing at what point they
+need to come back online and make a transaction before Q-day and then deciding which output type to use.
+Instead, the best we can do is provide an option or two that we think gets the most coins migrated
+"in time".
+> Matt, you stated the (only) goal of a migration strategy should be to enable the
+> maximum number of coins to be retained by their owner, and that this is only
+> possible by disabling EC spend path(s) and (i guess hard-)forking a ZK-proof
+> spend path for those fortunate users that happened to use a common key
+> derivation standard. First of all, this is only true for those owners that are
+> somehow unable to make a transaction until the advent of CRQCs, as any other
+> owner could simply migrate to a PQ output type instead.
+Or, more likely, unaware that they need to.
+> And therefore, this is
+> also incompatible with a higher-version-Taproot-output design that allows users
+> to opt into a future EC spend path(s) freeze. Which are you arguing for?
+Providing a shorter term alternative like a higher-version-Taproot-output blunts the cost of later
+migration logic like ZK-proof-of-BIP-32.
+> More importantly, i think your goal statement goes to the heart of the issue.
+> Maximizing the amount of coins to be retained by their owner is of course
+> desirable, but it can't be the only goal. Especially if it comes at the cost of
+> consensus changes that risk burning other users' coins.
+In this case, we simply disagree. In the face of coins which can be stolen by a CRQC, the best
+outcome is to maximize the probability that their true owner retains control. That means, yes,
+having some probability that the coins are burned. I'm unaware of a way to do so otherwise.
+> Finally, Matt you also asserted that a PQ output type alone is not a migration
+> strategy since it would not achieve much. I think that if you spell out the
+> argument behind this statement, the case is actually weaker than it seems. The
+> burden associated with using a hash-based PQ scheme would certainly slow down
+> adoption for those users that have less at stake, or whose usage patterns would
+> be particularly impacted. But it's only natural that holders with different
+> stakes and risk profiles make different risk assessments. Each may migrate to
+> the new output type as the assurance it provides comes to outweigh its
+> associated costs.
+See above. I think this is somewhat simplistic reasoning about how decisions around address formats
+are actually made.
+But I will say, I've somewhat come around to the idea of a PQ-only output type in conjunction with
+something more akin to flagged-P2TR. The former provides an option for those who think that there
+will be a bitcoin if only large, conservative holders are able to retain their coins in the face of
+a surprise CRQC, the latter provides an option that is cheap, retains existing implementation as
+much as possible, and provides a way to get PQC pubkeys attached to outputs in a measurable way to
+inform a later Bitcoin community of whether a ZK recovery scheme is viable and required.
+Matt
+Reply all
+Reply to author
+Forward
+0 new messages
+
+Search
+Clear search
+Close search
+Google apps
+Main menu

@@ -1,0 +1,113 @@
+{
+  "mode": "conversational-flow-edit",
+  "page_count": 20,
+  "slide_map_revision": 12,
+  "script_revision": 13,
+  "baseline_before_edit": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/正反方銜接與聊天口吻調整前-20261021-114658/逐字稿.md",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "total_before": 5881,
+  "total_after": 5878,
+  "ratio": 0.9995,
+  "pages": [
+    {
+      "page": 1,
+      "before": 238,
+      "after": 238
+    },
+    {
+      "page": 2,
+      "before": 288,
+      "after": 285
+    },
+    {
+      "page": 3,
+      "before": 251,
+      "after": 258
+    },
+    {
+      "page": 4,
+      "before": 295,
+      "after": 308
+    },
+    {
+      "page": 5,
+      "before": 291,
+      "after": 280
+    },
+    {
+      "page": 6,
+      "before": 289,
+      "after": 296
+    },
+    {
+      "page": 7,
+      "before": 289,
+      "after": 293
+    },
+    {
+      "page": 8,
+      "before": 297,
+      "after": 297
+    },
+    {
+      "page": 9,
+      "before": 305,
+      "after": 287
+    },
+    {
+      "page": 10,
+      "before": 326,
+      "after": 301
+    },
+    {
+      "page": 11,
+      "before": 305,
+      "after": 295
+    },
+    {
+      "page": 12,
+      "before": 290,
+      "after": 292
+    },
+    {
+      "page": 13,
+      "before": 289,
+      "after": 309
+    },
+    {
+      "page": 14,
+      "before": 268,
+      "after": 284
+    },
+    {
+      "page": 15,
+      "before": 283,
+      "after": 278
+    },
+    {
+      "page": 16,
+      "before": 300,
+      "after": 297
+    },
+    {
+      "page": 17,
+      "before": 287,
+      "after": 290
+    },
+    {
+      "page": 18,
+      "before": 295,
+      "after": 294
+    },
+    {
+      "page": 19,
+      "before": 290,
+      "after": 297
+    },
+    {
+      "page": 20,
+      "before": 405,
+      "after": 399
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+URL: https://blog.blockstream.com/op_checkshrincs-a-hash-based-signature-opcode-for-post-quantum-bitcoin/
+Accessed: 2026-10-17 Asia/Taipei
+
+Blockstream
+Products
+CONSUMERS
+Blockstream App
+A multi-platform, feature-rich Bitcoin and Liquid Wallet
+Blockstream Jade
+A fully-open source hardware wallet for Bitcoin and Liquid
+ENTERPRISE
+Blockstream Enterprise
+Enterprise-grade custody and treasury management tool
+AMP
+An API to issue and manage digital assets on the Liquid Network
+DEVELOPERS
+TOOLS
+Blockstream Explorer API
+Search data from the Bitcoin and Liquid blockchains
+Cryptocurrency Data Feed
+Real-time and historical cryptocurrency trade data
+COMMUNITY PROJECTS
+Core Lightning
+Implementation of the Lightning Protocol
+Liquid Network
+Bitcoin layer-2 for digital asset issuance
+Elements
+An open-source, sidechain-capable blockchain platform
+Simplicity
+High-assurance smart contracts
+Newsroom
+Blog
+In
+The News
+Press
+Releases
+Quantum
+Developers
+Engineering
+Blog
+Liquid Documentation
+Core Lightning Documentation
+Company
+Research
+About
+Careers
+Brand
+Assets
+Store
+Support
+Help Center
+Bitcoin Education
+Glossary
+Local
+Blockstream Research
+Quantum
+OP_CHECKSHRINCS: A Hash-Based Signature Opcode for Post-Quantum Bitcoin
+Jonas Nick
+May 12, 2026
+There is no concrete proposal for a post-quantum signature scheme in Bitcoin today. Over the past year, our team at Blockstream Research has been looking into exactly this problem. This post shares what we've learned, and argues that optimized hash-based signatures are a pragmatic choice for post-quantum Bitcoin that could be deployed in the near term. It covers SHRINCS and SHRIMPS, currently the smallest post-quantum signature schemes built on mature cryptographic assumptions, and then sketches what a concrete proposal could look like.
+Modern Bitcoin outputs lock funds to a Schnorr key, and spending them requires a valid Schnorr signature. Schnorr signatures, however, are vulnerable to quantum computers. The most natural way to add post-quantum signature verification is to extend the Taproot tree with a post-quantum option. After a soft fork, an output can commit to both a Schnorr key and a post-quantum key. Because Taproot only reveals the path that actually gets spent, users can keep spending with cheap Schnorr signatures, and the transaction cost stays essentially unchanged. The post-quantum option sits dormant in the tree. Only once a sufficiently powerful quantum computer arrives do users switch to the second path, spend with the post-quantum signature, and pay its transaction cost.
+Failure Modes of a Post-Quantum Upgrade
+A post-quantum upgrade can fail in several distinct ways, and avoiding each of them shapes the design choices discussed later in this post.
+Throughput collapse. If signatures are too large, block space fills up and many users won't be able to transact at all.
+Verification costs. If the computational requirements are too high, there will be less full-node verification, which impacts decentralization.
+Signing costs. Hardware wallets and constrained devices have to be able to sign in a reasonable time.
+Broken cryptography, built on assumptions that don't hold up over time.
+No adoption, because the proposal is too complex or doesn't integrate with existing infrastructure. If only you adopt the proposal, that is not enough: if the rest of the network gets compromised, your perfectly secure coins become economically worthless.
+Implementation complexity. The implementation contains bugs or is vulnerable to attacks, and someone has to maintain this code in Bitcoin's consensus rules forever without accidentally introducing even the slightest incompatibilities.
+A proposal that avoids these pitfalls has the highest chance of obtaining rough consensus.
+Standard Candidates
+The first set of candidates are schemes standardized by NIST. They already exist, have working implementations, and require relatively little additional effort to turn into a Bitcoin Improvement Proposal. The baseline for comparison is the Schnorr signature scheme used in Taproot. If every transaction used Schnorr signatures consistently, Bitcoin could support 6.5 transactions per second at current average transaction shapes. All TPS numbers in this post assume an average Bitcoin transaction with 2.27 inputs and 2.64 outputs (the 90-day average on 2026-03-30, per transactionfee.info), packed into the current block size limit.
+Schnorr signatures support the features that current wallet infrastructure relies on, in particular BIP 32 unhardened key derivation. They also enable efficiency upgrades that the ecosystem has deployed on top of Bitcoin in recent years, like MuSig, and planned privacy and efficiency improvements such as threshold signatures, silent payments, and cross-input signature aggregation.
+ML-DSA, based on lattice assumptions. Throughput collapses to about half a transaction per second (at NIST security level 3), and all of Schnorr signatures' features disappear, including BIP 32 unhardened derivation.
+SLH-DSA, based on hash functions. Hash functions are conservative assumptions that Bitcoin already trusts, which justifies targeting NIST security level 1. Throughput, however, drops further to 0.36 transactions per second, and again, the same features are missing.
+Neither of these schemes is a drop-in solution, and both decimate network throughput. A block size increase could mitigate the throughput problem, but bundling a timely, pragmatic post-quantum deployment with a controversial block size debate is unlikely to succeed. A block size increase is better left as a separate discussion.
+Candidates That Need More Research
+The NIST schemes are easy to deploy, but their trade-offs are hard to swallow. Other candidates promise better trade-offs, but require significantly more research and time before deployment is realistic.
+Falcon^WS, a recent lattice-based proposal. It offers significantly better signature sizes (throughput around 1 TPS at NIST security level 5), but it is far too immature to consider for deployment. It is included here as an illustration of what might eventually be possible with lattice-based schemes.
+Lattice schemes that match Schnorr signatures' feature set, such as unhardened BIP 32 or threshold signatures. This is a promising direction for further research. Unfortunately, adding these features significantly increases signature sizes compared to lattice schemes that omit them, probably putting throughput below Falcon^WS's ~1 TPS. For example, a modified Raccoon-G supports hierarchical deterministic key derivation (including unhardened), but with 16 kB public keys and 20 kB signatures.
+SQIsign, based on isogenies. Signature sizes are very good, with throughput up to ~3.6 TPS at security level 5, and isogenies have the potential to support Schnorr signatures' features. The catch is the cryptographic assumptions, which are far less mature than lattice assumptions. There is a real risk they could break, and that risk will not disappear anytime soon. Building confidence in new cryptographic assumptions takes many years.
+Block-wide signature aggregation, a single succinct proof (a SNARK) that aggregates every signature in a block. Conservatively assuming a 500 kB proof per block, throughput would be around 6.7 TPS. Recent proposals along these lines include BitZip and LeanVM. On top of open questions like who computes the proof and how to avoid mining centralization, the engineering complexity is massive.
+Optimizing Hash-Based Signatures and the Signing Budget
+All of these candidates live in the same multi-dimensional trade-off space: assumptions, efficiency, features, and complexity. For hash-based signatures specifically, two directions look particularly promising. First, we can add a new dimension: statefulness, which opens up new design space. Second, we can accept a minor increase in protocol complexity in exchange for significant efficiency gains. Together, these directions make hash-based signatures an attractive candidate. They offer much better efficiency without a new cryptographic assumption, and the cryptography remains relatively easy to explain and implement.
+Statefulness uses a concept built into every hash-based signature scheme: the signature budget, a parameter that dictates how many times a single key can securely sign a message. In SLH-DSA, the budget is set to 2^64, effectively unlimited for any practical purpose. Shrinking the budget deliberately makes signatures smaller, but accidentally exceeding it breaks the scheme's security.
+SLH-DSA's signature budget of 2^64 yields a signature size of nearly 8 kilobytes and throughput of 0.36 transactions per second. Reducing the budget to 2^40, about a trillion signatures per key, is still more than enough: at current block sizes that is hundreds of years of nonstop signing. At that smaller budget, signature size drops to 5.7 kilobytes, improving throughput by about 33%.
+SHRINCS
+How low can we push the signature budget? On Bitcoin's base layer, best practice discourages address reuse, so a typical key signs only once or a few times. The signature budget can therefore be made very small. For users who do need to exceed it, a fallback option is provided. The construction uses a single public key with two signing paths: a compact path producing small signatures while the budget holds, and a stateless fallback that is always available.
+This compact path comes with a cost: the signer must persistently track how many times they have signed, so as not to exceed the budget. That counter is state, and a scheme that relies on it is stateful. Statefulness is difficult to support in environments like desktop or mobile wallets, where backups are routine. Restoring an old backup silently rolls the counter back to a value that has already been used. A subsequent signature reuses that state, which can compromise the user's funds. Bitcoin developers, including our team at Blockstream Research, have worked hard to ensure that Bitcoin is misuse-resistant. A stateful scheme is inherently more fragile than a stateless one. When we first explored this direction, our view was that it was a neat trick, but not really practical.
+There is, however, one setup where the user cannot accidentally corrupt state: a dedicated signing device. On initialization, the device generates the seed and sets the initial state, which then lives exclusively on the device and never leaves it. The device produces compact signatures. Because the state is public, a software wallet can add an extra safety check by verifying that a candidate signature does not reuse state before broadcasting it. If the device is lost, breaks, or is replaced, the user loads the seed into a new device, which automatically falls back to the stateless path and produces a larger signature. By keeping the state entirely on the device, the setup eliminates any opportunity for the user to corrupt it.
+We call the resulting construction SHRINCS. It rests on two core ideas:
+Two signing paths under a single public key: a compact stateful path and a stateless fallback.
+A particularly efficient compact path. The specifics are beyond the scope of this post, but the construction builds straightforwardly on existing hash-based signature techniques.
+Throughput compared to the schemes seen so far:
+SLH-DSA: 0.36 TPS.
+SLH-DSA with the signing budget reduced to 2^40: 0.48 TPS.
+SHRINCS compact path (580-byte signatures): up to 3 TPS if every signature uses the compact path.
+The risk profile of SHRINCS is notably different from that of the other PQ candidates. Those alternatives carry systemic risks affecting every user on the network: low throughput, questionable crypto assumptions, or fragile consensus protocols. SHRINCS carries localized risk instead: state management on individual devices. With the possibility of safe deployment and these throughput numbers, SHRINCS no longer looks like a neat trick, but a pragmatic post-quantum option.
+SHRIMPS
+In SHRINCS, loading a seed into a new device is costly because it triggers the stateless fallback, which produces large signatures. The number of such events during a key's lifetime can be bounded, however. SHRIMPS exploits this by adding a second compact path specifically for these backup devices. With a budget of one thousand signatures, this path produces signatures of about 3000 bytes. This is roughly five times larger than the primary device's signature but two and a half times smaller than an SLH-DSA fallback.
+Optimizing the Fallback Path
+Statefulness was the first of the two directions identified earlier. The second is to optimize the stateless fallback path itself.
+Starting from SLH-DSA at 7,872 bytes (0.36 TPS), several optimizations stack on top:
+Reducing the signing budget to 2^40 brings the size to 5,792 bytes (0.48 TPS), a ~26% reduction.
+WOTS+C (coauthored by Blockstream cryptographer Mikhail Kudinov) and PORS+FP, drop-in optimizations to the underlying SPHINCS+ scheme that were not adopted into SLH-DSA. These bring the size to 5,060 bytes (0.54 TPS), a further ~13% reduction, with no performance penalty. The only downside is deviating from the NIST standard.
+Accepting 5× longer signing and key generation time yields another ~11%, to 4,496 bytes (0.60 TPS).
+Allowing per-byte verification time up to ~1.5× that of Schnorr signatures yields another ~13%, to 3,896 bytes (0.69 TPS).
+Together these roughly halve the size of a stateless hash-based signature scheme compared to SLH-DSA. Pushed further, at the cost of even longer signing or verification times, signatures could shrink more still.
+A Toy Proposal
+The proposal rests on two design principles.
+First, do not increase verification time compared to SLH-DSA. This avoids making any future block size increase harder. It also significantly simplifies SNARK proof generation should block-wide signature aggregation ever be adopted.
+Second, abandon the idea of a one-size-fits-all signature, and introduce multiple signature schemes tailored to specific use cases.
+Desktop and mobile layer-1 wallets cannot safely keep state, but they typically have fast CPUs. They use a stateless scheme that trades signing time for compactness: ~4,496-byte signatures at a 2^40 signing budget. This budget is far above anything that could be hit accidentally.
+Dedicated signing devices can be designed to keep state securely, but their processors are often weak, so high signing cost is not an option here. SHRINCS and SHRIMPS instead use statefulness to keep signatures small while signing stays fast. The stateless fallback uses a 2^32 budget (no one will physically press a button on a hardware wallet 4 billion times); signatures are ~580 bytes from a primary device, ~3,000 bytes from a backup device, and ~4,336 bytes from the fallback.
+Lightning nodes are stateful by construction and benefit from fast signing. Channel updates use the same stateless scheme as the fallback for dedicated signing devices: 2^32 budget, ~4,336 bytes. A node that somehow reaches 4 billion signatures can roll over to a new key. Cooperative channel closes should be able to use the SHRINCS compact path (~580 bytes).
+The result is four specialized signature variants working together. Effective throughput ranges from 0.60 to 3.04 TPS, well above the 0.36 baseline of standard SLH-DSA.
+Open Questions and Downsides
+The proposal is a starting point rather than a finished design. It comes with downsides and raises a number of open questions:
+Verification time prioritized over size: the proposal could be more size-optimized, at the cost of verification time. The per-byte verification cost is more than 6× lower than that of Schnorr signatures, so the block size could theoretically be increased by a factor of 6 without increasing block verification time. A more rigorous argument requires better benchmarks.
+Reduced fungibility and privacy: giving the option of combining multiple signature schemes instead of a single one weakens both.
+Coverage and layer 2: which use cases are not covered by the proposal, and how does it interact with layer-2 protocols?
+Future SNARK aggregation: how should the signature schemes be designed so they are ready for SNARK-based aggregation in a potential future soft fork? Should that even be a consideration today?
+Signing time: how much signing time is tolerable on different platforms? Better signing benchmarks would let us reduce signature sizes significantly.
+Reference implementation: C++, or a formal specification? In the age of LLMs, formal verification of consensus-critical code is more feasible than ever.
+What’s Next?
+The design space for a post-quantum upgrade to Bitcoin is large, and no single signature scheme is obviously the right choice. Even so, optimized, stateful hash-based signatures can offer better trade-offs than the standard schemes available today. They have a chance at keeping Bitcoin functional without relying on future soft forks. At the same time, research into longer-term improvements such as better lattice-based schemes, aggregation, and isogeny-based cryptography should continue in parallel.
+Fortunately, the deployment question is largely orthogonal to the choice of signature scheme: a new hash-based opcode could ship via Taproot, Taproot v2, or BIP 360 pay-to-merkle-root.
+The space of useful statefulness-based optimizations to hash-based signature schemes has not been fully explored. What other optimizations using statefulness are possible? How can careful engineering guarantee the safety of stateful setups? Can layer-2 protocols directly leverage stateful signatures?
+For an introduction to hash-based signatures and their parameters, see our paper Hash-based Signatures for Bitcoin. The scripts used to generate the numbers in this post, a C++ implementation of SHRINCS, a Simplicity verifier, and a draft specification are all available on GitHub. SHRINCS is already deployable in production: we have demonstrated it on Liquid, and anyone else can do the same today.
+Subscribe
+If you have specific preferences, please, mark the topic(s) you would like to read:
+All
+All topics
+Bitcoin Layer-2
+The latest on Core Lightning and Liquid
+Research
+Stay on the bleeding-edge of Bitcoin research with updates from the Blockstream Research team
+Finance
+Analysis and updates on Blockstream Finance products like the BMN and BASIC Fund
+Quarterly Update
+A concise, monthly newsletter on all-things Blockstream
+Blockstream
+Bitcoin and digital asset infrastructure
+Follow Us
+Blog Categories
+All Posts
+Blockstream AMP
+Blockstream Explorer
+Blockstream Finance
+Blockstream App
+Blockstream Jade
+Blockstream Research
+Blockstream Satellite
+Company
+Cryptocurrency Data Feed
+Elements
+Enterprise
+Insights
+Layer-2 Report
+Lightning Network
+Liquid Network
+Quantum
+Quarterly Update
+Simplicity Language
+Join the Conversation
+Subscribe to have the latest announcements and most cutting-edge research from Blockstream delivered to your inbox.
+Subscribe to all topics
+Subscribe to select topics
+Bitcoin
+Layer-2
+Research
+Finance
+Quarterly Update
+Subscribe
+Terms
+Privacy
+Blockstream Corporation Inc.
+All rights reserved.
+Products
+Blockstream App
+Blockstream Jade
+Blockstream Enterprise
+Blockstream AMP
+Blockstream Explorer
+Blockstream Asset Management
+Cryptocurrency Data Feed
+Liquid Network
+Core Lightning
+Elements
+Simplicity
+Developers
+Engineering Blog
+Liquid Documentation
+Core Lightning Documentation
+Company
+Research
+About
+Careers
+Resources
+Help Center
+Bitcoin Education
+Glossary
+Local
+Contact
+Brand Assets

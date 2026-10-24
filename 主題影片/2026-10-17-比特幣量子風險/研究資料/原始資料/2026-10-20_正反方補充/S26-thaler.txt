@@ -1,0 +1,196 @@
+Quantum computing and blockchains: Matching urgency to actual threats - a16z crypto
+about
+team
+portfolio
+state of crypto
+content
+all content
+policy
+engineering
+research
+go-to-market
+podcasts
+special projects
+Voices Onchain
+Read Write Own
+CSX Accelerator   search /
+Results
+Bios
+Pages
+Tags
+Content
+/
+No matches
+We couldn't find any matches for "".
+Double check your spelling or try a different search term.
+Still can't find what you're looking for? Check out our featured articles.
+Featured Articles
+/
+Searching...
+EXPLORE
+Engineering  learn more
+Research  learn more
+Podcast  learn more
+Policy  learn more
+clear history
+Quantum computing and blockchains: Matching urgency to actual threats
+Justin Thaler
+12.05.25
+TABLE OF CONTENTS    Where are we on timing?
+Where are we on timing?
+Where do HNDL attacks apply (and where not)?
+What this all means for blockchains
+Bitcoin’s special headaches: governance + abandoned coins
+The costs and risks of post-quantum signatures
+What should we do? 7 recommendations
+Tags
+cryptography
+glossaries & terminology
+quantum computing & post-quantum crypto
+research
+SNARKs
+tech trends
+Share Post
+Timelines to a cryptographically relevant quantum computer are frequently overstated — leading to calls for urgent, wholesale transitions to post-quantum cryptography.
+But these calls often overlook the costs and risks of premature migration, and ignore the very different risk profiles of different cryptographic primitives:
+Post-quantum encryption demands immediate deployment despite its costs: Harvest-now-decrypt-later (HNDL) attacks are already underway, as sensitive data encrypted today will remain valuable when quantum computers do arrive, even if that’s decades from now. The performance overhead and implementation risks of post-quantum encryption are real, but HNDL attacks leave no choice for data requiring long-term confidentiality.
+Post-quantum signatures face a different calculus. They are not susceptible to HNDL attacks, and the costs and risks (larger sizes, performance overhead, implementation immaturity, and bugs) demand deliberate rather than immediate migration.
+These distinctions matter. Misconceptions distort cost-benefit analyses, causing teams to overlook more salient security risks — like bugs.
+The real challenge in navigating a successful migration to post-quantum cryptography is matching urgency to actual threats. Below, I clarify common misconceptions about quantum threats to cryptography — covering encryption, signatures, and zero-knowledge proofs — with a special focus on their implications for blockchains.
+Where are we on timing?
+A cryptographically relevant quantum computer (CRQC) in the 2020s is highly unlikely, despite high-profile claims otherwise.
+By a “cryptographically relevant quantum computer” I mean a fault-tolerant, error-corrected quantum computer capable of running Shor’s algorithm at scales sufficient to attack elliptic curve cryptography or RSA within a reasonable timeframe (e.g., breaking secp256k1 or RSA-2048 with at most, say, one month of sustained computation).
+We are nowhere near a cryptographically relevant quantum computer by any reasonable reading of public milestones and resource estimates. Companies sometimes claim a CRQC is likely before 2030 or well before 2035, but publicly known progress doesn’t support those claims.
+For context, across all current architectures — trapped ions, superconducting qubits, and neutral atom systems — no quantum computing platform today comes close to the hundreds of thousands to millions of physical qubits (depending on error rates and error-correction schemes) required to run Shor’s algorithm on RSA-2048 or secp256k1.
+The limiting factor is not just qubit count, but gate fidelities, qubit connectivity, and the sustained error-corrected circuit depth needed to run deep quantum algorithms. While some systems now exceed 1,000 physical qubits, raw qubit count alone is misleading: These systems lack the qubit connectivity and gate fidelities needed for cryptographically relevant computation.
+Recent systems approach the physical error rates where quantum error correction begins to work, but no one has demonstrated more than a handful of logical qubits with sustained error-corrected circuit depth… much less the thousands of high-fidelity, deep-circuit, fault-tolerant logical qubits actually required to run Shor’s algorithm. The gap between demonstrating that quantum error correction works in principle, and achieving the scale needed for cryptanalysis, remains vast.
+In short: Until both qubit numbers and fidelities improve by several orders of magnitude, a cryptographically relevant quantum computer remains far beyond reach.
+It’s easy to get confused by corporate press releases and media coverage, however. Some common misconceptions and sources of confusion here include:
+Demos claiming “quantum advantage”, which currently target contrived tasks. These tasks aren’t selected for their practical usefulness, but because they can run on existing hardware while appearing to exhibit large quantum speedups — a fact that is often obscured in announcements.
+Companies claiming to have achieved many thousands of physical qubits. But this refers to quantum annealers, not the gate-model machines needed to run Shor’s algorithm to attack public-key cryptography.
+Companies making liberal use of the term “logical qubit”. Physical qubits are noisy. Quantum algorithms need logical qubits, as mentioned above; Shor’s algorithm requires thousands of them. Using quantum error-correction, one can implement a logical qubit out of many physical qubits — typically hundreds to thousands depending on error rates. But some companies have stretched the term beyond recognition. For example, one recent announcement claimed to have achieved 48 logical qubits using a distance-2 code with only two physical qubits per logical qubit. This is absurd: distance-2 codes can only detect errors, not correct them. Real fault-tolerant logical qubits for cryptanalysis require hundreds to thousands of physical qubits each, not two.
+More generally, many quantum computing roadmaps use the term “logical qubit” to refer to qubits that support only Clifford operations. These operations are efficiently classically simulable, and therefore insufficient to run Shor’s algorithm, which needs thousands of error-corrected T gates (or non-Clifford gates more generally).
+Even if one of those roadmaps aims for “thousands of logical qubits by year X”, that does not mean the company expects to run Shor’s algorithm to break classical cryptography by that same year X.
+These practices have seriously distorted public perception of how close we are to a cryptographically relevant quantum computer, even among sophisticated observers.
+That said, some experts are indeed excited by progress. Scott Aaronson for instance recently wrote that, given the “current staggering rate of hardware progress”,
+I now think it’s a live possibility that we’ll have a fault-tolerant quantum computer running Shor’s algorithm before the next U.S. presidential election.
+But Aaronson later clarified that his statement does not mean a cryptographically relevant quantum computer: He’d count it as fulfilled even if a fully fault-tolerant run of Shor’s algorithm factored 15 = 3×5 — a calculation you could do faster with pencil and paper. The bar is still a tiny-scale execution of Shor’s algorithm, not a cryptographically relevant one, as previous factorings of 15 on quantum computers used simplified circuits rather than full, fault-tolerant Shor. And there’s a reason these experiments consistently target 15 as the number to factor: Arithmetic modulo 15 is computationally easy, whereas factoring even slightly larger numbers like 21 is far harder. Consequently, quantum experiments claiming to factor 21 typically rely on additional hints or shortcuts.
+Simply put, the expectation of a cryptographically relevant quantum computer capable of breaking RSA-2048 or secp256k1 in the next 5 years — which is what matters for practical cryptography — is unsupported by publicly known progress.
+Even 10 years remains ambitious. Given how far away we are from a cryptographically relevant quantum computer, excitement about progress is entirely compatible with a decade-plus timeline.
+What about the U.S. government’s targeting 2035 as a deadline for wholesale post-quantum (PQ) migration of government systems? I consider this a reasonable timeline for completing such a large-scale transition. However, it is not a forecast that a cryptographically relevant quantum computer will exist by then.
+Where do HNDL attacks apply (and where not)?
+Harvest now, decrypt later (HNDL) attacks refer to adversaries storing encrypted traffic now, and then decrypting it later when a cryptographically relevant quantum computer exists. Nation-state level adversaries are surely already archiving encrypted communications at scale from the United States government, so they can decrypt these communications many years from now when a CRQC does exist.
+That’s why encryption needs to transition today — at least for anyone with 10-50+ year confidentiality needs.
+But digital signatures — which all blockchains rely on — are different from encryption: There’s no confidentiality to retroactively attack.
+In other words, if a cryptographically relevant quantum computer arrives, signature forgery does become possible from that point forward, but past signatures weren’t “hiding” secrets the way that encrypted messages are. As long as you know the digital signature was generated before a CRQC arrived, it cannot be a forgery.
+This makes the transition to post-quantum digital signatures less urgent than the post-quantum transition for encryption.
+Major platforms are acting accordingly: Chrome and Cloudflare rolled out hybrid X25519+ML-KEM for web transport-layer security (TLS) encryption*. [*Throughout this post, I refer to encryption schemes for readability, though strictly speaking, secure communication protocols like TLS use key exchange or key encapsulation mechanisms rather than public-key encryption.]
+“Hybrid” here means using both a post-quantum-secure scheme (namely ML-KEM) and an existing scheme (X25519) on top of each other, to get the combined security guarantees of both. This way they can (hopefully) stymie HNDL attacks via ML-KEM, while maintaining classical security from X25519 in the event that ML-KEM turns out to be insecure even against today’s computers.
+Apple’s iMessage also deployed such hybrid post-quantum encryption with its PQ3 protocol, as did Signal with its PQXDH and SPQR protocols.
+By contrast, the rollout of post-quantum digital signatures to critical web infrastructure is being delayed until a cryptographically relevant quantum computer is actually imminent, because current post-quantum signature schemes introduce performance regressions (more on that later in this post).
+zkSNARKs — zero-knowledge Succinct Non-interactive ARguments of Knowledge, which are key to the long term scalability and privacy of blockchains — occupy a similar situation to signatures. This is because even for zkSNARKs that are not post-quantum-secure (they use elliptic curve cryptography, just like today’s non-post-quantum encryption and signature schemes), their zero-knowledge property is post-quantum secure.
+The zero-knowledge property ensures that nothing about the secret witness is revealed in the proof — not even to a quantum adversary — so there is no confidential information to “harvest now” for later decryption.
+Hence, zkSNARKs are not vulnerable to harvest now, decrypt later attacks. Just as a non-post-quantum signature generated today is secure, any zkSNARK proof that was generated before a cryptographically relevant quantum computer arrived is trustworthy (that is, the statement being proved is definitely true) — even if the zkSNARK uses elliptic curve cryptography. Only after a cryptographically relevant quantum computer arrives can attackers find convincing proofs of false statements.
+What this all means for blockchains
+Most blockchains are not exposed to HNDL attacks:
+Most non-privacy chains, like Bitcoin and Ethereum today, use non-post-quantum cryptography mainly for transaction authorization — that is, they use digital signatures, not encryption.
+Again, those signatures are not an HNDL risk: “Harvest now, decrypt later” attacks apply to encrypted data. For example, Bitcoin’s blockchain is public; the quantum threat is signature forgery (deriving private keys to steal funds), not decrypting already-public transaction data. This eliminates the immediate cryptographic urgency from HNDL attacks.
+Unfortunately, even analyses from credible sources like the Federal Reserve incorrectly claim that Bitcoin is vulnerable to HNDL attacks, a mistake that exaggerates the urgency of transitioning to post-quantum cryptography.
+That said, reduced urgency doesn’t mean that Bitcoin can wait: It faces different timeline pressures from the immense social coordination required to change the protocol. (More on Bitcoin’s unique challenges below.)
+The exception as of today is privacy chains, many of which encrypt or otherwise hide recipients and amounts. That confidentiality can be harvested now and retroactively deanonymized once a quantum computer can break elliptic-curve cryptography.
+For such privacy chains, the severity of attack varies by blockchain design. For example, with Monero’s curve-based ring signatures and key images (a per-output linkability tag used to stop double-spends), the public ledger alone would largely suffice for retroactively reconstructing the spend-graph. But in others the damage is more limited — see Zcash cryptographic engineer and researcher Sean Bowe’s discussion for details.
+If it’s important to users that their transactions not be exposed by a cryptographically relevant quantum computer, then privacy chains should transition to post-quantum primitives (or hybrids) as soon as feasible. Or, they should adopt architectures that avoid placing decryptable secrets on-chain.
+Bitcoin’s special headaches: governance + abandoned coins
+For Bitcoin especially, two realities drive the urgency to begin switching to post-quantum digital signatures. Neither has anything to do with quantum technology.
+One concern is governance speed: Bitcoin changes slowly. Any contentious issues could trigger a damaging hard fork if the community cannot agree on the appropriate solution.
+Another concern is that Bitcoin’s switch to post-quantum signatures cannot be a passive migration: Owners must actively migrate their coins. This means abandoned, quantum-vulnerable coins cannot be protected. Some estimates place the amount of quantum-vulnerable and potentially abandoned BTC in the millions of coins, worth hundreds of billions of dollars at current prices (as of December 2025).
+However, the quantum threat to Bitcoin won’t be a sudden, overnight apocalypse… but more like a selective, progressive targeting process. Quantum computers won’t break all encryption simultaneously — Shor’s algorithm must target individual public keys one at a time. Early quantum attacks will be extremely expensive and slow. So once quantum computers are able to crack a single Bitcoin signing key, attackers will selectively prey on high-value wallets.
+Moreover, users who avoid address reuse and don’t use Taproot addresses — which expose public keys directly on-chain — are largely protected even without protocol changes: Their public keys remain hidden behind hash functions until their coins are spent. When they finally broadcast a spending transaction, the public key becomes visible and there’s a short real-time race, between the honest spender who needs to get their transaction confirmed, and any quantum-equipped attacker who wants to find the private key and spend the coins before the real owner’s transaction is final. So the truly vulnerable coins are those with public keys already exposed: early P2PK outputs, reused addresses, and Taproot holdings.
+For vulnerable coins that have been abandoned, there is no easy solution. Some options include:
+The Bitcoin community agreeing to a “flag day,” after which any unmigrated coins are declared burned.
+Leaving abandoned quantum-vulnerable coins vulnerable to seizure by anyone with a cryptographically relevant quantum computer.
+The second option creates serious legal and security problems. Using a quantum computer to take possession of coins without the private key — even with claimed, legitimate ownership or good intentions — could raise serious issues in many jurisdictions under theft and computer fraud laws.
+Furthermore, “abandoned” is itself a presumption based on inactivity. But no one actually knows whether these coins lack a living owner with access to the keys. Evidence that you once owned coins may not provide sufficient legal authority to break cryptographic protections to reclaim them. This legal ambiguity increases the likelihood that abandoned quantum-vulnerable coins fall into the hands of malicious actors willing to ignore legal constraints.
+A final issue specific to Bitcoin is its low transaction throughput. Even once migration plans are finalized, migrating all quantum-vulnerable funds to post-quantum-secure addresses would take months at Bitcoin’s current transaction rate.
+These challenges make it critical for Bitcoin to begin planning its post-quantum transition now — not because a cryptographically relevant quantum computer is likely before 2030, but because the governance, coordination, and technical logistics of migrating billions of dollars worth of coins will take years to resolve.
+The quantum threat to Bitcoin is real, but the timeline pressure comes from Bitcoin’s own constraints, not from imminent quantum computers. Other blockchains face their own challenges with quantum-vulnerable funds, but Bitcoin is uniquely exposed: Its earliest transactions used pay-to-public-key (P2PK) outputs that place public keys directly on-chain, leaving an especially significant fraction of BTC vulnerable to cryptographically relevant quantum computers. This technical difference — combined with Bitcoin’s age, value concentration, low throughput, and governance rigidity — makes the problem especially severe.
+Note that the vulnerabilities I describe above apply to the cryptographic security of Bitcoin’s digital signatures — but not to the economic security of the Bitcoin blockchain. This economic security derives from the proof-of-work (PoW) consensus mechanism, which is not as vulnerable to attacks from quantum computers for three reasons:
+PoW relies on hashing, and hence is only subject to the quadratic quantum speedup from Grover’s search algorithm, and not subject to the exponential speedup from Shor’s algorithm.
+The practical overheads of implementing Grover search make it highly unlikely that any quantum computer would achieve even modest real-world speedups on Bitcoin’s proof of work mechanism.
+Even if significant speedups were realized, those speedups would give large quantum miners an advantage over smaller ones, but would not act as a fundamental break of Bitcoin’s economic security model.
+The costs and risks of post-quantum signatures
+To see why blockchains shouldn’t rush post-quantum signature deployment, we need to understand both the performance costs and our still-evolving confidence in post-quantum security.
+Most post-quantum cryptography is based on one of five approaches:
+hashing
+codes
+lattices
+multivariate quadratic systems (MQ)
+isogenies.
+Why are there five different approaches? The security of any post-quantum cryptographic primitive rests on the assumption that quantum computers cannot efficiently solve a specific mathematical problem. The more “structured” that problem is, the more efficient the cryptographic protocols we can build from it.
+But this cuts both ways: Additional structure also creates more surface area for attack algorithms to exploit. This creates a fundamental tension — stronger assumptions enable better performance, but at the cost of potential security vulnerabilities (that is, increased likelihood that the assumptions turn out to be wrong).
+Generally speaking, hash-based approaches are the most conservative security-wise, since we have the most confidence that quantum computers cannot efficiently attack these protocols. But they are also the least performant. For example, hash-based signatures standardized by NIST have size 7-8 kilobytes even at its smallest parameter settings. For comparison, today’s elliptic-curve-based digital signatures are only 64 bytes. This is roughly a 100x difference in size.
+Lattice schemes are a major focus for deployment today. The only encryption scheme, and two of the three signature algorithms already selected by NIST for standardization, are based on lattices. One lattice scheme (ML-DSA, formerly Dilithium) produces signatures ranging from 2.4 KB (at the 128-bit security level) to 4.6 KB (at the 256-bit security level) — making them roughly 40-70x bigger than today’s elliptic curve-based ones. The other lattice scheme, Falcon, has somewhat smaller signatures (666 bytes for Falcon-512 and 1.3 KB for Falcon-1024) but comes with complex floating-point arithmetic that NIST itself flags as a special implementation challenge. One of the creators of Falcon, Thomas Pornin, called it “by far the most complicated cryptographic algorithm I have ever implemented.”
+Implementation security is also much more challenging with lattice-based than elliptic-curve-based signature schemes: ML-DSA has many more sensitive intermediate values and nontrivial rejection-sampling logic that needs side-channel and fault protection. Falcon adds constant-time floating-point concerns; several side-channel attacks on Falcon implementations have in fact recovered secret keys.
+These issues pose immediate risks, unlike the much more distant threat of cryptographically relevant quantum computers.
+There’s good reason to be cautious when deploying more performant approaches to post-quantum cryptography. Historically, leading candidates like Rainbow (an MQ-based signature scheme) and SIKE/SIDH (an isogeny-based encryption scheme) were broken classically, that is, broken using today’s computers, not quantum ones.
+This happened well into NIST’s standardization process. That’s healthy science doing its job, but it illustrates that premature standardization and deployment can backfire.
+As mentioned earlier, internet infrastructure is taking a deliberate approach to signature migration. This is especially notable given how long cryptographic transitions for the internet actually take once begun. The move away from MD5 and SHA-1 hash functions — technically deprecated by web-governing bodies years ago — took many more years to actually implement across infrastructure, and is still ongoing in some contexts. This happened despite those schemes being completely broken, not just being potentially vulnerable to future technology.
+Challenges unique to blockchain vs. internet infrastructure
+Fortunately, blockchains that are actively maintained by communities of open source developers — like Ethereum or Solana — can upgrade more quickly than traditional web infrastructure. On the other hand, traditional web infrastructure benefits from frequent key rotation, which means its attack surface moves faster than early quantum machines could target — a luxury blockchains don’t have, since coins and their associated keys can sit exposed indefinitely.
+But on balance, blockchains should still follow the web’s deliberate approach to signature migration. Neither setting is exposed to HNDL attacks for signatures, and the costs and risks of prematurely migrating to immature post-quantum schemes remain significant regardless of how long keys persist.
+There are also challenges specific to blockchains that make premature migration especially risky and complex: For example, blockchains have unique requirements for signature schemes, particularly the ability to quickly aggregate many signatures. Today, BLS signatures are commonly used because they enable very fast aggregation, but they are not post-quantum secure. Researchers are exploring SNARK-based aggregation of post-quantum signatures. This work is promising, but still early.
+For SNARKs specifically, the community currently focuses on hash-based constructions as the leading post-quantum option. But a major shift is coming: I am confident that in the coming months and years, lattice-based options will emerge as attractive alternatives. These alternatives will have better performance in various respects than hash-based SNARKs, such as substantially shorter proofs — analogous to how lattice-based signatures are shorter than hash-based ones.
+The bigger problem right now: Implementation security
+For years to come, implementation vulnerabilities will be a far bigger security risk than a cryptographically relevant quantum computer. For SNARKs, the primary concern is bugs.
+Bugs are already a challenge for digital signature and encryption schemes, and SNARKs are vastly more complicated. Indeed, a digital signature scheme can be viewed as a very simple kind of zkSNARK, for the statement “I know the private key corresponding to my public key, and I authorized this message.”
+For post-quantum signatures, the immediate risks also include implementation attacks such as side-channel and fault-injection attacks. These kinds of attacks are well-documented and can extract secret keys from deployed systems. They pose far more pressing threats than do distant quantum computers.
+The community will be working for years to identify and fix bugs in SNARKs, and to harden post-quantum signature implementations against side-channel and fault-injection attacks. Since the dust has yet to settle around post-quantum SNARKs and signature aggregation schemes, blockchains that transition prematurely risk locking themselves into suboptimal schemes. They could need to migrate again when better options emerge, or when implementation vulnerabilities are discovered.
+What should we do? 7 recommendations
+Given the realities I outline above, I’ll conclude with recommendations for various stakeholders — from builders to policymakers. The overarching principle: Take the quantum threat seriously, but do not act under the presumption that a cryptographically relevant quantum computer will arrive before 2030. This presumption is not justified by current progress. Nonetheless, there are still things we can and should do now:
+#1 We should deploy hybrid encryption immediately.
+Or at least, wherever long-term confidentiality matters and costs are tolerable.
+Many browsers, CDNs, and messaging apps (like iMessage and Signal) already have deployed hybrid approaches. The hybrid approach — post-quantum + classical — protects against HNDL attacks while hedging against potential weaknesses in post-quantum schemes.
+#2 Use hash-based signatures immediately when their large size is tolerable.
+Software/ firmware updates — and other such low-frequency, size-insensitive contexts — should adopt hybrid hash-based signatures now. (Hybrid to hedge against implementation bugs in the new schemes, not because hash-based security assumptions are in doubt.)
+This is conservative and gives society a clear “lifeboat” in the unlikely event that a cryptographically relevant quantum computer appears unexpectedly soon. Without post-quantum-signed software updates already in place, we’d face a bootstrapping problem after a CRQC emerges: We wouldn’t be able to securely distribute the post-quantum cryptography fixes we’d need to withstand it.
+#3 Blockchains don’t need to rush post-quantum signatures — but should start planning now.
+Blockchain developers should follow the web PKI community’s lead in taking a deliberate approach to post-quantum signature deployment. This allows post-quantum signature schemes to continue maturing in both performance and our understanding of their security. This approach also allows developers time to re-architect systems to handle larger signatures and develop better aggregation techniques.
+For Bitcoin and other L1s: The community needs to define migration paths and policies on abandoned quantum-vulnerable funds. Passive migration is impossible, so planning is critical. And since Bitcoin faces special challenges that are mostly non-technical — slow governance, and a large number of high-value potentially abandoned quantum-vulnerable addresses — it’s especially important that the Bitcoin community begin that planning now.
+Meanwhile, we need to allow research on post-quantum SNARKs and aggregatable signatures to mature (likely another couple of years). Again, migrating prematurely risks locking into suboptimal schemes or needing a second migration to address implementation bugs.
+A note on Ethereum’s account models: Ethereum supports two account types with different implications for post-quantum migration — externally owned accounts (EOAs), the traditional account type controlled by secp256k1 private keys; and smart contract wallets with programmable authorization logic.
+In a non-emergency scenario where Ethereum adds post-quantum signature support, upgradeable smart contract wallets could switch to post-quantum verification via a contract upgrade — while EOAs would likely need their funds moved to new post-quantum-secure addresses (though Ethereum may well provide dedicated migration mechanisms for EOAs as well). In a quantum emergency, Ethereum researchers have proposed a hard-fork plan to freeze vulnerable accounts and let users recover funds by proving knowledge of their seed phrase using post-quantum-secure SNARKs. This recovery mechanism would apply to both EOAs and any smart contract wallets that hadn’t already been upgraded.
+The practical implication for users: Well-audited, upgradeable, smart contract wallets may provide a marginally smoother migration path — but the difference is modest and comes with tradeoffs around trust in wallet providers and upgrade governance. What matters more than account type is that the Ethereum community continues its work on post-quantum primitives and emergency-response plans.
+A broader design lesson for builders: Many blockchains today tightly couple account identity to specific cryptographic primitives — Bitcoin and Ethereum to ECDSA signatures over secp256k1, others to EdDSA. The challenge of post-quantum migration highlights the value of decoupling account identity from any particular signature scheme. Ethereum’s move toward smart accounts and similar account-abstraction efforts on other chains reflect this trend: letting accounts upgrade their authentication logic without abandoning their on-chain history and state. This decoupling won’t make post-quantum migration trivial, but it does provide substantially more flexibility than hard-wiring accounts to a single signature scheme. (This also enables unrelated features like sponsored transactions, social recovery, and multisigs).
+#4 For privacy chains, which encrypt or hide transaction details, prioritize a transition sooner if performance is tolerable.
+User confidentiality on these chains is currently exposed to HNDL attacks, though severity varies amongst designs. Chains where the public ledger alone enables full retroactive deanonymization face the most urgent risk.
+Consider hybrid (post-quantum + classical) schemes to protect against ostensibly post-quantum schemes turning out to be even classically insecure, or implement architectural changes that avoid placing decryptable secrets on-chain.
+#5 Prioritize implementation security — not quantum threat mitigation — in the near term.
+Especially for complex cryptographic primitives like SNARKs and post-quantum signatures, bugs and implementation attacks (side-channel attacks, fault injection) will be far bigger security risks than cryptographically relevant quantum computers for years to come.
+Invest in auditing, fuzzing, formal verification, and defense in depth/layered security approaches right now — don’t let quantum worries overshadow the far more pressing threat of bugs!
+#6 Fund quantum computing development.
+A big national security implication of all of the above is that we need to sustain funding and talent development for quantum computing.
+A major adversary achieving cryptographically relevant quantum computing capabilities before the U.S. does would pose severe national security risks to us and others around the world.
+#7 Maintain perspective on quantum computing announcements.
+There will be many milestones in the years to come as quantum hardware matures. Paradoxically, the very frequency of these announcements is itself evidence of how far we remain from a cryptographically relevant quantum computer: Each milestone represents one of many bridges we must cross before reaching that point, and each will generate its own wave of headlines and excitement.
+Treat press releases as progress reports to critically assess, not prompts for abrupt action.
+***
+Of course, there can be surprising developments or innovations that accelerate projected timelines, just as there can be severe scaling bottlenecks that lengthen them.
+I won’t argue that a cryptographically relevant quantum computer in five years is literally impossible, only highly unlikely. The recommendations above are robust to that uncertainty, and following them avoids the more immediate, more probable risks: implementation bugs, rushed deployments, and the ordinary ways cryptographic transitions go wrong.
+Justin Thaler is Research Partner at a16z and an Associate Professor in the Department of Computer Science at Georgetown University. His research interests include verifiable computing, complexity theory, and algorithms for massive data sets.
+—
+The views expressed here are those of the individual AH Capital Management, L.L.C. (“a16z”) personnel quoted and are not the views of a16z or its affiliates. Certain information contained in here has been obtained from third-party sources, including from portfolio companies of funds managed by a16z. While taken from sources believed to be reliable, a16z has not independently verified such information and makes no representations about the current or enduring accuracy of the information or its appropriateness for a given situation. In addition, this content may include third-party advertisements; a16z has not reviewed such advertisements and does not endorse any advertising content contained therein.
+The views expressed here are those of the individual AH Capital Management, L.L.C. (“a16z”) personnel quoted and are not the views of a16z or its affiliates. Certain information contained in here has been obtained from third-party sources, including from portfolio companies of funds managed by a16z. While taken from sources believed to be reliable, a16z has not independently verified such information and makes no representations about the current or enduring accuracy of the information or its appropriateness for a given situation. In addition, this content may include third-party advertisements; a16z has not reviewed such advertisements and does not endorse any advertising content contained therein.
+You should consult your own advisers as to those matters. References to any securities or digital assets are for illustrative purposes only, and do not constitute an investment recommendation or offer to provide investment advisory services. Furthermore, this content is not directed at nor intended for use by any investors or prospective investors, and may not under any circumstances be relied upon when making a decision to invest in any fund managed by a16z. (An offering to invest in an a16z fund will be made only by the private placement memorandum, subscription agreement, and other relevant documentation of any such fund and should be read in their entirety.) Any investments or portfolio companies mentioned, referred to, or described are not representative of all investments in vehicles managed by a16z, and there can be no assurance that the investments will be profitable or that other investments made in the future will have similar characteristics or results. A list of investments made by funds managed by Andreessen Horowitz (excluding investments for which the issuer has not provided permission for a16z to disclose publicly as well as unannounced investments in publicly traded digital assets) is available at https://a16z.com/investment-list/.
+The content speaks only as of the date indicated. Any projections, estimates, forecasts, targets, prospects, and/or opinions expressed in these materials are subject to change without notice and may differ or be contrary to opinions expressed by others. Please see https://a16z.com/disclosures/ for additional important information.
+newsletter
+jobs
+legal + disclosures
+sitemap
+a16z.com
+Social
+x
+github
+youtube
+farcaster
+linkedIn
+instagram

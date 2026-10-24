@@ -1,0 +1,131 @@
+{
+  "mode": "preserve-current-length",
+  "baseline_path": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/老闆口吻標準修訂前-20261018-233418/逐字稿.md",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "page_count": 20,
+  "total_before": 9696,
+  "total_after": 9614,
+  "total_change_percent": -0.85,
+  "pages": [
+    {
+      "page": 1,
+      "before": 338,
+      "after": 336,
+      "ratio": 0.9941
+    },
+    {
+      "page": 2,
+      "before": 286,
+      "after": 304,
+      "ratio": 1.0629
+    },
+    {
+      "page": 3,
+      "before": 369,
+      "after": 370,
+      "ratio": 1.0027
+    },
+    {
+      "page": 4,
+      "before": 400,
+      "after": 386,
+      "ratio": 0.965
+    },
+    {
+      "page": 5,
+      "before": 484,
+      "after": 491,
+      "ratio": 1.0145
+    },
+    {
+      "page": 6,
+      "before": 500,
+      "after": 475,
+      "ratio": 0.95
+    },
+    {
+      "page": 7,
+      "before": 522,
+      "after": 488,
+      "ratio": 0.9349
+    },
+    {
+      "page": 8,
+      "before": 534,
+      "after": 515,
+      "ratio": 0.9644
+    },
+    {
+      "page": 9,
+      "before": 484,
+      "after": 498,
+      "ratio": 1.0289
+    },
+    {
+      "page": 10,
+      "before": 529,
+      "after": 545,
+      "ratio": 1.0302
+    },
+    {
+      "page": 11,
+      "before": 487,
+      "after": 483,
+      "ratio": 0.9918
+    },
+    {
+      "page": 12,
+      "before": 525,
+      "after": 519,
+      "ratio": 0.9886
+    },
+    {
+      "page": 13,
+      "before": 542,
+      "after": 512,
+      "ratio": 0.9446
+    },
+    {
+      "page": 14,
+      "before": 507,
+      "after": 482,
+      "ratio": 0.9507
+    },
+    {
+      "page": 15,
+      "before": 465,
+      "after": 467,
+      "ratio": 1.0043
+    },
+    {
+      "page": 16,
+      "before": 495,
+      "after": 530,
+      "ratio": 1.0707
+    },
+    {
+      "page": 17,
+      "before": 528,
+      "after": 512,
+      "ratio": 0.9697
+    },
+    {
+      "page": 18,
+      "before": 562,
+      "after": 601,
+      "ratio": 1.0694
+    },
+    {
+      "page": 19,
+      "before": 525,
+      "after": 496,
+      "ratio": 0.9448
+    },
+    {
+      "page": 20,
+      "before": 614,
+      "after": 604,
+      "ratio": 0.9837
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "mode": "balanced-evidence-20-page-rewrite",
+  "page_count": 20,
+  "slide_map_revision": 12,
+  "baseline_before_edit": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/正反方研究整合前-20261020-173208/逐字稿.md",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "total_before": 5915,
+  "total_after": 5881,
+  "ratio": 0.9943,
+  "pages": [
+    {
+      "page": 1,
+      "before": 238,
+      "after": 238
+    },
+    {
+      "page": 2,
+      "before": 303,
+      "after": 288
+    },
+    {
+      "page": 3,
+      "before": 264,
+      "after": 251
+    },
+    {
+      "page": 4,
+      "before": 265,
+      "after": 295
+    },
+    {
+      "page": 5,
+      "before": 297,
+      "after": 291
+    },
+    {
+      "page": 6,
+      "before": 278,
+      "after": 289
+    },
+    {
+      "page": 7,
+      "before": 294,
+      "after": 289
+    },
+    {
+      "page": 8,
+      "before": 288,
+      "after": 297
+    },
+    {
+      "page": 9,
+      "before": 316,
+      "after": 305
+    },
+    {
+      "page": 10,
+      "before": 285,
+      "after": 326
+    },
+    {
+      "page": 11,
+      "before": 325,
+      "after": 305
+    },
+    {
+      "page": 12,
+      "before": 257,
+      "after": 290
+    },
+    {
+      "page": 13,
+      "before": 292,
+      "after": 289
+    },
+    {
+      "page": 14,
+      "before": 279,
+      "after": 268
+    },
+    {
+      "page": 15,
+      "before": 297,
+      "after": 283
+    },
+    {
+      "page": 16,
+      "before": 280,
+      "after": 300
+    },
+    {
+      "page": 17,
+      "before": 321,
+      "after": 287
+    },
+    {
+      "page": 18,
+      "before": 297,
+      "after": 295
+    },
+    {
+      "page": 19,
+      "before": 291,
+      "after": 290
+    },
+    {
+      "page": 20,
+      "before": 448,
+      "after": 405
+    }
+  ],
+  "note": "逐頁任務已因新增證據重排，不用同頁增幅當每個主題長度比較；本輪未要求擴寫倍數。"
+}

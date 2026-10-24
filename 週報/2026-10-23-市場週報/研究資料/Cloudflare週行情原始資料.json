@@ -1,0 +1,155 @@
+{
+  "source": "https://query1.finance.yahoo.com/v8/finance/chart/NET?period1=1792108800&period2=1792713600&interval=1d",
+  "rows": [
+    {
+      "date": "2026-10-16",
+      "close": 296.29998779296875
+    },
+    {
+      "date": "2026-10-19",
+      "close": 297.5799865722656
+    },
+    {
+      "date": "2026-10-20",
+      "close": 291.69000244140625
+    },
+    {
+      "date": "2026-10-21",
+      "close": 307.2200012207031
+    },
+    {
+      "date": "2026-10-22",
+      "close": 303.6099853515625
+    }
+  ],
+  "raw": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "NET",
+            "exchangeName": "NYQ",
+            "fullExchangeName": "NYSE",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1568381400,
+            "regularMarketTime": 1792767565,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 322.67,
+            "regularMarketChangePercent": 6.278,
+            "fulldayPrice": 322.67,
+            "fulldayChange": 19.06,
+            "fulldayChangePercent": 6.278,
+            "fiftyTwoWeekHigh": 370.35,
+            "fiftyTwoWeekLow": 158.83,
+            "regularMarketDayHigh": 322.908,
+            "regularMarketDayLow": 299.27,
+            "regularMarketVolume": 1108233,
+            "longName": "Cloudflare, Inc.",
+            "shortName": "Cloudflare, Inc.",
+            "chartPreviousClose": 316.32,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1792762200,
+                "start": 1792742400,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1792785600,
+                "start": 1792762200,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1792800000,
+                "start": 1792785600,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1792157400,
+            1792416600,
+            1792503000,
+            1792589400,
+            1792675800
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "high": [
+                  320.5,
+                  306.760009765625,
+                  298.5899963378906,
+                  315.4599914550781,
+                  324.3299865722656
+                ],
+                "low": [
+                  291.1499938964844,
+                  296.29998779296875,
+                  285.05499267578125,
+                  296.9800109863281,
+                  302.8599853515625
+                ],
+                "close": [
+                  296.29998779296875,
+                  297.5799865722656,
+                  291.69000244140625,
+                  307.2200012207031,
+                  303.6099853515625
+                ],
+                "volume": [
+                  4224600,
+                  3050500,
+                  2291600,
+                  3650500,
+                  4800200
+                ],
+                "open": [
+                  319.0,
+                  305.0,
+                  291.1700134277344,
+                  298.1199951171875,
+                  314.5
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  296.29998779296875,
+                  297.5799865722656,
+                  291.69000244140625,
+                  307.2200012207031,
+                  303.6099853515625
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  }
+}

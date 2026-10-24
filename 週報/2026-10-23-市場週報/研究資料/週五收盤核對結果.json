@@ -1,0 +1,87 @@
+{
+  "comparison": "2026-10-16收盤至2026-10-23收盤；日線close，未含息",
+  "prices": {
+    "^IXIC": {
+      "start_close": 26140.029296875,
+      "end_close": 25955.341796875,
+      "change_pct": -0.7065313428018194,
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?period1=1792108800&period2=1792886400&interval=1d"
+    },
+    "^SOX": {
+      "start_close": 11137.2900390625,
+      "end_close": 10779.4638671875,
+      "change_pct": -3.2128657026976426,
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESOX?period1=1792108800&period2=1792886400&interval=1d"
+    },
+    "QQQ": {
+      "start_close": 709.7999877929688,
+      "end_close": 704.4000244140625,
+      "change_pct": -0.7607725375843866,
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=1792108800&period2=1792886400&interval=1d"
+    },
+    "SMH": {
+      "start_close": 539.7899780273438,
+      "end_close": 527.2000122070312,
+      "change_pct": -2.3323822843696385,
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?period1=1792108800&period2=1792886400&interval=1d"
+    },
+    "CIBR": {
+      "start_close": 98.81999969482422,
+      "end_close": 106.12000274658203,
+      "change_pct": 7.38717170036598,
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/CIBR?period1=1792108800&period2=1792886400&interval=1d"
+    },
+    "NET": {
+      "start_close": 296.29998779296875,
+      "end_close": 325.7300109863281,
+      "change_pct": 9.932509080602037,
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/NET?period1=1792108800&period2=1792886400&interval=1d"
+    },
+    "GC=F": {
+      "start_close": 4181.10009765625,
+      "end_close": 4010.0,
+      "change_pct": -4.092226774292285,
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=1792108800&period2=1792886400&interval=1d"
+    },
+    "SI=F": {
+      "start_close": 56.994998931884766,
+      "end_close": 53.959999084472656,
+      "change_pct": -5.325028343345117,
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/SI%3DF?period1=1792108800&period2=1792886400&interval=1d"
+    },
+    "BZ=F": {
+      "start_close": 109.86000061035156,
+      "end_close": 111.66000366210938,
+      "change_pct": 1.6384517037661528,
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/BZ%3DF?period1=1792108800&period2=1792886400&interval=1d"
+    },
+    "META": {
+      "start_close": 709.3300170898438,
+      "end_close": 642.6199951171875,
+      "change_pct": -9.404652329016939,
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1792108800&period2=1792886400&interval=1d"
+    },
+    "SPCX": {
+      "start_close": 146.02999877929688,
+      "end_close": 147.49000549316406,
+      "change_pct": 0.9997991687131114,
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/SPCX?period1=1792108800&period2=1792886400&interval=1d"
+    }
+  },
+  "etf_flow": {
+    "source": "https://farside.co.uk/btc/",
+    "unit": "USD million",
+    "2026-10-19": 526.7,
+    "2026-10-20": 23.2,
+    "2026-10-21": 524.8,
+    "2026-10-22": -635.6,
+    "first_four_sessions_total": 439.1,
+    "2026-10-23_reported_total": -27.6,
+    "2026-10-23_missing": [
+      "IBIT",
+      "HODL"
+    ],
+    "status": "週五未齊，不當作完整全週最終流量"
+  },
+  "oil_conflict": "Yahoo BZ=F日線10/23為111.66，Yahoo新聞與AP報導ICE Brent結算116.72。兩者存在口徑或資料差異，稿內只保留整週上漲方向，不報未解決的精確油價或週漲幅。"
+}

@@ -1,0 +1,86 @@
+2026-10-16｜這週週報候選題材
+
+範圍：10/12–10/16 已公開資料；本集週期 10/12–10/18，尚非完整週統計。
+階段：台積電、AMD、通膨已獲使用者採用；加入博通 CEO 發言與跌勢連結。Circle 已排除；以下新增兩個幣圈候選，未寫稿或製圖。
+固定來源 /weekly、/sources 均回傳 HTTP 404；以下為官方資料人工選題，不是系統評分排名。
+已比對 10/9 週報：記憶體股、OpenAI 營收、三星錢包 USDC、Tom Lee／ETF 資金；另避開本次博通主題片的重複論證。
+
+優先選題
+1. 台積電又大賺：AI 需求到底還有多強？
+本週事件：10/15 第三季財報與第四季展望。
+已核對：第三季 EPS 29.43 元、淨利年增 68.7%、毛利率 66.4%；第四季美元營收預估 523–543 億美元。第二奈米占第三季晶圓營收 8%。
+故事：財報新高 → 先進製程實際需求 → 下一季展望與二奈米爬坡 → 台積電成長如何延續。
+投資角度：重點是下一段成長及獲利延續，不只重報月營收或一句 AI 很旺。
+素材：財報摘要、第四季預估範圍、製程營收占比。
+來源：1 家公司原始公告。核心數字已核對；股價反應尚未核對，不引用漲跌。
+https://pr.tsmc.com/english/news/3346
+若要加 Terafab／美國投資，先核對官方法說逐字紀錄；本候選不將媒體轉述當成已簽合作。
+
+2. AI 不只搶 GPU，AMD 為什麼把 CPU 搬上主舞台？
+本週事件：AMD 10/12 在 OCP 推出 Helion 機櫃參考設計，10/13 公布演講回顧。
+已核對：Helion 面向 AI 代理工作，可配置 CPU-only 或 CPU/GPU 整合；公司計畫 2026/11 提供相關配置。官方列出與緯穎等夥伴合作。
+故事：AI 從回答走向執行多步驟工作 → 算力需求不只 GPU → AMD 的 CPU／整櫃布局 → 台灣系統整合與散熱合作機會。
+投資角度：把競爭從單顆 GPU 擴到整套運算與供應鏈；不把新品發表直接當成台灣夥伴已增加營收。
+素材：AI 工作分工、機櫃圖、合作夥伴原話。
+來源：AMD 官方 2 篇，同一來源機構；產品定位與時程已核對，效能及獲利仍屬公司主張／待後續資料。
+https://newsroom.amd.com/news/open-rack-blueprint-scale-agentic-ai/
+https://newsroom.amd.com/news/ocp-2026-amd-ceo-lisa-su-keynote-takeaways/
+
+3. AI 投資像賭博？博通 CEO 的話，加上通膨，市場在怕什麼？
+狀態：使用者要求採用，與跌勢放在同一段。人物已更正為博通 CEO 陳福陽（Hock Tan），不是高通 CEO。
+事件時間線：10/12 新加坡活動發言 → 10/12–13 市場討論 AI 回報與晶片股賣壓 → 10/14 CPI → 10/15 幣圈槓桿清算。
+彭博 10/12 現場報導稱，他把許多 AI 投資人的策略比作賭徒，質疑部分投資人不了解押注標的，也談到企業 AI 支出回報及虧損模型公司的經濟性。
+MarketWatch 10/13 指出，這番話被市場用來解釋晶片股下跌；不同媒體對上下文解讀有差異，高盛交易部門認為他同時確認需求強。尚未取得完整原始影音／逐字紀錄，不能升格成 CEO 宣告 AI 全面泡沫或所有投資無價值。
+BLS 10/14 數字：總 CPI 年增 3.7%、月增 0.6%；核心年增 2.6%、月增 0.3%。汽油月增 9.1%，貢獻超過一半總 CPI 月增幅。
+故事：AI 投資回報受到質疑 → 通膨又提高資金成本疑慮 → 市場重新評估成長期待 → 用台積電財報與 AMD 新布局看產業實況。
+連結方式：同段交代企業回報與利率兩種壓力，時間順序分清楚。不能拿 10/14 CPI 解釋 10/12 的跌勢，也不把一人發言寫成全部下跌原因。
+來源：彭博原報導、MarketWatch 報導及 BLS；原發言全文、同一交易時段的行情仍待正式研究補齊。MarketWatch 的盤前跌幅不當成收盤跌幅，現階段不引用精確晶片股跌幅。
+https://news.bloomberglaw.com/bankruptcy-law/broadcom-ceo-likens-many-ai-investors-to-casino-gamblers
+https://longbridge.com/en/news/301678406
+https://www.bls.gov/news.release/archives/cpi_10142026.htm
+
+4. 囤比特幣也可能被踢出指數？Strategy 面臨的新壓力
+建議：幣圈首選，比單純更新 ETF 流量有新故事。
+本週事件：MSCI 10/15 20:48 GMT 公告，將非營運型公司排除規則納入 11 月指數審查；11/11 公布最終受影響名單，11/30 收盤生效。
+已核對：新規則先看實質營運資產，再用五項財務比率篩選；不是直接以加密資產占比 50% 一刀切。CoinDesk、Cointelegraph、The Block 均報導 Strategy 等公司有被排除風險；最終名單尚未公布。
+故事：大量囤幣公司為何能吸引股票市場資金 → 指數資格改變 → 跟蹤基金面臨賣股 → 若股票買盤與募資能力轉弱，後續買幣模式會受到什麼影響。
+投資角度：幣價之外，囤幣股還有指數資格與融資條件這層風險。被動基金賣的是股票，不能直接寫成 Strategy 被迫賣比特幣。
+補充事實：Strategy 10/12 公布，10/5–10/11 用 2,150 萬美元買 250 BTC，另用 1.924 億美元回購 STRC 優先股；可作資本配置背景，不能說它是為了應對 10/15 才確定的規則。
+來源：MSCI 原始公告、Strategy SEC 附件；CoinDesk 等媒體交叉確認。核心政策日期已核對，具體排除名單待 11/11；不直接引用未讀原始券商報告的資金流出估算。
+https://app2.msci.com/webapp/index_ann/DocGet?format=html&lang=en&pub_key=aq0wbkjxPgo%3D
+https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes
+https://cointelegraph.com/news/msci-adopts-index-exclusion-rules-that-could-oust-strategy
+https://www.sec.gov/Archives/edgar/data/1050446/000119312526419726/mstr-ex99_1.htm
+
+5. 同一波下跌，為什麼以太幣傷得比比特幣更重？
+建議：第二個幣圈候選；與通膨及本週下跌容易銜接。若篇幅有限，可併入市場跌勢段落。
+本週事件：10/15 亞洲早間行情及 24 小時清算快照。
+已讀：CoinDesk 引用 CoinGlass，BTC 與 ETH 期貨清算合計約 4.83 億美元，其中 ETH 約 2.86 億、BTC 約 1.97 億美元；同一快照 ETH 跌約 6.4%、BTC 約 3.2%。不是週跌幅或日收盤漲跌幅。
+故事：同一市場壓力 → 兩種幣跌幅不同 → 槓桿部位被強制平倉 → 清算賣壓如何放大波動 → 看懂價格跌幅之外的市場結構。
+投資角度：用這次事件解釋 ETH 風險較大的具體表現，不寫成 ETH 長期沒有價值，也不改成槓桿操作教學。
+來源：CoinDesk 對 CoinGlass 快照的引用；原始歷史快照未獨立取得，其他報導多共用同一數據，不算多家獨立來源。正式製作時鎖定資料時間，不把新聞所引快照當成即時行情。
+https://www.coindesk.com/markets/2026/10/15/nearly-usd1-billion-in-crypto-bets-liquidated-as-bitcoin-ether-and-xrp-slide
+避免口徑混用：全市場近十億美元清算與 BTC／ETH 兩者 4.83 億不是同一範圍；清算名目部位金額不是投資人現金損失。
+
+6. 輝達不只賣 AI 晶片，還想幫晶片廠做得更快？
+建議：備選，若 AI 段落太多則不放。
+本週事件：10/14 輝達公布與晶片設計、設備及檢測業者擴大 AI／加速運算合作。
+已核對：合作涉及應用材料、科磊、科林研發、Cadence、Synopsys 等；涵蓋材料模擬、製程、檢測與工廠模擬。
+故事：晶片愈難做 → 模擬與檢測成本提高 → AI 協助工程工作 → 輝達軟硬體可服務哪些新客戶。
+投資角度：半導體業同時是 AI 供應者與使用者。不同模擬案例的加速倍數不能當整座廠產能或獲利倍數。
+來源：NVIDIA 原始公告 1 個來源機構；合作案例已確認，效能為廠商描述，尚無足夠資料量化對營收貢獻。
+https://nvidianews.nvidia.com/news/nvidia-and-semiconductor-leaders-advance-ai-across-chip-design-and-manufacturing-for-ai-defined-labs
+
+備查，不優先展開
+微軟 Maia：10/13 官方宣布自 2027 年多 GW 擴張，與剛完成的博通客製化晶片論證接近；除非要延伸同題，先不獨立占一段。
+https://news.microsoft.com/source/emea/2026/10/microsoft-escala-azure-maia-para-soportar-despliegues-de-varios-gigavatios/?lang=es
+BTC／ETH ETF：10/12–10/15 自行加總 BTC -1.460 億、ETH -2.504 億美元；10/16 表格全為破折號，總欄 0.0 是尚未填入，不作零流量。與上週資金段落重複，只適合短更新。
+https://farside.co.uk/btc/
+https://farside.co.uk/eth/
+SEC 代幣化股票豁免：雖有 10/13 媒體文章，官方事件是 9/17，不能寫成本週新公布。
+https://www.sec.gov/about/crypto-task-force/crypto-newsroom
+
+更新後整集組合（幣圈題仍待選定）
+博通 CEO 發言與 AI 回報疑慮 → 通膨及本週跌勢 → 台積電法說 → AMD 與台灣機櫃供應鏈 → Strategy／MSCI 指數風險。
+若要兩個幣圈主題：在市場跌勢後接 ETH 清算，再進台積電、AMD，最後以 Strategy／MSCI 收束。
+Circle 依使用者要求排除，不回推為主題。其他已確認題材保留。

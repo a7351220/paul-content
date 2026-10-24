@@ -1,0 +1,21 @@
+{
+  "design_id": "DAHYPk4twK8",
+  "edit_url": "https://www.canva.com/design/DAHYPk4twK8/5cOU0bfuGMJ8jrTCSHcR5g/edit",
+  "local_pptx": "輸出/2026-10-16-市場週報-原範本修正版.pptx",
+  "slide_count": 20,
+  "main_images": 19,
+  "style": "紙感墨線，多種視角；短字、數字與圖表整張生成",
+  "notes_status": "20頁逐字相符",
+  "main_image_editability": "主圖內文字與數據為圖像，分類標題與講者備註可編輯",
+  "pptx_sha256": "33ec7852a2f2940af2e08ca22ae24e3202a189e1c8fd0e1d12d50e8c97044d75",
+  "agenda": "四列可編輯文字，直接複用上週原版",
+  "template_reference": "2026-10-09-市場週報/輸出/市場週報-固定格式重製版-固定開場.pptx",
+  "template_reuse": "大綱文字、分類標題與品牌原始物件，保留字型字級行距及版位",
+  "canva_font_fix": {
+    "previous_actual_font": "Arimo",
+    "corrected_actual_font": "可画榜书",
+    "method": "Canva 編輯器內選取可画榜书，全部變更／所有頁面",
+    "confirmation": "Canva 顯示各個設計的字型已變更；內容頁標題字型選擇器顯示可画榜书，字級38.3",
+    "proof": "輸出/Canva字體修正.jpg"
+  }
+}

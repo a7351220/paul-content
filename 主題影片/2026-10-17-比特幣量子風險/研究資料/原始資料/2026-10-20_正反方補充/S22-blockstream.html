@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <title>Blockstream</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+
+    <link rel="preload" href="/assets/dist/app.min.js?v=tZlhIyOa7aKDFTYH" as="script">
+    <link rel="preload" href="/assets/dist/app.min.css?v=IYrC6TiavSH3sgHM" as="style">
+    <link rel="stylesheet" href="https://use.typekit.net/chx2fbn.css">
+
+    
+
+    <script>
+  // ===============
+  // Basic Config
+  // ===============
+  let config = {
+    /* Replace it with your domain: ghost_host: 'https://yoursite.domain' */
+    // Main blog
+    ghost_url: 'https://blog.blockstream.com',
+    // Development blog
+    /* ghost_url: 'http://localhost:2368,  */
+    
+    /* Settings > Integrations > New Custom Integration. Copy Key. Replace ghost_key below. */
+    // Main blog
+    ghost_key: 'bc6f6fc4faaa6e9b2d823b5ee8',
+    //Development blog
+    /* ghost_key: '5ba34a40e6866efa7627e3672f', */
+
+    /* Ghost version: v4 or v3 */
+    ghost_version: 'v4',
+
+    /* Ghost enable search in content */
+    enable_search_in_content: true,
+
+    /* Default Color Scheme. Values: preference(detects user setting), light, dark. */
+    color_scheme_default: 'dark',
+
+    /* Enable Progress Bar for posts */
+    enable_progress_bar: true,
+
+    /* Enable lightbox for post images */
+    enable_image_lightbox: true,
+
+    /* Enable Scroll Top Button */
+    enable_scroll_top: true,
+
+    /* Enable hyphens */
+    enable_hyphens: false,
+
+    /* Enable PWA - Progressive Web App */
+    enable_pwa: false,
+
+    /* Replace 'biron-demo' with your disqus account shortname */
+    disqus_shortname: 'biron-demo',
+
+    /* Open external links in posts in a new tab */
+    open_links_in_new_tab: false
+  }
+
+  // =========================
+  // Dark/Light Theme Handling
+  // =========================
+  let preferredTheme; 
+  if (config.color_scheme_default === 'preference') {
+    const preferredColorScheme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+    preferredTheme = localStorage.getItem('USER_COLOR_SCHEME') || preferredColorScheme;
+  } else {
+    preferredTheme = localStorage.getItem('USER_COLOR_SCHEME') || config.color_scheme_default;
+  }
+  document.documentElement.setAttribute("data-color-scheme", preferredTheme);
+
+  // =========================
+  // Set Hyphens property
+  // =========================
+  const root = document.documentElement;
+  if (config.enable_hyphens) {
+    root.style.setProperty('--global-hyphens', 'auto')
+  }
+  
+  // ===============================
+  // Global values used in the theme
+  // ===============================
+  const global = {
+    pagination_current_page: parseInt(``),
+    pagination_next_page: parseInt(``),
+    pagination_next_page_link: '',
+    pagination_max_pages: parseInt(''), 
+    pagination_posts_per_page: parseInt('11'),
+  }
+</script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/dist/app.min.css?v=IYrC6TiavSH3sgHM" />
+
+    <script async defer src="/assets/dist/app.min.js?v=tZlhIyOa7aKDFTYH"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LcC8qMfAAAAAKQvHTUiJyxB_DO3nXwei4BFktyg"></script>
+    <script async defer src="/assets/js/newsletter.js?v=6Ai_sLKafgsJhtVG"></script>
+
+    <!--cssential--><style></style><!--/cssential-->
+
+    <link href="/assets/font-awesome/css/all.min.css?v=JXQY3gkQH_d5HUEP" rel="stylesheet">
+
+    <meta name="description" content="Can quantum computers break Bitcoin? A plain-English look at whether Bitcoin is quantum resistant, what&#x27;s actually at risk, and what engineers are building to fix it.">
+    <link rel="icon" href="https://blog.blockstream.com/content/images/size/w256h256/2021/10/favicon_new-1.png" type="image/png">
+    <link rel="canonical" href="https://blog.blockstream.com/quantum-computing-and-bitcoin-eli5/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Blockstream">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Quantum Computing and Bitcoin: The Threat Explained (ELI5)">
+    <meta property="og:description" content="A plain-language explainer on what quantum computers actually threaten in Bitcoin, how close the threat is, and what engineers are already building to address it.">
+    <meta property="og:url" content="https://blog.blockstream.com/quantum-computing-and-bitcoin-eli5/">
+    <meta property="og:image" content="https://blog.blockstream.com/content/images/size/w1200/2026/04/Quantum_Computing_and_Bitcoin.png">
+    <meta property="article:published_time" content="2026-04-15T14:36:40.000Z">
+    <meta property="article:modified_time" content="2026-07-14T14:22:51.000Z">
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quantum Computing and Bitcoin: The Threat Explained (ELI5)">
+    <meta name="twitter:description" content="A plain-language explainer on what quantum computers actually threaten in Bitcoin, how close the threat is, and what engineers are already building to address it.">
+    <meta name="twitter:url" content="https://blog.blockstream.com/quantum-computing-and-bitcoin-eli5/">
+    <meta name="twitter:image" content="https://blog.blockstream.com/content/images/size/w1200/2026/07/Quantum_Computing_and_Bitcoin--1-.png">
+    <meta name="twitter:site" content="@ghost">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="675">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Blockstream",
+        "url": "https://blog.blockstream.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://blog.blockstream.com/content/images/2021/10/favicon_new.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Blockstream Team",
+        "url": "https://blog.blockstream.com/author/blockstreamteam/",
+        "sameAs": []
+    },
+    "headline": "Quantum Computing and Bitcoin: The Threat Explained (ELI5)",
+    "url": "https://blog.blockstream.com/quantum-computing-and-bitcoin-eli5/",
+    "datePublished": "2026-04-15T14:36:40.000Z",
+    "dateModified": "2026-07-14T14:22:51.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://blog.blockstream.com/content/images/size/w1200/2026/04/Quantum_Computing_and_Bitcoin.png",
+        "width": 1200,
+        "height": 675
+    },
+    "keywords": "Quantum, Blockstream Research",
+    "description": "A plain-language explainer on what quantum computers actually threaten in Bitcoin, how close the threat is, and what engineers are already building to address it. ",
+    "mainEntityOfPage": "https://blog.blockstream.com/quantum-computing-and-bitcoin-eli5/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 6.71">
+    <link rel="alternate" type="application/rss+xml" title="Blockstream" href="https://blog.blockstream.com/rss/">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.72/umd/portal.min.js" data-i18n="true" data-ghost="https://blog.blockstream.com/" data-key="6cc7cda8b5c7cd5c8806889b42" data-api="https://blog.blockstream.com/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.9/umd/sodo-search.min.js" data-key="6cc7cda8b5c7cd5c8806889b42" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.9/umd/main.css" data-sodo-search="https://blog.blockstream.com/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://blog.blockstream.com/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=ShRHxgy4po8zN-Wf"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=WwnU9jw5ancNC8Gc">
+    <script defer src="/public/member-attribution.min.js?v=AKG4hWena9j3yX3I"></script><style>:root {--ghost-accent-color: #111316;}</style>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W55GXHB');</script>
+<!-- End Google Tag Manager -->
+
+<style>
+  .post-hero {
+    figure {
+      justify-content: center;
+    }
+  }
+</style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can quantum computers break Bitcoin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No quantum computer that exists today can recover a Bitcoin private key from a public key. A sufficiently powerful future quantum computer running Shor's algorithm could, which would let an attacker spend coins whose public key is already visible on the chain. The risk is to ownership of specific coins, not to Bitcoin's mining or its ability to confirm transactions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will quantum computers break Bitcoin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The threat is real, but the timeline is uncertain. Expert estimates for a quantum computer powerful enough to break Bitcoin's signatures range from roughly 10 to 40 years out, and current hardware is far short of even the most aggressive requirement. Bitcoin can upgrade to quantum-resistant signatures before that point, and engineers are already building the tools to do it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Bitcoin quantum resistant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bitcoin is not fully quantum resistant yet. Its mining and hashing (SHA-256) are considered quantum-safe, but its signature scheme is not: any coin whose public key is exposed could be at risk once hardware catches up. Roughly 30% of circulating bitcoin currently sits behind exposed public keys. Upgrades like BIP 360 and post-quantum signature schemes are designed to close that gap."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much Bitcoin is at risk from quantum computing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chaincode Labs estimated in May 2025 that about 30% of circulating bitcoin, roughly 6 million BTC, sits behind public keys that are already visible on-chain. The other ~65% sits behind unrevealed public keys in older P2PKH, P2SH, P2WPKH, and P2WSH addresses, and stays hidden until the coins are spent. Exposed coins include early P2PK outputs and any address that has already sent a transaction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When could a quantum computer break Bitcoin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Expert consensus puts a cryptographically relevant quantum computer at 10 to 20 years out. The Global Risk Institute's 2025 survey put the probability within 10 years at 28 to 49%, and Adam Back estimates 20 to 40 years. Resource estimates have dropped sharply (one 2026 Google estimate fell below 500,000 physical qubits, down roughly 20x from a 2022 figure), but qubit counts alone do not capture the error rates, fidelity, and connectivity that determine real capability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Blockstream doing about the quantum threat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Blockstream Research is building and testing post-quantum signatures on the Liquid Network using the Simplicity smart contract language. In March 2026 it deployed SHRINCS, a hash-based scheme with 324-byte signatures, and confirmed the first post-quantum-signed transactions on a production Bitcoin sidechain. It is also exploring OP_SHRINCSVERIFY, a proposed opcode concept for Bitcoin Script, alongside BIP 360."
+      }
+    }
+  ]
+}
+</script>
+  </head>
+  <body class="post-template tag-quantum tag-blockstream-research">
+    <div class="search" id="search">
+  <div class="search__header">
+    <form action="/" method="get" class="search__form" id="search-form">
+      <input type="text" id="ghost-search-field" class="search__input" 
+        title="Search" placeholder="Search" autocomplete="off" required/>
+      <div class="search__icon">
+        <i class="icon icon-search icon--lg">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=Uc9WR8sZh_dpthZV#search"></use>
+  </svg>
+</i>      </div>
+    </form>
+    <a tabindex="0" class="search--close" id="search-close">
+      <i class="icon icon-x icon--lg">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=Uc9WR8sZh_dpthZV#x"></use>
+  </svg>
+</i>    </a>
+  </div>
+  <div class="search-content">
+    <div class="search-result" id="ghost-search-results"></div>
+  </div>
+</div>
+
+    
+<header class="header_primary">
+
+    <div class="header_primary_logo"> 
+      <a href="https://www.blockstream.com/">
+        <img src="https://blockstream.com/img/icons/logo_blks.png" alt="Blockstream">
+      </a>
+    </div>
+    <div class="hamburger header_primary_mobile-menu-button" onclick="mobileNavToggle()">
+      <div class="bar top">
+      </div>
+      <div class="bar middle">
+      </div>
+      <div class="bar bottom">
+      </div>
+    </div>
+
+    <nav class="header_primary_navigation">
+      <ul class="header_primary_navigation_list">
+                 <li class="header_primary_navigation_item font-h5 color-white">
+                <a class='header_primary_navigation_item_link header_primary_navigation_dropdown-button' id="nav-dropdown-products" href="#" onclick="mobileNavDropdown(event)">
+                    Products
+                    <span>
+                        <div class="arrow-icon">
+                            <div class="arrow a-top"></div>
+                            <div class="arrow a-bottom"></div>
+                        </div>
+                    </span>
+                </a>
+                <ul class="header_primary_navigation_item_sub-list" id="primary_navigation_list_products">
+                    <li class="header_primary_navigation_item_sub-list_header">
+                        <div class="product-subnav">
+                            <div class="subnav-grid">
+                                <div class="product-subnav-col subnav-grid-item-2">
+                                    <h4 class="font-h4">CONSUMERS</h4>
+                                    <ul class="product-subnav-grid-container subnav-grid">
+
+                                        <li class="header_primary_navigation_item_sub-list_item subnav-grid-item-2 font-h4 text-white" id="primary_navigation_app">
+                                            <a class="product-subnav-grid-container_link" data-nav-item="app" href="https://blockstream.com/app/">
+                                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_title font-h4 text-white">Blockstream App</p>
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_text font-p3 text-gray">A multi-platform, feature-rich Bitcoin and Liquid Wallet</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="header_primary_navigation_item_sub-list_item subnav-grid-item-2 font-h4 text-white" id="primary_navigation_jade">
+                                            <a class="product-subnav-grid-container_link" data-nav-item="jade" href="https://blockstream.com/jade/">
+                                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_title font-h4 text-white">Blockstream Jade</p>
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_text font-p3 text-gray">A fully-open source hardware wallet for Bitcoin and Liquid</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+<div class="product-subnav-col subnav-grid-item-2">  
+                                    <h4 class="font-h4">ENTERPRISE</h4>         
+                                    <ul class="product-subnav-grid-container subnav-grid">
+
+                                        <li class="header_primary_navigation_item_sub-list_item subnav-grid-item-2 font-h4 text-white" id="primary_navigation_enterprise">
+                                            <a class="product-subnav-grid-container_link" data-nav-item="enterprise" href="https://blockstream.com/enterprise/">
+                                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_title font-h4 text-white">Blockstream Enterprise</p>
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_text font-p3 text-gray">Enterprise-grade custody and treasury management tool</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="header_primary_navigation_item_sub-list_item subnav-grid-item-2 font-h4 text-white" id="primary_navigation_amp">
+                                            <a class='product-subnav-grid-container_link' data-nav-item="amp" href="https://blockstream.com/amp/">
+                                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_title font-h4 text-white">AMP</p>
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_text font-p3 text-gray">An API to issue and manage digital assets on the Liquid Network</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            
+
+                            
+                            <h4 class="font-h4">DEVELOPERS</h4>    
+                            <div class="subnav-grid">
+                                <div class="product-subnav-col subnav-grid-item-2">  
+                                    <h5 class="font-h5">TOOLS</h5>   
+
+                                    <ul class="product-subnav-grid-container subnav-grid">
+
+                                        <li class="header_primary_navigation_item_sub-list_item subnav-grid-item-2 font-h4 text-white" id="primary_navigation_explorer">
+                                            <a class='product-subnav-grid-container_link' data-nav-item="explorer" href="https://blockstream.info/explorer-api/">
+                                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_title font-h4 text-white">Blockstream Explorer API</p>
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_text font-p3 text-gray">Search data from the Bitcoin and Liquid blockchains</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="header_primary_navigation_item_sub-list_item subnav-grid-item-2 font-h4 text-white" id="primary_navigation_cryptofeed">
+                                            <a class='product-subnav-grid-container_link' data-nav-item="cryptofeed" href="https://blockstream.com/cryptofeed/">
+                                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_title font-h4 text-white">Cryptocurrency Data Feed</p>
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_text font-p3 text-gray">Real-time and historical cryptocurrency trade data</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="product-subnav-col subnav-grid-item-2">
+                                    <h5 class="font-h5">COMMUNITY PROJECTS</h5>   
+                                    <ul class="product-subnav-grid-container subnav-grid">
+
+                                        <li class="header_primary_navigation_item_sub-list_item subnav-grid-item-2 font-h4 text-white" id="primary_navigation_lightning">
+                                            <a class='product-subnav-grid-container_link' data-nav-item="lightning" href="https://blockstream.com/lightning/">
+                                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_title font-h4 text-white">Core Lightning</p>
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_text font-p3 text-gray">Implementation of the Lightning Protocol</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+                                        <li class="header_primary_navigation_item_sub-list_item subnav-grid-item-2 font-h4 text-white" id="primary_navigation_liquid">
+                                            <a class='product-subnav-grid-container_link' data-nav-item="liquid" href="https://blockstream.com/liquid/">
+                                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_title font-h4 text-white">Liquid Network</p>
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_text font-p3 text-gray">Bitcoin layer-2 for digital asset issuance</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+                                        <li class="header_primary_navigation_item_sub-list_item subnav-grid-item-2 font-h4 text-white" id="primary_navigation_elements">
+                                            <a class="product-subnav-grid-container_link" data-nav-item="elements" href="https://blockstream.com/elements/">
+                                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_title font-h4 text-white">Elements</p>
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_text font-p3 text-gray">An open-source, sidechain-capable blockchain platform</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="header_primary_navigation_item_sub-list_item subnav-grid-item-2 font-h4 text-white" id="primary_navigation_simplicity">
+                                            <a class="product-subnav-grid-container_link" data-nav-item="simplicity" href="https://simplicity-lang.org/" target="_blank">
+                                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_title font-h4 text-white">Simplicity</p>
+                                                        <p class="header_primary_navigation_item_sub-list_item_link_block_text font-p3 text-gray">High-assurance smart contracts</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        <li class="header_primary_navigation_item font-h5 color-white"> <a class="header_primary_navigation_item_link header_primary_navigation_dropdown-button" id="nav-dropdown-news" href="#" onclick="mobileNavDropdown(event)"> Newsroom <span>
+              <div class="arrow-icon">
+                <div class="arrow a-top"></div>
+                <div class="arrow a-bottom"></div>
+              </div>
+            </span> </a>
+          <ul class="header_primary_navigation_item_sub-list" id="primary_navigation_list_news">
+            <li class="header_primary_navigation_item_sub-list_header">
+              <ul class="subnav-grid-container">
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_blog">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> <a class="header_primary_navigation_item_sub-list_item_link_block_title blog-link font-h4 text-white" href="https://blog.blockstream.com" data-nav-item="blog" onclick="blogLinkClicked(event)"> <i class="fas fa-edit header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Blog</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_press-newsroom">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> <a class="header_primary_navigation_item_sub-list_item_link_block_title " href="https://blockstream.com/newsroom/" data-nav-item="newsroom"> <i class="fas fa-newspaper header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>In
+                        The News</a></div>
+                  </div>
+                </li>
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_press-release">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> <a class="header_primary_navigation_item_sub-list_item_link_block_title " href="https://blockstream.com/press-releases/" data-nav-item="press-release"> <i class="fas fa-list-alt header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Press
+                        Releases</a></div>
+                  </div>
+                </li>
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_quantum">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> <a class="header_primary_navigation_item_sub-list_item_link_block_title" href="https://blockstream.com/quantum/" data-nav-item="quantum" target="_blank"> <i class="fal fa-atom header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Quantum</a></div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="header_primary_navigation_item font-h5 color-white"> <a class="header_primary_navigation_item_link header_primary_navigation_dropdown-button" id="nav-dropdown-developer" href="#" onclick="mobileNavDropdown(event)"> Developers <span>
+              <div class="arrow-icon">
+                <div class="arrow a-top"></div>
+                <div class="arrow a-bottom"></div>
+              </div>
+            </span> </a>
+          <ul class="header_primary_navigation_item_sub-list" id="primary_navigation_list_developer">
+            <li class="header_primary_navigation_item_sub-list_header">
+              <ul class="subnav-grid-container">
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_eng-blog">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> <a class="header_primary_navigation_item_sub-list_item_link_block_title" href="https://blog.blockstream.com/blockstream-research/" target="blank" data-nav-item="eng-blog">
+                        <i class="fas fa-cog header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Engineering
+                        Blog</a></div>
+                  </div>
+                </li>
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_documentation">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> 
+                      <a class="header_primary_navigation_item_sub-list_item_link_block_title" href="https://docs.liquid.net/docs" target="blank" data-nav-item="documentation">
+                                <img class="header_primary_navigation_item_sub-list_item_link_block_title_img default-icon"
+                                            src="/assets/images/liquid_static.svg?v=xJrxRISXRbf9vfm5" alt="icon" />
+                                            <img class="header_primary_navigation_item_sub-list_item_link_block_title_img hover-icon"   
+                                            src="/assets/images/liquid_hover.svg?v=rgeTt9QZvKoyaX7F"  alt="icon" />
+                                            <img class="header_primary_navigation_item_sub-list_item_link_block_title_img hover-icon-white" src="/assets/images/liquid_white.svg?v=CZq55z1bVGgIR0bW"  alt="icon" /><span>Liquid Documentation</span>
+                            </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_documentation_cln">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> 
+                      <a class="header_primary_navigation_item_sub-list_item_link_block_title" href="https://docs.corelightning.org/docs" target="blank" data-nav-item="documentation_cln">
+                                <img class="header_primary_navigation_item_sub-list_item_link_block_title_img default-icon"  src="/assets/images/cln_static.svg?v=hsF5mQZ2HXXMpQol"  alt="icon" />
+                                            <img class="header_primary_navigation_item_sub-list_item_link_block_title_img hover-icon"  src="/assets/images/cln_hover.svg?v=G6XiHMiCbxNvtf1d"  alt="icon" />
+                                            <img class="header_primary_navigation_item_sub-list_item_link_block_title_img hover-icon-white" src="/assets/images/cln_white.svg?v=AnntrCGQtvOq8cDq"  alt="icon" />
+                                            <span>Core Lightning Documentation</span>
+                            </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="header_primary_navigation_item font-h5 color-white"> <a class="header_primary_navigation_item_link header_primary_navigation_dropdown-button " id="nav-dropdown-about" href="#" onclick="mobileNavDropdown(event)"> Company <span>
+              <div class="arrow-icon">
+                <div class="arrow a-top"></div>
+                <div class="arrow a-bottom"></div>
+              </div>
+            </span> </a>
+          <ul class="header_primary_navigation_item_sub-list" id="primary_navigation_list_about">
+            <li class="header_primary_navigation_item_sub-list_header">
+              <ul class="subnav-grid-container">
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_research">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> <a class="header_primary_navigation_item_sub-list_item_link_block_title" href="https://research.blockstream.com/" data-nav-item="research"> <i class="fas fa-book-open header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Research</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_about">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> <a class="header_primary_navigation_item_sub-list_item_link_block_title " href="https://blockstream.com/about/" data-nav-item="about"> <i class="fas fa-building header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>About</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_careers">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> <a class="header_primary_navigation_item_sub-list_item_link_block_title " href="https://blockstream.com/careers/" data-nav-item="careers"> <i class="fas fa-user header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Careers</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_brand-assets">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> <a class="header_primary_navigation_item_sub-list_item_link_block_title" href="https://design.blockstream.com/styleguide/branding/overview" data-nav-item="brand-assets" target="_blank"> <i class="fas fa-toolbox header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Brand
+                        Assets</a></div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="header_primary_navigation_item font-h5 text-white store-link"> <a class="header_primary_navigation_item_link " href="https://store.blockstream.com/" target="_blank">Store</a>
+        </li>
+        <li class="header_primary_navigation_item font-h5 text-white"> <a class="header_primary_navigation_item_link header_primary_navigation_dropdown-button" id="nav-dropdown-support" href="#" onclick="mobileNavDropdown(event)"> Support <span>
+              <div class="arrow-icon">
+                <div class="arrow a-top"></div>
+                <div class="arrow a-bottom"></div>
+              </div>
+            </span> </a>
+          <ul class="header_primary_navigation_item_sub-list" id="primary_navigation_list_developer">
+            <li class="header_primary_navigation_item_sub-list_header">
+              <ul class="subnav-grid-container">
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_help-center">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> 
+                      <a class="header_primary_navigation_item_sub-list_item_link_block_title" href="https://help.blockstream.com" target="blank" data-nav-item="help-center">
+                                <img class="header_primary_navigation_item_sub-list_item_link_block_title_img default-icon"
+                                            src="/assets/images/help_center_static.svg?v=MYLj1ImmPbIVXNpy" alt="icon" />
+                                            <img class="header_primary_navigation_item_sub-list_item_link_block_title_img hover-icon"   
+                                            src="/assets/images/help_center_hover.svg?v=yIppvbvk9Do69_Jy"  alt="icon" />
+                                            <img class="header_primary_navigation_item_sub-list_item_link_block_title_img hover-icon-white" src="/assets/images/help_center_white.svg?v=OpbJ3pFhDIMp_Q_j"  alt="icon" /><span>Help Center</span>
+                        </a>
+                      </div>
+                  </div>
+                </li>
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_education">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> 
+                      <a class="header_primary_navigation_item_sub-list_item_link_block_title" href="https://help.blockstream.com/education" target="blank" data-nav-item="education">
+                                 <img class="header_primary_navigation_item_sub-list_item_link_block_title_img default-icon"
+                                            src="/assets/images/bitcoin_education_static.svg?v=P2FQRS8Z0wx7eAXc" alt="icon" />
+                                            <img class="header_primary_navigation_item_sub-list_item_link_block_title_img hover-icon"   
+                                            src="/assets/images/bitcoin_education_hover.svg?v=oheSPD3hB_sfcjo3"  alt="icon" />
+                                            <img class="header_primary_navigation_item_sub-list_item_link_block_title_img hover-icon-white" src="/assets/images/bitcoin_education_white.svg?v=lSzKcVSO9JwLHjRO"  alt="icon" /><span>Bitcoin Education</span>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="header_primary_navigation_item_sub-list_item font-h4 text-white" id="primary_navigation_glossary">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> 
+                      <a class="header_primary_navigation_item_sub-list_item_link_block_title" href="https://help.blockstream.com/education/glossary" target="blank" data-nav-item="glossary">
+                                <img class="header_primary_navigation_item_sub-list_item_link_block_title_img default-icon"
+                                            src="/assets/images/glossary_static.svg?v=TTQTqcvxzcaVpzzX" alt="icon" />
+                                            <img class="header_primary_navigation_item_sub-list_item_link_block_title_img hover-icon"   
+                                            src="/assets/images/glossary_hover.svg?v=5oh5K4eUXIA1Owg7"  alt="icon" />
+                                            <img class="header_primary_navigation_item_sub-list_item_link_block_title_img hover-icon-white" src="/assets/images/glossary_white.svg?v=7daUCU_TPfPJbXU-"  alt="icon" /><span>Glossary</span>
+                        </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_local">
+                  <div class="header_primary_navigation_item_sub-list_item_link">
+                    <div class="header_primary_navigation_item_sub-list_item_link_block"> <a class="header_primary_navigation_item_sub-list_item_link_block_title" href="https://help.blockstream.com/local" target="blank" data-nav-item="local"> 
+                     <img class="header_primary_navigation_item_sub-list_item_link_block_title_img default-icon"
+                                            src="/assets/images/local_static.svg?v=ddVnIeQBHSWmNsAe" alt="icon" />
+                                            <img class="header_primary_navigation_item_sub-list_item_link_block_title_img hover-icon"   
+                                            src="/assets/images/local_hover.svg?v=X4HLJt_MHifzeBjh"  alt="icon" />
+                                            <img class="header_primary_navigation_item_sub-list_item_link_block_title_img hover-icon-white" src="/assets/images/local_white.svg?v=PeKCBIjsPB3S1fo8"  alt="icon" /><span>Local</span>
+                     </a></div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>    
+
+    <main class="main">
+      
+
+  
+  <div class="container-fluid wrapper">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="post-hero">
+    <figure class="post-hero__image">
+      <img
+        class="lazyload"
+        data-srcset="/content/images/size/w300/2026/04/Quantum_Computing_and_Bitcoin.png 300w,
+                /content/images/size/w600/2026/04/Quantum_Computing_and_Bitcoin.png 600w,
+                /content/images/size/w1000/2026/04/Quantum_Computing_and_Bitcoin.png 1000w,
+                /content/images/size/w2000/2026/04/Quantum_Computing_and_Bitcoin.png 2000w"
+        data-sizes="(max-width: 800px) 50vw,
+                (max-width: 1170px) 60vw,
+                1400px"
+        data-src="/content/images/size/w2000/2026/04/Quantum_Computing_and_Bitcoin.png"
+        src="/assets/images/img-placeholder-md.jpg?v=pq9J8DP_VxV7_s05"
+        alt="Quantum Computing and Bitcoin: The Threat Explained (ELI5)"
+      />
+    </figure>
+  <div class="post-hero__content">
+    <div class="post-hero__header">
+          <a class="tag-Quantum post-hero__tag" href="/quantum" 
+          title="Quantum" aria-label="Quantums">Quantum</a>
+          <a class="tag-Blockstream Research post-hero__tag" href="/blockstream-research" 
+          title="Blockstream Research" aria-label="Blockstream Researchs">Blockstream Research</a>
+    </div>
+
+    <h1 class="post-hero__title font-h2 text-white">Quantum Computing and Bitcoin: The Threat Explained (ELI5)</h1>
+
+    <div class="post-hero__details">
+      <div class="post-hero__authors is-flex ">
+          <div class="post-hero__author">
+              <span class="post-hero__author-icon" aria-label="Blockstream Team">
+                <i class="icon icon-user">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=Uc9WR8sZh_dpthZV#user"></use>
+  </svg>
+</i>              </span>
+          </div>
+      </div>
+
+      <div class="post-hero__info">
+        <div class="post-hero__author-names font-p2 text-gray">
+          <a href="/author/blockstreamteam/">Blockstream Team</a>
+        </div>
+
+        <time datetime="2026-04-15" class="post-hero__date font-p5 text-gray">
+          Apr 15, 2026
+        </time>
+      </div>
+    </div>
+  </div>
+</div>      </div>
+      <div class="col-xs-12 col-lg-8 col-xl-9">
+        <article class="post tag-quantum tag-blockstream-research post-access-public has-sidebar">
+            <div class="social-share">
+  <a class="social-share__item js-share" tabindex="0"
+   href="https://x.com/intent/tweet?url=https%3A%2F%2Fblog.blockstream.com%2Fquantum-computing-and-bitcoin-eli5%2F&text=Quantum%20Computing%20and%20Bitcoin%3A%20The%20Threat%20Explained%20(ELI5)"
+   target="_blank" rel="noopener noreferrer"
+   title="Share on X" aria-label="Share on X" style="display: flex; justify-content: center; align-items: center;">
+    <svg width="14" height="14" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white"/>
+    </svg>
+  </a>
+  <a class="social-share__item js-share" tabindex="0"
+      data-type="facebook" data-title="Quantum%20Computing%20and%20Bitcoin%3A%20The%20Threat%20Explained%20(ELI5)" data-url="https://blog.blockstream.com/quantum-computing-and-bitcoin-eli5/"
+      title="Share on Facebook" aria-label="Share on Facebook">
+    <i class="icon icon-facebook icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=Uc9WR8sZh_dpthZV#facebook"></use>
+  </svg>
+</i>  </a>
+  <a class="social-share__item js-share" tabindex="0"
+      data-type="linkedin" data-title="Quantum%20Computing%20and%20Bitcoin%3A%20The%20Threat%20Explained%20(ELI5)" data-url="https://blog.blockstream.com/quantum-computing-and-bitcoin-eli5/"
+      title="Share on Linkedin" aria-label="Share on Linkedin">
+    <i class="icon icon-linkedin icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=Uc9WR8sZh_dpthZV#linkedin"></use>
+  </svg>
+</i>  </a>
+  <a href="mailto:?subject=Quantum%20Computing%20and%20Bitcoin%3A%20The%20Threat%20Explained%20(ELI5)&body=https://blog.blockstream.com/quantum-computing-and-bitcoin-eli5/"
+      class="social-share__item js-share" tabindex="0"
+      data-type="email" data-title="Quantum%20Computing%20and%20Bitcoin%3A%20The%20Threat%20Explained%20(ELI5)" data-url="https://blog.blockstream.com/quantum-computing-and-bitcoin-eli5/"
+      title="Share by email" aria-label="Share by email">
+    <i class="icon icon-mail icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=Uc9WR8sZh_dpthZV#mail"></use>
+  </svg>
+</i>  </a>
+  <a class="copy-link js-share js-copy-link" tabindex="0"
+    data-type="copy" data-title="Quantum%20Computing%20and%20Bitcoin%3A%20The%20Threat%20Explained%20(ELI5)" data-url="https://blog.blockstream.com/quantum-computing-and-bitcoin-eli5/"
+    title="Copy to clipboard" data-label="Copied!" aria-label="Copy to clipboard">
+    <i class="icon icon-copy icon--sm">
+  <svg class="icon__svg">
+    <use xlink:href="/assets/icons/feather-sprite.svg?v=Uc9WR8sZh_dpthZV#copy"></use>
+  </svg>
+</i>  </a>
+</div>
+          <div class="post__content">
+              <p>The headlines say quantum computers will break Bitcoin. The reality: one specific part of Bitcoin's security is vulnerable. Blockstream engineers are already working on the fix.</p><h2 id="what-is-a-quantum-computer">What Is a Quantum Computer?</h2><p>Your laptop thinks in bits: tiny switches that are either 0 or 1. Every calculation it does, from loading a webpage to verifying a Bitcoin transaction, comes down to flipping billions of these switches really fast.</p><p>A quantum computer thinks in qubits. Where a bit is always either 0 or 1, a qubit holds a combination of the two that only resolves into a single value when you measure it. Combining many qubits produces a set of possible states that grows exponentially with the number of qubits, and the math that governs quantum hardware lets a computation act on all of those states at once in a way a classical computer cannot match.</p><p>Think of it like a maze. A regular computer tries every path one at a time until it finds the exit. A quantum computer explores many paths at once. For certain specific types of math problems, that means arriving at an answer in far fewer steps for certain specific problems. However, the gains are not universal; quantum computers are better at a narrow class of mathematical problems, but not at everything.</p><p>Quantum computers are not just "faster computers." They will not make your web browser faster, your videos stream more smoothly, or your documents load any quicker. They are a specialized tool, and one of the problems they excel at is directly relevant to how Bitcoin secures your keys.</p><h2 id="how-bitcoin-keeps-your-money-safe">How Bitcoin Keeps Your Money Safe</h2><p>Bitcoin uses two types of math to protect your bitcoin.</p><p><strong>The first type proves ownership.</strong> When you send bitcoin, you prove it is yours by signing the transaction with a secret key (your private key). The network checks your signature using a related public key. The whole system relies on one assumption: <strong>nobody can recover your private key from your public key</strong>. Today's computers cannot do this. It would take them longer than the age of the universe!</p><p><strong>The second type secures mining.</strong> Bitcoin miners compete to find a specific hash output by trying trillions of guesses per second. This keeps the network running and prevents anyone from rewriting transaction history.</p><p>Quantum computers threaten the first type directly. Their impact on the second is much more distant and concerns decentralization rather than network integrity.</p><h2 id="can-quantum-computers-break-bitcoin">Can Quantum Computers Break Bitcoin?</h2><p>A quantum computer running a specific algorithm (called Shor's algorithm) can work backward from a public key to recover the private key. With the private key, an attacker can take the bitcoin.</p><p>Think of it like a lock. Today's computers cannot pick this lock in any meaningful timeframe. A sufficiently powerful quantum computer could.</p><p>The mining side uses different math (SHA-256 hashing). Grover's algorithm gives a quantum computer a quadratic speedup on hashing, which would hand a large quantum miner a mathematical edge over smaller ones. This is a concern for mining decentralization, not for Bitcoin's ability to confirm transactions. In practice the risk sits much further out than signature breaking: it requires quantum hardware far larger than what is needed to attack secp256k1, and Grover's algorithm does not parallelize well, which limits how much that theoretical advantage would translate into real performance.</p><p><strong>The quantum threat to Bitcoin is about who owns the bitcoin, not how the network runs.</strong> Most coverage gets this backwards.</p><h2 id="how-close-is-the-quantum-threat-to-bitcoin">How Close Is the Quantum Threat to Bitcoin?</h2><p>Quantum hardware has advanced quickly, but the numbers depend on what you measure. <a href="https://www.scientificamerican.com/article/ibm-releases-first-ever-1-000-qubit-quantum-chip/?ref=blog.blockstream.com"><u>IBM's Condor gate-model chip</u></a> reached 1,121 qubits in 2023. <a href="https://blog.google/technology/research/google-willow-quantum-chip/?ref=blog.blockstream.com"><u>Google's Willow chip</u></a> reached only 105 qubits in December 2024 but hit a more important milestone: the first "below threshold" quantum error correction, something researchers had pursued since 1995. Larger neutral-atom arrays exist — a <a href="https://www.caltech.edu/about/news/caltech-team-sets-record-with-6100-qubit-array?ref=blog.blockstream.com"><u>Caltech team demonstrated a 6,100-qubit array</u></a> — but raw qubit counts do not measure useful computation.</p><p>Breaking Bitcoin's signature math requires far more than any current hardware can deliver. Three research papers published between May 2025 and March 2026 dropped the estimated requirement by roughly 20x:</p><ul><li><strong>2022 estimate (</strong><a href="https://doi.org/10.1116/5.0073075?ref=blog.blockstream.com"><strong><u>University of Sussex, 2022</u></strong></a><strong>):</strong> ~13 million physical qubits to crack a 256-bit key in one hour</li><li><strong>Updated estimate (</strong><a href="https://arxiv.org/abs/2603.28846?ref=blog.blockstream.com"><strong><u>Google Quantum AI, March 2026</u></strong></a><strong>):</strong> fewer than 500,000 physical qubits</li><li><strong>Most aggressive estimate (unproven architecture):</strong> fewer than 10,000 physical qubits</li></ul><p>Current hardware is still well short of even the most aggressive estimate, and raw qubit counts are a rough proxy at best. <a href="https://arxiv.org/abs/2603.28846?ref=blog.blockstream.com"><u>The Google paper cautions</u></a> that counting qubits misses most of what determines a quantum computer's usefulness: error rates, fidelity, connectivity, and the ability to sustain error-corrected computation long enough to finish the calculation. The gap is closing, but not uniformly across every dimension that matters.</p><p>Expert consensus places the arrival of quantum computers powerful enough to break cryptography at 10 to 20 years out. The <a href="https://globalriskinstitute.org/publication/quantum-threat-timeline-report-2025b/?ref=blog.blockstream.com"><u>Global Risk Institute's 2025 survey</u></a> found a 28-49% probability of a cryptographically relevant quantum computer arriving within the next 10 years, the highest estimate in the survey's seven-year history. Adam Back, Blockstream CEO and inventor of the proof-of-work system Bitcoin uses, <a href="https://cointelegraph.com/news/bitcoin-quantum-threat-decades-post-quantum-migration?ref=blog.blockstream.com"><u>estimates 20 to 40 years</u></a>.</p><p>Several institutions are planning around shorter horizons. NIST has published deprecation targets for today's signature standards (ECDSA and RSA) that begin near the end of this decade, and Google's quantum team has publicly recommended that organizations migrate sensitive systems on a similar timeline. Whether the threat arrives in 10 years or 40, the planning windows overlap with Bitcoin's own upgrade timeline.</p><p>Here is the part that matters most: <strong>Bitcoin upgrades take years</strong>. <a href="https://nickler.ninja/blog/2020/11/29/bip-%7Bschnorr/?ref=blog.blockstream.com"><u>Taproot took about 3.5 years</u></a> from its first mailing-list proposal to activation, and a post-quantum migration may take longer because every holder would need to move their coins to new address types, not just update their software. The time to start preparing is now, not when the threat arrives.</p><h2 id="the-clock-is-already-ticking">The Clock Is Already Ticking</h2><p>A quantum attacker does not need to wait for quantum hardware before choosing targets. The moment a public key is visible to anyone watching the chain — in an old P2PK output, in the spending script of any address that has sent a transaction, or in a funded Taproot (P2TR) output — that key is permanently recorded on the chain and can be attacked as soon as hardware catches up.</p><p>Nothing has to be decrypted. Bitcoin does not encrypt its consensus data. The attacker is waiting for the hardware that can derive a private key directly from a public key that is already in the open.</p><p>Security researchers describe a similar pattern in traditional cryptography as "harvest now, decrypt later," and the <a href="https://www.federalreserve.gov/econres/feds/harvest-now-decrypt-later-examining-post-quantum-cryptography-and-the-data-privacy-risks-for-distributed-ledger-networks.htm"><u>U.S. Federal Reserve published a 2025 paper</u></a> calling it an active risk for distributed ledger networks. Bitcoin's version is different in the details (there is no encryption, and nothing is decrypted), but the shape is the same: collect the target data today, break it tomorrow.</p><p><strong>Data collection could already be happening. The theft would come later.</strong></p><h2 id="is-bitcoin-quantum-resistant-whats-actually-at-risk">Is Bitcoin Quantum Resistant? What's Actually at Risk</h2><p>No. Not all aspects of Bitcoin face equal quantum risk.</p><p><strong>At risk:</strong> Any bitcoin where the public key is already visible to attackers. This includes:</p><ul><li>Early Bitcoin addresses from 2009-2010 (P2PK format) that stored the public key directly, including an estimated 1 million bitcoin widely attributed to Satoshi Nakamoto.</li><li>Any address that has been used to send a transaction, which reveals the public key on-chain in the spending script.</li><li><strong>P2TR (Taproot) addresses</strong>, which expose a version of the public key as soon as the address is funded. This was an accepted tradeoff when Taproot was designed because the quantum threat appeared distant. Proposals like <a href="https://bip360.org/?ref=blog.blockstream.com"><u>BIP 360</u></a> are designed to remove this exposure.</li><li>Transactions sitting in the mempool. These are not yet on-chain, but the public key is visible to anyone watching the network, giving a quantum attacker a window to derive the private key before miners confirm the transaction.</li></ul><p><a href="https://chaincode.com/bitcoin-post-quantum.pdf?ref=blog.blockstream.com"><u>Chaincode Labs researchers estimated in May 2025</u></a> that roughly 30% of circulating bitcoin, approximately 6 million BTC, sits behind exposed public keys.</p><p><strong>Hidden (for now):</strong> Older address formats like P2PKH, P2SH, P2WPKH, and P2WSH hide the public key behind an additional layer of math (a hash). The public key only gets revealed when you spend. If you have received bitcoin at one of these addresses but never sent from it, your public key remains hidden. About 65% of bitcoin sits behind unrevealed public keys.</p><p>That hidden state ends as soon as you spend it. The transaction broadcasts the public key into the mempool, and a sufficiently powerful quantum attacker could try to derive the private key during the window before the transaction confirms. P2WSH currently provides the strongest public key concealment, but only until the first time you move the funds.</p><p><strong>Safe:</strong> Proof-of-work, address derivation, and the structures that link transactions together all use SHA-256 hashing. Quantum algorithms cannot meaningfully compromise these operations.</p><h3 id="what-about-satoshis-coins">What about Satoshi's coins?</h3><figure class="kg-card kg-embed-card"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">quantum hypers don't have to agree with quantum realists on timeline, as there is strong value in providing a step-up sequence of PQ readiness for bitcoin users, so they have a long migration time. it also makes it more plausible to deprecate unmigrated ECDSA/schnorr signatures.</p>— Adam Back (@adam3us) <a href="https://twitter.com/adam3us/status/2040412431248130158?ref_src=twsrc%5Etfw&ref=blog.blockstream.com">April 4, 2026</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></figure><p>Adam Back has posited that a long post-quantum migration window makes it "more plausible to deprecate unmigrated ECDSA/schnorr signatures" via soft fork. Under that path, coins that had years to move to quantum-resistant addresses remain safe, while coins that never moved, whether from lost keys or Satoshi's wallets, would become unspendable by anyone, including an attacker. Back has separately rejected proposals to freeze vulnerable addresses proactively, framing that as developer overreach.</p><h2 id="solutions-arent-the-most-difficult-part">Solutions Aren't the Most Difficult Part</h2><p>The cryptographic solutions exist. <a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards?ref=blog.blockstream.com"><u>NIST (the U.S. standards body) finalized the first three post-quantum cryptography standards in August 2024</u></a> after an eight-year evaluation. The math is ready. <strong>Getting the Bitcoin network to upgrade is the hard part</strong>.</p><p><strong>Bigger signatures, higher costs.</strong> NIST's smallest standardized post-quantum signature scheme (ML-DSA, FIPS 204) requires approximately 3,700 bytes for a signature and public key combined. Bitcoin's current Schnorr key-path spends are 64 bytes. That is roughly a 58x increase in per-transaction cryptographic overhead, and a proportional decrease in how many transactions fit into each block. Bigger signatures mean bigger transactions and higher fees for everyone.</p><p><strong>Bitcoin changes slowly, and that is by design.</strong> Modifying Bitcoin requires broad consensus across a global, decentralized network. But Bitcoin has upgraded before. <a href="https://en.bitcoin.it/wiki/Segregated_Witness?ref=blog.blockstream.com"><u>SegWit (2017)</u></a> fixed transaction malleability and improved scalability. <a href="https://en.bitcoin.it/wiki/Taproot?ref=blog.blockstream.com"><u>Taproot (2021)</u></a> brought smarter scripting and better privacy. Both were soft forks that the network adopted. A post-quantum migration would follow a similar playbook, but would be significantly more complex than either.</p><p><strong>Every single holder must act.</strong> Upgrading Bitcoin's code does not automatically protect existing funds. Every bitcoin holder would need to actively move their coins from old addresses to new quantum-safe addresses. At Bitcoin's current throughput (3 to 10 transactions per second), a full network migration would take months to years.</p><p>BIP 360 proponents have suggested that even under optimistic assumptions, a full migration would take several years. That clock only starts once the community agrees on a plan, and no such plan exists yet.</p><h2 id="what-is-already-being-built">What Is Already Being Built</h2><p>The Blockstream team isn't waiting for the threat to arrive.</p><p><strong>A testing ground on Liquid.</strong> The <a href="https://blockstream.com/liquid/?ref=blog.blockstream.com"><u>Liquid Network</u></a> is a Bitcoin sidechain built by Blockstream. It runs <a href="https://simplicity-lang.org/?ref=blog.blockstream.com"><u>Simplicity</u></a>, a smart contract language designed for Bitcoin's security model. On Bitcoin mainnet, deploying new cryptography requires a network-wide protocol change. On Liquid with Simplicity, the same capability ships as a smart contract without a network-wide consensus change, which means post-quantum protection can ship in weeks, not the years a Bitcoin soft fork requires.</p><p><strong>The first post-quantum transactions on a live network.</strong> In March 2026, Blockstream Research deployed <a href="https://blog.blockstream.com/blockstream-research-demonstrates-quantum-resistant-transaction-signing-on-liquid-using-simplicity-smart-contracts/"><strong><u>SHRINCS</u></strong></a> (a compact post-quantum signature scheme) on Liquid mainnet. Five real transactions were broadcast and confirmed, marking the first post-quantum-signed transactions on a production Bitcoin sidechain.</p><p>SHRINCS produces 324-byte signatures in normal operation. (Reusing the same key in stateful mode adds about 16 bytes per subsequent signature.) The smallest NIST standard produces signatures of 2,420+ bytes. That 7x size reduction is the difference between a practical blockchain signature and one that dominates every transaction's cost.</p><p>SHRINCS relies only on the security of SHA-256, the same hash function Bitcoin already uses for proof-of-work, address derivation, and Merkle trees. No new cryptographic assumptions are required, just more of what Bitcoin already trusts. Several of NIST's original post-quantum candidates were broken using classical computers during the standardization process, which underscores the value of conservative cryptographic foundations.</p><p><a href="https://blog.blockstream.com/shrimps-2-5-kb-post-quantum-signatures-across-multiple-stateful-devices/"><strong><u>Hardware wallet rollover with SHRIMPS</u></strong></a><strong>.</strong> Proposed in March 2026 by Blockstream cryptographer Jonas Nick, <strong>SHRIMPS</strong> is designed for the hardware wallet lifecycle: what happens when your current device breaks, or when you want to upgrade to a newer generation. Up to 1,024 devices loaded from the same backup can sign independently, with 2.5 KB signatures — still 3x smaller than NIST's hash-based standard (SLH-DSA). If you ever expect to replace a hardware wallet, SHRIMPS is the scheme designed with that transition in mind.</p><p><strong>A path to Bitcoin mainnet.</strong> Blockstream Research is exploring the rationale for <a href="https://bitcoinops.org/en/newsletters/2026/02/06/?ref=blog.blockstream.com"><strong><u>OP_SHRINCSVERIFY</u></strong></a>, a proposed opcode concept that would bring hash-based post-quantum signature verification directly to Bitcoin Script. The work is still at the open-questions stage, not a finalized BIP. If a future version is proposed and adopted, holders could protect their bitcoin with quantum-resistant signatures one address at a time, without waiting for a full network migration.</p><p>This approach complements BIP 360 (Pay-to-Merkle-Root), which removes Taproot's quantum-vulnerable key-spend path. BIP 360 provides the address structure. OP_SHRINCSVERIFY provides the signature verification. Different approaches that work together.</p><p><strong>The proving ground pattern.</strong> Liquid operates as a live financial network with billions in total value locked. Deploying new cryptography on Liquid produces the kind of production evidence that Bitcoin's consensus process needs. OP_CAT is live on Liquid and has a concrete proposal (<a href="https://github.com/bitcoin/bips/blob/master/bip-0347.mediawiki?ref=blog.blockstream.com"><u>BIP 347</u></a>) for inclusion in Bitcoin. Post-quantum cryptography is following the same path: build on Liquid, prove it works under real economic conditions, then let that production data inform any future Bitcoin proposal.</p><h2 id="what-you-can-do-today">What You Can Do Today</h2><ul><li><strong>Use a modern wallet.</strong> The <a href="https://blockstream.com/app?ref=blog.blockstream.com"><u>Blockstream app</u></a> uses modern address formats. For most address types, your public key stays hidden until you spend.</li><li><strong>Avoid address reuse.</strong> Most modern wallets generate a fresh address for every transaction automatically. If yours does not, switch to one that does. Address reuse is a surefire way to increase your exposure to a future quantum threat.</li><li><strong>Move coins off old, exposed addresses.</strong> If you have bitcoin sitting in a legacy address you have spent from before, especially old paper wallets or early exchange withdrawals, send those coins to a fresh address. This removes your public key from the "exposed" category.</li><li><strong>Stay informed.</strong> Follow the development of BIP 360 and OP_SHRINCSVERIFY as they move through Bitcoin's proposal process.</li></ul><p><strong>For institutions:</strong> Include quantum readiness in long-term custody planning. The migration window means decisions made in 2026 shape preparedness for the years ahead.</p><p>The quantum threat to Bitcoin is real, specific, and further away than the headlines suggest. But Bitcoin's upgrade timeline is measured in years too, and the resource estimates for breaking its cryptography are dropping fast. The margin for preparation exists, and it is narrowing.</p><p><a href="http://blockstream.com/quantum?ref=blog.blockstream.com"><u>Explore Blockstream's post-quantum research</u></a></p><h2 id="frequently-asked-questions">Frequently Asked Questions</h2><p><strong>Can quantum computers break Bitcoin?</strong> No quantum computer that exists today can recover a Bitcoin private key from a public key. A sufficiently powerful future quantum computer running Shor's algorithm could, which would let an attacker spend coins whose public key is already visible on the chain. The risk is to ownership of specific coins, not to Bitcoin's mining or its ability to confirm transactions.</p><p><strong>Will quantum computers break Bitcoin?</strong> The threat is real, but the timeline is uncertain. Expert estimates for a quantum computer powerful enough to break Bitcoin's signatures range from roughly 10 to 40 years out, and current hardware is far short of even the most aggressive requirement. Bitcoin can upgrade to quantum-resistant signatures before that point, and engineers are already building the tools to do it.</p><p><strong>Is Bitcoin quantum resistant?</strong> Bitcoin is not fully quantum resistant yet. Its mining and hashing (SHA-256) are considered quantum-safe, but its signature scheme is not: any coin whose public key is exposed could be at risk once hardware catches up. Roughly 30% of circulating bitcoin currently sits behind exposed public keys. Upgrades like BIP 360 and post-quantum signature schemes are designed to close that gap.</p><p><strong>How much Bitcoin is at risk from quantum computing?</strong> Chaincode Labs estimated in May 2025 that about 30% of circulating bitcoin, roughly 6 million BTC, sits behind public keys that are already visible on-chain. The other ~65% sits behind unrevealed public keys in older P2PKH, P2SH, P2WPKH, and P2WSH addresses, and stays hidden until the coins are spent. Exposed coins include early P2PK outputs and any address that has already sent a transaction.</p><p><strong>When could a quantum computer break Bitcoin?</strong> Expert consensus puts a cryptographically relevant quantum computer at 10 to 20 years out. The Global Risk Institute's 2025 survey put the probability within 10 years at 28 to 49%, and Adam Back estimates 20 to 40 years. Resource estimates have dropped sharply (one 2026 Google estimate fell below 500,000 physical qubits, down roughly 20x from a 2022 figure), but qubit counts alone do not capture the error rates, fidelity, and connectivity that determine real capability.</p><p><strong>What is Blockstream doing about the quantum threat?</strong> Blockstream Research is building and testing post-quantum signatures on the Liquid Network using the Simplicity smart contract language. In March 2026 it deployed SHRINCS, a hash-based scheme with 324-byte signatures (about 16 bytes per subsequent signature when a key is reused in stateful mode), and confirmed the first post-quantum-signed transactions on a production Bitcoin sidechain. It is also exploring OP_SHRINCSVERIFY, a proposed opcode concept to bring hash-based post-quantum verification to Bitcoin Script, alongside BIP 360.</p><p></p>
+
+          
+          </div>
+            <form id="newsletter"> 
+    <div class="newsletterRow">
+  <input type="email" placeholder="E-mail Address" id="email" name="email" required=""> 
+  <input type="hidden" id="captchaResponse" name="g-recaptcha-response"> 
+  <button class="g-btn primary-btn">Subscribe</button>
+    </div>
+    <div class="newsletterRow">
+    <p>If you have specific preferences, please, mark the topic(s) you would like to read:</p>
+    </div>
+    <div class="newsletterRow newsletterCol">
+    <label for="all">
+        	<input type="checkbox" value="all" name="newsletterPref[]" id="all" checked />All
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+        <span class="newsletter-tooltip">All topics</span>
+    </label>
+    <label for="bitcoinLayer2">
+        <input type="checkbox" value="bitcoinLayer2" name="newsletterPref[]" id="bitcoinLayer2" />Bitcoin Layer-2
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+        <span class="newsletter-tooltip">The latest on Core Lightning and Liquid</span>
+    </label>
+    <label for="research">
+        <input type="checkbox" value="research" name="newsletterPref[]" id="research" />Research
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+        <span class="newsletter-tooltip">Stay on the bleeding-edge of Bitcoin research with updates from the Blockstream Research team
+</span>
+    </label>
+    <label for="finance">
+        <input type="checkbox" value="finance" name="newsletterPref[]" id="finance" />Finance
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+        <span class="newsletter-tooltip">Analysis and updates on Blockstream Finance products like the BMN and BASIC Fund
+</span>
+    </label>
+        <label for="newsletter">
+        <input type="checkbox" value="newsletter" name="newsletterPref[]" id="newsletter" />Quarterly Update
+            <i class="fa fa-question-circle" aria-hidden="true"></i>
+            <span class="newsletter-tooltip">A concise, monthly newsletter on all-things Blockstream
+</span>
+    </label>
+    </div>
+</form>
+        </article>
+        
+      </div>
+      <div class="col-xs-12 col-lg-4 col-xl-3 has-sidebar">
+        <aside class="sidebar">
+  <div class="sidebar__section sidebar__outline-border">
+    <h4 class="sidebar__title font-h4">Blockstream</h4>
+    <div class="sidebar__description font-p3 text-gray">Bitcoin and digital asset infrastructure</div>
+    <h4 class="sidebar__title font-h4">Follow Us</h4>
+    <div class="social-links">
+  <a href="https://x.com/Blockstream" target="_blank" class="x-icon"> 
+    <svg width="12" height="12" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white"/>
+    </svg> 
+  </a>
+  <a href="https://ca.linkedin.com/company/blockstream" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
+  <a href="https://t.me/blockstream" target="_blank"> <i class="fab fa-telegram"></i> </a>
+  <a href="https://github.com/Blockstream" target="_blank"> <i class="fab fa-github"></i> </a>
+  <a href="https://www.youtube.com/channel/UCZNt3fZazX9cwWcC9vjDJ4Q" target="_blank"> <i class="fab fa-youtube"></i> </a>
+</div>
+  </div>
+
+     
+  <div class="sidebar__section">
+      <h4 class="sidebar__title font-h4">Blog Categories</h4>
+      <a class="sidebar__tag" href="/" title="all-posts" aria-label="all-posts">
+        <h5 class="sidebar__tag-name font-h5">All Posts</h5>
+      </a>
+      <a class="sidebar__tag" href="/blockstream-amp/" title="blockstream amp" aria-label="blockstream-amp">
+        <h5 class="sidebar__tag-name font-h5">Blockstream AMP</h5>
+      </a>
+      <a class="sidebar__tag" href="/blockstream-explorer/" title="blockstream explorer" aria-label="blockstream-explorer">
+        <h5 class="sidebar__tag-name font-h5">Blockstream Explorer</h5>
+      </a>
+      <a class="sidebar__tag" href="/blockstream-finance/" title="blockstream finance" aria-label="blockstream-finance">
+        <h5 class="sidebar__tag-name font-h5">Blockstream Finance</h5>
+      </a>
+      <a class="sidebar__tag" href="/blockstream-app/" title="blockstream app" aria-label="blockstream-app">
+        <h5 class="sidebar__tag-name font-h5">Blockstream App</h5>
+      </a>
+      <a class="sidebar__tag" href="/blockstream-jade/" title="blockstream jade" aria-label="blockstream-jade">
+        <h5 class="sidebar__tag-name font-h5">Blockstream Jade</h5>
+      </a>
+      <a class="sidebar__tag" href="/blockstream-research/" title="blockstream research" aria-label="blockstream-research">
+        <h5 class="sidebar__tag-name font-h5">Blockstream Research</h5>
+      </a>
+      <a class="sidebar__tag" href="/blockstream-satellite/" title="blockstream satellite" aria-label="blockstream-satellite">
+        <h5 class="sidebar__tag-name font-h5">Blockstream Satellite</h5>
+      </a>
+      <a class="sidebar__tag" href="/company/" title="company" aria-label="company">
+        <h5 class="sidebar__tag-name font-h5">Company</h5>
+      </a>
+      <a class="sidebar__tag" href="/cryptocurrency-data-feed/" title="cryptocurrency data feed" aria-label="cryptocurrency-data-feed">
+        <h5 class="sidebar__tag-name font-h5">Cryptocurrency Data Feed</h5>
+      </a>
+      <a class="sidebar__tag" href="/elements/" title="elements" aria-label="elememts">
+        <h5 class="sidebar__tag-name font-h5">Elements</h5>
+      </a>
+      <a class="sidebar__tag" href="/enterprise/" title="enterprise" aria-label="enterprise">
+        <h5 class="sidebar__tag-name font-h5">Enterprise</h5>
+      </a>
+      <a class="sidebar__tag" href="/insights/" title="insights" aria-label="insights">
+        <h5 class="sidebar__tag-name font-h5">Insights</h5>
+      </a>
+      <a class="sidebar__tag" href="/layer-2-report/" title="layer-2 roundup" aria-label="layer-2-report">
+        <h5 class="sidebar__tag-name font-h5">Layer-2 Report</h5>
+      </a>
+      <a class="sidebar__tag" href="/lightning-network/" title="lightning network" aria-label="lightning-network">
+        <h5 class="sidebar__tag-name font-h5">Lightning Network</h5>
+      </a>
+      <a class="sidebar__tag" href="/liquid-network/" title="liquid network" aria-label="liquid-network">
+        <h5 class="sidebar__tag-name font-h5">Liquid Network</h5>
+      </a>
+      <a class="sidebar__tag" href="/quantum/" title="quantum" aria-label="quantum">
+        <h5 class="sidebar__tag-name font-h5">Quantum</h5>
+      </a>
+      <a class="sidebar__tag" href="/quarterly-update/" title="quarterly-update" aria-label="quarterly-update">
+        <h5 class="sidebar__tag-name font-h5">Quarterly Update</h5>
+      </a>
+      <a class="sidebar__tag" href="/simplicity-language/" title="simplicity-language" aria-label="simplicity-language">
+        <h5 class="sidebar__tag-name font-h5">Simplicity Language</h5>
+      </a>
+  </div>
+
+  <div class="sidebar__section sidebar-search">
+    <input class="gh-search" placeholder="Search for an article" />
+    <i class="fal fa-search"></i>
+  </div>
+
+  <!-- Search Modal -->
+  <div id="searchModal" class="search-modal">
+      <div class="search-modal-content">
+        <div class="search-modal-input">
+          <span class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Search"><path d="M23.38,21.62l-6.53-6.53a9.15,9.15,0,0,0,1.9-5.59,9.27,9.27,0,1,0-3.66,7.36l6.53,6.53a1.26,1.26,0,0,0,1.76,0A1.25,1.25,0,0,0,23.38,21.62ZM2.75,9.5A6.75,6.75,0,1,1,9.5,16.25,6.76,6.76,0,0,1,2.75,9.5Z" fill="#1c1c1c"></path></svg>
+          </span>
+          <span class="search-clear">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="11" width="11" ><path stroke-linecap="round" stroke-width="0.4" fill="#1c1c1c" stroke="#000000" stroke-linejoin="round" d="M.44,21.44a1.49,1.49,0,0,0,0,2.12,1.5,1.5,0,0,0,2.12,0l9.26-9.26a.25.25,0,0,1,.36,0l9.26,9.26a1.5,1.5,0,0,0,2.12,0,1.49,1.49,0,0,0,0-2.12L14.3,12.18a.25.25,0,0,1,0-.36l9.26-9.26A1.5,1.5,0,0,0,21.44.44L12.18,9.7a.25.25,0,0,1-.36,0L2.56.44A1.5,1.5,0,0,0,.44,2.56L9.7,11.82a.25.25,0,0,1,0,.36Z"></path></svg>
+          </span>
+          <input type="text" id="modalSearchInput" placeholder="Search posts, tags and authors">
+        </div>
+        <div id="searchResults">
+        </div>
+      </div>
+  </div>
+
+  <div class="sidebar__section sidebar__outline-border">
+    <script>
+
+document.addEventListener("DOMContentLoaded", () => {
+    const formSubmissionSb = document.getElementById("sidebar-newsletter");
+    const submitBtnSb = document.querySelector("#sidebar-newsletter .g-btn");
+    const emailSb = document.getElementById('sidebar-email');
+    const checkboxesSb = document.querySelectorAll('#sidebar-newsletter .sidebar-topics');
+    const allSb = document.getElementById('sidebar-all');
+
+
+  (function () {
+    const allSb = document.getElementById('sidebar-all')
+    const specificSb = document.getElementById('sidebar-specific');
+    const specificListSb = document.querySelector('.sidebar-specific-list');
+
+    specificSb.addEventListener('change', e => {
+        if(e.target.checked){
+          specificListSb.style.display = "block";
+        } 
+    });
+
+    allSb.addEventListener('change', e => {
+      if(e.target.checked){
+        specificListSb.style.display = "none";
+      } 
+    });
+
+})();
+
+    allSb.addEventListener('change', e => {
+        if(e.currentTarget.checked) {
+            let checkboxList = document.querySelectorAll('input[type="checkbox"]');
+            checkboxList.forEach(i => {
+                i.checked = false;
+            });
+        }
+    });
+
+    const inputFieldsSb = [emailSb];
+
+    let shouldValidateSb = false;
+    let isFormValidSb = false;
+
+    function resetElmSb(elm) {
+        elm.classList.remove("invalid-input");
+    }
+
+    function invalidateElmSb(elm) {
+        elm.classList.add("invalid-input");
+    }
+
+    const validateInputsSb = () => {
+        isFormValidSb = true;
+        resetElmSb(emailSb);
+
+        if (!emailSb.value || emailSb.value.indexOf("@") == -1 || emailSb.value.length < 5) {
+            isFormValidSb = false;
+            invalidateElmSb(emailSb);
+        }
+
+    };
+
+    function subscriptionsPrefSb(){
+        const preferencesList = [];
+        checkboxesSb.forEach(checkbox => {
+            if(checkbox.checked === true) {
+                preferencesList.push(checkbox.value);
+            }
+        });
+        return preferencesList;
+    }
+
+    function formSendSb(e){
+        e.preventDefault();
+        formSubmitedSb(e);
+        submitBtnSb.style.display = "none";
+        emailSb.style.display = "none";
+        formSubmissionSb.innerHTML = "<h4 class='submitted-message'>Thank you!</h4>";
+    }
+
+    function formSubmitedSb(e) {
+       e.preventDefault();
+       const formData = new FormData();
+       formData.append(
+           'email',
+           `${emailSb.value === "" ? "n/a" : emailSb.value}`
+       );
+       formData.append(
+        'subscriptions',
+        `${subscriptionsPrefSb()}`
+       );
+
+       grecaptcha.ready(function() {
+            grecaptcha.execute('6LcC8qMfAAAAAKQvHTUiJyxB_DO3nXwei4BFktyg', {action: 'contact'}).then(function(token) {
+                formData.append('g-recaptcha-response', token);
+                // Production version - Getform API endpoint
+                fetch("https://getform.io/f/5f1f20be-e019-4bcf-a218-dd770809b977",
+
+                // Development version - Getform API endpoint
+                // fetch("https://getform.io/f/06e2d1c9-dcd5-4e5d-85d8-f401f9aa0427",
+                    {
+                        method: "POST",
+                        body: formData,
+                    })
+                    .then(response => console.log(response))
+                    .catch(error => console.log(error));
+            });
+        });
+    
+    }
+
+    submitBtnSb.addEventListener("click", (e) => {
+        e.preventDefault();
+        shouldValidateSb = true;
+        validateInputsSb();
+        if (isFormValidSb) {
+            formSendSb(event);
+        }
+    });
+
+    inputFieldsSb.forEach((input) => input.addEventListener("input", () => {
+        validateInputsSb();
+    }));
+});
+</script>
+
+<form class="sidebar_form" id="sidebar-newsletter">
+  <h4 class="sidebar__title font-h4">Join the Conversation</h4>
+  <div class="sidebar__description font-p3 text-gray">Subscribe to have the latest announcements and most cutting-edge research from Blockstream delivered to your inbox.</div>
+  <label class="sidebar-inputContainer font-p3 text-gray" for="sidebar-all">
+    <input class="sidebar-topics" type="radio" name="sidebar-topics" id="sidebar-all" value="all" checked />Subscribe to all topics
+    <span class="sidebar-checkmark"></span>
+  </label>
+  <label class="sidebar-inputContainer font-p3 text-gray" for="sidebar-specific">
+    <input type="radio" name="sidebar-topics" id="sidebar-specific" value="specific" />Subscribe to select topics
+    <span class="sidebar-checkmark"></span>
+  </label>
+  <div class="sidebar-specific-list">
+    <label class="sidebar-inputContainer">
+      <input class="sidebar-topics" type="checkbox" value="bitcoinLayer2" name="sidebar-newsletterPref[]" id="sidebar-bitcoinLayer2" />Bitcoin
+      Layer-2
+      <span class="sidebar-checkmarkBox"></span>
+    </label>
+    <label class="sidebar-inputContainer">
+      <input class="sidebar-topics" type="checkbox" value="research" name="sidebar-newsletterPref[]" id="sidebar-research" />Research
+      <span class="sidebar-checkmarkBox"></span>
+    </label>
+    <label class="sidebar-inputContainer">
+      <input class="sidebar-topics" type="checkbox" value="finance" name="sidebar-newsletterPref[]" id="sidebar-finance" />Finance
+      <span class="sidebar-checkmarkBox"></span>
+    </label>
+    <label class="sidebar-inputContainer">
+      <input class="sidebar-topics" type="checkbox" value="newsletter" name="sidebar-newsletterPref[]" id="sidebar-newsletter" />Quarterly Update
+      <span class="sidebar-checkmarkBox"></span>
+    </label>
+  </div>
+  <input type="text" id="sidebar-email" placeholder="Email Address" />
+  <button class="g-btn primary-btn font-btn-2">Subscribe</button>
+</form>  </div>
+</aside>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const searchInput = document.querySelector('.gh-search');
+  const searchModal = document.getElementById('searchModal');
+  const modalSearchInput = document.getElementById('modalSearchInput');
+  const searchResults = document.getElementById('searchResults');
+  const searchClear = document.querySelector('.search-clear');
+  const searchIcon = document.querySelector('.search-icon');
+
+  let currentPage = 0;
+  const size = 10;
+
+  searchInput.addEventListener('focus', function() {
+      searchModal.style.display = 'block';
+      modalSearchInput.focus();
+  });
+
+  modalSearchInput.addEventListener('input', function() {
+      currentPage = 0;
+      updateSearchResults(this.value);
+      if (this.value.length > 0) {
+          searchClear.style.display = 'flex'; 
+          searchIcon.style.display = 'none';  
+      } else {
+          searchClear.style.display = 'none';  
+          searchIcon.style.display = 'flex'; 
+      }
+  });
+
+  searchClear.addEventListener('click', function() {
+      modalSearchInput.value = '';         
+      searchResults.innerHTML = '';         
+      searchClear.style.display = 'none';   
+      searchIcon.style.display = 'flex';    
+      modalSearchInput.focus();             
+  });
+
+  window.addEventListener('click', function(event) {
+      if (event.target === searchModal) {
+          searchModal.style.display = 'none';
+            modalSearchInput.value = '';
+            searchResults.innerHTML = '';
+      }
+  });
+
+  function updateSearchResults(query, append = false) {
+    if (!query) {
+        searchResults.innerHTML = '';
+        currentPage = 0;
+        return;
+    }
+
+    const from = currentPage * size;
+
+    fetch(`https://blog-search-index.blockstream.com/search?query=${encodeURIComponent(query)}&from=${from}&size=${size}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            let htmlContent = '';
+
+            if (data.length === 0 && currentPage === 0) {
+                htmlContent = '<p class="no-matches">No matches found</p>';
+            } else {
+                data.forEach(item => {
+                    htmlContent += '<a class="search-item" href="' + item._source.url + '">';
+                    htmlContent += '<span class="search-item-title">' + item._source.title + '</span>';
+                    htmlContent += '<span class="search-item-text">' + item._source.plaintext.substring(0, 50) + '...</span>';
+                    htmlContent += '</a>';
+                });
+
+                const existingLoadMoreBtn = document.getElementById('loadMoreBtn');
+                if (existingLoadMoreBtn) {
+                    existingLoadMoreBtn.remove();
+                }
+
+                if (data.length === size) {
+                    htmlContent += '<div class="load-more-btn-wrapper"><button id="loadMoreBtn" class="load-more-btn">Show more results</button></div>';
+                }
+            }
+
+            if (append) {
+                searchResults.insertAdjacentHTML('beforeend', htmlContent);
+            } else {
+                searchResults.innerHTML = htmlContent;
+            }
+
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    currentPage++;
+                    updateSearchResults(modalSearchInput.value, true);
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+            searchResults.innerHTML = '<p style="padding: 10px 26px;">Error loading results.</p>';
+        });
+  }
+
+  
+});
+
+</script>
+      </div>
+    </div>
+  </div>
+
+    </main>
+
+      <footer>
+    <div class="footer">
+        <div class="footer-sitemap">
+            <div class="footer-sitemap_logo-grid">
+                <img
+                src="https://blockstream.com/img/icons/logo_blks.png" alt="logo"> </a>
+                <div class="social-links">
+                    <div class="social-links">
+                        <a href="https://x.com/Blockstream" target="_blank" class="x-icon"> 
+                            <svg width="12" height="12" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white"/>
+                            </svg> 
+                        </a>
+                        <a href="https://ca.linkedin.com/company/blockstream" target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
+                        <a href="https://t.me/blockstream" target="_blank"> <i class="fab fa-telegram"></i> </a>
+                        <a href="https://github.com/Blockstream" target="_blank"> <i class="fab fa-github"></i> </a>
+                        <a href="https://www.youtube.com/channel/UCZNt3fZazX9cwWcC9vjDJ4Q" target="_blank"> <i class="fab fa-youtube"></i> </a>
+                    </div>
+                </div>
+                <div class="footer-sitemap_logo-grid_terms_privacy">
+                    <ul>
+                        <li>
+                            <a class="font-p3 text-gray" href="https://blockstream.com/terms">Terms</a>
+                        </li>
+                        <li>
+                            <a class="font-p3 text-gray" href="https://blockstream.com/privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-sitemap_logo-grid_copyright font-p3 text-gray">
+                    <script type="text/javascript">
+                        document.write("&copy; " + new Date().getFullYear());
+                    </script>
+                    Blockstream Corporation Inc.<br/> All rights reserved.
+                </div>
+            </div>
+            <div class="footer-sitemap_sitelinks">
+                <div class="footer-sitemap_products">
+                    <h4 class="footer-title font-h4 text-white">Products</h4>
+                    <div class="footer-sitemap_products_twoColGrid collapse">
+                        <ul>
+                            <li> <a class="font-p3 text-gray" href="https://blockstream.com/app">Blockstream App</a></li>
+                            <li> <a class="font-p3 text-gray" href="https://blockstream.com/jade">Blockstream Jade</a></li>
+                            <li> <a class="font-p3 text-gray" href="https://blockstream.com/enterprise">Blockstream Enterprise</a></li>
+                            <li> <a class="font-p3 text-gray" href="https://blockstream.com/amp">Blockstream AMP</a></li>
+                            <li> <a class="font-p3 text-gray" href="https://blockstream.info/">Blockstream Explorer</a></li>
+                            <li> <a class="font-p3 text-gray" href="https://blockstreamfunds.com/">Blockstream Asset Management</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a class="font-p3 text-gray" href="https://blockstream.com/cryptofeed">Cryptocurrency Data Feed</a></li>              
+                            <li> <a class="font-p3 text-gray" href="https://blockstream.com/liquid">Liquid Network</a></li>
+                            <li> <a class="font-p3 text-gray" href="https://blockstream.com/lightning">Core Lightning</a></li>
+                            <li> <a class="font-p3 text-gray" href="https://blockstream.com/elements">Elements</a></li>
+                            <li> <a class="font-p3 text-gray" href="https://simplicity-lang.org/">Simplicity</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-sitemap_otherlinks">
+                    <div>
+                        <h4 class="footer-title font-h4 text-white">Developers</h4>
+                        <ul class="collapse">
+                            <li>
+                                <a class="font-p3 text-gray" href="https://blog.blockstream.com/blockstream-research/" target="_blank">Engineering Blog</a>
+                            </li>
+                            <li>
+                                <a class="font-p3 text-gray" href="https://docs.liquid.net/docs" target="_blank">Liquid Documentation</a>
+                            </li>
+                            <li>
+                                <a class="font-p3 text-gray" href="https://docs.corelightning.org/docs" target="_blank">Core Lightning Documentation</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-title font-h4 text-white">Company</h4>
+                        <ul class="collapse">
+                            <li>
+                                <a class="font-p3 text-gray" href="https://research.blockstream.com/">Research</a>
+                            </li>
+                            <li>
+                                <a class="font-p3 text-gray" href="https://blockstream.com/about">About</a>
+                            </li>
+                            <li>
+                                <a class="font-p3 text-gray" href="https://blockstream.com/careers">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-title font-h4 text-white">Resources</h4>
+                        <ul class="collapse">
+                            <li>
+                                <a class="font-p3 text-gray" href="https://help.blockstream.com/">Help Center</a>
+                            </li>
+                            <li>
+                                <a class="font-p3 text-gray" href="https://help.blockstream.com/education">Bitcoin Education</a>
+                            </li>
+                            <li>
+                                <a class="font-p3 text-gray" href="https://help.blockstream.com/education/glossary">Glossary</a>
+                            </li>
+                            <li> <a class="font-p3 text-gray" href="https://help.blockstream.com/local">Local</a></li>
+                            <li>
+                                <a class="font-p3 text-gray" href="https://blockstream.com/contact">Contact</a>
+                            </li>
+                            <li>
+                                <a class="font-p3 text-gray" href="https://design.blockstream.com/styleguide/branding/overview">Brand Assets</a>
+                            </li>
+                        </ul>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>      <div class="scroll-to-top"></div>
+
+    <svg class="wave-gradient" version="1.1">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="var(--color-primary)" />
+      <stop offset="100%" stop-color="var(--color-secondary)" />
+    </linearGradient>
+  </defs>
+</svg>
+    <script>
+      if (config.enable_pwa && 'serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W55GXHB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>

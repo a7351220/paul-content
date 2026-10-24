@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "project_id": "2026-10-17-bitcoin-quantum-risk",
+  "project_root": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險",
+  "research_cutoff": "2026-10-17",
+  "timezone": "Asia/Taipei",
+  "mode": "topic",
+  "story_shape": "teaching",
+  "house_voice_profile": "market-house-voice-zh-tw-v1",
+  "voice_status": "approved",
+  "current_stage": "complete-script-draft",
+  "structure_status": "approved-for-drafting",
+  "slide_map_revision": 1,
+  "slides": [
+    {
+      "slide_id": "opening-question",
+      "display_ordinal": 1,
+      "title": "比特幣會被量子計算攻破嗎？"
+    },
+    {
+      "slide_id": "research-promise",
+      "display_ordinal": 2,
+      "title": "Slide 2"
+    },
+    {
+      "slide_id": "spending-authority",
+      "display_ordinal": 3,
+      "title": "Slide 3"
+    },
+    {
+      "slide_id": "key-recovery",
+      "display_ordinal": 4,
+      "title": "Slide 4"
+    },
+    {
+      "slide_id": "signature-versus-mining",
+      "display_ordinal": 5,
+      "title": "Slide 5"
+    },
+    {
+      "slide_id": "usable-qubits",
+      "display_ordinal": 6,
+      "title": "Slide 6"
+    },
+    {
+      "slide_id": "google-resource-model",
+      "display_ordinal": 7,
+      "title": "Slide 7"
+    },
+    {
+      "slide_id": "ai-design-progress",
+      "display_ordinal": 8,
+      "title": "Slide 8"
+    },
+    {
+      "slide_id": "subroutine-tradeoff",
+      "display_ordinal": 9,
+      "title": "Slide 9"
+    },
+    {
+      "slide_id": "no-fixed-qday",
+      "display_ordinal": 10,
+      "title": "Slide 10"
+    },
+    {
+      "slide_id": "exposure-windows",
+      "display_ordinal": 11,
+      "title": "Slide 11"
+    },
+    {
+      "slide_id": "different-risk-denominators",
+      "display_ordinal": 12,
+      "title": "Slide 12"
+    },
+    {
+      "slide_id": "institutional-disagreement",
+      "display_ordinal": 13,
+      "title": "Slide 13"
+    },
+    {
+      "slide_id": "post-quantum-toolkit",
+      "display_ordinal": 14,
+      "title": "Slide 14"
+    },
+    {
+      "slide_id": "bip360-boundary",
+      "display_ordinal": 15,
+      "title": "Slide 15"
+    },
+    {
+      "slide_id": "migration-costs",
+      "display_ordinal": 16,
+      "title": "Slide 16"
+    },
+    {
+      "slide_id": "legacy-coins-consensus",
+      "display_ordinal": 17,
+      "title": "Slide 17"
+    },
+    {
+      "slide_id": "investment-answer",
+      "display_ordinal": 18,
+      "title": "Slide 18"
+    }
+  ],
+  "audit_status": "conditional",
+  "audit_conditions": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08"
+  ],
+  "bundle_status": "working",
+  "source_evidence_status": "not_captured",
+  "next_stage": "user_script_review",
+  "commit_status": "not_requested",
+  "preferred_term_forms": [
+    "以太坊共同創辦人 V 神",
+    "V 神"
+  ],
+  "approved_voice_samples": [
+    "user-approved-opening-73108"
+  ],
+  "script_status": "draft-ready-for-user-review",
+  "script_path": "逐字稿.md",
+  "source_mapping_path": "逐頁來源對照.md"
+}

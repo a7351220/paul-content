@@ -1,0 +1,131 @@
+{
+  "matched": 31,
+  "total": 31,
+  "normalization": "忽略PDF排版空白，NFKC，PDF字形⻑/⺠對應長/民。",
+  "checks": [
+    {
+      "slide": 1,
+      "match": true
+    },
+    {
+      "slide": 2,
+      "match": true
+    },
+    {
+      "slide": 3,
+      "match": true
+    },
+    {
+      "slide": 4,
+      "match": true
+    },
+    {
+      "slide": 5,
+      "match": true
+    },
+    {
+      "slide": 6,
+      "match": true
+    },
+    {
+      "slide": 7,
+      "match": true
+    },
+    {
+      "slide": 8,
+      "match": true
+    },
+    {
+      "slide": 9,
+      "match": true
+    },
+    {
+      "slide": 10,
+      "match": true
+    },
+    {
+      "slide": 11,
+      "match": true
+    },
+    {
+      "slide": 12,
+      "match": true
+    },
+    {
+      "slide": 13,
+      "match": true
+    },
+    {
+      "slide": 14,
+      "match": true
+    },
+    {
+      "slide": 15,
+      "match": true
+    },
+    {
+      "slide": 16,
+      "match": true
+    },
+    {
+      "slide": 17,
+      "match": true
+    },
+    {
+      "slide": 18,
+      "match": true
+    },
+    {
+      "slide": 19,
+      "match": true
+    },
+    {
+      "slide": 20,
+      "match": true
+    },
+    {
+      "slide": 21,
+      "match": true
+    },
+    {
+      "slide": 22,
+      "match": true
+    },
+    {
+      "slide": 23,
+      "match": true
+    },
+    {
+      "slide": 24,
+      "match": true
+    },
+    {
+      "slide": 25,
+      "match": true
+    },
+    {
+      "slide": 26,
+      "match": true
+    },
+    {
+      "slide": 27,
+      "match": true
+    },
+    {
+      "slide": 28,
+      "match": true
+    },
+    {
+      "slide": 29,
+      "match": true
+    },
+    {
+      "slide": 30,
+      "match": true
+    },
+    {
+      "slide": 31,
+      "match": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Weekly Market Research"
+  short_description: "Research weekly stories, verify sources, and update market data."
+  default_prompt: "Use $weekly-market-research to research this week's market stories from the fixed-source workbench and API."

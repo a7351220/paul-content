@@ -1,0 +1,208 @@
+Blockstream
+Products
+CONSUMERS
+Blockstream App
+A multi-platform, feature-rich Bitcoin and Liquid Wallet
+Blockstream Jade
+A fully-open source hardware wallet for Bitcoin and Liquid
+ENTERPRISE
+Blockstream Enterprise
+Enterprise-grade custody and treasury management tool
+AMP
+An API to issue and manage digital assets on the Liquid Network
+DEVELOPERS
+TOOLS
+Blockstream Explorer API
+Search data from the Bitcoin and Liquid blockchains
+Cryptocurrency Data Feed
+Real-time and historical cryptocurrency trade data
+COMMUNITY PROJECTS
+Core Lightning
+Implementation of the Lightning Protocol
+Liquid Network
+Bitcoin layer-2 for digital asset issuance
+Elements
+An open-source, sidechain-capable blockchain platform
+Simplicity
+High-assurance smart contracts
+Newsroom
+Blog
+In
+The News
+Press
+Releases
+Quantum
+Developers
+Engineering
+Blog
+Liquid Documentation
+Core Lightning Documentation
+Company
+Research
+About
+Careers
+Brand
+Assets
+Store
+Support
+Help Center
+Bitcoin Education
+Glossary
+Local
+Quantum
+Blockstream Research
+Quantum Computing and Bitcoin: The Threat Explained (ELI5)
+Blockstream Team
+Apr 15, 2026
+The headlines say quantum computers will break Bitcoin. The reality: one specific part of Bitcoin's security is vulnerable. Blockstream engineers are already working on the fix.
+What Is a Quantum Computer?
+Your laptop thinks in bits: tiny switches that are either 0 or 1. Every calculation it does, from loading a webpage to verifying a Bitcoin transaction, comes down to flipping billions of these switches really fast.
+A quantum computer thinks in qubits. Where a bit is always either 0 or 1, a qubit holds a combination of the two that only resolves into a single value when you measure it. Combining many qubits produces a set of possible states that grows exponentially with the number of qubits, and the math that governs quantum hardware lets a computation act on all of those states at once in a way a classical computer cannot match.
+Think of it like a maze. A regular computer tries every path one at a time until it finds the exit. A quantum computer explores many paths at once. For certain specific types of math problems, that means arriving at an answer in far fewer steps for certain specific problems. However, the gains are not universal; quantum computers are better at a narrow class of mathematical problems, but not at everything.
+Quantum computers are not just "faster computers." They will not make your web browser faster, your videos stream more smoothly, or your documents load any quicker. They are a specialized tool, and one of the problems they excel at is directly relevant to how Bitcoin secures your keys.
+How Bitcoin Keeps Your Money Safe
+Bitcoin uses two types of math to protect your bitcoin.
+The first type proves ownership. When you send bitcoin, you prove it is yours by signing the transaction with a secret key (your private key). The network checks your signature using a related public key. The whole system relies on one assumption: nobody can recover your private key from your public key. Today's computers cannot do this. It would take them longer than the age of the universe!
+The second type secures mining. Bitcoin miners compete to find a specific hash output by trying trillions of guesses per second. This keeps the network running and prevents anyone from rewriting transaction history.
+Quantum computers threaten the first type directly. Their impact on the second is much more distant and concerns decentralization rather than network integrity.
+Can Quantum Computers Break Bitcoin?
+A quantum computer running a specific algorithm (called Shor's algorithm) can work backward from a public key to recover the private key. With the private key, an attacker can take the bitcoin.
+Think of it like a lock. Today's computers cannot pick this lock in any meaningful timeframe. A sufficiently powerful quantum computer could.
+The mining side uses different math (SHA-256 hashing). Grover's algorithm gives a quantum computer a quadratic speedup on hashing, which would hand a large quantum miner a mathematical edge over smaller ones. This is a concern for mining decentralization, not for Bitcoin's ability to confirm transactions. In practice the risk sits much further out than signature breaking: it requires quantum hardware far larger than what is needed to attack secp256k1, and Grover's algorithm does not parallelize well, which limits how much that theoretical advantage would translate into real performance.
+The quantum threat to Bitcoin is about who owns the bitcoin, not how the network runs. Most coverage gets this backwards.
+How Close Is the Quantum Threat to Bitcoin?
+Quantum hardware has advanced quickly, but the numbers depend on what you measure. IBM's Condor gate-model chip reached 1,121 qubits in 2023. Google's Willow chip reached only 105 qubits in December 2024 but hit a more important milestone: the first "below threshold" quantum error correction, something researchers had pursued since 1995. Larger neutral-atom arrays exist — a Caltech team demonstrated a 6,100-qubit array — but raw qubit counts do not measure useful computation.
+Breaking Bitcoin's signature math requires far more than any current hardware can deliver. Three research papers published between May 2025 and March 2026 dropped the estimated requirement by roughly 20x:
+2022 estimate (University of Sussex, 2022): ~13 million physical qubits to crack a 256-bit key in one hour
+Updated estimate (Google Quantum AI, March 2026): fewer than 500,000 physical qubits
+Most aggressive estimate (unproven architecture): fewer than 10,000 physical qubits
+Current hardware is still well short of even the most aggressive estimate, and raw qubit counts are a rough proxy at best. The Google paper cautions that counting qubits misses most of what determines a quantum computer's usefulness: error rates, fidelity, connectivity, and the ability to sustain error-corrected computation long enough to finish the calculation. The gap is closing, but not uniformly across every dimension that matters.
+Expert consensus places the arrival of quantum computers powerful enough to break cryptography at 10 to 20 years out. The Global Risk Institute's 2025 survey found a 28-49% probability of a cryptographically relevant quantum computer arriving within the next 10 years, the highest estimate in the survey's seven-year history. Adam Back, Blockstream CEO and inventor of the proof-of-work system Bitcoin uses, estimates 20 to 40 years.
+Several institutions are planning around shorter horizons. NIST has published deprecation targets for today's signature standards (ECDSA and RSA) that begin near the end of this decade, and Google's quantum team has publicly recommended that organizations migrate sensitive systems on a similar timeline. Whether the threat arrives in 10 years or 40, the planning windows overlap with Bitcoin's own upgrade timeline.
+Here is the part that matters most: Bitcoin upgrades take years. Taproot took about 3.5 years from its first mailing-list proposal to activation, and a post-quantum migration may take longer because every holder would need to move their coins to new address types, not just update their software. The time to start preparing is now, not when the threat arrives.
+The Clock Is Already Ticking
+A quantum attacker does not need to wait for quantum hardware before choosing targets. The moment a public key is visible to anyone watching the chain — in an old P2PK output, in the spending script of any address that has sent a transaction, or in a funded Taproot (P2TR) output — that key is permanently recorded on the chain and can be attacked as soon as hardware catches up.
+Nothing has to be decrypted. Bitcoin does not encrypt its consensus data. The attacker is waiting for the hardware that can derive a private key directly from a public key that is already in the open.
+Security researchers describe a similar pattern in traditional cryptography as "harvest now, decrypt later," and the U.S. Federal Reserve published a 2025 paper calling it an active risk for distributed ledger networks. Bitcoin's version is different in the details (there is no encryption, and nothing is decrypted), but the shape is the same: collect the target data today, break it tomorrow.
+Data collection could already be happening. The theft would come later.
+Is Bitcoin Quantum Resistant? What's Actually at Risk
+No. Not all aspects of Bitcoin face equal quantum risk.
+At risk: Any bitcoin where the public key is already visible to attackers. This includes:
+Early Bitcoin addresses from 2009-2010 (P2PK format) that stored the public key directly, including an estimated 1 million bitcoin widely attributed to Satoshi Nakamoto.
+Any address that has been used to send a transaction, which reveals the public key on-chain in the spending script.
+P2TR (Taproot) addresses, which expose a version of the public key as soon as the address is funded. This was an accepted tradeoff when Taproot was designed because the quantum threat appeared distant. Proposals like BIP 360 are designed to remove this exposure.
+Transactions sitting in the mempool. These are not yet on-chain, but the public key is visible to anyone watching the network, giving a quantum attacker a window to derive the private key before miners confirm the transaction.
+Chaincode Labs researchers estimated in May 2025 that roughly 30% of circulating bitcoin, approximately 6 million BTC, sits behind exposed public keys.
+Hidden (for now): Older address formats like P2PKH, P2SH, P2WPKH, and P2WSH hide the public key behind an additional layer of math (a hash). The public key only gets revealed when you spend. If you have received bitcoin at one of these addresses but never sent from it, your public key remains hidden. About 65% of bitcoin sits behind unrevealed public keys.
+That hidden state ends as soon as you spend it. The transaction broadcasts the public key into the mempool, and a sufficiently powerful quantum attacker could try to derive the private key during the window before the transaction confirms. P2WSH currently provides the strongest public key concealment, but only until the first time you move the funds.
+Safe: Proof-of-work, address derivation, and the structures that link transactions together all use SHA-256 hashing. Quantum algorithms cannot meaningfully compromise these operations.
+What about Satoshi's coins?
+quantum hypers don't have to agree with quantum realists on timeline, as there is strong value in providing a step-up sequence of PQ readiness for bitcoin users, so they have a long migration time. it also makes it more plausible to deprecate unmigrated ECDSA/schnorr signatures.— Adam Back (@adam3us) April 4, 2026
+Adam Back has posited that a long post-quantum migration window makes it "more plausible to deprecate unmigrated ECDSA/schnorr signatures" via soft fork. Under that path, coins that had years to move to quantum-resistant addresses remain safe, while coins that never moved, whether from lost keys or Satoshi's wallets, would become unspendable by anyone, including an attacker. Back has separately rejected proposals to freeze vulnerable addresses proactively, framing that as developer overreach.
+Solutions Aren't the Most Difficult Part
+The cryptographic solutions exist. NIST (the U.S. standards body) finalized the first three post-quantum cryptography standards in August 2024 after an eight-year evaluation. The math is ready. Getting the Bitcoin network to upgrade is the hard part.
+Bigger signatures, higher costs. NIST's smallest standardized post-quantum signature scheme (ML-DSA, FIPS 204) requires approximately 3,700 bytes for a signature and public key combined. Bitcoin's current Schnorr key-path spends are 64 bytes. That is roughly a 58x increase in per-transaction cryptographic overhead, and a proportional decrease in how many transactions fit into each block. Bigger signatures mean bigger transactions and higher fees for everyone.
+Bitcoin changes slowly, and that is by design. Modifying Bitcoin requires broad consensus across a global, decentralized network. But Bitcoin has upgraded before. SegWit (2017) fixed transaction malleability and improved scalability. Taproot (2021) brought smarter scripting and better privacy. Both were soft forks that the network adopted. A post-quantum migration would follow a similar playbook, but would be significantly more complex than either.
+Every single holder must act. Upgrading Bitcoin's code does not automatically protect existing funds. Every bitcoin holder would need to actively move their coins from old addresses to new quantum-safe addresses. At Bitcoin's current throughput (3 to 10 transactions per second), a full network migration would take months to years.
+BIP 360 proponents have suggested that even under optimistic assumptions, a full migration would take several years. That clock only starts once the community agrees on a plan, and no such plan exists yet.
+What Is Already Being Built
+The Blockstream team isn't waiting for the threat to arrive.
+A testing ground on Liquid. The Liquid Network is a Bitcoin sidechain built by Blockstream. It runs Simplicity, a smart contract language designed for Bitcoin's security model. On Bitcoin mainnet, deploying new cryptography requires a network-wide protocol change. On Liquid with Simplicity, the same capability ships as a smart contract without a network-wide consensus change, which means post-quantum protection can ship in weeks, not the years a Bitcoin soft fork requires.
+The first post-quantum transactions on a live network. In March 2026, Blockstream Research deployed SHRINCS (a compact post-quantum signature scheme) on Liquid mainnet. Five real transactions were broadcast and confirmed, marking the first post-quantum-signed transactions on a production Bitcoin sidechain.
+SHRINCS produces 324-byte signatures in normal operation. (Reusing the same key in stateful mode adds about 16 bytes per subsequent signature.) The smallest NIST standard produces signatures of 2,420+ bytes. That 7x size reduction is the difference between a practical blockchain signature and one that dominates every transaction's cost.
+SHRINCS relies only on the security of SHA-256, the same hash function Bitcoin already uses for proof-of-work, address derivation, and Merkle trees. No new cryptographic assumptions are required, just more of what Bitcoin already trusts. Several of NIST's original post-quantum candidates were broken using classical computers during the standardization process, which underscores the value of conservative cryptographic foundations.
+Hardware wallet rollover with SHRIMPS. Proposed in March 2026 by Blockstream cryptographer Jonas Nick, SHRIMPS is designed for the hardware wallet lifecycle: what happens when your current device breaks, or when you want to upgrade to a newer generation. Up to 1,024 devices loaded from the same backup can sign independently, with 2.5 KB signatures — still 3x smaller than NIST's hash-based standard (SLH-DSA). If you ever expect to replace a hardware wallet, SHRIMPS is the scheme designed with that transition in mind.
+A path to Bitcoin mainnet. Blockstream Research is exploring the rationale for OP_SHRINCSVERIFY, a proposed opcode concept that would bring hash-based post-quantum signature verification directly to Bitcoin Script. The work is still at the open-questions stage, not a finalized BIP. If a future version is proposed and adopted, holders could protect their bitcoin with quantum-resistant signatures one address at a time, without waiting for a full network migration.
+This approach complements BIP 360 (Pay-to-Merkle-Root), which removes Taproot's quantum-vulnerable key-spend path. BIP 360 provides the address structure. OP_SHRINCSVERIFY provides the signature verification. Different approaches that work together.
+The proving ground pattern. Liquid operates as a live financial network with billions in total value locked. Deploying new cryptography on Liquid produces the kind of production evidence that Bitcoin's consensus process needs. OP_CAT is live on Liquid and has a concrete proposal (BIP 347) for inclusion in Bitcoin. Post-quantum cryptography is following the same path: build on Liquid, prove it works under real economic conditions, then let that production data inform any future Bitcoin proposal.
+What You Can Do Today
+Use a modern wallet. The Blockstream app uses modern address formats. For most address types, your public key stays hidden until you spend.
+Avoid address reuse. Most modern wallets generate a fresh address for every transaction automatically. If yours does not, switch to one that does. Address reuse is a surefire way to increase your exposure to a future quantum threat.
+Move coins off old, exposed addresses. If you have bitcoin sitting in a legacy address you have spent from before, especially old paper wallets or early exchange withdrawals, send those coins to a fresh address. This removes your public key from the "exposed" category.
+Stay informed. Follow the development of BIP 360 and OP_SHRINCSVERIFY as they move through Bitcoin's proposal process.
+For institutions: Include quantum readiness in long-term custody planning. The migration window means decisions made in 2026 shape preparedness for the years ahead.
+The quantum threat to Bitcoin is real, specific, and further away than the headlines suggest. But Bitcoin's upgrade timeline is measured in years too, and the resource estimates for breaking its cryptography are dropping fast. The margin for preparation exists, and it is narrowing.
+Explore Blockstream's post-quantum research
+Frequently Asked Questions
+Can quantum computers break Bitcoin? No quantum computer that exists today can recover a Bitcoin private key from a public key. A sufficiently powerful future quantum computer running Shor's algorithm could, which would let an attacker spend coins whose public key is already visible on the chain. The risk is to ownership of specific coins, not to Bitcoin's mining or its ability to confirm transactions.
+Will quantum computers break Bitcoin? The threat is real, but the timeline is uncertain. Expert estimates for a quantum computer powerful enough to break Bitcoin's signatures range from roughly 10 to 40 years out, and current hardware is far short of even the most aggressive requirement. Bitcoin can upgrade to quantum-resistant signatures before that point, and engineers are already building the tools to do it.
+Is Bitcoin quantum resistant? Bitcoin is not fully quantum resistant yet. Its mining and hashing (SHA-256) are considered quantum-safe, but its signature scheme is not: any coin whose public key is exposed could be at risk once hardware catches up. Roughly 30% of circulating bitcoin currently sits behind exposed public keys. Upgrades like BIP 360 and post-quantum signature schemes are designed to close that gap.
+How much Bitcoin is at risk from quantum computing? Chaincode Labs estimated in May 2025 that about 30% of circulating bitcoin, roughly 6 million BTC, sits behind public keys that are already visible on-chain. The other ~65% sits behind unrevealed public keys in older P2PKH, P2SH, P2WPKH, and P2WSH addresses, and stays hidden until the coins are spent. Exposed coins include early P2PK outputs and any address that has already sent a transaction.
+When could a quantum computer break Bitcoin? Expert consensus puts a cryptographically relevant quantum computer at 10 to 20 years out. The Global Risk Institute's 2025 survey put the probability within 10 years at 28 to 49%, and Adam Back estimates 20 to 40 years. Resource estimates have dropped sharply (one 2026 Google estimate fell below 500,000 physical qubits, down roughly 20x from a 2022 figure), but qubit counts alone do not capture the error rates, fidelity, and connectivity that determine real capability.
+What is Blockstream doing about the quantum threat? Blockstream Research is building and testing post-quantum signatures on the Liquid Network using the Simplicity smart contract language. In March 2026 it deployed SHRINCS, a hash-based scheme with 324-byte signatures (about 16 bytes per subsequent signature when a key is reused in stateful mode), and confirmed the first post-quantum-signed transactions on a production Bitcoin sidechain. It is also exploring OP_SHRINCSVERIFY, a proposed opcode concept to bring hash-based post-quantum verification to Bitcoin Script, alongside BIP 360.
+Subscribe
+If you have specific preferences, please, mark the topic(s) you would like to read:
+All
+All topics
+Bitcoin Layer-2
+The latest on Core Lightning and Liquid
+Research
+Stay on the bleeding-edge of Bitcoin research with updates from the Blockstream Research team
+Finance
+Analysis and updates on Blockstream Finance products like the BMN and BASIC Fund
+Quarterly Update
+A concise, monthly newsletter on all-things Blockstream
+Blockstream
+Bitcoin and digital asset infrastructure
+Follow Us
+Blog Categories
+All Posts
+Blockstream AMP
+Blockstream Explorer
+Blockstream Finance
+Blockstream App
+Blockstream Jade
+Blockstream Research
+Blockstream Satellite
+Company
+Cryptocurrency Data Feed
+Elements
+Enterprise
+Insights
+Layer-2 Report
+Lightning Network
+Liquid Network
+Quantum
+Quarterly Update
+Simplicity Language
+Join the Conversation
+Subscribe to have the latest announcements and most cutting-edge research from Blockstream delivered to your inbox.
+Subscribe to all topics
+Subscribe to select topics
+Bitcoin
+Layer-2
+Research
+Finance
+Quarterly Update
+Subscribe
+Terms
+Privacy
+Blockstream Corporation Inc.
+All rights reserved.
+Products
+Blockstream App
+Blockstream Jade
+Blockstream Enterprise
+Blockstream AMP
+Blockstream Explorer
+Blockstream Asset Management
+Cryptocurrency Data Feed
+Liquid Network
+Core Lightning
+Elements
+Simplicity
+Developers
+Engineering Blog
+Liquid Documentation
+Core Lightning Documentation
+Company
+Research
+About
+Careers
+Resources
+Help Center
+Bitcoin Education
+Glossary
+Local
+Contact
+Brand Assets

@@ -1,0 +1,130 @@
+{
+  "pptx": "/Users/xieminghua/Documents/保羅內容/主題影片/2026-10-13-博通AI下一個最大贏家/輸出/博通AI下一個最大贏家-整張生成20頁.pptx",
+  "pages": 20,
+  "notes_match": 20,
+  "generated_content_images": 20,
+  "chart_overlays": 0,
+  "standalone_content_text_overlays": 0,
+  "per_page": [
+    {
+      "page": 1,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 2,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 3,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 4,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 5,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 6,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 7,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 8,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 9,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 10,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 11,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 12,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 13,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 14,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 15,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 16,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 17,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 18,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 19,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    },
+    {
+      "page": 20,
+      "whole_generated_image_match": true,
+      "no_chart_or_text_overlay": true,
+      "notes_exact_match": true
+    }
+  ]
+}

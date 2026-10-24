@@ -1,0 +1,212 @@
+{
+  "counting": "spoken non-whitespace characters; excludes title and Slide headings",
+  "minimum_multiplier": 2,
+  "baseline_path": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/逐頁加倍與Skill修訂前-20261018-225754/逐字稿.md",
+  "pages": [
+    {
+      "page": 1,
+      "before": 160,
+      "after": 338,
+      "minimum": 320,
+      "multiplier": 2.1125,
+      "han_before": 125,
+      "han_after": 284,
+      "han_multiplier": 2.272
+    },
+    {
+      "page": 2,
+      "before": 127,
+      "after": 286,
+      "minimum": 254,
+      "multiplier": 2.252,
+      "han_before": 89,
+      "han_after": 233,
+      "han_multiplier": 2.618
+    },
+    {
+      "page": 3,
+      "before": 182,
+      "after": 369,
+      "minimum": 364,
+      "multiplier": 2.0275,
+      "han_before": 161,
+      "han_after": 330,
+      "han_multiplier": 2.0497
+    },
+    {
+      "page": 4,
+      "before": 183,
+      "after": 400,
+      "minimum": 366,
+      "multiplier": 2.1858,
+      "han_before": 165,
+      "han_after": 362,
+      "han_multiplier": 2.1939
+    },
+    {
+      "page": 5,
+      "before": 231,
+      "after": 484,
+      "minimum": 462,
+      "multiplier": 2.0952,
+      "han_before": 204,
+      "han_after": 435,
+      "han_multiplier": 2.1324
+    },
+    {
+      "page": 6,
+      "before": 242,
+      "after": 500,
+      "minimum": 484,
+      "multiplier": 2.0661,
+      "han_before": 207,
+      "han_after": 433,
+      "han_multiplier": 2.0918
+    },
+    {
+      "page": 7,
+      "before": 251,
+      "after": 522,
+      "minimum": 502,
+      "multiplier": 2.0797,
+      "han_before": 221,
+      "han_after": 457,
+      "han_multiplier": 2.0679
+    },
+    {
+      "page": 8,
+      "before": 264,
+      "after": 534,
+      "minimum": 528,
+      "multiplier": 2.0227,
+      "han_before": 230,
+      "han_after": 477,
+      "han_multiplier": 2.0739
+    },
+    {
+      "page": 9,
+      "before": 239,
+      "after": 484,
+      "minimum": 478,
+      "multiplier": 2.0251,
+      "han_before": 217,
+      "han_after": 440,
+      "han_multiplier": 2.0276
+    },
+    {
+      "page": 10,
+      "before": 262,
+      "after": 529,
+      "minimum": 524,
+      "multiplier": 2.0191,
+      "han_before": 236,
+      "han_after": 477,
+      "han_multiplier": 2.0212
+    },
+    {
+      "page": 11,
+      "before": 241,
+      "after": 487,
+      "minimum": 482,
+      "multiplier": 2.0207,
+      "han_before": 213,
+      "han_after": 431,
+      "han_multiplier": 2.0235
+    },
+    {
+      "page": 12,
+      "before": 258,
+      "after": 525,
+      "minimum": 516,
+      "multiplier": 2.0349,
+      "han_before": 200,
+      "han_after": 430,
+      "han_multiplier": 2.15
+    },
+    {
+      "page": 13,
+      "before": 267,
+      "after": 542,
+      "minimum": 534,
+      "multiplier": 2.03,
+      "han_before": 237,
+      "han_after": 488,
+      "han_multiplier": 2.0591
+    },
+    {
+      "page": 14,
+      "before": 247,
+      "after": 507,
+      "minimum": 494,
+      "multiplier": 2.0526,
+      "han_before": 221,
+      "han_after": 459,
+      "han_multiplier": 2.0769
+    },
+    {
+      "page": 15,
+      "before": 228,
+      "after": 465,
+      "minimum": 456,
+      "multiplier": 2.0395,
+      "han_before": 206,
+      "han_after": 423,
+      "han_multiplier": 2.0534
+    },
+    {
+      "page": 16,
+      "before": 242,
+      "after": 495,
+      "minimum": 484,
+      "multiplier": 2.0455,
+      "han_before": 217,
+      "han_after": 452,
+      "han_multiplier": 2.0829
+    },
+    {
+      "page": 17,
+      "before": 259,
+      "after": 528,
+      "minimum": 518,
+      "multiplier": 2.0386,
+      "han_before": 234,
+      "han_after": 483,
+      "han_multiplier": 2.0641
+    },
+    {
+      "page": 18,
+      "before": 281,
+      "after": 562,
+      "minimum": 562,
+      "multiplier": 2.0,
+      "han_before": 251,
+      "han_after": 506,
+      "han_multiplier": 2.0159
+    },
+    {
+      "page": 19,
+      "before": 259,
+      "after": 525,
+      "minimum": 518,
+      "multiplier": 2.027,
+      "han_before": 237,
+      "han_after": 480,
+      "han_multiplier": 2.0253
+    },
+    {
+      "page": 20,
+      "before": 302,
+      "after": 614,
+      "minimum": 604,
+      "multiplier": 2.0331,
+      "han_before": 269,
+      "han_after": 559,
+      "han_multiplier": 2.0781
+    }
+  ],
+  "baseline_sha256": "4d7f9f63669c106e08a6cdc5f2093880dfb20af5d6c1260499336e31375cd5ab",
+  "total_before": 4725,
+  "total_after": 9696,
+  "all_pages_passed": true,
+  "han_only_cross_check_passed": true
+}

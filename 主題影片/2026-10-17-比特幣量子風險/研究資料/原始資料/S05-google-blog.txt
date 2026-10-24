@@ -1,0 +1,210 @@
+URL: https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/
+Accessed: 2026-10-17 Asia/Taipei
+
+Safeguarding cryptocurrency by disclosing quantum vulnerabilities responsibly
+Skip to main content
+Explore our many areas of focus
+Explore all research areas
+Applied AI & sciences
+Earth AI
+Health AI
+Science AI
+Sustainability & crisis resilience
+Foundational ML & algorithms
+Algorithms & theory
+Information retrieval
+Machine intelligence
+Machine perception
+Natural language processing
+People, systems & quantum AI
+Human-computer interaction and visualization
+Networking
+Quantum AI
+Responsible AI
+Anti abuse
+Software engineering
+Software systems
+Learn More
+Publications
+Projects
+Building a collaborative ecosystem
+Datasets
+Access high-quality datasets to accelerate your research.
+Tools & services
+Explore our latest AI models and products.
+Open source
+Discover open-source code and collaborate with the community.
+Try Deep Review
+Get detailed AI feedback on complex documents
+Shaping the future together
+See all programs
+Faculty programs
+Participating in the academic research community through meaningful engagement with university faculty.
+Student programs
+Supporting the next generation of researchers through a wide range of programming.
+R&D programs
+Collaborating with industry and academic experts to support foundational science and innovation.
+Locations
+Find your place in our global offices and research labs.
+Translating discovery into real-world impact
+People
+Our researchers drive advancements in computer science through both fundamental and applied research.
+Teams
+Collaborative groups tackling the world's most challenging AI problems.
+Research
+Explore our many areas of focus
+Explore all research areas
+Applied AI & sciences
+Earth AI
+Health AI
+Science AI
+Sustainability & crisis resilience
+Foundational ML & algorithms
+Algorithms & theory
+Information retrieval
+Machine intelligence
+Machine perception
+Natural language processing
+People, systems & quantum AI
+Human-computer interaction and visualization
+Networking
+Quantum AI
+Responsible AI
+Anti abuse
+Software engineering
+Software systems
+Learn More
+Publications
+Projects
+Resources
+Building a collaborative ecosystem
+Datasets
+Access high-quality datasets to accelerate your research.
+Tools & services
+Explore our latest AI models and products.
+Open source
+Discover open-source code and collaborate with the community.
+Try Deep Review
+Get detailed AI feedback on complex documents
+Conferences & events
+Careers
+Shaping the future together
+See all programs
+Faculty programs
+Participating in the academic research community through meaningful engagement with university faculty.
+Student programs
+Supporting the next generation of researchers through a wide range of programming.
+R&D programs
+Collaborating with industry and academic experts to support foundational science and innovation.
+Locations
+Find your place in our global offices and research labs.
+Blog
+About
+Translating discovery into real-world impact
+People
+Our researchers drive advancements in computer science through both fundamental and applied research.
+Teams
+Collaborative groups tackling the world's most challenging AI problems.
+Google
+Research
+Google AI
+Learn about all our AI
+Google DeepMind
+Explore the frontier of AI
+Google Labs
+Try our AI experiments
+Research
+Resources
+Conferences & events
+Careers
+Blog
+About
+Search
+Home
+Blog
+Safeguarding cryptocurrency by disclosing quantum vulnerabilities responsibly
+March 31, 2026
+Ryan Babbush, Director of Research, Quantum Algorithms, and Hartmut Neven, VP of Engineering, Google Quantum AI, Google Research
+We’re exploring a new model for how to elucidate the code breaking capabilities of future quantum computers and outlining steps that should be taken to mitigate their consequences.
+Quick links
+Paper
+Share
+Copy link
+×
+Google has led the responsible transition to post-quantum cryptography since 2016. In a new whitepaper, we show that future quantum computers may break the elliptic curve cryptography that protects cryptocurrency and other systems with fewer qubits and gates than previously realized. We want to raise awareness on this issue and are providing the cryptocurrency community with recommendations to improve security and stability before this is possible, including transitioning blockchains to post-quantum cryptography (PQC), which is resistant to quantum attacks.
+To share this research responsibly, we engaged with the U.S. government and developed a new method to describe these vulnerabilities via a zero-knowledge proof, so they can be verified without providing a roadmap for bad actors. We urge other research teams to do the same to keep people safe. We look forward to continuing our work across the industry following our 2029 timeline alongside others working on responsible approaches, like Coinbase, the Stanford Institute for Blockchain Research, and the Ethereum Foundation.
+Quantum resource estimates
+Quantum computers promise to solve otherwise impossible problems, including examples in chemistry, drug discovery, and energy. However, large-scale cryptographically relevant quantum computers (CRQCs) will also be able to break current, widely used public-key cryptography that protects things like people’s confidential information. Governments and others, including Google, have been preparing for this security challenge for many years. With continued scientific and technological progress, CRQCs are getting closer to reality, requiring a transition to PQC, which is why we recently introduced our 2029 migration timeline.
+In our whitepaper, we share updated estimates of the quantum computing “resources” (i.e., qubits and gates) necessary to break the 256-bit elliptic curve discrete logarithm problem (ECDLP-256) on which elliptic curve cryptography is based. We express our resource estimates in terms of the number of logical qubits (error-corrected qubits composed of hundreds of physical qubits) and Toffoli gates (expensive elementary operations on qubits that are the primary driver of the time needed to execute many algorithms). Specifically, we have compiled two quantum circuits (a sequence of quantum gates) that implement Shor's algorithm for ECDLP-256: one that uses less than 1,200 logical qubits and 90 million Toffoli gates and one that uses less than 1,450 logical qubits and 70 million Toffoli gates. We estimate that these circuits can be executed on a superconducting qubit CRQC with fewer than 500,000 physical qubits in a few minutes, given standard assumptions about hardware capabilities that are consistent with some of Google’s flagship quantum processors. This is an approximately 20-fold reduction in the number of physical qubits required to solve ECDLP-256 and a continuation of a long history of gradual optimization in compiling quantum algorithms to fault-tolerant circuits.
+Protecting cryptocurrencies with post-quantum cryptography
+Most blockchain technologies and cryptocurrencies currently rely on ECDLP-256 for critical aspects of their security. As we argue in our paper, PQC represents a well-understood path to post-quantum blockchain security, underwriting confidence in the long-term viability of cryptocurrencies and the digital economy in a world with CRQCs. We provide examples of post-quantum blockchains and experimental PQC deployments on otherwise quantum-vulnerable blockchains. We note that while viable solutions like PQC exist, they will take time to implement, bringing increasing urgency to act. We also lay out additional recommendations for the cryptocurrency community to help improve security and stability in the short term and long term, including refraining from exposing or reusing vulnerable wallet addresses as well as potential policy options to address abandoned cryptocoins.
+Our approach to vulnerability disclosure
+Disclosure of security vulnerabilities is a controversial subject. On one hand, the "No Disclosure" position holds that publicizing vulnerabilities provides bad actors with instruction manuals for attacks. On the other, the "Full Disclosure" movement argues that knowledge of security vulnerabilities enables the public to exercise caution and protect itself while incentivizing security fixes. In computer security, the debate has converged around a set of compromises known as "Responsible Disclosure" and "Coordinated Vulnerability Disclosure". Both advocate disclosing the vulnerability with an embargo and some time allowing for security fixes to be rolled out to affected systems. Variants of Responsible Disclosure with strict deadlines have been adopted by premier security research institutions, such as CERT/CC at Carnegie Mellon University and Google's Project Zero, and have been adopted as an international standard ISO/IEC 29147:2018.
+Disclosure of security vulnerabilities in blockchain technologies is further complicated by the fact that cryptocurrencies are not simply decentralized data processing systems. Their value as digital assets derives both from the digital security of the network and the public confidence in the system. While their digital security can be attacked using CRQCs, public confidence can also be undermined using fear, uncertainty and doubt (FUD) techniques. Consequently, unscientific and unsubstantiated resource estimates for quantum algorithms breaking ECDLP-256 can themselves represent an attack on the system.
+These considerations guide our careful disclosure of updated resource estimates for quantum attacks on blockchain technology based on elliptic curve cryptography. First, we reduce the FUD potential of our discussion by clarifying the areas where blockchains are immune to quantum attacks and by highlighting the progress that has already been achieved towards post-quantum blockchain security. Second, we substantiate our resource estimates without sharing the underlying quantum circuits by publishing a state-of-the-art cryptographic construction called a "zero-knowledge proof", which allows third parties to verify our claims without us leaking sensitive attack details.
+We welcome further discussions with the quantum, security, cryptocurrency, and policy communities to align on responsible disclosure norms going forward.
+Outlook
+With this work, our goal is to support the long-term health of the cryptocurrency ecosystem and blockchain technologies, which are an increasingly significant part of the digital economy. Moving forward, we hope our approach to responsible disclosure can spur an important conversation among quantum computing researchers and the broader public, and offer a model on which to build for the quantum cryptanalysis research field.
+Labels:
+Algorithms & Theory
+Quantum
+Security, Privacy and Abuse Prevention
+Quick links
+Paper
+Share
+Copy link
+×
+Other posts of interest
+October 5, 2026
+Open and Emergent Problems in Agentic Privacy and Security: A Contextual Angle
+Generative AI
+·
+Natural Language Processing
+·
+Security, Privacy and Abuse Prevention
+October 2, 2026
+Toward provably private learning from federated data
+Mobile Systems
+·
+Security, Privacy and Abuse Prevention
+·
+Software Systems & Engineering
+September 29, 2026
+How Diffusion Controller unifies and simplifies AI image generation
+Algorithms & Theory
+·
+Machine Intelligence
+Follow us
+Explore our other initiatives
+Google AI
+Discover how Google AI is committed to enriching knowledge and solving complex challenges
+Products
+Build
+Research
+Responsibility
+Societal Impact
+About
+Google Cloud
+High-performance infrastructure for cloud computing, data analytics & machine learning
+Overview
+Solutions
+Products
+Pricing
+Resources
+Google DeepMind
+Our mission is to build AI responsibly to benefit humanity
+Models
+Research
+Science
+About
+Google Labs
+Explore the future of AI responsibly with Google Labs
+About
+Experiments
+Stay connected
+About Google
+Google Products
+Privacy
+Terms
+Cookies management controls
+×

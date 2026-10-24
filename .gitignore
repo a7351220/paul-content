@@ -1,0 +1,11 @@
+# Local dependencies and operating-system metadata
+.DS_Store
+.AppleDouble
+._*
+node_modules
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.cache-*

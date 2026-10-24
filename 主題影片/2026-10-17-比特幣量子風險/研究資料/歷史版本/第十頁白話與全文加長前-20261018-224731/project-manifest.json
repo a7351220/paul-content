@@ -1,0 +1,544 @@
+{
+  "schema_version": "1.0",
+  "project_id": "2026-10-17-bitcoin-quantum-risk",
+  "project_root": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險",
+  "research_cutoff": "2026-10-17",
+  "timezone": "Asia/Taipei",
+  "mode": "topic",
+  "story_shape": "thesis",
+  "house_voice_profile": "market-house-voice-zh-tw-v1",
+  "voice_status": "approved",
+  "current_stage": "script-revision",
+  "structure_status": "chronological-research-and-context-first-introduction",
+  "slide_map_revision": 6,
+  "slides": [
+    {
+      "slide_id": "opening-question",
+      "display_ordinal": 1,
+      "title": "比特幣會被量子計算攻破嗎？",
+      "slide_job": "比特幣會被量子計算攻破嗎？",
+      "viewer_question_in": "這次的量子風險為什麼又被提起？",
+      "answer": "量子電腦會不會破解比特幣，這個問題大家已經聽過很多次。但這次多了一個變數，就是 AI。\n\n以太坊共同創辦人 V 神，最近就提醒，AI 加速數學研究，可能讓一些原本被認為安全的密碼系統，比預期更早受到挑戰。\n\n而做 Claude 的 Anthropic，也公布了一項研究，讓 AI 幫忙設計更有效率的量子運算，其中就包含破解比特幣簽章會用到的運算。",
+      "prior_knowledge_required": [],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C07",
+        "C18"
+      ],
+      "source_ids": [
+        "S03",
+        "S04",
+        "S15"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "當下AI消息引出疑問，需要交代查閱資料與要回答的問題"
+    },
+    {
+      "slide_id": "research-promise",
+      "display_ordinal": 2,
+      "title": "先看原始研究與機構資料",
+      "slide_job": "先看原始研究與機構資料",
+      "viewer_question_in": "要從哪些資料理解這個問題？",
+      "answer": "這讓人擔心，原本以為還很遠的威脅，會不會因為 AI 的幫忙，提早到來？\n\n所以我找了一些機構研究資料，包括富達、數位資產管理公司 CoinShares，也回頭看了 Google 和 Anthropic 的原始研究。今天就來聊，比特幣到底面臨什麼威脅，以及它有沒有辦法應對。",
+      "prior_knowledge_required": [],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [],
+      "source_ids": [
+        "S03",
+        "S05",
+        "S07",
+        "S08"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "要判斷威脅，先從觀眾手上的比特幣如何得到使用授權開始"
+    },
+    {
+      "slide_id": "public-private-analogy",
+      "prior_knowledge_required": [],
+      "new_terms": [
+        "私鑰",
+        "公鑰"
+      ],
+      "key_numbers": [],
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "source_ids": [
+        "S06",
+        "S10"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "display_ordinal": 3,
+      "title": "比特幣靠什麼讓你證明自己同意花幣？",
+      "slide_job": "比特幣靠什麼讓你證明自己同意花幣？",
+      "viewer_question_in": "比特幣怎麼確認是我同意花這筆錢？",
+      "answer": "你要花錢包裡的比特幣，靠的是一份由你保管的秘密資料。它能讓你證明，這筆交易是你同意的。這份秘密，就叫做私鑰，可以想成你手上的鑰匙。\n\n跟它配成一組的，還有公鑰，可以想成那把鎖。公鑰讓比特幣網路核對交易，可以公開；私鑰則要自己保管。\n\n誰拿到私鑰，誰就能拿走你的比特幣。",
+      "why_next": "私鑰控制比特幣，因此下一步要理解它為何可能被算出"
+    },
+    {
+      "slide_id": "key-recovery",
+      "display_ordinal": 4,
+      "title": "量子電腦可能從公鑰算出私鑰",
+      "slide_job": "量子電腦可能從公鑰算出私鑰",
+      "viewer_question_in": "保管好私鑰，為什麼仍有量子風險？",
+      "answer": "現在，別人就算看得到鎖，也很難配出鑰匙。換成比特幣來說，就是看到公鑰，也很難算出私鑰。\n\n量子電腦發展到夠強的時候，就有機會做到這件事。你即使從來沒把私鑰交給任何人，未來也可能被別人直接算出來。\n\n所以，要繼續保護這些比特幣，就需要換上量子電腦也很難破解的方法。",
+      "prior_knowledge_required": [
+        "public-private-analogy"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "source_ids": [
+        "S06",
+        "S10"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "私鑰可能被回推，保護資產就需要能抵抗量子攻擊的新方法"
+    },
+    {
+      "slide_id": "post-quantum-toolkit",
+      "display_ordinal": 5,
+      "title": "2024年：抗量子簽章已有正式標準",
+      "slide_job": "2024年：抗量子簽章已有正式標準",
+      "viewer_question_in": "大家之前有沒有準備防護方法？",
+      "answer": "這樣的防護，其實已經準備很多年了。\n\n二〇二四年，美國負責技術標準的 NIST，就公布了抗量子簽章的標準。簽章就是錢包替交易附上的證明，讓網路確認這筆交易是你同意的。\n\n這些新方法，是要讓量子電腦也很難破解，而且用一般電腦就能執行。也就是說，比特幣已經有可以考慮採用的技術。\n\n有了工具，接下來就要決定，哪一種適合比特幣，以及怎麼換上去才安全。",
+      "prior_knowledge_required": [
+        "key-recovery"
+      ],
+      "new_terms": [
+        "NIST",
+        "數位簽章",
+        "抗量子簽章"
+      ],
+      "key_numbers": [
+        "2024 NIST standards"
+      ],
+      "claim_ids": [
+        "C14"
+      ],
+      "source_ids": [
+        "S12"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "已有工具，接下來要決定怎麼選、怎麼安全換上去"
+    },
+    {
+      "slide_id": "institutional-disagreement",
+      "display_ordinal": 6,
+      "title": "2026年2月：CoinShares認為風險可管理",
+      "slide_job": "2026年2月：CoinShares認為風險可管理",
+      "viewer_question_in": "今年稍早，機構怎麼看風險？",
+      "answer": "換上新的保護，也要留時間確認，它用起來會不會出問題。\n\n今年二月，CoinShares 認為比特幣的量子風險可以管理，同時提醒，太急著修改安全規則，可能把新的漏洞一起帶進來。原本想保護大家的錢，反而可能先因為升級出錯而受損。\n\n所以，提早測試、慢慢準備，是有道理的。只是，準備時間到底夠不夠，還得看攻擊的方法進步得多快。接下來幾個月，這件事就有了新的變化。",
+      "prior_knowledge_required": [
+        "post-quantum-toolkit"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C22"
+      ],
+      "source_ids": [
+        "S08"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "測試需要時間，準備是否來得及取決於破解方法的進展"
+    },
+    {
+      "slide_id": "google-resource-model",
+      "display_ordinal": 7,
+      "title": "3月：Google估計需要的機器可以更小",
+      "slide_job": "3月：Google估計需要的機器可以更小",
+      "viewer_question_in": "之後的新研究改變了什麼估計？",
+      "answer": "三月底的新變化，是破解可能用到的機器，比以前估計的小很多。\n\nGoogle 重新估算，按照他們設定的機器性能，破解比特幣用的這類密碼，需要的實體量子位元，可以壓到五十萬個以下，大約只有先前估計的二十分之一。\n\n原本覺得要做出很大台的量子電腦，才有辦法破解；算法變得更有效率，需要的機器就可能縮小。這會讓攻擊有機會提早做得到，也讓原本留給升級的時間，多了一個變數。",
+      "prior_knowledge_required": [
+        "key-recovery"
+      ],
+      "new_terms": [],
+      "key_numbers": [
+        "<500000 physical qubits",
+        "~20-fold reduction per Google"
+      ],
+      "claim_ids": [
+        "C04",
+        "C20"
+      ],
+      "source_ids": [
+        "S05",
+        "S06"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "所需機器可能縮小，下一步看會影響哪些已存在的幣及準備規模"
+    },
+    {
+      "slide_id": "exposed-coins-estimate",
+      "display_ordinal": 8,
+      "title": "Google同時估計曝險資產並安排自家升級",
+      "slide_job": "Google同時估計曝險資產並安排自家升級",
+      "viewer_question_in": "多少幣需要保護，Google怎麼安排準備？",
+      "answer": "如果這樣的破解能力出現，現在已經公開的公鑰，就會成為攻擊者可以下手的目標。\n\nGoogle 在同一份論文裡估計，當時公鑰已經公開的比特幣，大約有六百九十萬顆，包含早期地址，也包含一些較新的地址設計。要處理的，是一大批已經存在的幣。\n\nGoogle 自己也已經把二〇二九年，訂為自家系統完成抗量子升級的目標。防護得提早做，才有時間讓這麼多系統和資產陸續換好。比特幣同樣得處理這個問題，而換上新方法，又會影響平常怎麼使用。",
+      "prior_knowledge_required": [
+        "google-resource-model"
+      ],
+      "new_terms": [],
+      "key_numbers": [
+        "~6.9 million BTC at study time",
+        "2029 Google migration target"
+      ],
+      "claim_ids": [
+        "C10",
+        "C11",
+        "C21"
+      ],
+      "source_ids": [
+        "S06",
+        "S05"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "大量資產要轉移，新的防護也必須維持平常使用"
+    },
+    {
+      "slide_id": "migration-costs",
+      "display_ordinal": 9,
+      "title": "9月：富達分析新簽章的交易容量代價",
+      "slide_job": "9月：富達分析新簽章的交易容量代價",
+      "viewer_question_in": "有了新方法，為什麼升級還需要時間？",
+      "answer": "新的防護換上去之後，大家平常轉帳，也要能順利進行。九月，富達的報告就把其中的代價講得更具體。\n\n抗量子簽章通常比較大，會讓一筆交易占用更多空間。但比特幣每個區塊能放的資料有限，一筆交易變大，同一個區塊能放的交易就會變少。\n\n如果很多人同時轉帳，大家就可能得等更久。所以，選新方法時，也得想辦法減少它占用的空間。只是，有些省空間的做法，又會讓錢包多出需要管理的事情。",
+      "prior_knowledge_required": [
+        "post-quantum-toolkit"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C13"
+      ],
+      "source_ids": [
+        "S07",
+        "S13"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "為壓低資料量而縮小簽章，可能增加錢包管理代價"
+    },
+    {
+      "slide_id": "fidelity-wallet-usability",
+      "prior_knowledge_required": [
+        "migration-costs"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C13",
+        "C17"
+      ],
+      "source_ids": [
+        "S07",
+        "S13",
+        "S06"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "display_ordinal": 10,
+      "title": "富達也討論錢包使用與社群配合的難題",
+      "slide_job": "富達也討論錢包使用與社群配合的難題",
+      "viewer_question_in": "容量之外，錢包和社群還要處理什麼？",
+      "answer": "有些方法能把簽章縮小，代價是錢包得記住，同一把私鑰已經用了幾次。\n\n假如換手機時恢復舊備份，這個次數也跟著回到以前，就可能出現安全問題。原本只是換個手機，卻可能因為紀錄不對，讓自己的幣有風險。\n\n這些問題處理好，社群還得談妥採用哪個方案。比特幣沒有一家公司能決定，明天所有人都換新規則。方案要談好，錢包、交易所和整個網路也要配合，這些準備都得花時間。",
+      "why_next": "錢包、規則及業者配合都需時間，期間攻擊能力仍可能進步"
+    },
+    {
+      "slide_id": "vitalik-ai-math-warning",
+      "display_ordinal": 11,
+      "title": "10月8日：V神提醒AI可能加快密碼變化",
+      "slide_job": "10月8日：V神提醒AI可能加快密碼變化",
+      "viewer_question_in": "到了十月，AI帶來了什麼新的擔心？",
+      "answer": "這些準備需要時間，攻擊的方法卻可能繼續往前走。十月八日，V 神的提醒，就讓這個問題又多了一層。\n\n他擔心，AI 加速數學研究之後，可能找到某些密碼方法裡，過去沒發現的弱點。原本大家認為很難破解的問題，就可能因為新的數學方法，變得沒那麼難。\n\n按照他的判斷，AI 也可能改變我們對安全性的估計。防護方案還在選擇、系統還在準備時，破解的方法可能已經有新進展，留給升級的時間也可能跟著改變。",
+      "prior_knowledge_required": [
+        "key-recovery"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C18"
+      ],
+      "source_ids": [
+        "S15"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "V神指出AI數學的可能風險，接著看不同路線的AI量子電路成果"
+    },
+    {
+      "slide_id": "ai-design-progress",
+      "display_ordinal": 12,
+      "title": "10月16日：Claude用53小時找出新設計",
+      "slide_job": "10月16日：Claude用53小時找出新設計",
+      "viewer_question_in": "同月AI在量子運算上做出了什麼成果？",
+      "answer": "AI 在量子運算這一邊，也已經開始參與改良。十月十六日，Anthropic 公布了 Claude 幫忙設計量子運算的成果。\n\n他們挑了一項破解私鑰會用到的運算，讓 Claude 想辦法做得更有效率。Claude 花了五十三個小時，找出新的設計。\n\n人主要是一開始交代任務，中間偶爾提醒它多試幾個方向。Claude 就持續提出做法、測試，再接著修改，過程中連新的數學關係也找了出來。這讓找出更省資源的算法，多了 AI 可以幫忙。",
+      "prior_knowledge_required": [
+        "vitalik-ai-math-warning"
+      ],
+      "new_terms": [],
+      "key_numbers": [
+        "53 hours design time"
+      ],
+      "claim_ids": [
+        "C07",
+        "C09"
+      ],
+      "source_ids": [
+        "S03",
+        "S04"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "AI已能參與設計，接著交代設計節省計算的具體幅度"
+    },
+    {
+      "slide_id": "subroutine-tradeoff",
+      "display_ordinal": 13,
+      "title": "AI設計以多12%位元換大量運算減少",
+      "slide_job": "AI設計以多12%位元換大量運算減少",
+      "viewer_question_in": "這個設計到底省下多少計算？",
+      "answer": "Claude 找到的其中一個設計，跟之前最省量子位元的做法相比，多用了大約百分之十二的量子位元，卻讓一種重要運算的次數，減到原本的十七分之一左右。\n\n多用一點硬體，就能在這個計算環節省下大量工作。假如這類改良持續出現，破解需要的資源，就可能繼續往下減。\n\n升級得花時間測試，AI 卻可能讓破解方法改良得更快。越早把新的防護做成大家能使用的功能，就越有時間讓持有人把幣換好。",
+      "prior_knowledge_required": [
+        "ai-design-progress"
+      ],
+      "new_terms": [],
+      "key_numbers": [
+        "~12% more qubits",
+        "~17x fewer Toffoli gates in a subroutine"
+      ],
+      "claim_ids": [
+        "C08"
+      ],
+      "source_ids": [
+        "S03",
+        "S04"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "攻擊方法可能加快，防護就需要轉成可部署的功能"
+    },
+    {
+      "slide_id": "bip360-boundary",
+      "display_ordinal": 14,
+      "title": "目前：BIP360草案先處理公鑰長期公開",
+      "slide_job": "目前：BIP360草案先處理公鑰長期公開",
+      "viewer_question_in": "看完最新進展，比特幣目前打算怎麼升級？",
+      "answer": "比特幣要把這些防護用起來，已經有一些草案在討論，其中一個叫 BIP 三六〇。\n\n它先從地址設計下手，減少公鑰長時間公開的情況，讓攻擊者少一點機會，拿著公鑰慢慢破解。再搭配抗量子簽章，才能讓存著的幣和轉帳過程都受到保護。\n\n目前社群還得選好簽章方案，讓錢包和交易所支援。等這些工作做好，原本放在舊地址的幣，也需要轉到支援新防護的地址。這一步，就會回到誰在保管你的比特幣。",
+      "prior_knowledge_required": [
+        "post-quantum-toolkit",
+        "subroutine-tradeoff"
+      ],
+      "new_terms": [
+        "BIP360草案"
+      ],
+      "key_numbers": [],
+      "claim_ids": [
+        "C10",
+        "C15"
+      ],
+      "source_ids": [
+        "S10"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "新地址及簽章得到支援後，現有資產仍需持有人或業者轉移"
+    },
+    {
+      "slide_id": "funds-migration",
+      "display_ordinal": 15,
+      "title": "自己保管的人，需要把幣轉好",
+      "slide_job": "自己保管的人，需要把幣轉好",
+      "viewer_question_in": "新方法能用之後，自己的幣要怎麼辦？",
+      "answer": "如果是你自己保管比特幣，之後就可能需要你來完成這一步。\n\n錢包軟體先提供支援新防護的功能，再由你按照指示，把幣轉到新的地址。原本放在舊地址的幣，要真的轉過去，才會用上新的保護。\n\n有人很快就會處理好，有人可能很久沒打開錢包，根本不知道要升級。所以，除了把軟體做好，還得讓持有人知道要做什麼、操作也要夠簡單，才有機會讓更多幣及時換好。",
+      "prior_knowledge_required": [
+        "bip360-boundary"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C13",
+        "C17"
+      ],
+      "source_ids": [
+        "S07",
+        "S06"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "自託管由本人處理，接著交代另一種保管方式由誰負責"
+    },
+    {
+      "slide_id": "institutional-migration",
+      "prior_knowledge_required": [
+        "funds-migration"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C13",
+        "C17"
+      ],
+      "source_ids": [
+        "S07",
+        "S06"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "display_ordinal": 16,
+      "title": "放在交易所的幣，需要業者處理",
+      "slide_job": "放在交易所的幣，需要業者處理",
+      "viewer_question_in": "放在交易所的幣由誰處理？",
+      "answer": "如果比特幣放在交易所，或交給公司保管，這一步就由業者來做。\n\n業者得更新保管系統，把幣轉到支援新防護的地址，也要讓客戶能正常存幣、提幣。一家業者可能管理很多地址，又保管了一大批客戶的錢，整個過程需要安排和測試。\n\n自己保管的人，要看錢包何時支援；交給業者保管的人，就要看業者做到哪一步。這兩種情況，至少都還有人握著私鑰，能安排接下來怎麼轉移。",
+      "why_next": "有人握有私鑰就能安排轉移，接著處理私鑰遺失的例外"
+    },
+    {
+      "slide_id": "legacy-coins-consensus",
+      "display_ordinal": 17,
+      "title": "私鑰弄丟的老幣，無法自行轉移",
+      "slide_job": "私鑰弄丟的老幣，無法自行轉移",
+      "viewer_question_in": "如果主人已經弄丟私鑰呢？",
+      "answer": "但如果私鑰已經弄丟了，這一步就做不到。\n\n主人連自己的幣都拿不出來，自然也沒辦法把它轉到新的地址。假如公鑰又已經公開，未來就可能被量子攻擊者算出私鑰，把幣拿走。這些幣會繼續留在原本的風險裡。\n\n更麻煩的是，一個地址很多年沒動，我們也不知道，主人是一直放著，還是真的弄丟私鑰了。社群想保護這些幣，卻很難直接分清楚，哪些人無法升級，哪些人只是還沒升級。",
+      "prior_knowledge_required": [
+        "funds-migration",
+        "institutional-migration"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C17"
+      ],
+      "source_ids": [
+        "S06"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "無法辨識遺失和未遷移，導致規則與救援的共識難題"
+    },
+    {
+      "slide_id": "legacy-spending-rules",
+      "display_ordinal": 18,
+      "title": "BIP361草案提出舊簽章退場與救援方向",
+      "slide_job": "BIP361草案提出舊簽章退場與救援方向",
+      "viewer_question_in": "社群要怎麼處理無法自行升級的老幣？",
+      "answer": "分不清楚這兩種情況，就很難訂出讓所有人都能接受的規則。社群目前討論的 BIP 三六一草案，就碰到這個難題。\n\n它提出的方向，是給大家時間換上新的保護，之後逐步停用舊簽章。同時，也要設法讓原持有人證明自己是主人，再把幣領回來。怎麼證明、哪些人能領，還有很多問題要談。\n\n有些人如果始終無法提出證明，幣就可能一直被鎖住；繼續讓舊方法使用下去，又可能讓攻擊者把幣拿走。要防止別人偷幣，卻也可能讓原本的主人無法花幣，這就是最難取得共識的地方。",
+      "prior_knowledge_required": [
+        "legacy-coins-consensus"
+      ],
+      "new_terms": [
+        "BIP361草案"
+      ],
+      "key_numbers": [],
+      "claim_ids": [
+        "C16",
+        "C17"
+      ],
+      "source_ids": [
+        "S11",
+        "S06"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "老幣可能被盜或受限，影響也可能傳到其他持有人的市場風險"
+    },
+    {
+      "slide_id": "market-risk-after-migration",
+      "prior_knowledge_required": [
+        "legacy-spending-rules"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C17"
+      ],
+      "source_ids": [
+        "S06",
+        "S07"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "display_ordinal": 19,
+      "title": "老幣風險也可能影響其他持有人",
+      "slide_job": "老幣風險也可能影響其他持有人",
+      "viewer_question_in": "我已經升級，老幣還會影響我嗎？",
+      "answer": "這個難題，跟已經完成升級的人也有關。因為老幣如果被攻擊者拿走，影響可能一路傳到市場上。\n\n假如有一批多年沒動的幣，突然被拿出來賣，就可能增加賣壓。大家也可能開始擔心，還有多少幣會遇到同樣的問題，進一步影響持有比特幣的信心。\n\n所以，自己的幣保護好了，還要在意其他老幣怎麼處理。對整個市場來說，能有多少幣及時換上新保護，以及剩下那些幣怎麼辦，都會影響這次升級最後能降低多少風險。",
+      "why_next": "個人保護與全網老幣風險一起決定結果，回到原問題"
+    },
+    {
+      "slide_id": "investment-answer",
+      "display_ordinal": 20,
+      "title": "比特幣能否及時完成升級？",
+      "slide_job": "比特幣能否及時完成升級？",
+      "viewer_question_in": "量子攻擊來臨前，比特幣能把保護換好嗎？",
+      "answer": "回到一開始的問題，比特幣會被量子電腦攻破嗎？如果繼續用現在這套密碼方法，足夠強的量子電腦，就有機會算出私鑰，拿走你的比特幣。\n\n比特幣有方法可以升級。難的是，防護要選好、測好，錢包和交易所要支援，持有人也要把幣轉好。這些事情都需要時間，而破解的方法還可能因為 AI 繼續進步。私鑰遺失的老幣，又留下了需要整個社群一起處理的問題。\n\n所以，我之後會看兩件事：新的防護有沒有真的開始使用，以及有風險的幣，有多少已經完成升級。這些進度，才會告訴我們，比特幣有沒有趕在量子攻擊做得到之前，把大家的幣保護好。",
+      "prior_knowledge_required": [
+        "market-risk-after-migration"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C01",
+        "C07",
+        "C15",
+        "C16",
+        "C17"
+      ],
+      "source_ids": [
+        "S06",
+        "S07",
+        "S10",
+        "S11"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "結束"
+    }
+  ],
+  "audit_status": "conditional",
+  "audit_conditions": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08"
+  ],
+  "bundle_status": "working",
+  "source_evidence_status": "not_captured",
+  "next_stage": "user_script_review",
+  "commit_status": "not_requested",
+  "preferred_term_forms": [
+    "以太坊共同創辦人 V 神",
+    "V 神"
+  ],
+  "approved_voice_samples": [
+    "user-approved-opening-73108"
+  ],
+  "script_status": "draft-ready-for-user-review",
+  "script_path": "逐字稿.md",
+  "source_mapping_path": "逐頁來源對照.md",
+  "last_editor_pass": {
+    "date": "2026-10-18",
+    "scope": "causal-paragraph-transitions-without-report-recitation",
+    "opening_preserved": true,
+    "slide_order_changed": false,
+    "user_correction": "保留20頁、時間順序與小結；以防護需要時間而破解可能加快的因果推進，讓每段自然接往下一段，不再逐家報告報幕。"
+  },
+  "story_spine": "錢包裡的比特幣靠私鑰保護 → 私鑰可能被量子算出 → 已有防護工具但更換須測試 → Google新估計讓準備時間多了變數 → 富達說明容量、使用及協調代價 → AI又可能加快破解方法改進 → 防護必須轉成可用功能與實際資產轉移 → 私鑰遺失的老幣無法配合 → 規則與市場風險需要共同處理。研究事件順序沿用2024、2026年2月、3月、9月、10月。"
+}

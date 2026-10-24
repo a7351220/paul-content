@@ -1,0 +1,113 @@
+{
+  "mode": "whole-script-natural-spoken-chinese-rewrite",
+  "page_count": 20,
+  "slide_map_revision": 15,
+  "script_revision": 21,
+  "baseline_before_edit": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/全文口語重寫前-20261021-162112/逐字稿.md",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "total_before": 5874,
+  "total_after": 6103,
+  "ratio": 1.039,
+  "pages": [
+    {
+      "page": 1,
+      "before": 238,
+      "after": 238
+    },
+    {
+      "page": 2,
+      "before": 309,
+      "after": 297
+    },
+    {
+      "page": 3,
+      "before": 280,
+      "after": 379
+    },
+    {
+      "page": 4,
+      "before": 284,
+      "after": 262
+    },
+    {
+      "page": 5,
+      "before": 319,
+      "after": 308
+    },
+    {
+      "page": 6,
+      "before": 294,
+      "after": 309
+    },
+    {
+      "page": 7,
+      "before": 289,
+      "after": 307
+    },
+    {
+      "page": 8,
+      "before": 277,
+      "after": 294
+    },
+    {
+      "page": 9,
+      "before": 305,
+      "after": 322
+    },
+    {
+      "page": 10,
+      "before": 296,
+      "after": 300
+    },
+    {
+      "page": 11,
+      "before": 291,
+      "after": 294
+    },
+    {
+      "page": 12,
+      "before": 302,
+      "after": 306
+    },
+    {
+      "page": 13,
+      "before": 300,
+      "after": 308
+    },
+    {
+      "page": 14,
+      "before": 294,
+      "after": 297
+    },
+    {
+      "page": 15,
+      "before": 295,
+      "after": 305
+    },
+    {
+      "page": 16,
+      "before": 284,
+      "after": 295
+    },
+    {
+      "page": 17,
+      "before": 302,
+      "after": 322
+    },
+    {
+      "page": 18,
+      "before": 293,
+      "after": 283
+    },
+    {
+      "page": 19,
+      "before": 275,
+      "after": 315
+    },
+    {
+      "page": 20,
+      "before": 347,
+      "after": 362
+    }
+  ]
+}

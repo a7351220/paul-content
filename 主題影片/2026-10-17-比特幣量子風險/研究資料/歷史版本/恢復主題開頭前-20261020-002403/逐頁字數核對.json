@@ -1,0 +1,111 @@
+{
+  "mode": "person-led-full-narration",
+  "page_count": 20,
+  "baseline_before_edit": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/孫哥帶入與減少術語前-20261019-234525/逐字稿.md",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "total_before": 5563,
+  "total_after": 5530,
+  "note": "故事已重排，各頁數字只核對篇幅，不代表同一內容逐頁比較。",
+  "pages": [
+    {
+      "page": 1,
+      "before": 238,
+      "after": 219
+    },
+    {
+      "page": 2,
+      "before": 177,
+      "after": 250
+    },
+    {
+      "page": 3,
+      "before": 164,
+      "after": 252
+    },
+    {
+      "page": 4,
+      "before": 187,
+      "after": 243
+    },
+    {
+      "page": 5,
+      "before": 242,
+      "after": 258
+    },
+    {
+      "page": 6,
+      "before": 317,
+      "after": 278
+    },
+    {
+      "page": 7,
+      "before": 323,
+      "after": 286
+    },
+    {
+      "page": 8,
+      "before": 341,
+      "after": 294
+    },
+    {
+      "page": 9,
+      "before": 293,
+      "after": 274
+    },
+    {
+      "page": 10,
+      "before": 251,
+      "after": 275
+    },
+    {
+      "page": 11,
+      "before": 310,
+      "after": 276
+    },
+    {
+      "page": 12,
+      "before": 280,
+      "after": 273
+    },
+    {
+      "page": 13,
+      "before": 278,
+      "after": 265
+    },
+    {
+      "page": 14,
+      "before": 279,
+      "after": 274
+    },
+    {
+      "page": 15,
+      "before": 284,
+      "after": 266
+    },
+    {
+      "page": 16,
+      "before": 279,
+      "after": 274
+    },
+    {
+      "page": 17,
+      "before": 284,
+      "after": 314
+    },
+    {
+      "page": 18,
+      "before": 352,
+      "after": 262
+    },
+    {
+      "page": 19,
+      "before": 272,
+      "after": 300
+    },
+    {
+      "page": 20,
+      "before": 412,
+      "after": 397
+    }
+  ]
+}

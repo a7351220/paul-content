@@ -1,0 +1,39 @@
+{
+  "status": "complete",
+  "canva_id": "DAHX7zjhLsI",
+  "canva_edit_url": "https://www.canva.com/d/HlKXmVRVgiKsXpg",
+  "local_file": "/Users/xieminghua/Documents/保羅內容/主題影片/2026-10-13-博通AI下一個最大贏家/輸出/博通AI下一個最大贏家-全套新版風格-完成版.pptx",
+  "sha256": "debd2af6d9a8dbc5e2622eb477da7e4bd0745f547cd139d43a80ce2f76b8cea4",
+  "verification": {
+    "date": "2026-10-14",
+    "scope": "全套統一新版紙感工程插畫",
+    "changed_pages": [
+      1,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "approved_pages_2_to_6_preserved": true,
+    "notes_exact_match": 20,
+    "canva_saved_image_ids_match": 20,
+    "native_chart_numeric_caches_unchanged": true,
+    "native_chart_pages": [
+      10,
+      11,
+      17,
+      18
+    ]
+  },
+  "max_mean_rgb_difference": 3.432
+}

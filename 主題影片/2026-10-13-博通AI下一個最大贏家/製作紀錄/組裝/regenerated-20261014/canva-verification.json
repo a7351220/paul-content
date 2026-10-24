@@ -1,0 +1,90 @@
+{
+  "design_id": "DAHX_sCWEvY",
+  "edit_url": "https://www.canva.com/d/o7F4_Jv65PXxgzX",
+  "page_count": 20,
+  "notes_exact_match": 20,
+  "canva_image_comparison": [
+    {
+      "page": 1,
+      "relative_pixel_rmse": 0.03865
+    },
+    {
+      "page": 2,
+      "relative_pixel_rmse": 0.03229
+    },
+    {
+      "page": 3,
+      "relative_pixel_rmse": 0.0378
+    },
+    {
+      "page": 4,
+      "relative_pixel_rmse": 0.03814
+    },
+    {
+      "page": 5,
+      "relative_pixel_rmse": 0.02979
+    },
+    {
+      "page": 6,
+      "relative_pixel_rmse": 0.0332
+    },
+    {
+      "page": 7,
+      "relative_pixel_rmse": 0.02939
+    },
+    {
+      "page": 8,
+      "relative_pixel_rmse": 0.03456
+    },
+    {
+      "page": 9,
+      "relative_pixel_rmse": 0.03029
+    },
+    {
+      "page": 10,
+      "relative_pixel_rmse": 0.03526
+    },
+    {
+      "page": 11,
+      "relative_pixel_rmse": 0.02893
+    },
+    {
+      "page": 12,
+      "relative_pixel_rmse": 0.02976
+    },
+    {
+      "page": 13,
+      "relative_pixel_rmse": 0.03681
+    },
+    {
+      "page": 14,
+      "relative_pixel_rmse": 0.02438
+    },
+    {
+      "page": 15,
+      "relative_pixel_rmse": 0.03056
+    },
+    {
+      "page": 16,
+      "relative_pixel_rmse": 0.03401
+    },
+    {
+      "page": 17,
+      "relative_pixel_rmse": 0.03228
+    },
+    {
+      "page": 18,
+      "relative_pixel_rmse": 0.03761
+    },
+    {
+      "page": 19,
+      "relative_pixel_rmse": 0.03411
+    },
+    {
+      "page": 20,
+      "relative_pixel_rmse": 0.03426
+    }
+  ],
+  "max_pixel_rmse": 0.03865,
+  "method": "20 full-page generated-image slides, narration-only editable presenter notes"
+}

@@ -1,0 +1,154 @@
+{
+  "mode": "approximately-1.5-times-original",
+  "baseline_path": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/逐頁加倍與Skill修訂前-20261018-225754/逐字稿.md",
+  "previous_revision_archive": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/調整為原稿1.5倍前-20261019-102948",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "page_count": 20,
+  "target_multiplier_per_page": 1.5,
+  "total_original": 4725,
+  "total_before_this_edit": 9614,
+  "total_after": 7116,
+  "actual_total_multiplier": 1.506,
+  "pages": [
+    {
+      "page": 1,
+      "original": 160,
+      "before_this_edit": 336,
+      "after": 232,
+      "multiplier": 1.45
+    },
+    {
+      "page": 2,
+      "original": 127,
+      "before_this_edit": 304,
+      "after": 189,
+      "multiplier": 1.4882
+    },
+    {
+      "page": 3,
+      "original": 182,
+      "before_this_edit": 370,
+      "after": 278,
+      "multiplier": 1.5275
+    },
+    {
+      "page": 4,
+      "original": 183,
+      "before_this_edit": 386,
+      "after": 273,
+      "multiplier": 1.4918
+    },
+    {
+      "page": 5,
+      "original": 231,
+      "before_this_edit": 491,
+      "after": 346,
+      "multiplier": 1.4978
+    },
+    {
+      "page": 6,
+      "original": 242,
+      "before_this_edit": 475,
+      "after": 359,
+      "multiplier": 1.4835
+    },
+    {
+      "page": 7,
+      "original": 251,
+      "before_this_edit": 488,
+      "after": 373,
+      "multiplier": 1.4861
+    },
+    {
+      "page": 8,
+      "original": 264,
+      "before_this_edit": 515,
+      "after": 407,
+      "multiplier": 1.5417
+    },
+    {
+      "page": 9,
+      "original": 239,
+      "before_this_edit": 498,
+      "after": 360,
+      "multiplier": 1.5063
+    },
+    {
+      "page": 10,
+      "original": 262,
+      "before_this_edit": 545,
+      "after": 399,
+      "multiplier": 1.5229
+    },
+    {
+      "page": 11,
+      "original": 241,
+      "before_this_edit": 483,
+      "after": 369,
+      "multiplier": 1.5311
+    },
+    {
+      "page": 12,
+      "original": 258,
+      "before_this_edit": 519,
+      "after": 398,
+      "multiplier": 1.5426
+    },
+    {
+      "page": 13,
+      "original": 267,
+      "before_this_edit": 512,
+      "after": 403,
+      "multiplier": 1.5094
+    },
+    {
+      "page": 14,
+      "original": 247,
+      "before_this_edit": 482,
+      "after": 381,
+      "multiplier": 1.5425
+    },
+    {
+      "page": 15,
+      "original": 228,
+      "before_this_edit": 467,
+      "after": 335,
+      "multiplier": 1.4693
+    },
+    {
+      "page": 16,
+      "original": 242,
+      "before_this_edit": 530,
+      "after": 377,
+      "multiplier": 1.5579
+    },
+    {
+      "page": 17,
+      "original": 259,
+      "before_this_edit": 512,
+      "after": 384,
+      "multiplier": 1.4826
+    },
+    {
+      "page": 18,
+      "original": 281,
+      "before_this_edit": 601,
+      "after": 420,
+      "multiplier": 1.4947
+    },
+    {
+      "page": 19,
+      "original": 259,
+      "before_this_edit": 496,
+      "after": 395,
+      "multiplier": 1.5251
+    },
+    {
+      "page": 20,
+      "original": 302,
+      "before_this_edit": 604,
+      "after": 438,
+      "multiplier": 1.4503
+    }
+  ]
+}

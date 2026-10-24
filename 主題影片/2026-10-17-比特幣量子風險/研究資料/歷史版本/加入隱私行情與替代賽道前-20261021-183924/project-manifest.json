@@ -1,0 +1,665 @@
+{
+  "schema_version": "1.0",
+  "project_id": "2026-10-17-bitcoin-quantum-risk",
+  "project_root": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險",
+  "research_cutoff": "2026-10-21",
+  "timezone": "Asia/Taipei",
+  "mode": "topic",
+  "story_shape": "thesis",
+  "house_voice_profile": "market-house-voice-zh-tw-v1",
+  "voice_status": "pending-review",
+  "current_stage": "script-revision",
+  "structure_status": "approved-price-thesis-and-bull-bear-evidence",
+  "slide_map_revision": 17,
+  "slides": [
+    {
+      "slide_id": "topic-risk-opening",
+      "display_ordinal": 1,
+      "title": "量子風險能否在破解前壓低幣價",
+      "slide_job": "量子風險能否在破解前壓低幣價",
+      "viewer_question_in": "量子風險能否在破解前壓低幣價",
+      "answer": "量子電腦會不會破解比特幣，這個問題大家已經聽過很多次。但這次多了一個變數，就是 AI。\n\n以太坊共同創辦人 V 神，最近提醒，AI 加速數學研究，可能讓原本被認為安全的密碼，比預期更早受到挑戰。做 Claude 的 Anthropic，也公布研究，讓 AI 幫忙改良量子計算，其中就有破解比特幣簽章會用到的運算。\n\n如果你手上有比特幣，最在意的應該是，這會不會讓價格下跌？幣還沒被破解，市場會不會就先有人賣？真的出事，又會影響到什麼程度？\n\n我的看法是，量子風險已經值得放進價格判斷。市場只要開始懷疑，比特幣還適不適合拿來存很多年，就有理由先調整持倉。價格可能比真正的破解，提早很多反應。",
+      "prior_knowledge_required": [],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C07",
+        "C18",
+        "C50"
+      ],
+      "source_ids": [
+        "S03",
+        "S04",
+        "S15",
+        "S28"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "看空、樂觀及替代資產三種價格觀點",
+      "evidence_boundary": "開場價格觀點是作者推論；未聲稱已觀測因量子造成的跌幅。"
+    },
+    {
+      "slide_id": "price-viewpoints-overview",
+      "display_ordinal": 2,
+      "title": "看空、樂觀及替代資產三種價格觀點",
+      "slide_job": "看空、樂觀及替代資產三種價格觀點",
+      "viewer_question_in": "看空、樂觀及替代資產三種價格觀點",
+      "answer": "所以這次，我找了 Google、Anthropic 的研究，也看了富達、數位資產管理公司 CoinShares，以及密碼學研究者和交易員怎麼說。\n\n現在有幾種不同看法。擔心的人認為，破解門檻一直降低，比特幣長期安全的承諾受到挑戰，投資人會先減少持有。比較樂觀的人則認為，威脅還需要硬體實現，比特幣也有能力應對，市場很容易把研究消息看得太嚴重。\n\n還有交易員已經在想，如果大家開始懷疑比特幣，資金會不會去找其他幣，連帶改變整個市場的估值。\n\n這幾個看法，都會影響價格。我比較在意的是，投資人願意為比特幣付多少錢，會不會因為量子風險改變。有人先賣，有人把原本要買的錢留在手上，就算沒有幣被偷，價格也會有壓力。",
+      "prior_knowledge_required": [
+        "topic-risk-opening"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C17",
+        "C22",
+        "C34",
+        "C50",
+        "C52"
+      ],
+      "source_ids": [
+        "S08",
+        "S19",
+        "S28",
+        "S30"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "孫哥態度轉保守及自述BTC未減",
+      "evidence_boundary": "先呈現觀點；不以人數或機構數充當市場共識。"
+    },
+    {
+      "slide_id": "research-and-market-example",
+      "display_ordinal": 3,
+      "title": "孫哥態度轉保守及自述BTC未減",
+      "slide_job": "孫哥態度轉保守及自述BTC未減",
+      "viewer_question_in": "孫哥態度轉保守及自述BTC未減",
+      "answer": "孫哥的例子，就很值得參考。他說，因為 AI 和量子風險，對比特幣比以前保守，尤其擔心那些主人已經弄丟私鑰的老幣。\n\n原主人拿不出來，這些幣就一直躺著。如果未來有人把私鑰算出來，就能拿走，再賣到市場上。他認為，市場可能還沒有充分考慮這件事。\n\n至於倉位，他說比特幣仍然當底倉，沒有減持。訪談裡大幅減持以太幣，是他對當時行情的判斷。看他目前的說法，是對風險更警覺，還沒有因此賣掉比特幣。\n\n我覺得這種態度的變化，就值得注意。原本很有信心的人，現在開始懷疑持有很多年會遇到什麼問題。他可以繼續拿著，其他人也可以選擇先少拿一點。價格會受到多少影響，要看這種擔心擴散到多少投資人。",
+      "prior_knowledge_required": [
+        "price-viewpoints-overview"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C30",
+        "C31",
+        "C32",
+        "C50"
+      ],
+      "source_ids": [
+        "S16",
+        "S17"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "私鑰破解如何影響長期持有理由",
+      "evidence_boundary": "二手整理；未核持倉；未宣稱量子導致減持BTC。"
+    },
+    {
+      "slide_id": "key-recovery-and-offline-limit",
+      "display_ordinal": 4,
+      "title": "私鑰破解如何影響長期持有理由",
+      "slide_job": "私鑰破解如何影響長期持有理由",
+      "viewer_question_in": "私鑰破解如何影響長期持有理由",
+      "answer": "量子風險會碰到的，是比特幣最基本的資產安全。現在別人就算看得到公鑰，也很難反推出私鑰。一般電腦要算，工作量太大；足夠強的量子電腦，卻有機會把它算出來。\n\n拿到私鑰，就能拿走那些幣。對方可以用已經公開的資料，在自己的機器上算，你的冷錢包有沒有開機，不影響他手上的資料。\n\n這跟價格的關係很直接。很多人願意長期持有，是相信只要自己保管好，資產就不會被別人拿走。如果這個前提開始動搖，買比特幣要承擔的風險就增加了。\n\n同一個價格，有人原本覺得值得買，現在就會重新考慮。尤其買來當長期資產的人，更得在意十年以後還安不安全。研究消息只要讓人改變這個判斷，就已經會影響需求。",
+      "prior_knowledge_required": [
+        "research-and-market-example"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C10",
+        "C24",
+        "C50"
+      ],
+      "source_ids": [
+        "S06",
+        "S10"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "Google資源下修與硬體穩定運算的爭點",
+      "evidence_boundary": "機制為條件情境；需求影響為作者推論。"
+    },
+    {
+      "slide_id": "google-resource-estimate",
+      "display_ordinal": 5,
+      "title": "Google資源下修與硬體穩定運算的爭點",
+      "slide_job": "Google資源下修與硬體穩定運算的爭點",
+      "viewer_question_in": "Google資源下修與硬體穩定運算的爭點",
+      "answer": "Google 這份研究，最有分量的是把破解需要的機器規模，大幅往下修。按照他們設定的機器性能，實體量子位元可以估到五十萬個以下，大約是先前的二十分之一。\n\n擔心的人會認為，原本靠「設備太大，很難做出來」換到的安全空間，現在少了一大截。這個理由確實值得重視，因為算法改良，會直接改變硬體要做到什麼程度。\n\n對硬體比較保留的研究者，在意的則是能不能穩定完成整段計算。a16z 研究者 Justin Thaler 在去年底的文章就強調，量子位元數量以外，運作的可靠程度同樣重要。把機器做大，和把一整套破解工作跑完，中間還有很多工程問題。",
+      "prior_knowledge_required": [
+        "key-recovery-and-offline-limit"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C04",
+        "C20",
+        "C54"
+      ],
+      "source_ids": [
+        "S05",
+        "S06",
+        "S26"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "IonQ成功機會與攻擊經濟規模",
+      "evidence_boundary": "Google為模型；Thaler去年底文章為先前觀點，不冒充對新論文的回應，不採其舊年份預測。"
+    },
+    {
+      "slide_id": "ionq-time-and-hardware-model",
+      "display_ordinal": 6,
+      "title": "IonQ成功機會與攻擊經濟規模",
+      "slide_job": "IonQ成功機會與攻擊經濟規模",
+      "viewer_question_in": "IonQ成功機會與攻擊經濟規模",
+      "answer": "IonQ 的研究團隊，算的是另一種機器設計：大約兩萬個實體量子位元，計算二十六天，有約六成三的機會，解出比特幣使用的這類密碼問題。\n\n這裡真正要算的，是攻擊者花這些錢，能換到多少資產。假如目標金額很大，等幾週也有吸引力；金額太小，設備時間和失敗風險，就可能把利益吃掉。\n\nThaler 在先前文章裡的判斷，是早期攻擊會先挑高價值目標，因為每次計算都很貴、很慢。不同目標要分別花資源，不能把破解一個目標的能力，直接當成能大量拿走所有幣。\n\n這套方法能不能反覆執行、拿到的資產夠不夠支付成本，會影響攻擊能做到多大規模。一台機器先算一個月，失敗再重來，和能夠持續、便宜地偷幣，市場面對的壓力差很多。IonQ 給了設備、時間和成功機會的估計，實際營運成本會影響哪些目標值得下手。",
+      "prior_knowledge_required": [
+        "google-resource-estimate"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C33",
+        "C10",
+        "C50",
+        "C55"
+      ],
+      "source_ids": [
+        "S14",
+        "S10",
+        "S26"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "Anthropic已展示的設計能力與可重複性",
+      "evidence_boundary": "特定架構模型；目標選擇為Thaler先前判斷，獲利與規模為條件分析。"
+    },
+    {
+      "slide_id": "anthropic-resource-tradeoff",
+      "display_ordinal": 7,
+      "title": "Anthropic已展示的設計能力與可重複性",
+      "slide_job": "Anthropic已展示的設計能力與可重複性",
+      "viewer_question_in": "Anthropic已展示的設計能力與可重複性",
+      "answer": "Anthropic 提供的，是 AI 已經參與量子計算設計的成果。Claude 提出做法，工具檢查正確性和資源需求，再把結果交回去，讓它繼續改。\n\n其中一段跟破解私鑰有關的重要計算，相對一個舊方案，從大約七千萬次降到四百萬次。團隊多安排一些硬體，就省掉大量運算。這是很具體的改進，也說明破解方法還有被改良的空間。\n\n這次設計搜尋花了五十三個小時。Claude 也完成需要的數學推導，把先前做不出來的想法，變成能執行、能檢查的方案。\n\n研究過程也顯示，人怎麼引導會影響結果。Claude 有時依賴熟悉的做法，研究者就要求它多試幾個方向。這份成果已經讓 AI 找算法的能力，有了可以檢查的結果。後續值得看的，是它能否把同樣的做法，用在更多計算上。一次改良帶來多少節省，以及研究團隊以後能多快找到下一個改良，會影響破解方法進步的速度。",
+      "prior_knowledge_required": [
+        "ionq-time-and-hardware-model"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C07",
+        "C08",
+        "C45",
+        "C27",
+        "C50"
+      ],
+      "source_ids": [
+        "S03",
+        "S04"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "V神與Thaler對新數學解法的不同判斷",
+      "evidence_boundary": "部分計算比較及設計搜尋；不把一次節省倍數外推整體破解或未來速度。"
+    },
+    {
+      "slide_id": "vitalik-ai-math",
+      "display_ordinal": 8,
+      "title": "V神與Thaler對新數學解法的不同判斷",
+      "slide_job": "V神與Thaler對新數學解法的不同判斷",
+      "viewer_question_in": "V神與Thaler對新數學解法的不同判斷",
+      "answer": "V 神提出的是另一種擔心：AI 有沒有可能找到人類以前不知道的數學解法，讓原本很難破解的密碼，突然變得比較好算？他談的也包括部分抗量子密碼。\n\nJustin Thaler 對這件事的看法，比較保留。他認為，有些問題可能本來就沒有快速解法。AI 更聰明，也無法找出一個不存在的算法。\n\n兩邊真正有分歧的，是這些數學問題究竟有多難。V 神擔心，人類目前知道的還不夠多；Thaler 相信，部分問題本身就很難，增加智慧也未必能大幅降低難度。這些困難性，至今仍有無法證明的部分。\n\n我認為，這是最難估價格影響的一種風險。它沒有明確的設備數量和時間可以追蹤，也很難安排一個可信的倒數。要把這種擔心換成下跌判斷，就得持續看具體密碼有沒有真的被找到新解法。AI 在其他數學題上進步，還不足以替這件事定案。",
+      "prior_knowledge_required": [
+        "anthropic-resource-tradeoff"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C18",
+        "C44",
+        "C50"
+      ],
+      "source_ids": [
+        "S15",
+        "S20"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "AI也可能加快安全檢查及釐清市場恐慌",
+      "evidence_boundary": "兩方為風險判斷或條件論證，未證明困難性；不設破解倒數。"
+    },
+    {
+      "slide_id": "ai-evidence-counterargument",
+      "display_ordinal": 9,
+      "title": "AI也可能加快安全檢查及釐清市場恐慌",
+      "slide_job": "AI也可能加快安全檢查及釐清市場恐慌",
+      "viewer_question_in": "AI也可能加快安全檢查及釐清市場恐慌",
+      "answer": "史丹佛密碼學教授 Dan Boneh 和 a16z 的研究者，還提出一個比較樂觀的方向：AI 也能加快檢查密碼和程式的工作。\n\n以前有人提出新方法，其他研究者得花很多時間找弱點，才能慢慢建立信心。他們期待 AI 反覆嘗試攻擊，讓一些問題提早被找出來。新錢包的程式寫好，也能先用這些工具檢查漏洞。\n\n這個觀點會影響我怎麼看 AI 的利空。如果它能讓破解研究更有效率，也有機會讓安全檢查更有效率。後續要比較的，就是哪一邊真的拿出成果。\n\n他們在十月初的節目裡，也指出當時受討論的 AI 數學成果，還沒有展示具體密碼破解。這是對當時證據的判斷。市場如果因為一個很強的 AI 消息，就把整套密碼都想成快失效，恐慌會走得比資料更遠。實際弱點在哪裡、AI 又幫忙補了哪些問題，都會影響這個利空最後站不站得住。",
+      "prior_knowledge_required": [
+        "vitalik-ai-math"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C36",
+        "C37",
+        "C50"
+      ],
+      "source_ids": [
+        "S20"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "預期風險可以讓投資人先減持",
+      "evidence_boundary": "安全效益為專家期待；十月初討論不寫成回應後來Anthropic成果。"
+    },
+    {
+      "slide_id": "anticipatory-selling",
+      "display_ordinal": 10,
+      "title": "預期風險可以讓投資人先減持",
+      "slide_job": "預期風險可以讓投資人先減持",
+      "viewer_question_in": "預期風險可以讓投資人先減持",
+      "answer": "市場上的人，不需要等研究完全確定，才決定要不要賣。\n\n假如你本來打算長期持有，現在開始擔心量子風險，最簡單的做法就是少放一點。你不用認定比特幣一定會被破解，只要覺得這個風險不值得拿那麼多錢去承擔，就有減持的理由。\n\n尤其已經賺到錢的人，也可以選擇先保留獲利。量子消息對不同人的影響，不一定是全部賣光，也可能只是從原本很有信心，變成不想再增加持倉。\n\n我認為，這會是比較早出現的價格壓力。投資人調整的是對未來的看法，市場卻是今天就成交。大家如果同時往保守的方向調整，現在的價格就要面對這些賣單。真正發生失竊，可能還是很後面的事。\n\n同一個消息反覆被轉傳，和研究真的出現新進展，分量也不同。比較會改變持倉理由的，是新資料讓人發現，原本以為安全的時間，比自己想的短。",
+      "prior_knowledge_required": [
+        "ai-evidence-counterargument"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C50"
+      ],
+      "source_ids": [
+        "S28"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "買盤縮手及稀缺無法單獨保證價格",
+      "evidence_boundary": "作者價格機制分析；沒有聲稱已有量子驅動資金流。"
+    },
+    {
+      "slide_id": "buyer-demand-and-scarcity",
+      "display_ordinal": 11,
+      "title": "買盤縮手及稀缺無法單獨保證價格",
+      "slide_job": "買盤縮手及稀缺無法單獨保證價格",
+      "viewer_question_in": "買盤縮手及稀缺無法單獨保證價格",
+      "answer": "另一邊，是原本準備買的人先停下來。這種影響很容易被忽略，因為市場上不一定會看到一個很大的拋售事件。\n\n假如一筆資金本來準備買比特幣，看到量子研究之後，決定先等等，市場就少了一筆買盤。持有人還是照常獲利了結、支付開銷，願意接手的人卻變少，就得用更低的價格吸引買家。\n\n所以我不認為，拿「比特幣總量有限」就能回答這個風險。稀缺是一個持有理由，大家還得願意買、願意長期拿著。當安全性受到質疑，同樣有限的數量，也可以用更低的價格成交。\n\n對長期價格來說，我更在意這種新增需求會不會被拖慢。如果投資人持續把錢留在現金、黃金或其他資產，買家可能要求更低的價格，才願意承擔這個風險。",
+      "prior_knowledge_required": [
+        "anticipatory-selling"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C29",
+        "C50"
+      ],
+      "source_ids": [
+        "S08",
+        "S28"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "老幣恢復可售可能增加供給",
+      "evidence_boundary": "需求與替代選擇為假設，非觀測的實際配置變化。"
+    },
+    {
+      "slide_id": "dormant-coins-sale-pressure",
+      "display_ordinal": 12,
+      "title": "老幣恢復可售可能增加供給",
+      "slide_job": "老幣恢復可售可能增加供給",
+      "viewer_question_in": "老幣恢復可售可能增加供給",
+      "answer": "真的有幣被拿走，還會多出實際賣壓。這就是孫哥提到老幣的理由。\n\n原主人弄丟私鑰，幣價漲再多也賣不了。未來如果有人破解取得這些幣，他就能決定什麼時候賣。原本多年沒有進市場的資產，會重新變成可出售的供給。\n\nGoogle 的論文估計，報告當時大約有六百九十萬顆比特幣，公鑰已經公開。這個數字讓人很難忽略，但真正要估賣壓，還得看其中多少會受攻擊、能被拿走多少，以及多久拿得走。\n\n我在意的，是過去大家可能已經把一些遺失的幣，當成永遠不會出售。量子攻擊如果改變這個前提，就會影響大家對市場供給的想像。比特幣總量照樣有限，持有人原本以為不會遇到的賣家，卻可能重新出現。",
+      "prior_knowledge_required": [
+        "buyer-demand-and-scarcity"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C11",
+        "C17",
+        "C29",
+        "C50"
+      ],
+      "source_ids": [
+        "S06",
+        "S08"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "CoinShares認為突然賣壓範圍較小",
+      "evidence_boundary": "690萬為報告時點曝光量，不是損失量或賣壓上限。"
+    },
+    {
+      "slide_id": "coinshares-supply-counterargument",
+      "display_ordinal": 13,
+      "title": "CoinShares認為突然賣壓範圍較小",
+      "slide_job": "CoinShares認為突然賣壓範圍較小",
+      "viewer_question_in": "CoinShares認為突然賣壓範圍較小",
+      "answer": "CoinShares 對這種賣壓的判斷，就樂觀很多。它在今年二月的報告裡，認為量子風險可以管理，市場影響也可能比大家想的小。\n\n它著重早期一類存幣方式，估計其中大約一萬零兩百顆，屬於被快速拿走時，可能造成明顯市場影響的部分。其他幣分散在很多筆裡，攻擊需要分別投入資源，很難全部一下子拿出來。\n\n它的意思是，看到一大批曝光資產，還要考慮攻擊速度。假如花很長時間才能取得一部分，出售也分散發生，市場就有機會消化。\n\n這個觀點有道理，也讓「幾百萬顆一起砸盤」的想像需要重新檢查。不過，它的估計早於後來 Google 和 Anthropic 的新成果。攻擊效率改變，原本對取得速度的判斷也得更新。一萬零兩百顆，是它那套篩選下的估計，不能當成未來損失的上限。",
+      "prior_knowledge_required": [
+        "dormant-coins-sale-pressure"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C12",
+        "C22"
+      ],
+      "source_ids": [
+        "S08"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "首個獲確認量子攻擊的信心衝擊",
+      "evidence_boundary": "10200為其2月P2PK篩選與市場判斷；非全網風險總量或損失上限。"
+    },
+    {
+      "slide_id": "first-attack-confidence-shock",
+      "display_ordinal": 14,
+      "title": "首個獲確認量子攻擊的信心衝擊",
+      "slide_job": "首個獲確認量子攻擊的信心衝擊",
+      "viewer_question_in": "首個獲確認量子攻擊的信心衝擊",
+      "answer": "比起被拿走的幣有多少，我更擔心第一次確認量子攻擊成功，會怎麼改變其他人的想法。\n\n如果失竊被證明來自量子破解，大家會知道，原本討論的能力真的存在了。市場當下就會問，還有哪些資產會出問題，這種攻擊能不能繼續做。\n\n就算第一筆金額不大，持有人也可能先減少風險，新買家也可能先停手。被拿走的幣要是再拿來出售，就會同時碰到信心下降和額外賣盤。\n\n這也是我對「失竊數量不大，市場就能消化」比較保留的原因。拿走多少，影響直接賣壓；大家因此還敢持有多少，影響的範圍更廣。當然，一般錢包遭竊、老地址突然轉帳，都不能直接當成量子破解。真正能證明攻擊方式的證據，會決定這則消息有多大分量。",
+      "prior_knowledge_required": [
+        "coinshares-supply-counterargument"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C17",
+        "C49",
+        "C50"
+      ],
+      "source_ids": [
+        "S06",
+        "S28"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "IBIT揭露他人遭竊也會影響基金價格",
+      "evidence_boundary": "假設首次確認事件；未聲稱已發生量子失竊。"
+    },
+    {
+      "slide_id": "ibit-market-risk-disclosure",
+      "display_ordinal": 15,
+      "title": "IBIT揭露他人遭竊也會影響基金價格",
+      "slide_job": "IBIT揭露他人遭竊也會影響基金價格",
+      "viewer_question_in": "IBIT揭露他人遭竊也會影響基金價格",
+      "answer": "這個價格風險，連比特幣 ETF 的文件都有寫。貝萊德旗下 IBIT，在二〇二六年第二季季報裡提到，即使基金自己的比特幣沒有被偷，其他已公開公鑰的資產遭到量子攻擊，也可能打擊市場信心、壓低幣價。\n\n這點我很認同。透過 ETF 買比特幣，保管工作交給專業機構，價格風險還是跟整個市場連在一起。\n\n你不用自己操作錢包，也不會因此避開別人的幣出事所造成的跌價。投資人評估的，仍然是比特幣值不值得用現在的價格持有。\n\n所以我會把這個風險看成所有比特幣投資人都要面對的問題。文件揭露的是可能發生的情境，沒有預測下一次下跌；它至少很清楚地說明，保管得好和價格能不能撐住，是兩件需要分開判斷的事。",
+      "prior_knowledge_required": [
+        "first-attack-confidence-shock"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C49"
+      ],
+      "source_ids": [
+        "S28"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "槓桿平倉可能放大短線下跌",
+      "evidence_boundary": "2026Q2風險揭露，不是看空、減持、資金外流或下跌預測。"
+    },
+    {
+      "slide_id": "leverage-price-amplification",
+      "display_ordinal": 16,
+      "title": "槓桿平倉可能放大短線下跌",
+      "slide_job": "槓桿平倉可能放大短線下跌",
+      "viewer_question_in": "槓桿平倉可能放大短線下跌",
+      "answer": "如果消息引起一波下跌，市場上的槓桿還會影響跌得多急。\n\n有些人借助槓桿做多，價格往下，帳戶裡的錢不夠符合保證金要求，就會被強制平倉。Coinbase 的交易規則，也有這種自動處理機制。\n\n假如一開始只是部分人賣出，後來跌到其他多頭必須平倉的位置，就可能再增加賣出壓力。這些人未必改變對比特幣的長期看法，帳戶的資金條件卻讓他們沒辦法繼續拿著。\n\n所以同一則量子消息，放在不同的市場情況，跌幅可以很不一樣。買盤充足、槓桿不高，衝擊比較容易被接住；本來就很多人押上漲，又缺乏願意接手的買家，下跌就更容易被放大。我們可以分析這條路怎麼發生，目前手上的研究，還算不出它會造成幾成跌幅。要估這一段，還需要當時的槓桿部位、買賣單和市場流動性。破解需要多少設備，無法直接換算成價格會跌多少。",
+      "prior_knowledge_required": [
+        "ibit-market-risk-disclosure"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C51",
+        "C50"
+      ],
+      "source_ids": [
+        "S29"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "技術應對能力支持信心修復",
+      "evidence_boundary": "交易規則支持自動平倉；連鎖價格效果為情境，不預設當前槓桿或跌幅。"
+    },
+    {
+      "slide_id": "defense-and-demand-recovery",
+      "display_ordinal": 17,
+      "title": "技術應對能力支持信心修復",
+      "slide_job": "技術應對能力支持信心修復",
+      "viewer_question_in": "技術應對能力支持信心修復",
+      "answer": "反過來看，比特幣也有讓信心恢復的理由。Dan Boneh 本身參與 Google 的破解資源研究，對比特幣應對量子威脅，卻相當樂觀。\n\n他認為，抗量子地址、簽章和遷移，都有可以做的方向。NIST 已經公布相關簽章標準；Blockstream 在 Liquid 側鏈跑過交易，StarkWare 也在主網做出特殊交易的實驗。\n\n我認為，這些成果足以支持「比特幣有機會解決」的看法。市場如果相信風險能被控制，持有人就比較有理由繼續拿，前面停下來的買家也有理由重新評估。\n\n因此，量子消息造成下跌，也不等於長期價值一定被破壞。要看後來的新資料，是讓大家更相信有能力處理，還是讓破解看起來越來越容易。這會影響跌下來以後，有多少人願意買回去。",
+      "prior_knowledge_required": [
+        "leverage-price-amplification"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C34",
+        "C35",
+        "C14",
+        "C38",
+        "C40",
+        "C50"
+      ],
+      "source_ids": [
+        "S19",
+        "S06",
+        "S12",
+        "S21",
+        "S22"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "Ansem看Zcash估值機會與資金競爭",
+      "evidence_boundary": "Boneh為判斷；NIST標準、Liquid側鏈及QSB主網特殊實驗分開。"
+    },
+    {
+      "slide_id": "ansem-zcash-valuation",
+      "display_ordinal": 18,
+      "title": "Ansem看Zcash估值機會與資金競爭",
+      "slide_job": "Ansem看Zcash估值機會與資金競爭",
+      "viewer_question_in": "Ansem看Zcash估值機會與資金競爭",
+      "answer": "知名交易員 Ansem，想的則是其他幣會不會因此得到機會。他認為，量子風險如果成為比特幣的實質威脅，Zcash 有機會靠隱私和價值儲存的說法，獲得更高估值。\n\n這個交易思路很直接。原本想把錢放比特幣的人，如果開始懷疑它，就可能去找另一個自己相信、又有上漲空間的選擇。資金也可以留在幣圈，換一個看好的對象。\n\n我覺得這是值得注意的價格競爭。比特幣如果要持續吸引資金，就得讓人相信，它仍然值得持有。其他幣一旦有能吸引人的故事，就會來爭同一筆錢。\n\nZcash 自己也還有量子安全問題需要處理，Ansem 談的是他的估值判斷。目前這些說法能支持的是，交易員已經開始思考誰會受益；實際有多少錢因此流動，還需要資金和交易資料來確認。\n\n而且，其他幣得到更高估值，比特幣也可以同時上漲。要判斷它有沒有被搶走買盤，得看投資人是否真的減少配置比特幣，不能光靠另一個幣漲了，就認定錢從比特幣流出去。",
+      "prior_knowledge_required": [
+        "defense-and-demand-recovery"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C52",
+        "C53",
+        "C50"
+      ],
+      "source_ids": [
+        "S30",
+        "S31"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "Ansem文化與集體信念如何影響估值",
+      "evidence_boundary": "深潮二手轉述，X全文未直接取得；不把Zcash寫成已抗量子，不虛構實際輪動。"
+    },
+    {
+      "slide_id": "ansem-culture-and-bitcoin-belief",
+      "display_ordinal": 19,
+      "title": "Ansem文化與集體信念如何影響估值",
+      "slide_job": "Ansem文化與集體信念如何影響估值",
+      "viewer_question_in": "Ansem文化與集體信念如何影響估值",
+      "answer": "Ansem 還把這個想法，接到 AI、文化和集體信念上。他認為，AI 讓智力越來越容易取得，人們真正相信的文化和資產，反而更有機會得到高估值。\n\n他也認同 Memecoin 交易員 Murad 的大方向：有共同信念的社群，能讓資產獲得很大的溢價。同時他認為，純 Memecoin 超越比特幣的機會極低。\n\n我認為，這個觀點也可以拿來看比特幣本身。它的價格，包含很多人對稀缺性、長期保值，以及全球有人願意接受的共同信念。量子風險如果削弱這份信念，估值就會受影響；這份信念如果夠強，大家又相信問題能解決，也會成為支撐買盤的理由。\n\n所以資金會不會離開比特幣，還要看其他選擇有沒有足夠說服力。有人看好 Zcash，有人繼續相信比特幣，最後都會反映在願意付多少錢、願意拿多久。",
+      "prior_knowledge_required": [
+        "ansem-zcash-valuation"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C52",
+        "C50"
+      ],
+      "source_ids": [
+        "S30"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "小結區分恐慌修復與長期需求受損",
+      "evidence_boundary": "Murad觀點經Ansem轉述；不另稱已核Murad原文；BTC文化分析為作者判斷。"
+    },
+    {
+      "slide_id": "investment-answer",
+      "display_ordinal": 20,
+      "title": "小結區分恐慌修復與長期需求受損",
+      "slide_job": "小結區分恐慌修復與長期需求受損",
+      "viewer_question_in": "小結區分恐慌修復與長期需求受損",
+      "answer": "所以，量子電腦會讓比特幣跌嗎？我的判斷是，這個風險足以造成價格壓力，而且完全可以在實際破解以前發生。持有人先減少部位，新資金先等等，市場就已經會受到影響。\n\nGoogle、IonQ、Anthropic 的研究，讓這件事越來越值得認真評估。如果未來真的確認有量子失竊，額外賣盤和信心下降，還可能一起衝擊價格。\n\n但我也不認為，看到破解研究，就能直接推到比特幣會失去價值。反方提出的攻擊速度限制、防守研究，以及比特幣已有的信念和需求，都有理由放進判斷。\n\n對我來說，關鍵在於跌價以後，大家原本買它的理由還在不在。市場過度擔心，後續又有資料讓人恢復信心，就有修復的機會。如果投資人持續懷疑它能不能安全存很多年，新增買盤一直不回來，那就會影響長期估值。\n\n我現在會把量子風險，當成比特幣價格不能忽略的一個變數。能不能處理好這個風險，會影響大家願意拿多少錢買它，也會影響比特幣還能不能吸引下一批長期持有人。",
+      "prior_knowledge_required": [
+        "ansem-culture-and-bitcoin-belief"
+      ],
+      "new_terms": [],
+      "key_numbers": [],
+      "claim_ids": [
+        "C17",
+        "C22",
+        "C34",
+        "C49",
+        "C50",
+        "C52"
+      ],
+      "source_ids": [
+        "S06",
+        "S08",
+        "S19",
+        "S28",
+        "S30"
+      ],
+      "visual_evidence_needed": [],
+      "visual_evidence_status": "not_captured",
+      "why_next": "全片收束",
+      "evidence_boundary": "作者條件式投資觀點，不給價格目標或下跌必然性。"
+    }
+  ],
+  "audit_status": "conditional",
+  "audit_conditions": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A09",
+    "A10",
+    "A11",
+    "A12",
+    "A13"
+  ],
+  "bundle_status": "working",
+  "source_evidence_status": "not_captured",
+  "next_stage": "user_script_review",
+  "commit_status": "not_requested",
+  "preferred_term_forms": [
+    "以太坊共同創辦人 V 神",
+    "V 神"
+  ],
+  "approved_voice_samples": [
+    "user-approved-opening-73108"
+  ],
+  "script_status": "substantive-disagreements-edit-pending-user-review",
+  "script_path": "逐字稿.md",
+  "source_mapping_path": "逐頁來源對照.md",
+  "last_editor_pass": {
+    "date": "2026-10-21",
+    "scope": "paragraph-purpose-audit-and-semantic-deduplication",
+    "approved_opening_sentences_preserved": true,
+    "opening_role_preserved": true,
+    "slide_order_changed": false,
+    "slide_count": 20,
+    "page_conclusions_preserved": true,
+    "script_revision": 24,
+    "user_correction": "第11頁及全文刪除換詞重講；以已讀研究的不同資訊補足，保留20頁、小結與目前篇幅。",
+    "paragraph_role_audit": {
+      "5": [
+        "數字估計",
+        "攻擊成本含義",
+        "成果公開方式",
+        "估計與實機階段"
+      ],
+      "11": [
+        "設備、時間與成功率",
+        "為完整任務規劃機器及計算",
+        "對長期公開資產的意義，只講一次",
+        "失敗與實際運作成本"
+      ],
+      "13": [
+        "錢包程式風險",
+        "AI協助安全檢查",
+        "預留更換方法的能力"
+      ],
+      "16": [
+        "誰保管誰處理",
+        "不同方案的保護範圍",
+        "委外保管分工假設",
+        "業者公開進度的資訊"
+      ]
+    },
+    "slide_map_revision": 17
+  },
+  "story_spine": "價格問題與正反觀點→孫哥→必要機制→Google/IonQ/Anthropic/V神→AI證據反方→提前賣出與買盤縮手→老幣供給與CoinShares反方→信心衝擊及IBIT→槓桿放大→信心修復→Ansem替代資產及文化估值→價格小結",
+  "length_contract": {
+    "mode": "paragraphs-with-distinct-information",
+    "page_count": 20,
+    "reference_full_script": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/刪除擴寫贅述前-20261019-232417/逐字稿.md",
+    "baseline_before_edit": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/全文段落用途去重前-20261021-145054/逐字稿.md",
+    "verification_path": "逐頁字數核對.json",
+    "total_before": 6029,
+    "total_after": 5898,
+    "fixed_multiplier": null,
+    "latest_priority": "20頁、原順序、小結與目前篇幅保留；重複段落刪掉，以可追溯且不同的資訊或明示情境補足，不為字數重講。"
+  },
+  "research_supplement": {
+    "date": "2026-10-20",
+    "path": "正反方補充研究-2026-10-20.md",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S23",
+      "S24",
+      "S25",
+      "S26",
+      "S27"
+    ],
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "audit_conditions": [
+      "A09",
+      "A10",
+      "A11",
+      "A12",
+      "A13"
+    ],
+    "status": "integrated-into-script-revision-12",
+    "script_modified": true,
+    "required_correction": "Resolved: Slide 3 no longer states signature replacement is the only defense; QSB discussed on Slide 9."
+  },
+  "script_revision": 24
+}

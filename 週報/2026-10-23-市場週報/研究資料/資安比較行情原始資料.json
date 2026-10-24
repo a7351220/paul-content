@@ -1,0 +1,80 @@
+{
+  "CIBR": {
+    "source": "https://query1.finance.yahoo.com/v8/finance/chart/CIBR?period1=1792108800&period2=1792713600&interval=1d",
+    "daily": [
+      {
+        "date": "2026-10-16",
+        "close": 98.82
+      },
+      {
+        "date": "2026-10-19",
+        "close": 99.92
+      },
+      {
+        "date": "2026-10-20",
+        "close": 100.4
+      },
+      {
+        "date": "2026-10-21",
+        "close": 103.13
+      },
+      {
+        "date": "2026-10-22",
+        "close": 102.81
+      }
+    ],
+    "change_pct": 4.0376442015786385
+  },
+  "QQQ": {
+    "source": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=1792108800&period2=1792713600&interval=1d",
+    "daily": [
+      {
+        "date": "2026-10-16",
+        "close": 709.8
+      },
+      {
+        "date": "2026-10-19",
+        "close": 718.36
+      },
+      {
+        "date": "2026-10-20",
+        "close": 717.63
+      },
+      {
+        "date": "2026-10-21",
+        "close": 725.2
+      },
+      {
+        "date": "2026-10-22",
+        "close": 704.47
+      }
+    ],
+    "change_pct": -0.7509157509157371
+  },
+  "SMH": {
+    "source": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?period1=1792108800&period2=1792713600&interval=1d",
+    "daily": [
+      {
+        "date": "2026-10-16",
+        "close": 539.79
+      },
+      {
+        "date": "2026-10-19",
+        "close": 548.46
+      },
+      {
+        "date": "2026-10-20",
+        "close": 546.36
+      },
+      {
+        "date": "2026-10-21",
+        "close": 556.7
+      },
+      {
+        "date": "2026-10-22",
+        "close": 523.35
+      }
+    ],
+    "change_pct": -3.0456288556660827
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "title_verified": true,
+  "seven_sections_preserved": true,
+  "slides": 18,
+  "han_total": 2002,
+  "han_average": 111.2,
+  "narration_contains_urls": false,
+  "narration_contains_production_notes": false,
+  "slide_sources_mapped": true,
+  "price_basis": "2026-10-12 US regular-session close",
+  "valuation": [
+    {
+      "ticker": "AVGO",
+      "price_date": "2026-10-12",
+      "price_usd": 354.73,
+      "fiscal_year": "FY2027",
+      "consensus_updated": "2026-10-02",
+      "adjusted_eps_usd": 19.39,
+      "calculated_pe": 18.2945
+    },
+    {
+      "ticker": "NVDA",
+      "price_date": "2026-10-12",
+      "price_usd": 226.32,
+      "fiscal_year": "FY2028",
+      "consensus_updated": "2026-10-09",
+      "adjusted_eps_usd": 15.91,
+      "calculated_pe": 14.225
+    },
+    {
+      "ticker": "MRVL",
+      "price_date": "2026-10-12",
+      "price_usd": 265.86,
+      "fiscal_year": "FY2028",
+      "consensus_updated": "2026-10-07",
+      "adjusted_eps_usd": 7.28,
+      "calculated_pe": 36.5192
+    }
+  ],
+  "timing": "Not recorded; previous 35-page timing estimate no longer applies",
+  "delivery_stage": "18-page revised narration draft after storytelling reference analysis",
+  "version": "18-page progressive reveal revision",
+  "page_limit": [
+    15,
+    20
+  ],
+  "source_page_mapping_updated": true,
+  "previous_version": "版本/逐字稿-段落銜接調整前.txt",
+  "current_script_sha256": "8e7e2804a9e6b3e67dc3c03e3eae25b41cff942b7191e418763430dd78d8ebee",
+  "final_readback_complete": true,
+  "future_deployments_distinguished_from_reported_revenue": true,
+  "all_17_page_transitions_reviewed": true,
+  "seven_outline_sections_mapped": true,
+  "existing_numeric_values_preserved": true,
+  "visible_revision_file": "逐字稿-開場與銜接修訂版.txt",
+  "restored_revision_readback_verified": true,
+  "opening_company_and_thesis_first": false,
+  "spoken_ticker_introductions_removed": true,
+  "opening_han": 54,
+  "opening_brief_company_and_question_only": true,
+  "progressive_reveal_reviewed": true
+}

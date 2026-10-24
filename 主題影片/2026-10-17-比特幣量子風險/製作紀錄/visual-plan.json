@@ -1,0 +1,142 @@
+[
+  {
+    "page": 1,
+    "file": "slide_01.png",
+    "text": "不碰錢包，也能轉走？",
+    "scene": "Close-up paper illustration of an unplugged hardware wallet, Bitcoin engraved coin, and a distant quantum processor represented by precise concentric circuit rings. A thin navy path between public data and a key shape; question motif, no claim of current break. One clear hero scene.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 不碰錢包，也能轉走？. Scene: Close-up paper illustration of an unplugged hardware wallet, Bitcoin engraved coin, and a distant quantum processor represented by precise concentric circuit rings. A thin navy path between public data and a key shape; question motif, no claim of current break. One clear hero scene."
+  },
+  {
+    "page": 2,
+    "file": "slide_02.png",
+    "text": "被攻擊的是轉帳授權",
+    "scene": "An open transfer document receiving an authorization stamp, with a separate intact stack of blockchain record pages behind. Cutaway composition focusing on forged authorization versus immutable history; no literal criminal face. One brick-orange signature mark.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 被攻擊的是轉帳授權. Scene: An open transfer document receiving an authorization stamp, with a separate intact stack of blockchain record pages behind. Cutaway composition focusing on forged authorization versus immutable history; no literal criminal face. One brick-orange signature mark."
+  },
+  {
+    "page": 3,
+    "file": "slide_03.png",
+    "text": "私鑰簽署｜公鑰驗證",
+    "scene": "Top-down two hands: on left a private signing key stamping a transaction sheet, on right a magnifying verifier examining stamp. Clear left-to-right arrow workflow, private key remains inside wallet. Use exact two text labels separately.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 私鑰簽署｜公鑰驗證. Scene: Top-down two hands: on left a private signing key stamping a transaction sheet, on right a magnifying verifier examining stamp. Clear left-to-right arrow workflow, private key remains inside wallet. Use exact two text labels separately."
+  },
+  {
+    "page": 4,
+    "file": "slide_04.png",
+    "text": "冷錢包離線，公鑰仍可能公開",
+    "scene": "Side profile unplugged hardware wallet on left; on right public bulletin with public-key symbol and an independent computing apparatus examining it. A physical gap shows no connection to cold wallet needed. Do not suggest actual current attack.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 冷錢包離線，公鑰仍可能公開. Scene: Side profile unplugged hardware wallet on left; on right public bulletin with public-key symbol and an independent computing apparatus examining it. A physical gap shows no connection to cold wallet needed. Do not suggest actual current attack."
+  },
+  {
+    "page": 5,
+    "file": "slide_05.png",
+    "text": "Google 研究估算｜不到 50 萬｜實體量子位元",
+    "scene": "Big type editorial numerical plate with small diagram of a superconducting quantum chip at lower right and many tiny logical resource marks. No chart, no other numbers. Make '研究估算' conspicuous, keep unit attached to number.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: Google 研究估算｜不到 50 萬｜實體量子位元. Scene: Big type editorial numerical plate with small diagram of a superconducting quantum chip at lower right and many tiny logical resource marks. No chart, no other numbers. Make '研究估算' conspicuous, keep unit attached to number."
+  },
+  {
+    "page": 6,
+    "file": "slide_06.png",
+    "text": "數量之外，還要穩定運算",
+    "scene": "Macro microscope view of quantum chip with ordered sequence of checked operations, one disturbance indicated in brick-orange and a corrected path. Explain hardware reliability visually, not a fake scientific plot.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 數量之外，還要穩定運算. Scene: Macro microscope view of quantum chip with ordered sequence of checked operations, one disturbance indicated in brick-orange and a corrected path. Explain hardware reliability visually, not a fake scientific plot."
+  },
+  {
+    "page": 7,
+    "file": "slide_07.png",
+    "text": "53 小時｜設計搜尋｜約 17 倍｜特定運算步驟減少",
+    "scene": "An engineering drafting desk with a large single optimized circuit schematic and a pencil. Two separated annotation zones: 53小時 design search and 約17倍 operation reduction. Not a chart; no BTC cracked icon, no claim 53h attack.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 53 小時｜設計搜尋｜約 17 倍｜特定運算步驟減少. Scene: An engineering drafting desk with a large single optimized circuit schematic and a pencil. Two separated annotation zones: 53小時 design search and 約17倍 operation reduction. Not a chart; no BTC cracked icon, no claim 53h attack."
+  },
+  {
+    "page": 8,
+    "file": "slide_08.png",
+    "text": "硬體進步｜演算法省資源",
+    "scene": "Two hands moving opposite ends of an adjustable engineering caliper toward a central threshold, depicting hardware capability rises and algorithm requirements shrink. Clean single physical metaphor, sparse grid, no numeric scale.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 硬體進步｜演算法省資源. Scene: Two hands moving opposite ends of an adjustable engineering caliper toward a central threshold, depicting hardware capability rises and algorithm requirements shrink. Clean single physical metaphor, sparse grid, no numeric scale."
+  },
+  {
+    "page": 9,
+    "file": "slide_09.png",
+    "text": "抗量子簽章｜已有技術方向",
+    "scene": "A conventional desktop computer signing a transaction with a new shield-shaped mathematical seal. Small human researcher silhouette nearby. Emphasize technology runs on normal computers, no giant quantum machine.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 抗量子簽章｜已有技術方向. Scene: A conventional desktop computer signing a transaction with a new shield-shaped mathematical seal. Small human researcher silhouette nearby. Emphasize technology runs on normal computers, no giant quantum machine."
+  },
+  {
+    "page": 10,
+    "file": "slide_10.png",
+    "text": "更大的簽章｜費用與備份取捨",
+    "scene": "Overhead packing illustration: same size block container, compact documents on one side and fewer larger sealed documents on the other, plus a small backup notebook. Qualitative comparison only, no invented counts or axes.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 更大的簽章｜費用與備份取捨. Scene: Overhead packing illustration: same size block container, compact documents on one side and fewer larger sealed documents on the other, plus a small backup notebook. Qualitative comparison only, no invented counts or axes."
+  },
+  {
+    "page": 11,
+    "file": "slide_11.png",
+    "text": "BIP 360｜減少長期曝光｜BIP 361｜討論舊簽章退場｜草案",
+    "scene": "Two large engineering proposal sheets on the same desk, each with its exact number and scope text, both visibly stamped 草案. Neutral composition no approval stamps. No fake fine print.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: BIP 360｜減少長期曝光｜BIP 361｜討論舊簽章退場｜草案. Scene: Two large engineering proposal sheets on the same desk, each with its exact number and scope text, both visibly stamped 草案. Neutral composition no approval stamps. No fake fine print."
+  },
+  {
+    "page": 12,
+    "file": "slide_12.png",
+    "text": "老幣怎麼辦？｜防止被偷｜保留持有人權利",
+    "scene": "Balanced scale with an old wallet and a protective shield on opposite sides, plus an unclaimed coin in center. Moral/governance tradeoff illustration, not price chart. One orange question mark.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 老幣怎麼辦？｜防止被偷｜保留持有人權利. Scene: Balanced scale with an old wallet and a protective shield on opposite sides, plus an unclaimed coin in center. Moral/governance tradeoff illustration, not price chart. One orange question mark."
+  },
+  {
+    "page": 13,
+    "file": "slide_13.png",
+    "text": "可能增加賣壓｜也可能削弱買盤｜情境分析",
+    "scene": "Street-level view of a market exchange counter: dormant coin vault opens at left and cautious buyer's hand holds back at right. Two economic channels in one scene. Clearly marked 情境分析; no invented prices or curves.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 可能增加賣壓｜也可能削弱買盤｜情境分析. Scene: Street-level view of a market exchange counter: dormant coin vault opens at left and cautious buyer's hand holds back at right. Two economic channels in one scene. Clearly marked 情境分析; no invented prices or curves."
+  },
+  {
+    "page": 14,
+    "file": "slide_14.png",
+    "text": "Ansem 的看法｜Zcash 可能獲得更高估值｜若比特幣量子風險升高",
+    "scene": "Researcher's trading notebook open to two coin sketches marked BTC and ZEC, a hand considering alternative. No fabricated portrait. Ansem view framed as conditional opinion; typography with big Zcash, small explicit condition.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: Ansem 的看法｜Zcash 可能獲得更高估值｜若比特幣量子風險升高. Scene: Researcher's trading notebook open to two coin sketches marked BTC and ZEC, a hand considering alternative. No fabricated portrait. Ansem view framed as conditional opinion; typography with big Zcash, small explicit condition."
+  },
+  {
+    "page": 15,
+    "file": "slide_15.png",
+    "text": "跨鏈退款地址｜可能留下隱私線索",
+    "scene": "A cross-chain transfer bridge diagram between two ledgers labeled Zcash and NEAR, with a refund address paper tag publicly pinned on the NEAR side. Magnifying glass reveals linked incoming-payment records. Privacy exposure not coin theft, no extra text.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 跨鏈退款地址｜可能留下隱私線索. Scene: A cross-chain transfer bridge diagram between two ledgers labeled Zcash and NEAR, with a refund address paper tag publicly pinned on the NEAR side. Magnifying glass reveals linked incoming-payment records. Privacy exposure not coin theft, no extra text."
+  },
+  {
+    "page": 16,
+    "file": "slide_16.png",
+    "text": "每次兌換，獨立查看金鑰｜錢包整合方案",
+    "scene": "Three separate refund slips each paired with its own viewing key and discrete isolated receipt bundle, a single spending wallet below untouched. A clear cut in links between bundles. Qualitative illustration, no numerical captions.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 每次兌換，獨立查看金鑰｜錢包整合方案. Scene: Three separate refund slips each paired with its own viewing key and discrete isolated receipt bundle, a single spending wallet below untouched. A clear cut in links between bundles. Qualitative illustration, no numerical captions."
+  },
+  {
+    "page": 17,
+    "file": "slide_17.png",
+    "text": "NEAR｜帳戶已支援抗量子簽章｜共識與跨鏈仍需升級",
+    "scene": "Exploded three-layer engineering model of NEAR: top account layer has a completed shield, lower consensus and cross-chain layers have construction tools. Clear label separation, no guarantee entire network safe, no logos invented.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: NEAR｜帳戶已支援抗量子簽章｜共識與跨鏈仍需升級. Scene: Exploded three-layer engineering model of NEAR: top account layer has a completed shield, lower consensus and cross-chain layers have construction tools. Clear label separation, no guarantee entire network safe, no logos invented."
+  },
+  {
+    "page": 18,
+    "file": "slide_18.png",
+    "text": "交易需求增加｜服務使用量｜代幣價值仍看收入連結",
+    "scene": "Bird's-eye cross-chain swap service with a single central exchange desk connecting a ZEC token traveler to other asset slips, then a small fee receipt leading toward NEAR token. Causal arrows; fee-to-token path dashed to show conditional linkage; no invented amounts.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 交易需求增加｜服務使用量｜代幣價值仍看收入連結. Scene: Bird's-eye cross-chain swap service with a single central exchange desk connecting a ZEC token traveler to other asset slips, then a small fee receipt leading toward NEAR token. Causal arrows; fee-to-token path dashed to show conditional linkage; no invented amounts."
+  },
+  {
+    "page": 19,
+    "file": "slide_19.png",
+    "text": "功能可以更新｜信任需要累積",
+    "scene": "Large weathered Bitcoin coin on sturdy base versus a small new technology tool nearby, people deciding around them. Editorial wide perspective shows existing trust and emerging competition, not claim of guaranteed dominance.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 功能可以更新｜信任需要累積. Scene: Large weathered Bitcoin coin on sturdy base versus a small new technology tool nearby, people deciding around them. Editorial wide perspective shows existing trust and emerging competition, not claim of guaranteed dominance."
+  },
+  {
+    "page": 20,
+    "file": "slide_20.png",
+    "text": "攻擊能力 × 防守進度｜共同決定長期安全",
+    "scene": "Closing wide engineering scene of a Bitcoin vault being upgraded while a research lab evolves across the same horizon. Balanced neutral composition, protective work in progress, no victory or catastrophe. Large exact closing phrase, restrained orange accent.",
+    "prompt": "Generate ONE finished 16:9 investment-video content illustration, 1920x1080 or equivalent wide aspect ratio. Reference ONLY for style, never copy its text or objects. Warm ivory textured paper, dark navy #0C1B2F precise ink linework and fine crosshatching, sparse faint engineering grid, small brick-orange #B75A38 accents. Bold large readable Traditional Chinese integrated typography. One coherent editorial composition, 1-2 main ideas, generous breathing room. No UI cards, no outer frame, no owl branding, no slide number, no extra page header, no sources, no invented logos, no fake fine print. All text/numbers/illustration generated in one image. Keep 5% safety margins. Only exact visible text specified below; | separates labels and is NOT printed. Text: 攻擊能力 × 防守進度｜共同決定長期安全. Scene: Closing wide engineering scene of a Bitcoin vault being upgraded while a research lab evolves across the same horizon. Balanced neutral composition, protective work in progress, no victory or catastrophe. Large exact closing phrase, restrained orange accent."
+  }
+]

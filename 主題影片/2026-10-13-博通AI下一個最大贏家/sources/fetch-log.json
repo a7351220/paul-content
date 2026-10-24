@@ -1,0 +1,74 @@
+[
+  {
+    "id": "avgo_q3",
+    "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+    "ok": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "avgo_call",
+    "url": "https://stockanalysis.com/stocks/avgo/transcripts/685349-q3-2026/",
+    "ok": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "avgo_stats",
+    "url": "https://stockanalysis.com/stocks/avgo/statistics/",
+    "ok": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "nvda_stats",
+    "url": "https://stockanalysis.com/stocks/nvda/statistics/",
+    "ok": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "mrvl_stats",
+    "url": "https://stockanalysis.com/stocks/mrvl/statistics/",
+    "ok": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "avgo_network",
+    "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-redefines-ai-infrastructure-industry-leading-networking",
+    "ok": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "mrvl_day",
+    "url": "https://www.marvell.com/company/events/investor-day-2026.html",
+    "ok": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "mrvl_q2",
+    "url": "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results",
+    "ok": true,
+    "chars": 33459
+  },
+  {
+    "id": "avgo_10q",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+    "ok": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "openai_chip",
+    "url": "https://openai.com/zh-Hant/index/openai-broadcom-jalapeno-inference-chip/",
+    "ok": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "anthropic",
+    "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+    "ok": true,
+    "chars": 4401
+  },
+  {
+    "id": "mrvl_google",
+    "url": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001193125-26-356217/d412696d8k.htm",
+    "ok": true,
+    "chars": 5654
+  }
+]

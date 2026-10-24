@@ -1,0 +1,111 @@
+{
+  "mode": "full-narration-with-selective-editing",
+  "page_count": 20,
+  "reference_full_script": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/刪除擴寫贅述前-20261019-232417/逐字稿.md",
+  "baseline_before_edit": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/恢復完整口白前-20261019-232941/逐字稿.md",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "total_before": 3929,
+  "total_after": 5406,
+  "pages": [
+    {
+      "page": 1,
+      "summary_version": 202,
+      "full_narration": 238
+    },
+    {
+      "page": 2,
+      "summary_version": 164,
+      "full_narration": 177
+    },
+    {
+      "page": 3,
+      "summary_version": 134,
+      "full_narration": 164
+    },
+    {
+      "page": 4,
+      "summary_version": 136,
+      "full_narration": 187
+    },
+    {
+      "page": 5,
+      "summary_version": 173,
+      "full_narration": 242
+    },
+    {
+      "page": 6,
+      "summary_version": 212,
+      "full_narration": 317
+    },
+    {
+      "page": 7,
+      "summary_version": 218,
+      "full_narration": 323
+    },
+    {
+      "page": 8,
+      "summary_version": 247,
+      "full_narration": 341
+    },
+    {
+      "page": 9,
+      "summary_version": 181,
+      "full_narration": 293
+    },
+    {
+      "page": 10,
+      "summary_version": 168,
+      "full_narration": 251
+    },
+    {
+      "page": 11,
+      "summary_version": 203,
+      "full_narration": 310
+    },
+    {
+      "page": 12,
+      "summary_version": 216,
+      "full_narration": 280
+    },
+    {
+      "page": 13,
+      "summary_version": 209,
+      "full_narration": 278
+    },
+    {
+      "page": 14,
+      "summary_version": 159,
+      "full_narration": 227
+    },
+    {
+      "page": 15,
+      "summary_version": 175,
+      "full_narration": 215
+    },
+    {
+      "page": 16,
+      "summary_version": 168,
+      "full_narration": 251
+    },
+    {
+      "page": 17,
+      "summary_version": 204,
+      "full_narration": 253
+    },
+    {
+      "page": 18,
+      "summary_version": 250,
+      "full_narration": 375
+    },
+    {
+      "page": 19,
+      "summary_version": 237,
+      "full_narration": 272
+    },
+    {
+      "page": 20,
+      "summary_version": 273,
+      "full_narration": 412
+    }
+  ]
+}

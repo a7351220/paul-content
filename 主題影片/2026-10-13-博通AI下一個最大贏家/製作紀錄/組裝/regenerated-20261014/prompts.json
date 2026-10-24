@@ -1,0 +1,70 @@
+[
+  {
+    "page": 2,
+    "prompt": "Overhead still life: a semiconductor chip on a technical drawing at lower right, and a slim software notebook beside it. Reserve LEFT 65% as completely empty cream paper for a precise chart added later. Only integrated small text at bottom right:「博通的兩門生意」. Do not draw any chart or numbers."
+  },
+  {
+    "page": 5,
+    "prompt": "Macro cutaway of a customized chip fitted to three precise task shapes, hand pencil annotations and finely hatched circuits, no servers. Integrated bold statement left「照自己的需求做晶片」and smaller「同樣的設備，做更多事」. Conceptual engineering image, no charts or numeric claims."
+  },
+  {
+    "page": 6,
+    "prompt": "Overhead cost tradeoff on engineering notebook: left an initial chip development blueprint with pencil and coins, right many neatly repeating job tickets expanding into distance, no charts. Bold integrated labels「先花開發費」and「用得夠多，才划算」. Visually show upfront development versus repeated use without invented numbers."
+  },
+  {
+    "page": 7,
+    "prompt": "Macro lab test bench with hands testing a prototype chip on circuit board, left large integrated lettering「OpenAI × 博通」and「9 個月」then small「設計 → 交給工廠製造」. Timeline milestone, NOT mass production. Avoid server rack and pipe composition."
+  },
+  {
+    "page": 8,
+    "prompt": "Editorial financial desk paper texture, fine navy hatching; at far RIGHT 30%, physical revenue ledger open with a chip and network connector on it, orange ledger marker. LEFT 68% MUST remain completely empty paper for precise financial chart and numbers added later. No labels, text, charts, numbers or fake logos."
+  },
+  {
+    "page": 9,
+    "prompt": "Low eye-level closeup financial ledger, paper banknote bundles and pencil with navy ink hatching and brick orange details confined RIGHT 30%. LEFT 68% completely empty cream paper for exact cash flow figures added later. No text or charts."
+  },
+  {
+    "page": 10,
+    "prompt": "Wide cream paper with small hand-drawn chip sample tray and orange quarterly calendar confined bottom RIGHT 20%, fine navy ink and hatching. CENTER and LEFT 80% empty for exact native bar chart. No chart, text, numerals or decorative arrows."
+  },
+  {
+    "page": 11,
+    "prompt": "Wide cream paper engineering journal: small stacked next-generation chip design notebooks confined far RIGHT 20%, navy outlines, orange binder. LEFT 78% empty for exact year comparison chart. No text, numbers or chart."
+  },
+  {
+    "page": 12,
+    "prompt": "Overhead real engineering procurement desk with a Google project folder at top, two separate technical portfolios below marked「博通」and「Marvell」, hands reviewing both. Large integrated phrase「大客戶，也有其他選擇」. Clearly show supplier competition without implying either contract lost. No fake logos, no quantitative chart."
+  },
+  {
+    "page": 13,
+    "prompt": "Extreme macro cutaway of a network switch connector and board, navy crosshatched traces linking multiple compute chips, orange signal highlights. Integrated phrase「晶片要快，資料也要傳得快」and smaller「運算晶片 ＋ 網路產品」. Perspective differs from overhead scenes. No chart."
+  },
+  {
+    "page": 14,
+    "prompt": "Side-on layered engineering sketchbook volumes and chip prototypes progressing through generations, papers pinned like product roadmap, calm cream space. Integrated bold phrase「這一代合作，接著做下一代」small label「OpenAI × 博通」. No sales chart, no numbers, no rising stock arrow."
+  },
+  {
+    "page": 15,
+    "prompt": "Cream paper with delicate navy ink earnings notebook, pencil and small orange margin tab at far RIGHT 20%. LEFT 78% empty for precise earnings comparison chart. No labels, numbers, chart or arrows."
+  },
+  {
+    "page": 16,
+    "prompt": "Cream paper with hand holding an orange-marked earnings estimate document and magnifying glass only far RIGHT 22%, navy fine crosshatching. LEFT 76% empty for exact valuation sensitivity chart. No text or chart."
+  },
+  {
+    "page": 17,
+    "prompt": "Cream paper with two distinct semiconductor chip samples in a slim comparison tray confined far RIGHT 20%, navy ink hatch with restrained orange detail. LEFT 78% empty for exact valuation bars. No logos, text, numbers or chart."
+  },
+  {
+    "page": 18,
+    "prompt": "Cream paper overhead desk with five client folders stacked together, one tilted schedule page, confined far RIGHT 20%, navy ink and orange binding. LEFT 78% empty for exact concentration comparison bars. No labels, chart or numerals."
+  },
+  {
+    "page": 19,
+    "prompt": "Cream paper with closeup hands signing a lease guarantee contract, equipment crate faint linework behind, artwork confined RIGHT 30%. LEFT 68% empty for exact risk figure and wording. Navy ink hatching, orange signature tab. No text, chart, invented financial values."
+  },
+  {
+    "page": 20,
+    "prompt": "Editorial overhead synthesis: one open ledger with cash at left, a custom chip plus networking connector in center, several successive product design notebooks at right. Three integrated labels only「AI 收入」「現金流」「多代合作」. Large bottom integrated thesis「看好未來幾年的獲利成長」. Navy ink, fine hatching, orange restrained highlights. No price arrows, buying advice or new figures."
+  }
+]

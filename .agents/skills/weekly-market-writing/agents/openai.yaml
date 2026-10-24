@@ -1,0 +1,4 @@
+interface:
+  display_name: "Weekly Market Writing"
+  short_description: "Outline, write, and orally edit market reports from existing material."
+  default_prompt: "Use $weekly-market-writing to turn this research pack into a weekly market writing workflow."

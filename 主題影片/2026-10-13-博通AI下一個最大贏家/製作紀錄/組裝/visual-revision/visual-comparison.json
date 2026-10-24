@@ -1,0 +1,102 @@
+[
+  {
+    "page": 1,
+    "mean_rgb_difference": 2.949,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 2,
+    "mean_rgb_difference": 2.955,
+    "verification": "fresh transaction export"
+  },
+  {
+    "page": 3,
+    "mean_rgb_difference": 3.436,
+    "verification": "fresh transaction export"
+  },
+  {
+    "page": 4,
+    "mean_rgb_difference": 3.072,
+    "verification": "fresh transaction export"
+  },
+  {
+    "page": 5,
+    "mean_rgb_difference": 2.56,
+    "verification": "fresh transaction export"
+  },
+  {
+    "page": 6,
+    "mean_rgb_difference": 3.228,
+    "verification": "fresh transaction export"
+  },
+  {
+    "page": 7,
+    "mean_rgb_difference": 2.595,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 8,
+    "mean_rgb_difference": 2.557,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 9,
+    "mean_rgb_difference": 2.216,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 10,
+    "mean_rgb_difference": 0.78,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 11,
+    "mean_rgb_difference": 0.762,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 12,
+    "mean_rgb_difference": 2.582,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 13,
+    "mean_rgb_difference": 2.968,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 14,
+    "mean_rgb_difference": 2.705,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 15,
+    "mean_rgb_difference": 0.785,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 16,
+    "mean_rgb_difference": 2.588,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 17,
+    "mean_rgb_difference": 0.628,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 18,
+    "mean_rgb_difference": 0.868,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 19,
+    "mean_rgb_difference": 2.288,
+    "verification": "unchanged page preview"
+  },
+  {
+    "page": 20,
+    "mean_rgb_difference": 2.252,
+    "verification": "unchanged page preview"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "title_verified": true,
+  "seven_sections_preserved": true,
+  "slides": 18,
+  "han_total": 2033,
+  "han_average": 112.9,
+  "narration_contains_urls": false,
+  "narration_contains_production_notes": false,
+  "slide_sources_mapped": true,
+  "price_basis": "2026-10-12 US regular-session close",
+  "valuation": [
+    {
+      "ticker": "AVGO",
+      "price_date": "2026-10-12",
+      "price_usd": 354.73,
+      "fiscal_year": "FY2027",
+      "consensus_updated": "2026-10-02",
+      "adjusted_eps_usd": 19.39,
+      "calculated_pe": 18.2945
+    },
+    {
+      "ticker": "NVDA",
+      "price_date": "2026-10-12",
+      "price_usd": 226.32,
+      "fiscal_year": "FY2028",
+      "consensus_updated": "2026-10-09",
+      "adjusted_eps_usd": 15.91,
+      "calculated_pe": 14.225
+    },
+    {
+      "ticker": "MRVL",
+      "price_date": "2026-10-12",
+      "price_usd": 265.86,
+      "fiscal_year": "FY2028",
+      "consensus_updated": "2026-10-07",
+      "adjusted_eps_usd": 7.28,
+      "calculated_pe": 36.5192
+    }
+  ],
+  "timing": "Not recorded; previous 35-page timing estimate no longer applies",
+  "delivery_stage": "18-page revised narration draft after storytelling reference analysis",
+  "version": "18-page narrative revision",
+  "page_limit": [
+    15,
+    20
+  ],
+  "source_page_mapping_updated": true,
+  "previous_version": "版本/逐字稿-18頁敘事調整前.txt",
+  "current_script_sha256": "fdfe4b9d1b2ef94366f73982d2e2216b216c7dd5c93d023281236b7607b9c9b8",
+  "final_readback_complete": true,
+  "future_deployments_distinguished_from_reported_revenue": true
+}

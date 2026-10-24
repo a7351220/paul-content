@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-23",
+  "type": "weekly-market-report",
+  "slide_count": 27,
+  "canonical_script": "逐字稿.txt",
+  "synced_script": "逐字稿－銜接修正版.txt",
+  "canva": {
+    "design_id": "DAHY5RMEnMk",
+    "edit_url": "https://www.canva.com/design/DAHY5RMEnMk/uJIqFRhFkegPtofCIjHGbw/edit",
+    "page_count": 27,
+    "font": "可画榜书",
+    "font_verified": true,
+    "notes_match": 27
+  },
+  "original_chart_pages": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "generated_image_count": 25,
+  "generated_via": "built-in image_gen",
+  "prompt_file": "製作紀錄/製圖指令.json",
+  "google_doc": {
+    "id": "1AZHdu-JOGZTrcmKO2be9RJSD1o42YYmVLKxxKpKMoZs",
+    "url": "https://docs.google.com/document/d/1AZHdu-JOGZTrcmKO2be9RJSD1o42YYmVLKxxKpKMoZs/edit?usp=drivesdk",
+    "source": "2026-10-24 Canva人工修改後27頁，統一數字與市場用詞",
+    "heading_count": 27,
+    "readback_match": true,
+    "folder": "ChatGPT"
+  },
+  "prior_pptx": "輸出/2026-10-23-市場週報-31頁.pptx",
+  "prior_pptx_status": "31頁舊版，保留歷史輸出；目前以Canva27頁與Google Doc為準",
+  "project_root": "/Users/xieminghua/Documents/保羅內容/週報/2026-10-23-市場週報"
+}

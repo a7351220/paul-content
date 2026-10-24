@@ -1,0 +1,113 @@
+{
+  "mode": "integrated-author-judgment-and-provider-responsibility",
+  "page_count": 20,
+  "slide_map_revision": 15,
+  "script_revision": 22,
+  "baseline_before_edit": "/Users/xieminghua/Documents/保羅內容/reports/2026-10-17_比特幣量子風險/_archive/全文判斷與業者責任改寫前-20261021-163432/逐字稿.md",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "total_before": 6103,
+  "total_after": 6175,
+  "ratio": 1.0118,
+  "pages": [
+    {
+      "page": 1,
+      "before": 238,
+      "after": 238
+    },
+    {
+      "page": 2,
+      "before": 297,
+      "after": 297
+    },
+    {
+      "page": 3,
+      "before": 379,
+      "after": 379
+    },
+    {
+      "page": 4,
+      "before": 262,
+      "after": 292
+    },
+    {
+      "page": 5,
+      "before": 308,
+      "after": 314
+    },
+    {
+      "page": 6,
+      "before": 309,
+      "after": 317
+    },
+    {
+      "page": 7,
+      "before": 307,
+      "after": 313
+    },
+    {
+      "page": 8,
+      "before": 294,
+      "after": 297
+    },
+    {
+      "page": 9,
+      "before": 322,
+      "after": 324
+    },
+    {
+      "page": 10,
+      "before": 300,
+      "after": 301
+    },
+    {
+      "page": 11,
+      "before": 294,
+      "after": 299
+    },
+    {
+      "page": 12,
+      "before": 306,
+      "after": 322
+    },
+    {
+      "page": 13,
+      "before": 308,
+      "after": 306
+    },
+    {
+      "page": 14,
+      "before": 297,
+      "after": 296
+    },
+    {
+      "page": 15,
+      "before": 305,
+      "after": 302
+    },
+    {
+      "page": 16,
+      "before": 295,
+      "after": 291
+    },
+    {
+      "page": 17,
+      "before": 322,
+      "after": 306
+    },
+    {
+      "page": 18,
+      "before": 283,
+      "after": 303
+    },
+    {
+      "page": 19,
+      "before": 315,
+      "after": 299
+    },
+    {
+      "page": 20,
+      "before": 362,
+      "after": 379
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "page": 1,
+    "before": 212,
+    "after": 212,
+    "delta": 0,
+    "ratio": 1.0,
+    "unchanged": true
+  },
+  {
+    "page": 2,
+    "before": 103,
+    "after": 143,
+    "delta": 40,
+    "ratio": 1.39,
+    "unchanged": false
+  },
+  {
+    "page": 3,
+    "before": 122,
+    "after": 162,
+    "delta": 40,
+    "ratio": 1.33,
+    "unchanged": false
+  },
+  {
+    "page": 4,
+    "before": 104,
+    "after": 191,
+    "delta": 87,
+    "ratio": 1.84,
+    "unchanged": false
+  },
+  {
+    "page": 5,
+    "before": 114,
+    "after": 188,
+    "delta": 74,
+    "ratio": 1.65,
+    "unchanged": false
+  },
+  {
+    "page": 6,
+    "before": 103,
+    "after": 166,
+    "delta": 63,
+    "ratio": 1.61,
+    "unchanged": false
+  },
+  {
+    "page": 7,
+    "before": 108,
+    "after": 199,
+    "delta": 91,
+    "ratio": 1.84,
+    "unchanged": false
+  },
+  {
+    "page": 8,
+    "before": 114,
+    "after": 92,
+    "delta": -22,
+    "ratio": 0.81,
+    "unchanged": false
+  },
+  {
+    "page": 9,
+    "before": 113,
+    "after": 103,
+    "delta": -10,
+    "ratio": 0.91,
+    "unchanged": false
+  },
+  {
+    "page": 10,
+    "before": 106,
+    "after": 106,
+    "delta": 0,
+    "ratio": 1.0,
+    "unchanged": true
+  },
+  {
+    "page": 11,
+    "before": 106,
+    "after": 151,
+    "delta": 45,
+    "ratio": 1.42,
+    "unchanged": false
+  },
+  {
+    "page": 12,
+    "before": 109,
+    "after": 123,
+    "delta": 14,
+    "ratio": 1.13,
+    "unchanged": false
+  },
+  {
+    "page": 13,
+    "before": 116,
+    "after": 127,
+    "delta": 11,
+    "ratio": 1.09,
+    "unchanged": false
+  },
+  {
+    "page": 14,
+    "before": 96,
+    "after": 96,
+    "delta": 0,
+    "ratio": 1.0,
+    "unchanged": true
+  },
+  {
+    "page": 15,
+    "before": 78,
+    "after": 78,
+    "delta": 0,
+    "ratio": 1.0,
+    "unchanged": true
+  },
+  {
+    "page": 16,
+    "before": 122,
+    "after": 143,
+    "delta": 21,
+    "ratio": 1.17,
+    "unchanged": false
+  },
+  {
+    "page": 17,
+    "before": 68,
+    "after": 89,
+    "delta": 21,
+    "ratio": 1.31,
+    "unchanged": false
+  },
+  {
+    "page": 18,
+    "before": 102,
+    "after": 102,
+    "delta": 0,
+    "ratio": 1.0,
+    "unchanged": true
+  },
+  {
+    "page": 19,
+    "before": 109,
+    "after": 161,
+    "delta": 52,
+    "ratio": 1.48,
+    "unchanged": false
+  },
+  {
+    "page": 20,
+    "before": 127,
+    "after": 219,
+    "delta": 92,
+    "ratio": 1.72,
+    "unchanged": false
+  }
+]

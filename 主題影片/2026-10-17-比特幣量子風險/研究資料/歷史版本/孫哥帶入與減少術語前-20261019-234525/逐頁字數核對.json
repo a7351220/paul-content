@@ -1,0 +1,130 @@
+{
+  "mode": "differentiate-slides-14-to-18",
+  "page_count": 20,
+  "baseline_before_edit": "reports/2026-10-17_比特幣量子風險/_archive/第14至18頁重點分開前-20261019-234025/逐字稿.md",
+  "count_method": "spoken_non_whitespace_characters_excluding_titles_and_page_labels",
+  "total_before": 5406,
+  "total_after": 5563,
+  "pages": [
+    {
+      "page": 1,
+      "before": 238,
+      "after": 238,
+      "changed": false
+    },
+    {
+      "page": 2,
+      "before": 177,
+      "after": 177,
+      "changed": false
+    },
+    {
+      "page": 3,
+      "before": 164,
+      "after": 164,
+      "changed": false
+    },
+    {
+      "page": 4,
+      "before": 187,
+      "after": 187,
+      "changed": false
+    },
+    {
+      "page": 5,
+      "before": 242,
+      "after": 242,
+      "changed": false
+    },
+    {
+      "page": 6,
+      "before": 317,
+      "after": 317,
+      "changed": false
+    },
+    {
+      "page": 7,
+      "before": 323,
+      "after": 323,
+      "changed": false
+    },
+    {
+      "page": 8,
+      "before": 341,
+      "after": 341,
+      "changed": false
+    },
+    {
+      "page": 9,
+      "before": 293,
+      "after": 293,
+      "changed": false
+    },
+    {
+      "page": 10,
+      "before": 251,
+      "after": 251,
+      "changed": false
+    },
+    {
+      "page": 11,
+      "before": 310,
+      "after": 310,
+      "changed": false
+    },
+    {
+      "page": 12,
+      "before": 280,
+      "after": 280,
+      "changed": false
+    },
+    {
+      "page": 13,
+      "before": 278,
+      "after": 278,
+      "changed": false
+    },
+    {
+      "page": 14,
+      "before": 227,
+      "after": 279,
+      "changed": true
+    },
+    {
+      "page": 15,
+      "before": 215,
+      "after": 284,
+      "changed": true
+    },
+    {
+      "page": 16,
+      "before": 251,
+      "after": 279,
+      "changed": true
+    },
+    {
+      "page": 17,
+      "before": 253,
+      "after": 284,
+      "changed": true
+    },
+    {
+      "page": 18,
+      "before": 375,
+      "after": 352,
+      "changed": true
+    },
+    {
+      "page": 19,
+      "before": 272,
+      "after": 272,
+      "changed": false
+    },
+    {
+      "page": 20,
+      "before": 412,
+      "after": 412,
+      "changed": false
+    }
+  ]
+}

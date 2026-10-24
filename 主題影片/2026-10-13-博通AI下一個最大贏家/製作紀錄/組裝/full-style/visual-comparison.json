@@ -1,0 +1,62 @@
+[
+  {
+    "page": 1,
+    "mean_rgb_difference": 3.432
+  },
+  {
+    "page": 7,
+    "mean_rgb_difference": 3.422
+  },
+  {
+    "page": 8,
+    "mean_rgb_difference": 1.885
+  },
+  {
+    "page": 9,
+    "mean_rgb_difference": 1.726
+  },
+  {
+    "page": 10,
+    "mean_rgb_difference": 1.285
+  },
+  {
+    "page": 11,
+    "mean_rgb_difference": 1.649
+  },
+  {
+    "page": 12,
+    "mean_rgb_difference": 2.226
+  },
+  {
+    "page": 13,
+    "mean_rgb_difference": 3.404
+  },
+  {
+    "page": 14,
+    "mean_rgb_difference": 3.375
+  },
+  {
+    "page": 15,
+    "mean_rgb_difference": 1.52
+  },
+  {
+    "page": 16,
+    "mean_rgb_difference": 2.104
+  },
+  {
+    "page": 17,
+    "mean_rgb_difference": 1.504
+  },
+  {
+    "page": 18,
+    "mean_rgb_difference": 1.685
+  },
+  {
+    "page": 19,
+    "mean_rgb_difference": 2.382
+  },
+  {
+    "page": 20,
+    "mean_rgb_difference": 2.974
+  }
+]
