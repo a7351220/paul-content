@@ -8,5 +8,12 @@
   "layout": "貓頭鷹右上；右下錄影區留白",
   "pptx": "輸出/Anthropic成長與IPO-28頁.pptx",
   "font_check": "Canva 封面原生字體待確認",
-  "owl_scale_update": "全部28頁等比例放大20%，寬384，高358.3122；左1476，上54"
+  "owl_scale_update": "全部28頁等比例放大20%，寬384，高358.3122；左1476，上54",
+  "latest_notes_export": {
+    "date": "2026-10-29",
+    "slide_count": 27,
+    "google_doc": "https://docs.google.com/document/d/1kXqtiL1-6Eyvr4r3Ta8FwcVKlCadsHwg9acZX_J6b08/edit?usp=drivesdk",
+    "verified": "Google Doc已讀回與Canva原文核對一致",
+    "scope": "僅匯出最新備註；既有28頁PPTX未同步此次人工刪頁及改稿"
+  }
 }
