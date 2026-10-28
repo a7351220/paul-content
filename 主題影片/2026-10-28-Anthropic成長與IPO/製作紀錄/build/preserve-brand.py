@@ -15,7 +15,7 @@ for i in range(1,29):
   pr=shape.find('.//p:cNvPr',ns)
   xf0=shape.find('.//a:xfrm',ns)
   off=xf0.find('a:off',ns) if xf0 is not None else None
-  if off is not None and off.get('x')==str(1540*9525) and off.get('y')==str(54*9525):sp.remove(shape);removed+=1
+  if off is not None and off.get('x')==str(round(box['left']*9525)) and off.get('y')==str(round(box['top']*9525)):sp.remove(shape);removed+=1
  assert removed==1,(i,removed)
  brand=copy.deepcopy(source);pr=brand.find('.//p:cNvPr',ns);pr.set('id',str(max(int(x.get('id')) for x in tree.findall('.//p:cNvPr',ns))+1));pr.set('name','保羅貓頭鷹原始物件');pr.set('descr','原版貓頭鷹；右上品牌，右下錄影區留白')
  xf=brand.find('.//a:xfrm',ns);xf.find('a:off',ns).attrib.update({'x':str(round(box['left']*9525)),'y':str(round(box['top']*9525))});xf.find('a:ext',ns).attrib.update({'cx':str(round(box['width']*9525)),'cy':str(round(box['height']*9525))})

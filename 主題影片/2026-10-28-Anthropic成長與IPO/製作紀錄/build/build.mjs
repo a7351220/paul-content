@@ -7,7 +7,7 @@ const notes=JSON.parse(await fs.readFile(path.join(root,'製作紀錄/slides.jso
 assert.equal(notes.length,28);
 const p=Presentation.create({slideSize:{width:1920,height:1080}});
 const content={left:60,top:170,width:1380,height:776.25};
-const owl={left:1540,top:54,width:320,height:298.5935};
+const owl={left:1476,top:54,width:384,height:358.3122};
 const video={left:1500,top:620,width:420,height:460};
 function intersects(a,b){return a.left<b.left+b.width&&a.left+a.width>b.left&&a.top<b.top+b.height&&a.top+a.height>b.top;}
 assert(!intersects(content,video));assert(!intersects(owl,video));
