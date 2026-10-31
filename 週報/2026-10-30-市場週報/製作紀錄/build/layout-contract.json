@@ -1,0 +1,25 @@
+{
+  "slideSize": {
+    "width": 1920,
+    "height": 1080
+  },
+  "content": {
+    "left": 60,
+    "top": 170,
+    "width": 1380,
+    "height": 776.25
+  },
+  "owl": {
+    "left": 1476,
+    "top": 54,
+    "width": 384,
+    "height": 358.3122
+  },
+  "video": {
+    "left": 1500,
+    "top": 620,
+    "width": 420,
+    "height": 460
+  },
+  "slideCount": 26
+}

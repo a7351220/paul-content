@@ -1,0 +1,91 @@
+{
+  "tool": "built-in image_gen",
+  "common_style": "16:9；米白紙紋；海軍藍工程墨線；細排線；少量磚橘；繁中粗黑體；圖文一體；不加外層標題及貓頭鷹；不捏造走勢或來源介面。",
+  "pages": [
+    {
+      "page": 3,
+      "content": "凍結資產：幣安合計30億美元，Tether9.7億USDT、Circle8.2億USDC。",
+      "output": "視覺素材/slide_03.png"
+    },
+    {
+      "page": 6,
+      "content": "AI機器人找漏洞，工程師修補牆。文字：AI找洞更快，修補也要跟上。",
+      "output": "視覺素材/slide_06.png"
+    },
+    {
+      "page": 7,
+      "content": "10/29事件當時，跌破77000美元；24h清算15.5億，多單13.4億、約86%。",
+      "output": "視覺素材/slide_07.png"
+    },
+    {
+      "page": 9,
+      "content": "Hyperliquid經TradeXYZ連到ICE美國市場，橋樑構圖。",
+      "output": "視覺素材/slide_09.png"
+    },
+    {
+      "page": 10,
+      "content": "股票商品外匯與24/7時鐘，全天候合約交易，傳統市場並行。",
+      "output": "視覺素材/slide_10.png"
+    },
+    {
+      "page": 12,
+      "content": "原稿截點2026/10/31 03:49UTC，TradeXYZ近30日成交668.27億美元、費用705萬，Hyperliquid10月非加密成交約30%。",
+      "output": "視覺素材/slide_12.png"
+    },
+    {
+      "page": 13,
+      "content": "部分交易費用→Assistance Fund→買入HYPE→銷毀，不加分配百分比。",
+      "output": "視覺素材/slide_13.png"
+    },
+    {
+      "page": 14,
+      "content": "費率競爭及監管要求，成交量之後，要看能留下多少收入。",
+      "output": "視覺素材/slide_14.png"
+    },
+    {
+      "page": 15,
+      "content": "Google10/29單日-12.64%；Intel10/30單日-28.58%，市場追問AI投資何時回收。",
+      "output": "視覺素材/slide_15.png"
+    },
+    {
+      "page": 17,
+      "content": "PC下季營收季減逾20%；AI供貨跟不上；Fab28事故少3億美元營收及2個百分點毛利。",
+      "output": "視覺素材/slide_17.png"
+    },
+    {
+      "page": 18,
+      "content": "Intel2020當日跌約16%，63交易日後+7.3%；2024當日跌約26%，5日後-7.7%，63日後+0.8%；均以重挫當日收盤為基準。",
+      "output": "視覺素材/slide_18.png"
+    },
+    {
+      "page": 19,
+      "content": "2026Q3 Cloud營收年增103%；Search & Other Q1/Q2/Q3營收年增19/17/12%；共用零基線19:17:12。搜尋仍成長，速度放慢。",
+      "output": "視覺素材/slide_19.png"
+    },
+    {
+      "page": 21,
+      "content": "2026Q3 Google營運現金423億-資本支出514億=自由現金-91億美元。",
+      "output": "視覺素材/slide_21.png"
+    },
+    {
+      "page": 22,
+      "content": "本次財季Microsoft Azure年增48%、FCF+186億美元；Amazon AWS年增39%、設備支出759億、FCF-335億美元。",
+      "output": "視覺素材/slide_22.png"
+    },
+    {
+      "page": 23,
+      "content": "GOOGL上市以來至2026/10/29單日跌至少10%共3次；2008/2020後63交易日報酬-21.9/+32.4%，不生成曲線。",
+      "output": "視覺素材/slide_23.png"
+    },
+    {
+      "page": 24,
+      "content": "波克夏關聯企業2026年6月私募認購價351.81美元，2026/10/30收盤279.84，低20.46%；不用整體平均成本字樣或模擬官方文件。",
+      "output": "視覺素材/slide_24.png"
+    },
+    {
+      "page": 26,
+      "content": "Intel能否交貨接住PC需求；Google廣告客戶回報、現金回收；市場檢查投入換回什麼。",
+      "output": "視覺素材/slide_26.png"
+    }
+  ]
+}

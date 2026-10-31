@@ -1,0 +1,6 @@
+import path from 'node:path';
+import {finalizePresentation} from '/Users/xieminghua/.codex/plugins/cache/openai-primary-runtime/presentations/26.1017.22136/skills/presentations/container_tools/artifact_tool_utils.mjs';
+process.env.RUNTIME_NODE_MODULES='/Users/xieminghua/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
+const root=path.resolve(import.meta.dirname,'../..');
+const c='/Users/xieminghua/.codex/plugins/cache/openai-primary-runtime/presentations/26.1017.22136/skills/presentations/container_tools';
+console.log(await finalizePresentation({workspaceDir:root,candidatePath:path.join(import.meta.dirname,'brand-preserved.pptx'),finalPath:path.join(root,'輸出/2026-10-30市場週報-26頁.pptx'),pythonExecutable:'/Users/xieminghua/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3',integrityValidatorPath:c+'/inspect_presentation_package_integrity.py',layoutValidatorPath:c+'/inspect_presentation_layout_geometry.py',layoutArgs:['--expected-slide-size-emu','18288000,10287000'],explicitTotalSlideCount:26,verifyArtifactToolImport:true,receiptPath:path.join(import.meta.dirname,'validation.json')}));
