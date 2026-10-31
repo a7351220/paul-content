@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-31",
+  "canva_transaction_id": "2117212506020142911",
+  "transaction_status": "committed",
+  "pages": [
+    2,
+    4,
+    5,
+    8,
+    11,
+    16,
+    20,
+    25
+  ],
+  "canva_asset_ids": {
+    "2": "MAHZjlN8OOY",
+    "4": "MAHZjov3KEE",
+    "5": "MAHZjgBGtys",
+    "8": "MAHZjkzW2JQ",
+    "11": "MAHZjr542A0",
+    "16": "MAHZjtAd1gA",
+    "20": "MAHZjmsPRsE",
+    "25": "MAHZjgotUyc"
+  },
+  "slide_count": 26,
+  "local_notes_exact": true,
+  "original_owl_media_preserved": true,
+  "source_reference_files_preserved": true,
+  "crop_correction": {
+    "transaction_id": "2567572470980123315",
+    "status": "committed",
+    "previewed_pages": [
+      2,
+      4,
+      5,
+      8,
+      11,
+      16,
+      20,
+      25
+    ],
+    "placement": "完整比例RECT圖片，清除舊圖框裁切",
+    "live_canva_page2_verified": true
+  },
+  "title_update": {
+    "transaction_id": "1152316292052053822",
+    "status": "committed",
+    "titles": [
+      "幣安遭駭 63 億美元，宇宙交易所也守不住？",
+      "華爾街看上 Hyperliquid，HYPE 在漲什麼？",
+      "財報週天崩地裂：Intel 暴跌，Google 能抄底嗎？"
+    ],
+    "page_ranges": [
+      [
+        2,
+        8
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        15,
+        26
+      ]
+    ],
+    "document_order_matched": true,
+    "physical_page_order_changed": false,
+    "reason": "文件Slide1與2沿用既有第2頁合併；其餘內容順序原已一致，修正主題分段起點",
+    "all_notes_preserved": true,
+    "live_agenda_saved_verified": true
+  },
+  "pptx_sha256": "a8652fd6b486fd0e60967740dd57c9a3b5659c54f2c2f4480b03580eede04161",
+  "other_slide_changes": "全部26頁只更新外層主題標題；8頁另換成參考重繪圖片；第1–2頁備註含已授權的大綱調整"
+}

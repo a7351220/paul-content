@@ -1,0 +1,46 @@
+{
+  "source_doc": "https://docs.google.com/document/d/1z0Z_yS9luEX2n4zR_u97yCcKaLxluunT2DntB46mwTo/edit",
+  "source_revision": "AHj4eMT9i6ZVqjXIMUsULt1sulzWycOMssbfT2gtzYgij4FbChFDpXPfJc3l2Zeh7kETkX6LkCxMTyjwIArjGuUBPxteeB420_9-GaWu_JA",
+  "slide_count": 26,
+  "canva_design_id": "DAHZjQZJXkc",
+  "canva_edit_url": "https://www.canva.com/design/DAHZjQZJXkc/M4aSSkFpW0UuemlI2AlP8Q/edit",
+  "pptx": "輸出/2026-10-30市場週報-26頁.pptx",
+  "pptx_sha256": "f02de1543952919e4a6d825a12717be373045d975709c6ef1596b3f27277559c",
+  "notes_local_check": "26/26 exact match",
+  "canva_notes_readback": "26/26 original notes retained in order",
+  "canva_font": "Canva UI verified 可画榜书 on agenda and content title after replacing Arimo across all pages",
+  "visuals": {
+    "original_source_pages": [
+      2,
+      4,
+      5,
+      8,
+      11,
+      16,
+      20,
+      25
+    ],
+    "generated_pages": [
+      3,
+      6,
+      7,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      26
+    ],
+    "agenda_page": 1
+  },
+  "layout": "原版貓頭鷹右上、右下錄影區留白",
+  "status": "delivered"
+}

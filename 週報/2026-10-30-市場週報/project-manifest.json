@@ -1,16 +1,17 @@
 {
   "source_doc": "https://docs.google.com/document/d/1z0Z_yS9luEX2n4zR_u97yCcKaLxluunT2DntB46mwTo/edit",
-  "source_revision": "AHj4eMT9i6ZVqjXIMUsULt1sulzWycOMssbfT2gtzYgij4FbChFDpXPfJc3l2Zeh7kETkX6LkCxMTyjwIArjGuUBPxteeB420_9-GaWu_JA",
+  "source_revision": "AHj4eMSvRZAQXS2y2jD45VN6_PEwrzBbL1k1_JKT5nKr2tFHUsK1StSvofoVkm9c5yKpkDM_R0yCcF_Lx6yhDHBYco2C90Iv1E9TXcPSAxs",
   "slide_count": 26,
   "canva_design_id": "DAHZjQZJXkc",
   "canva_edit_url": "https://www.canva.com/design/DAHZjQZJXkc/M4aSSkFpW0UuemlI2AlP8Q/edit",
   "pptx": "輸出/2026-10-30市場週報-26頁.pptx",
-  "pptx_sha256": "f02de1543952919e4a6d825a12717be373045d975709c6ef1596b3f27277559c",
-  "notes_local_check": "26/26 exact match",
-  "canva_notes_readback": "26/26 original notes retained in order",
+  "pptx_sha256": "a8652fd6b486fd0e60967740dd57c9a3b5659c54f2c2f4480b03580eede04161",
+  "notes_local_check": "26/26 exact match including user agenda and relocated hack opening",
+  "canva_notes_readback": "Pages 1–2 exact match after update; pages 3–26 preserved",
   "canva_font": "Canva UI verified 可画榜书 on agenda and content title after replacing Arimo across all pages",
   "visuals": {
-    "original_source_pages": [
+    "original_source_pages": [],
+    "reference_redrawn_pages": [
       2,
       4,
       5,
@@ -21,26 +22,38 @@
       25
     ],
     "generated_pages": [
+      2,
       3,
+      4,
+      5,
       6,
       7,
+      8,
       9,
       10,
+      11,
       12,
       13,
       14,
       15,
+      16,
       17,
       18,
       19,
+      20,
       21,
       22,
       23,
       24,
+      25,
       26
     ],
     "agenda_page": 1
   },
   "layout": "原版貓頭鷹右上、右下錄影區留白",
-  "status": "delivered"
+  "status": "delivered",
+  "visual_revision": "2026-10-31 按使用者要求，來源圖作參考，8頁圖解重新生成；原始來源保留作證據。",
+  "google_doc_sync": "原文件保留使用者最新稿；Canva第1頁採用其開場段，原Slide1與Slide2合併至Canva第2頁",
+  "title_revision": "2026-10-31 最新文件三個主題標題；第2–8頁幣安、第9–14頁HYPE、第15–26頁財報；內容順序與文件一致",
+  "crop_fix": "8頁已按圖片原始比例重新插入，修正交易2567572470980123315已儲存"
 }
