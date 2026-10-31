@@ -158,6 +158,13 @@
       "output": "視覺素材/slide_25_重繪.png",
       "mode": "來源供事實與關係參考，重新生成紙感墨線圖解；不直接貼截圖",
       "canva_asset_id": "MAHZjgotUyc"
+    },
+    {
+      "page": 27,
+      "content": "依使用者結尾：檢查資產集中、槓桿、買進理由。紙感墨線；只出現一隻與右手臂連接的拿筆右手；左手不可見；右下錄影區留白。",
+      "output": "視覺素材/slide_27.png",
+      "status": "已修正多餘手部並儲存原Canva",
+      "generation_call": "call_cUu4Z2do3HRJHKfuQmBYBTPz"
     }
   ]
 }

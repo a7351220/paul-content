@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {Presentation,PresentationFile} from '@oai/artifact-tool';
 const root=path.resolve(import.meta.dirname,'../..');
 const items=JSON.parse(await fs.readFile(path.join(root,'製作紀錄/slides.json'),'utf8'));
-assert.equal(items.length,26);
+assert.equal(items.length,27);
 const p=Presentation.create({slideSize:{width:1920,height:1080}});
 const content={left:60,top:170,width:1380,height:776.25};
 const owl={left:1476,top:54,width:384,height:358.3122};
@@ -26,8 +26,8 @@ for(const item of items){
  s.speakerNotes.text=item.notes;
 }
 await(await PresentationFile.exportPptx(p)).save(path.join(import.meta.dirname,'draft.pptx'));
-await fs.writeFile(path.join(import.meta.dirname,'layout-contract.json'),JSON.stringify({slideSize:{width:1920,height:1080},content,owl,video,slideCount:26},null,2));
+await fs.writeFile(path.join(import.meta.dirname,'layout-contract.json'),JSON.stringify({slideSize:{width:1920,height:1080},content,owl,video,slideCount:27},null,2));
 for(const[i,s]of p.slides.items.entries()){
  const png=await p.export({slide:s,format:'png',scale:0.75});await fs.writeFile(path.join(root,'製圖預覽',`slide_${String(i+1).padStart(2,'0')}.png`),new Uint8Array(await png.arrayBuffer()));
 }
-console.log('26 slides exported; current notes, reference-derived generated images, editable titles and video whitespace.');
+console.log('27 slides exported; current notes, reference-derived generated images, editable titles and video whitespace.');

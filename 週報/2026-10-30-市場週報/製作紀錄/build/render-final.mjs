@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {FileBlob,PresentationFile} from '@oai/artifact-tool';
 const root=path.resolve(import.meta.dirname,'../..');
-const p=await PresentationFile.importPptx(await FileBlob.load(path.join(root,'輸出/2026-10-30市場週報-26頁.pptx')));
+const p=await PresentationFile.importPptx(await FileBlob.load(path.join(root,'輸出/2026-10-30市場週報-27頁.pptx')));
 const selected=new Set(process.argv.slice(2).map(Number));
 for(const[i,s]of p.slides.items.entries()){
  if(selected.size&&!selected.has(i+1))continue;
