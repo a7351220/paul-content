@@ -1,0 +1,29 @@
+{
+  "source_doc": "https://docs.google.com/document/d/1MHvMQ1MhNPNq3O8ucf6G41BvXITBnVB5SR_YWZfogrg/edit",
+  "source_title": "美國期中選舉與市場走勢逐字稿",
+  "pages": 28,
+  "canva_design_id": "DAHaEa6CkGA",
+  "canva_edit_url": "https://www.canva.com/design/DAHaEa6CkGA/SKkLdxI-7N0PauGaE-qNYw/edit",
+  "pptx": "輸出/美國期中選舉與市場-28頁.pptx",
+  "generation": "built-in image_gen; one unique illustration per page",
+  "notes": "28頁Canva讀回，與原稿正文一致，未納入舊研究附錄",
+  "titles": "28頁讀回與來源一致，原生可編輯",
+  "font": "Canva實際工具列確認可画榜书，全部變更已儲存，第1與7頁選取確認",
+  "brand": "沿用原始貓頭鷹物件於右上，右下留白",
+  "source_doc_modified": false,
+  "visual_fixes": [
+    "第13頁停戰文件年份1954改1953",
+    "第17頁移除模型自行加入的訂單數量"
+  ],
+  "checks": [
+    "28頁標題與口白逐頁核對",
+    "28張主圖逐張檢視",
+    "PPTX重匯入成功",
+    "8張代表頁本地渲染",
+    "Canva頁1及7檢視字型與版面"
+  ],
+  "not_checked": [
+    "未在桌面PowerPoint逐頁開啟",
+    "未重寫或重新審核完整原稿研究結論"
+  ]
+}

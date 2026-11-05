@@ -1,0 +1,58 @@
+[
+  {
+    "name": "CapitalGroup",
+    "url": "https://www.capitalgroup.com/pcs/insights/articles/midterm-elections-markets-5-charts-2026.html",
+    "status": 200,
+    "path": "/tmp/midterm-CapitalGroup.html",
+    "size": 149299,
+    "images": [
+      "/pcs/insights/articles/midterm-elections-markets-5-charts-2026/_jcr_content/root/contentfragmentwt/par4/par4_copy/image.coreimg.100{.width}.jpeg/1778257949742/qi-q1-2026-midterms-chart1.jpeg",
+      "https://static.capitalgroup.com/content/dam/cgc/shared-content/images/pcs/QI_Q1_2026_midterms_chart1.jpg",
+      "/pcs/insights/articles/midterm-elections-markets-5-charts-2026/_jcr_content/root/contentfragmentwt/par10/par10_copy/image.coreimg.100{.width}.png/1778254360579/chart-topical-ci-2026-outlook-policy-politics-midterm-election-return-ranges-averages-767x465-updated.png",
+      "https://static.capitalgroup.com/content/dam/cgc/shared-content/images/pcs/chart-topical-ci-2026-outlook-policy-politics-midterm-election-return-ranges-averages-767x465_updated.png",
+      "/pcs/insights/articles/midterm-elections-markets-5-charts-2026/_jcr_content/root/contentfragmentwt/par11/par11_copy/image_858768831.coreimg.100{.width}.png/1778257949176/prcdx-s-p-500-index-monthly-volatility-since-1970.png",
+      "https://static.capitalgroup.com/content/dam/eacg/en/2026/q1/how-us-midterm-elections-affect-the-markets/pRcdX-s-p-500-index-monthly-volatility-since-1970.png",
+      "/pcs/insights/articles/midterm-elections-markets-5-charts-2026/_jcr_content/root/contentfragmentwt/par16/par16_copy_copy/image.coreimg.100{.width}.jpeg/1778257948933/qi-q1-2026-midterms-chart2.jpeg",
+      "https://static.capitalgroup.com/content/dam/cgc/shared-content/images/pcs/QI_Q1_2026_midterms_chart2.jpg",
+      "/pcs/insights/articles/midterm-elections-markets-5-charts-2026/_jcr_content/root/contentfragmentwt/par19/par18_copy_copy/image_382252067.coreimg.100{.width}.png/1778257949316/xhpj7-returns-one-year-after-midterm-elections.png",
+      "https://static.capitalgroup.com/content/dam/eacg/en/2026/q1/how-us-midterm-elections-affect-the-markets/xHPJ7-returns-one-year-after-midterm-elections.png"
+    ]
+  },
+  {
+    "name": "RBC",
+    "url": "https://www.rbcwealthmanagement.com/en-us/insights/midterms-the-market-and-what-matters",
+    "status": 200,
+    "path": "/tmp/midterm-RBC.html",
+    "size": 128860,
+    "images": [
+      "https://www.rbcwealthmanagement.com/assets/wp-content/uploads/global/midterms-markets-and-what-matters-en-chart-1.png",
+      "https://www.rbcwealthmanagement.com/assets/wp-content/uploads/global/midterms-markets-and-what-matters-en-chart-2.png",
+      "https://www.rbcwealthmanagement.com/assets/wp-content/uploads/global/midterms-markets-and-what-matters-en-chart-3-v2.png",
+      "https://www.rbcwealthmanagement.com/assets/wp-content/uploads/global/midterms-markets-and-what-matters-en-chart-4.png",
+      "https://www.rbcwealthmanagement.com/assets/wp-content/uploads/global/midterms-markets-and-what-matters-en-chart-5.png",
+      "https://www.rbcwealthmanagement.com/assets/wp-content/uploads/global/midterms-markets-and-what-matters-en-chart-6.png",
+      "https://www.rbcwealthmanagement.com/assets/wp-content/uploads/global/midterms-markets-and-what-matters-en-chart-7.png"
+    ]
+  },
+  {
+    "name": "Yardeni",
+    "url": "https://archive.yardeni.com/pub/cc_20221109.pdf",
+    "status": 200,
+    "path": "/tmp/midterm-Yardeni.pdf",
+    "size": 296394,
+    "images": []
+  },
+  {
+    "name": "Reuters",
+    "url": "https://www.reuters.com/business/retail-consumer/democrats-midterm-sweep-fuels-750-billion-big-tech-rally-2026-11-04/",
+    "error": "HTTP Error 401: HTTP Forbidden"
+  },
+  {
+    "name": "FirstTrust",
+    "url": "https://www.ftportfolios.com/Commentary/Insights/2026/1/12/midterm-election-client-resource-kit---december-2025",
+    "status": 200,
+    "path": "/tmp/midterm-FirstTrust.pdf",
+    "size": 766444,
+    "images": []
+  }
+]

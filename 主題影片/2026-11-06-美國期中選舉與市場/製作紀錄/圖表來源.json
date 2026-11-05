@@ -1,0 +1,45 @@
+[
+  {
+    "file": "來源原圖/CapitalGroup-選後一年.png",
+    "url": "https://static.capitalgroup.com/content/dam/eacg/en/2026/q1/how-us-midterm-elections-affect-the-markets/xHPJ7-returns-one-year-after-midterm-elections.png",
+    "article": "https://www.capitalgroup.com/pcs/insights/articles/midterm-elections-markets-5-charts-2026.html",
+    "pages": [
+      7,
+      27
+    ],
+    "basis": "1950–2022期中選舉後12個月，標普500價格報酬",
+    "transformation": "依原圖數值重繪，共同零基線，保留來源與口徑"
+  },
+  {
+    "file": "來源原圖/RBC-圖5.png",
+    "url": "https://www.rbcwealthmanagement.com/assets/wp-content/uploads/global/midterms-markets-and-what-matters-en-chart-5.png",
+    "article": "https://www.rbcwealthmanagement.com/en-us/insights/midterms-the-market-and-what-matters",
+    "pages": [
+      9,
+      27
+    ],
+    "basis": "1932–2025，23組總統週期，標普500價格報酬不含股息",
+    "transformation": "重繪第2年第3年平均及第三年中位數"
+  },
+  {
+    "file": "來源原圖/FirstTrust-期中選舉研究.pdf",
+    "url": "https://www.ftportfolios.com/Commentary/Insights/2026/1/12/midterm-election-client-resource-kit---december-2025",
+    "pages": [
+      13,
+      15,
+      18
+    ],
+    "basis": "選舉後12個月含股息報酬",
+    "transformation": "摘取原稿所用數值製作解說圖"
+  },
+  {
+    "file": "來源原圖/Yardeni-歷次選後報酬.pdf",
+    "url": "https://archive.yardeni.com/pub/cc_20221109.pdf",
+    "pages": [
+      24,
+      27
+    ],
+    "basis": "長期美股指數選後12個月價格報酬",
+    "transformation": "摘取1930年數值製作解說圖"
+  }
+]
