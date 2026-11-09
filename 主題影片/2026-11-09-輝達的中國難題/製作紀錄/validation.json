@@ -1,0 +1,29 @@
+{
+  "pages": 29,
+  "notes_exact_match": true,
+  "titles_exact_match": true,
+  "outer_title_pages": [
+    1
+  ],
+  "no_content_crop": true,
+  "owl_original_preserved": true,
+  "sha256": "b9dab0157e92b241cbc94b804f8936942150485aa3d6239fe416463154389ae2",
+  "rendered_pages": 29,
+  "visual_review": "所有主圖已查看；13頁依原圖重繪；只有第一頁有外層標題",
+  "all_main_images_generated": true,
+  "source_reference_redrawn_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    11,
+    20,
+    21,
+    23,
+    24,
+    26,
+    28
+  ]
+}

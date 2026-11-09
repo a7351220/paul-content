@@ -1,0 +1,353 @@
+[
+  {
+    "id": "NV-CN-01",
+    "index": 1,
+    "title": "老黃的私事，為何國會也要問？",
+    "notes": "老黃寫信給員工，承認自己出軌了！輝達董事會宣布啟動獨立調查，美國國會的 3 位委員會主席，也已經要求他出面說明。一個 CEO 的婚外情，怎麼會鬧到這個程度？\n\n馬斯克要是又有感情新聞，大家可能笑個半年，也就過去了。但這次，輝達得面對董事會調查，老黃還得向國會交代。事情走到這裡，讓人關心的已經包括公司的生意。要知道這場風波怎麼來的，得先認識和老黃交往的這位女性。",
+    "image": "視覺素材/slide_01.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": true,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-02",
+    "index": 2,
+    "title": "一段關係，連到一家晶片客戶",
+    "notes": "她叫 Alice Huang，曾在輝達的客戶 Megaspeed 擔任主管。《紐約時報》報導，美國情報部門認為她跟中國情報單位有關。而她待過的這家公司，本來就在被查，有沒有把受管制的輝達晶片轉往中國。\n\n一位是輝達的 CEO，一位曾在採購輝達設備的公司任職，雙方有商業往來，又出現私人關係。這就帶出一個疑問：美國不准賣進中國的晶片，會不會透過這家公司，繞一圈又進了中國？如果有這些交易，老黃知道多少，又是在什麼情況下和對方往來？",
+    "image": "視覺素材/slide_02.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": false,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-03",
+    "index": 3,
+    "title": "情報指控，指向政策遊說",
+    "notes": "兩人的關係在 10 月 29 日就已經曝光。後續揭露的美國政府情報備忘錄，還提到美方對 Alice Huang 的判斷：她被認為受到中國國安部招募，要蒐集老黃的資訊，也可能影響他爭取把先進晶片賣給中國的行動。\n\n老黃平常會接觸客戶，也會向白宮談產業和政策。情報部門懷疑的，是有人藉著接近他，了解這些商業安排，甚至影響他向政府提出的建議。這讓兩人的往來內容成了調查要釐清的事情，包括談過什麼，以及她有機會接觸到哪些資訊。",
+    "image": "視覺素材/slide_03.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": false,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-04",
+    "index": 4,
+    "title": "白宮與董事會，如何回應",
+    "notes": "川普也被指大約一年前就收到情報簡報。大家現在才在吃這個瓜，白宮那邊早就聽過了。按照相關報導，他為了避免影響輝達銷售，以及這些生意對經濟和股市的幫助，當時選擇不採取行動。\n\n輝達董事會目前表示，沒有理由認為美國國安或公司機密受到損害；中國也否認間諜指控。各方怎麼處理這些情報，還得等調查往下走。而這段關係裡有一家可以繼續追查的公司，就是 Megaspeed。它買設備、收資金、和供應商交易，都會留下紀錄，這些紀錄能幫助還原雙方的生意。",
+    "image": "視覺素材/slide_04.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": false,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-05",
+    "index": 5,
+    "title": "Megaspeed 做的是什麼生意",
+    "notes": "Megaspeed 在新加坡做資料中心和 AI 算力服務。它向供應商買進裝有輝達晶片的伺服器，放進機房，再把運算能力租給企業使用。做 AI 需要設備，但每家公司都自己蓋機房，花費很大，也得養人維護，所以這類業者就把設備準備好，讓客戶付錢來用。\n\n這是一門能替輝達帶來訂單的生意。客戶租用得多，機房需要擴大，就會再買下一批設備。輝達和這些區域業者合作，也能讓產品服務到更多企業。Alice Huang 任職的公司，就在這條從晶片到算力服務的產業鏈上。",
+    "image": "視覺素材/slide_05.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": false,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-06",
+    "index": 6,
+    "title": "晶片最後去了哪裡？",
+    "notes": "美國追查的，是設備買來以後，到底去了哪裡。Megaspeed 被報導遭調查的疑點，就是它有沒有把受管制的晶片轉往中國。原本說要在海外提供服務的設備，最後是否真的裝在當地機房，是查核的一部分。\n\n假設供應商先把一批伺服器賣給新加坡公司，這家公司又轉給另一個買家，第一張訂單看到的，就只是中間一站。要還原設備去向，得把出資人、採購公司、運送紀錄和最終使用者接起來。公司在哪裡登記，和設備最後在哪裡工作，中間可能隔著好幾筆交易。",
+    "image": "視覺素材/slide_06.png",
+    "type": "generated",
+    "brief": [
+      "誰出錢、誰下單、貨去哪裡、誰在用",
+      "Four-step tracing of deposit envelope, purchase order, server shipping crate, datacenter rack. Uncertain dotted branch to China and magnifier, not confirmed diversion."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-07",
+    "index": 7,
+    "title": "輝達當初如何審查客戶",
+    "notes": "輝達先前曾把 Megaspeed 當成一般的區域雲端客戶，替雙方正常往來辯護。現在這些說法會和交易紀錄放在一起看：當初拿到哪些資料，怎麼確認用途，後續又有沒有發現異常。\n\n一筆正常的客戶交易，原本可以由負責審查和出貨的人照程序處理。但客戶的前主管又和 CEO 有私人關係，就多了需要交代的部分，像這段往來有沒有影響原本的判斷。這些問題得靠資料回答。而買一批設備為什麼需要繞這麼多公司，就得把時間拉回美國開始限制對中銷售的時候。",
+    "image": "視覺素材/slide_07.png",
+    "type": "generated",
+    "brief": [
+      "客戶資料／設備用途／出貨紀錄",
+      "Inspection desk with customer folder, checklist, serial records, and magnifier."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-08",
+    "index": 8,
+    "title": "2022年起，中國銷售受到限制",
+    "notes": "美國從 2022 年開始，限制把高階 AI 晶片賣給中國。輝達要賣受管制的產品，得先取得美國政府批准。客戶拿著錢來，供應商也有設備，但政府沒點頭，這筆生意就是做不成。\n\n這對輝達很尷尬。晶片開發出來了，中國也有想買的公司，部分訂單卻受到限制。老黃曾形容，輝達在中國的相關業務已經大幅縮水。所以這幾年，他一直向華府爭取放寬，希望公司能留在中國市場，繼續服務原本的客戶。這也是他為什麼會花那麼多力氣，向政治人物解釋中國市場的重要性。",
+    "image": "視覺素材/slide_08.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": false,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-09",
+    "index": 9,
+    "title": "失去訂單，也可能失去客戶",
+    "notes": "老黃提出的理由，是中國企業要做 AI，就會找算力。買不到輝達，就會找其他供應商，也會加快發展自己的產品。一開始少掉的可能是一筆訂單，之後卻會牽動工程師用什麼工具、公司接下來買哪一家的設備。\n\n一家企業已經花錢換了產品，工程師也學會另一套工具，再換回來又是一筆成本。即使未來重新開放，它也未必願意回頭。所以老黃擔心，今天離開中國，可能讓美國技術在那邊失去一整群使用者。這是他爭取銷售時，一直強調要保住技術影響力的背景。",
+    "image": "視覺素材/slide_09.png",
+    "type": "generated",
+    "brief": [
+      "晶片換了，工具也跟著換",
+      "Two workbenches from top down: old GPU plus familiar software toolbox left; alternative chip plus a different toolbox right. Engineers moving tools and manuals. Explain switching cost, no company logos."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-10",
+    "index": 10,
+    "title": "中國生意，真的已經消失？",
+    "notes": "在這個說法裡，中國是一塊輝達正在失去、但還想爭取回來的市場。投資人也就可以期待，如果哪天限制放寬，公司能拿回訂單，多賺一筆收入。這樣理解，中國會是未來的成長機會。\n\n可是今年 5 月，一份放空報告提出不同的看法。它懷疑，中國需求沒有像表面上減少那麼多，部分客戶透過海外公司，繼續取得輝達設備或算力。這就讓問題往下走了一步：那些看起來已經失去的生意，會不會其實還在，只是出現在別的地區、別的公司名下？",
+    "image": "視覺素材/slide_10.png",
+    "type": "generated",
+    "brief": [
+      "中國需求，換了一條路？",
+      "An overseas datacenter buying server equipment, with a branching route that may connect to China. Very clear question mark; generic maps with no geopolitical borders and no definitive illegal route. Short only labels 中國需求 海外客戶 ?."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-11",
+    "index": 11,
+    "title": "半年前的放空報告",
+    "notes": "提出這份報告的，是 Culper Research。它估計，輝達 2026 財年運算業務營收，有超過 20% 仍由中國需求帶動，並指控部分設備透過東南亞中介商違規轉運。Culper 自己持有空單，股價下跌對它有利，這些主張就是它支持放空的理由。\n\n報告裡點名的公司，包括前面提到的 Megaspeed。它把公司的財務、旗下企業和供貨商接在一起，想證明東南亞的設備採購，背後有更多中國需求。這份材料半年前就公開了，如今老黃的新聞讓同一批公司重新受到注意，原本分散的交易也再度被拿出來檢查。",
+    "image": "視覺素材/slide_11.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": false,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-12",
+    "index": 12,
+    "title": "從3,300萬到30億美元",
+    "notes": "第一個線索在 Megaspeed 的帳上。按照 Culper 整理的資料，它的資產規模從 2023 年底約 3,300 萬美元，增加到 2024 年底約 30 億美元。其中約 29 億美元，是來源未具名的可退還押金，錢又被轉往旗下公司。\n\n從幾千萬到幾十億，這個變化背後需要有人提供大筆資金。有了這些錢，公司才有能力參與設備採購。但資料裡沒有寫明，誰先把押金放進來，所以空方繼續往下追。出資人和最後使用設備的人，如果存在關係，就能幫助理解這批採購是替誰準備的。",
+    "image": "視覺素材/slide_12.png",
+    "type": "generated",
+    "brief": [
+      "2023年底：3,300萬美元｜2024年底：約30億美元｜可退還押金：約29億美元｜Culper資料",
+      "Editorial finance ledger with two large dated numbers, and a deposit envelope linked to subsidiaries. NOT a proportional bar chart, no invented trend line. Exact printed numeric amounts as supplied. Emphasize refundable deposit, not revenue."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-13",
+    "index": 13,
+    "title": "融資關係，連到阿里巴巴",
+    "notes": "接著，它追到 Megaspeed 的馬來西亞子公司 Speedmatrix。在 Culper 整理的文件裡，Speedmatrix 於 2024 年 6 月，把資產抵押給新加坡公司 Apex Enterprise Solutions，而 Apex 的母公司是阿里巴巴。\n\n這幾個名字接起來，出現的是一條融資關係：設備採購在東南亞，提供抵押融資的對象，卻連到中國大廠。這也是空方懷疑，中國資金在支持海外採購的原因。它開始從公司的註冊地往後追，去看這門生意由誰提供資金，以及誰需要機房裡面的算力。",
+    "image": "視覺素材/slide_13.png",
+    "type": "generated",
+    "brief": [
+      "Megaspeed／Speedmatrix／Apex／阿里巴巴／Culper資料",
+      "Clean relationship illustration with four large company name blocks: Megaspeed above subsidiary Speedmatrix, asset collateral document from Speedmatrix to Apex; parent relation of Alibaba to Apex. Label 子公司 抵押 母公司. Show relationships exactly, not confirmed smuggling. No extra arrows."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-14",
+    "index": 14,
+    "title": "技鋼也出現在供貨線索裡",
+    "notes": "設備供貨這邊，Culper 又點名台灣技嘉旗下的技鋼 Giga Computing。它聲稱，技鋼向 Speedmatrix 和另一家公司 Novagate Cloud，出貨超過 5 億美元、搭載 H200 與 Blackwell 的伺服器，並懷疑 Novagate 也和 Megaspeed 有關。\n\n到這裡，前面的資金線索有了可以對照的設備交易。公司取得資金，旗下企業參與融資，供應商再把伺服器賣進來。空方就是用這些紀錄，主張海外採購仍受到中國需求支撐。調查接下來要追的，則是這些設備最後裝在哪裡，以及採購安排有沒有違反管制。",
+    "image": "視覺素材/slide_14.png",
+    "type": "generated",
+    "brief": [
+      "技鋼 Giga Computing／Speedmatrix／Novagate Cloud／逾5億美元／H200・Blackwell／Culper指稱",
+      "Hardware supply diagram. One supplier at left sends servers to two buyer labels at right. Exact combined shipment value label 逾5億美元, not one amount for each buyer. Clearly label Culper指稱. Do not draw Chinese destination."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-15",
+    "index": 15,
+    "title": "中國開放，能多賺多少？",
+    "notes": "如果空方的判斷成立，市場原本對中國的期待，就得重新計算。部分中國需求如果已經透過海外客戶，變成輝達現在的收入，未來就不能再把同一筆需求，全部當成額外增加的生意。\n\n而且美國一旦加強追查，受到影響的可能就是現有訂單。原本被想成「放寬之後會多賺多少」的機會，會變成「收緊之後可能少掉多少」的風險。這是這份放空材料對市場的挑戰。追到這裡，海外交易和中國市場已經很難只分成兩個地區來看，因為真正的客戶和用途，可能藏在交易後面。",
+    "image": "視覺素材/slide_15.png",
+    "type": "generated",
+    "brief": [
+      "未來新增收入？／已在海外收入裡？",
+      "Two ledger books on one desk with same generic order slip being checked by a magnifier; explain avoiding double counting existing China-driven demand. Distinct question marks. No numbers, no fake graphs. Flat editorial layout."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-16",
+    "index": 16,
+    "title": "商品，還是戰略物資？",
+    "notes": "這也讓高階 AI 晶片的角色變得清楚。對公司來說，它是商品，有人買就有收入，客戶用得多，未來還有機會繼續採購。可是當設備能用來發展軍事和情報能力，政府就會把它當成戰略物資，要求限制最後交到誰手上。\n\n輝達賣一筆設備，算的是研發、成本和能賺多少錢；政府要多算一件事，就是對手取得這些能力後，會不會增加美國的安全風險。這也是有人主張，應該像管理武器一樣嚴格管理高階晶片的原因。雙方對同一筆訂單的考量，從這裡開始出現分歧。",
+    "image": "視覺素材/slide_16.png",
+    "type": "generated",
+    "brief": [
+      "商品／戰略物資",
+      "Large GPU in center. Left: business checkout invoice and coin. Right: national security document and shield. Side-by-side comparison, not weaponized chip. Engraved top down composition, exact two labels only."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-17",
+    "index": 17,
+    "title": "老黃再談中國，先被問什麼",
+    "notes": "而 Alice Huang 的情報指控，讓原本的分歧多了一個問題。老黃再向華府爭取中國銷售，反對者就能追問，他的判斷有沒有受到私人關係影響。即使擺出的是同一份商業分析，政治人物也可能先要求他解釋這段關係。\n\n這對他往後說話的份量會有影響。老黃懂產品、懂客戶，也能直接向白宮說明產業，這些原本都是輝達爭取支持的優勢。現在其中一些往來，卻會成為外界檢查的對象。公司要繼續推動原本的政策建議，就得先回答這次風波留下的疑問。",
+    "image": "視覺素材/slide_17.png",
+    "type": "generated",
+    "brief": [
+      "商業分析／信任問題",
+      "Conference table perspective. A stack of business analysis papers beside a closed briefing folder and a large question mark over a speech bubble. No named people or alleged spy portrayal. Explain a policy discussion paused by trust questions."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-18",
+    "index": 18,
+    "title": "信任問題，走進交易流程",
+    "notes": "接下來可能需要的，是能讓政府和股東檢查的紀錄：客戶怎麼審、用途怎麼確認、設備送到哪裡，發現異常時又怎麼處理。如果要求增加，買家要補資料，供應商要重新確認，談好的交易就可能多等一段時間。\n\nAI 產業此時也面對地方居民對電價、用水和新機房的反彈，需要向社會解釋建設的價值。出口管制和地方問題，各有不同的理由，但企業都得爭取支持。這個時間點，老黃受到質疑，會讓公司溝通更費力。而接下來決定哪些事情要公開追查的人，還要換一批。",
+    "image": "視覺素材/slide_18.png",
+    "type": "generated",
+    "brief": [
+      "客戶審查／設備追蹤／等待核准",
+      "Close-up inspection of server serial label, checklist with blank rows, and a timer. Show customer due diligence taking time. No invented regulatory numbers or text beyond the three labels."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-19",
+    "index": 19,
+    "title": "明年1月，國會換手",
+    "notes": "民主黨在這次期中選舉拿下參眾兩院，明年 1 月新國會上任後，可以透過委員會要求文件、舉行聽證，依程序傳人來問話。前面提到川普早已收到情報，當時卻沒有採取行動，這就給了他們追查白宮決策的理由。\n\n調查因此可能一路問到，政府當時知道什麼、怎麼評估，以及有沒有要求公司採取措施。董事會完成自己的調查，也無法替國會決定接下來還要問什麼。這會把公司的處理時程，和美國政治的時程放在同一張桌上，輝達必須準備面對不只一方的追問。",
+    "image": "視覺素材/slide_19.png",
+    "type": "generated",
+    "brief": [
+      "2027年1月／新國會／文件・聽證・傳喚",
+      "US Capitol architectural ink illustration, calendar marked 2027年1月 and three simple document / microphone / summons objects. No party logos or fake official paperwork. Uncluttered composition."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-20",
+    "index": 20,
+    "title": "11月18日：要求閉門說明",
+    "notes": "目前要求安排閉門簡報的，是 3 位共和黨籍委員會主席，提出的日期是 11 月 18 日。距離明年 1 月還有一段時間，公司可以在換手前先交代已經查到哪些事情，以及準備怎麼處理問題。\n\n閉門說明和公開聽證的壓力不同。公開場合有一排議員輪流問，鏡頭也在拍，回答的每一句話都可能被拿出來解讀。先準備好資料、把事情說清楚，會比等到公開被追問時，才開始整理回應，更有機會掌握節奏。這也是換手前這段時間，對公司有意義的地方。",
+    "image": "視覺素材/slide_20.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": false,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-21",
+    "index": 21,
+    "title": "風波有沒有協商的空間",
+    "notes": "川普目前的態度，則讓事情還留有協商的空間。他被問到會不會帶老黃去亞洲時，仍表達願意同行，也淡化私人往來。這表示在當時，他還願意公開支持老黃，沒有因為新聞曝光就立即切斷關係。\n\n美國需要輝達的技術，也需要 AI 公司繼續投資。如果企業配合調查、接受新的要求，政治人物拿到能交代的結果，就有機會在聖誕節前找到台階，讓風波降溫。這是偏樂觀的情境：各方談妥處理方式，公司繼續經營，市場再把注意力放回生意。",
+    "image": "視覺素材/slide_21.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": false,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-22",
+    "index": 22,
+    "title": "留任，也可能換來更嚴限制",
+    "notes": "但事情收尾，可能還會留下新的條件。比如老黃繼續當 CEO，輝達照常經營，美國卻把對中銷售管得更嚴。這樣一來，政治人物既保住重要的美國企業，也能宣稱自己守住國安，對雙方都有可以交代的部分。\n\n股東看到老黃不用下台，可能先鬆一口氣，覺得事情過了。但如果後來敏感交易更難通過，中國市場也更難爭取回來，公司仍然付出了代價。所以年底前落幕，和市場對輝達的看法恢復到以前，未必會同時發生。差別就在，風波過後，原本能做的生意還剩多少。",
+    "image": "視覺素材/slide_22.png",
+    "type": "generated",
+    "brief": [
+      "CEO留任／對中條件更嚴／可能情境",
+      "Two outcomes in same wide illustration: office chair retained on left and export gate being narrowed on right. Do not show real people. Label CEO留任, 對中條件更嚴 and small 可能情境. No claim this already happened."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-23",
+    "index": 23,
+    "title": "11月5日，輝達跌約9.3%",
+    "notes": "市場在這段時間，已經先經歷一波下跌。11 月 5 日，美股科技股重挫，輝達當天跌了大約 9.3%。當時投資人擔心民主黨勝選後，AI 監管會加強，資料中心建設更難往前走。到了 11 月 8 日，董事會宣布調查，又增加了公司本身需要處理的事情。\n\n這幾天的消息並不是同一天發生，市場消化的問題也不完全相同。先是產業的建設速度，接著又有公司領導人的信任問題，原本對成長的期待就得重新評估。但設備現在還有沒有人用、客戶願不願意付錢，則要回到實際生意裡面看。",
+    "image": "視覺素材/slide_23.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": false,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-24",
+    "index": 24,
+    "title": "租用算力，價格仍在上升",
+    "notes": "算力租用市場提供了一個線索。Ornn 的 B200 租用指數，從 10 月中到 11 月初仍然上升，租用價格沒有跟著科技股一起下跌。需要運算能力的企業，仍要找到設備來做開發、跑服務，這些使用需求還在影響市場。\n\n同時，租金也會受到設備供應影響。如果新機房更難蓋，現有設備增加得不夠快，客戶就可能更集中到已經能用的機房。這時即使新建設放慢，算力仍然稀缺，租用價格就可能繼續上升。表面上同樣是 AI 生意，不同業者接下來得到的好處，會開始出現差別。",
+    "image": "視覺素材/slide_24.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": false,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-25",
+    "index": 25,
+    "title": "租金上漲，誰先受惠？",
+    "notes": "已經有設備可以出租的業者，能從租金提高中多收一些收入。輝達要增加收入，則需要機房業者買下一批新設備。如果原本準備擴建的計畫卡住，晶片採購也可能跟著晚一點。\n\n所以現有機房生意好，和設備供應商拿到更多新訂單，中間還有一段距離。這個差別在建設受限時會更明顯：一邊擁有現在就能提供的算力，一邊等待未來的新案子開工。需求仍然存在，但收入會先進到哪一種公司，就得看設備和建設走到哪一步。",
+    "image": "視覺素材/slide_25.png",
+    "type": "generated",
+    "brief": [
+      "既有機房：租金／晶片供應商：新增採購／情境分析",
+      "Split comparison: existing datacenter rack generating rental receipts vs a new server equipment order waiting beside a paused construction site. No charts, no invented numeric values. Exact three labels only."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-26",
+    "index": 26,
+    "title": "OpenAI 首批募資110億美元",
+    "notes": "資金這邊，11 月 6 日的報導指出，OpenAI 完成這輪募資中的首批約 110 億美元，公司估值約 1.25 兆美元。110 億美元仍然是一大筆錢，表示資金沒有全面退出 AI，投資人還願意支持後續發展。\n\n但這輪募資目標和估值，也比原本期待降低。出錢的人開始更在意價格，以及公司還要投入多少成本。阿聯酋的 MGX 也參與其中，這些跨國資金讓 AI 發展同時牽涉政府和投資機構。企業拿到錢之後，還得完成設備、機房和營運安排，才有辦法把計畫變成能持續提供的服務。",
+    "image": "視覺素材/slide_26.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": false,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-27",
+    "index": 27,
+    "title": "機房晚開，利息不會等",
+    "notes": "假設一家公司已經借錢、訂設備，機房卻卡在審批，那就很頭痛了。客戶還沒開始付租金，銀行的利息又不會等，設備款也得照付。原本預計幾個月後進來的收入延後，手上的錢就可能不夠用，下一批設備也得晚一點才買。\n\n這就是政治風險往生意裡面走的過程。終端仍有人需要 AI，機房業者卻得等更久才能提供服務，設備供應商也跟著等訂單。所以需求還在、企業還能募到錢，和股價下跌可以同時發生。市場調整的是，這些生意要花多久才能做成，以及完成之前還得承擔多少成本。",
+    "image": "視覺素材/slide_27.png",
+    "type": "generated",
+    "brief": [
+      "機房延後／租金未進／利息照付／情境分析",
+      "One clear editorial scene: unopened datacenter doors, calendar pages, incoming interest bill and equipment invoice. A cash envelope waiting outside. Labels integrated and no fabricated dollar amounts. Convey timing mismatch, not definite insolvency."
+    ],
+    "show_outer_title": false
+  },
+  {
+    "id": "NV-CN-28",
+    "index": 28,
+    "title": "私人關係，碰上美中競爭",
+    "notes": "到這裡，開頭那場婚外情為什麼會引來公司和國會追查，才有了完整的脈絡。對方任職過的公司正在被查晶片流向，老黃又一直替中國銷售爭取放寬，私人關係因此碰到了輝達正在做的生意，以及美國政府想守住的技術。\n\n風波能不能過去，也就無法只由兩人的關係決定。公司需要交代交易，政府需要回應情報，國會還能繼續問責。輝達的產品越重要，客戶和設備去向就越受到關注，而老黃往後替公司爭取市場時，這段關係留下的疑問，也可能再次出現在談判桌上。",
+    "image": "視覺素材/slide_28.png",
+    "type": "reference-redrawn",
+    "brief": null,
+    "show_outer_title": false,
+    "reference_policy": "依原圖構圖和事實重新生成紙感墨線插畫；原圖只保存於來源原圖，不直接上投影片"
+  },
+  {
+    "id": "NV-CN-29",
+    "index": 29,
+    "title": "八卦，還是轉折點？",
+    "notes": "接下來，調查會決定哪些疑問能被回答，政府和國會的後續要求，則會影響交易能不能照原來的方式進行。老黃是否留任，只是其中一項結果；受關注的客戶能不能繼續買、設備能不能正常交付，才會讓公司付出的營運代價逐步清楚。\n\n這場風波可能隨著協商降溫，也可能在政策和客戶審查上留下更長的影響。那大家怎麼看？這是一時的八卦，還是輝達的轉折點？留言告訴我。喜歡這種把新聞背後的生意講清楚的分析，記得訂閱，我們下支影片見。",
+    "image": "視覺素材/slide_29.png",
+    "type": "generated",
+    "brief": [
+      "一時八卦？／輝達轉折點？",
+      "Open notebook on a desk: two large question headings on facing pages, a GPU server sketch in the center gutter, no people, no ballot choices checked. Thoughtful final scene leaving the question open, large readable Chinese."
+    ],
+    "show_outer_title": false
+  }
+]
