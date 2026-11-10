@@ -14,7 +14,7 @@ description: 製作及交付保羅的市場影片：真實來源圖、紙感墨�
 - 畫風、原圖保存、生成圖邊界及視覺建議：[視覺規則](references/visual-style.md)。
 - 版型、字體、套版、版本對照與 PPTX／Canva 修改：[本地組裝](references/local-assembly.md)。
 - 行情比較與指定篇幅核算：[數據與篇幅核算](references/data-and-length.md)。
-- 必要時校準既有聲音：[週報樣稿](references/weekly-example.txt)、[主題片認可稿](references/topic-example-quantum-final.txt)；僅學口吻及密度，不沿用歷史事實或頁數。
+- 校準既有聲音時讀[核准週報樣稿](references/weekly-example.txt)及[核准主題片樣稿](references/topic-example-quantum-final.txt)。主題片敘事節奏可參考[《輝達的中國難題》主管認可稿](references/topic-example-nvidia-china-approved.txt)，該稿取自 2026-11-11 Canva 最新讀回版本；只學如何鋪陳問題、逐步補證據、自然轉場及保留口播密度，不沿用事實、句型或頁數。
 
 缺研究證據或需改口白時，按路由補件；製作本身不重選題、不自行重寫敘事。已有認可風格且獲授權整批就完成全套，不重新設批准關卡。
 
