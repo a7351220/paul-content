@@ -6,6 +6,7 @@
 
 - [週報](週報/)：依日期整理的市場週報。
 - [主題影片](主題影片/)：個別題目的研究、逐字稿與製作檔案。
+- [IG貼文](IG貼文/)：IG 圖文範本與已發布貼文。
 - [共用素材](共用素材/)：範本、視覺格式與管理紀錄。
 - [參考研究](參考研究/)：跨題參考資料。
 - [Skills](.agents/skills/)：路由、研究、寫作與製作交付四個 skills；敘事規則統一放在 [共用框架](.agents/skills/market-video-story/references/story-framework.md)。

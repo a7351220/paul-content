@@ -1,0 +1,6 @@
+month,max_daily_close_NOT_intraday_high,vix_month_close,twii_ret_1m_pct,twii_ret_3m_pct,twii_ret_6m_pct,twii_ret_12m_pct,next12m_further_drop_pct
+2024-08,48.05,21.72,-0.2,-0.03,3.53,8.82,-21.9
+2025-04,46.93,28.56,5.5,16.35,39.53,92.37,0.0
+2026-03,41.63,37.0,22.71,45.4,51.12,,
+2026-06,44.27,38.55,-6.52,3.93,,,
+2026-07,44.31,40.77,6.98,4.85,,,

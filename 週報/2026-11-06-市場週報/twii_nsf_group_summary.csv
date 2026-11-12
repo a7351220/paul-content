@@ -1,0 +1,4 @@
+group,n,ret_1w_mean,ret_1w_median,ret_1w_winrate_pos,ret_1m_mean,ret_1m_median,ret_1m_winrate_pos,ret_3m_mean,ret_3m_median,ret_3m_winrate_pos,drawdown_60d_mean,drawdown_60d_median,no_further_drop_pct,days_to_bottom_mean,days_to_bottom_median
+同窗,4,7.21,6.22,100.0,6.56,9.19,75.0,11.83,17.29,75.0,-7.81,-1.86,50.0,11.0,0.5
+單獨國安,5,3.2,2.85,80.0,1.71,6.1,60.0,-4.4,-6.66,40.0,-8.89,-7.15,20.0,41.4,53.0
+全部(1–9),9,4.98,4.45,88.9,3.87,6.75,66.7,2.81,0.79,55.6,-8.41,-3.83,33.3,27.89,37.0

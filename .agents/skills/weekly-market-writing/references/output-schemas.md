@@ -15,3 +15,11 @@
 需要固定開場時取自 [weekly-opening.txt](../../market-video-story/assets/weekly-opening.txt)，採用最新確認的自介、發布口播及 CTA；人工已刪內容不補回。
 
 來源與研究註記另存；必要歸屬仍保留在口白。敘事依[共用框架](../../market-video-story/references/story-framework.md)，線上操作與讀回依[交付規則](../../market-video-story/SKILL.md)。
+
+## IG 圖文稿
+
+固定 4 張圖文加 Caption，Markdown 為文字源，依 [IG 範本](../../../../IG貼文/README.md) 產出 Google Doc／DOCX／PDF。
+
+- `**Slide N｜段落標籤**` 後接：標題（封面可兩行）、一段 1–2 句的內文；封面另有一段導言。第 2–4 張各一句標題加兩段內文。
+- `**Caption**`：第一段重複封面標題，接三段連續短文，最後一句可帶留言提問。
+- `**資料來源與配圖說明**`：來源以 `[媒體｜標題](URL)` 列出，最後一行逐張說明配圖性質（官方原圖、依公開照片 AI 再製、AI 示意圖）。
