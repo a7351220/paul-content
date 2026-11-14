@@ -1,140 +1,139 @@
 {
   "pages": 22,
-  "total_han_characters": 2874,
+  "total_han_characters": 3515,
   "page_counts": [
     {
       "page": 1,
-      "han_characters": 318,
-      "nonspace_characters": 362
+      "han_characters": 379,
+      "nonspace_characters": 429
     },
     {
       "page": 2,
-      "han_characters": 114,
-      "nonspace_characters": 143
+      "han_characters": 127,
+      "nonspace_characters": 160
     },
     {
       "page": 3,
-      "han_characters": 106,
-      "nonspace_characters": 130
+      "han_characters": 114,
+      "nonspace_characters": 137
     },
     {
       "page": 4,
-      "han_characters": 138,
-      "nonspace_characters": 171
+      "han_characters": 157,
+      "nonspace_characters": 192
     },
     {
       "page": 5,
-      "han_characters": 96,
-      "nonspace_characters": 106
+      "han_characters": 135,
+      "nonspace_characters": 149
     },
     {
       "page": 6,
-      "han_characters": 138,
-      "nonspace_characters": 154
+      "han_characters": 156,
+      "nonspace_characters": 173
     },
     {
       "page": 7,
-      "han_characters": 142,
-      "nonspace_characters": 163
+      "han_characters": 174,
+      "nonspace_characters": 203
     },
     {
       "page": 8,
-      "han_characters": 145,
-      "nonspace_characters": 165
+      "han_characters": 180,
+      "nonspace_characters": 202
     },
     {
       "page": 9,
-      "han_characters": 106,
-      "nonspace_characters": 130
+      "han_characters": 138,
+      "nonspace_characters": 165
     },
     {
       "page": 10,
-      "han_characters": 78,
-      "nonspace_characters": 99
+      "han_characters": 122,
+      "nonspace_characters": 145
     },
     {
       "page": 11,
-      "han_characters": 163,
-      "nonspace_characters": 182
+      "han_characters": 183,
+      "nonspace_characters": 206
     },
     {
       "page": 12,
-      "han_characters": 150,
-      "nonspace_characters": 164
+      "han_characters": 164,
+      "nonspace_characters": 180
     },
     {
       "page": 13,
-      "han_characters": 101,
-      "nonspace_characters": 119
+      "han_characters": 134,
+      "nonspace_characters": 154
     },
     {
       "page": 14,
-      "han_characters": 139,
-      "nonspace_characters": 222
+      "han_characters": 166,
+      "nonspace_characters": 252
     },
     {
       "page": 15,
-      "han_characters": 122,
-      "nonspace_characters": 138
+      "han_characters": 141,
+      "nonspace_characters": 164
     },
     {
       "page": 16,
-      "han_characters": 110,
-      "nonspace_characters": 125
+      "han_characters": 128,
+      "nonspace_characters": 148
     },
     {
       "page": 17,
-      "han_characters": 88,
-      "nonspace_characters": 104
+      "han_characters": 128,
+      "nonspace_characters": 147
     },
     {
       "page": 18,
-      "han_characters": 117,
-      "nonspace_characters": 134
+      "han_characters": 133,
+      "nonspace_characters": 152
     },
     {
       "page": 19,
-      "han_characters": 109,
-      "nonspace_characters": 135
+      "han_characters": 144,
+      "nonspace_characters": 174
     },
     {
       "page": 20,
-      "han_characters": 127,
-      "nonspace_characters": 155
+      "han_characters": 152,
+      "nonspace_characters": 194
     },
     {
       "page": 21,
-      "han_characters": 92,
-      "nonspace_characters": 128
+      "han_characters": 135,
+      "nonspace_characters": 177
     },
     {
       "page": 22,
-      "han_characters": 175,
-      "nonspace_characters": 199
+      "han_characters": 225,
+      "nonspace_characters": 264
     }
   ],
   "revision": {
     "date": "2026-11-14",
-    "purpose": "Add CEO-return petition, Trump/Cook succession discussion and China/Taiwan supply-chain contrast while retaining weekly direction",
-    "previous_pages": 19,
-    "previous_han_characters": 2437
+    "purpose": "Correct soup metaphor and revise all pages for complete spoken sentences, connected narrative and opening-ending correspondence",
+    "previous_pages": 22,
+    "previous_han_characters": 2874
   },
   "checks": [
-    "sequential page numbers and updated topic ranges",
-    "fixed opening preserved",
-    "BTC narration unchanged and follows NVIDIA directly",
-    "Musk support attributed; no unsupported large-shareholder title",
-    "a16z founders absent from queried public list and excluded pending source",
-    "Cook appointment kept hypothetical; margin scenario attributed",
-    "three China stock moves calculated from Nov 12-13 closes",
-    "mixed Taiwan optical moves checked; no blanket all-Taiwan rally claim",
-    "procurement shift conditional; not equated with actual order transfers",
-    "all 22 pages mapped to sources",
-    "all research JSON parsed",
-    "narrative transitions and repeated conclusions reviewed"
+    "22 sequential page numbers and matching topic ranges",
+    "fixed opening preserved verbatim",
+    "all numeric tokens unchanged page by page from previous committed narration",
+    "soup metaphor corrected in narration and source records",
+    "NVIDIA followed directly by BTC; Satoshi joke preserved",
+    "Musk support attributed; no large-shareholder title or a16z participation added",
+    "Cook succession and procurement shifts remain conditional",
+    "Liang Yimeng inference remains attributed",
+    "existing per-page source mapping retained; no new numerical claims",
+    "all 22 pages read consecutively for transitions and repeated conclusions",
+    "closing answers opening questions on supplier profits and BTC buying flows"
   ],
   "pending": [
     "User source for a16z founder participation in another petition or public support"
   ],
-  "verification_scope": "New public sources and seven equity series checked; existing BTC research and narration retained. No Canva or Google Doc changes."
+  "verification_scope": "Writing-only revision using existing research; no fresh external fact or price verification. Numeric tokens compared page by page with HEAD; page format and fixed opening checked. No Canva or Google Doc changes."
 }
