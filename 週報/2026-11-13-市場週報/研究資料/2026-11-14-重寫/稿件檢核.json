@@ -1,16 +1,16 @@
 {
   "pages": 28,
-  "total_han_characters": 4254,
+  "total_han_characters": 4384,
   "page_counts": [
     {
       "page": 1,
-      "han_characters": 307,
-      "nonspace_characters": 353
+      "han_characters": 336,
+      "nonspace_characters": 381
     },
     {
       "page": 2,
-      "han_characters": 145,
-      "nonspace_characters": 205
+      "han_characters": 166,
+      "nonspace_characters": 223
     },
     {
       "page": 3,
@@ -19,23 +19,23 @@
     },
     {
       "page": 4,
-      "han_characters": 152,
-      "nonspace_characters": 199
+      "han_characters": 173,
+      "nonspace_characters": 229
     },
     {
       "page": 5,
-      "han_characters": 163,
-      "nonspace_characters": 209
+      "han_characters": 169,
+      "nonspace_characters": 221
     },
     {
       "page": 6,
-      "han_characters": 147,
-      "nonspace_characters": 185
+      "han_characters": 146,
+      "nonspace_characters": 183
     },
     {
       "page": 7,
-      "han_characters": 169,
-      "nonspace_characters": 186
+      "han_characters": 164,
+      "nonspace_characters": 180
     },
     {
       "page": 8,
@@ -64,33 +64,33 @@
     },
     {
       "page": 13,
-      "han_characters": 155,
-      "nonspace_characters": 178
+      "han_characters": 183,
+      "nonspace_characters": 209
     },
     {
       "page": 14,
-      "han_characters": 167,
-      "nonspace_characters": 190
+      "han_characters": 158,
+      "nonspace_characters": 181
     },
     {
       "page": 15,
-      "han_characters": 162,
-      "nonspace_characters": 180
+      "han_characters": 166,
+      "nonspace_characters": 185
     },
     {
       "page": 16,
-      "han_characters": 129,
-      "nonspace_characters": 221
+      "han_characters": 135,
+      "nonspace_characters": 220
     },
     {
       "page": 17,
-      "han_characters": 150,
-      "nonspace_characters": 247
+      "han_characters": 140,
+      "nonspace_characters": 236
     },
     {
       "page": 18,
-      "han_characters": 148,
-      "nonspace_characters": 168
+      "han_characters": 144,
+      "nonspace_characters": 163
     },
     {
       "page": 19,
@@ -139,8 +139,8 @@
     },
     {
       "page": 28,
-      "han_characters": 207,
-      "nonspace_characters": 233
+      "han_characters": 251,
+      "nonspace_characters": 282
     }
   ],
   "checks": [
@@ -150,6 +150,10 @@
     "full-week ETF arithmetic and fund-column checks passed",
     "equity and BTC endpoint arithmetic passed",
     "cash-allocation arithmetic passed",
-    "all research JSON parsed"
+    "all research JSON parsed",
+    "approved topic script compared for overlap",
+    "follow-up framing and opening-ending continuity reviewed",
+    "BTC pages 19-27 unchanged",
+    "existing numerical tokens preserved; financial-report date retained on page 18"
   ]
 }
