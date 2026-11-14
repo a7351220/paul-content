@@ -1,159 +1,126 @@
 {
-  "pages": 28,
-  "total_han_characters": 4384,
+  "pages": 19,
+  "total_han_characters": 2437,
   "page_counts": [
     {
       "page": 1,
-      "han_characters": 336,
-      "nonspace_characters": 381
+      "han_characters": 301,
+      "nonspace_characters": 344
     },
     {
       "page": 2,
-      "han_characters": 166,
-      "nonspace_characters": 223
+      "han_characters": 114,
+      "nonspace_characters": 143
     },
     {
       "page": 3,
-      "han_characters": 115,
-      "nonspace_characters": 185
+      "han_characters": 106,
+      "nonspace_characters": 130
     },
     {
       "page": 4,
-      "han_characters": 173,
-      "nonspace_characters": 229
+      "han_characters": 134,
+      "nonspace_characters": 155
     },
     {
       "page": 5,
-      "han_characters": 169,
-      "nonspace_characters": 221
+      "han_characters": 129,
+      "nonspace_characters": 140
     },
     {
       "page": 6,
-      "han_characters": 146,
-      "nonspace_characters": 183
+      "han_characters": 145,
+      "nonspace_characters": 165
     },
     {
       "page": 7,
-      "han_characters": 164,
-      "nonspace_characters": 180
+      "han_characters": 106,
+      "nonspace_characters": 130
     },
     {
       "page": 8,
-      "han_characters": 140,
-      "nonspace_characters": 184
+      "han_characters": 117,
+      "nonspace_characters": 142
     },
     {
       "page": 9,
-      "han_characters": 139,
-      "nonspace_characters": 179
+      "han_characters": 129,
+      "nonspace_characters": 142
     },
     {
       "page": 10,
-      "han_characters": 141,
-      "nonspace_characters": 170
+      "han_characters": 101,
+      "nonspace_characters": 119
     },
     {
       "page": 11,
-      "han_characters": 157,
-      "nonspace_characters": 185
+      "han_characters": 139,
+      "nonspace_characters": 222
     },
     {
       "page": 12,
-      "han_characters": 135,
-      "nonspace_characters": 180
+      "han_characters": 122,
+      "nonspace_characters": 138
     },
     {
       "page": 13,
-      "han_characters": 183,
-      "nonspace_characters": 209
+      "han_characters": 110,
+      "nonspace_characters": 125
     },
     {
       "page": 14,
-      "han_characters": 158,
-      "nonspace_characters": 181
+      "han_characters": 88,
+      "nonspace_characters": 104
     },
     {
       "page": 15,
-      "han_characters": 166,
-      "nonspace_characters": 185
+      "han_characters": 117,
+      "nonspace_characters": 134
     },
     {
       "page": 16,
-      "han_characters": 135,
-      "nonspace_characters": 220
+      "han_characters": 109,
+      "nonspace_characters": 135
     },
     {
       "page": 17,
-      "han_characters": 140,
-      "nonspace_characters": 236
+      "han_characters": 127,
+      "nonspace_characters": 155
     },
     {
       "page": 18,
-      "han_characters": 144,
-      "nonspace_characters": 163
+      "han_characters": 92,
+      "nonspace_characters": 128
     },
     {
       "page": 19,
-      "han_characters": 136,
-      "nonspace_characters": 175
-    },
-    {
-      "page": 20,
-      "han_characters": 126,
-      "nonspace_characters": 170
-    },
-    {
-      "page": 21,
-      "han_characters": 126,
+      "han_characters": 151,
       "nonspace_characters": 173
-    },
-    {
-      "page": 22,
-      "han_characters": 127,
-      "nonspace_characters": 190
-    },
-    {
-      "page": 23,
-      "han_characters": 134,
-      "nonspace_characters": 200
-    },
-    {
-      "page": 24,
-      "han_characters": 141,
-      "nonspace_characters": 210
-    },
-    {
-      "page": 25,
-      "han_characters": 123,
-      "nonspace_characters": 189
-    },
-    {
-      "page": 26,
-      "han_characters": 164,
-      "nonspace_characters": 210
-    },
-    {
-      "page": 27,
-      "han_characters": 149,
-      "nonspace_characters": 220
-    },
-    {
-      "page": 28,
-      "han_characters": 251,
-      "nonspace_characters": 282
     }
   ],
+  "revision": {
+    "date": "2026-11-14",
+    "purpose": "Weekly overview using directional data; remove topic-video-level detail",
+    "previous_pages": 28,
+    "previous_han_characters": 4384,
+    "narration_numeric_tokens_before": 123,
+    "narration_numeric_tokens_after": 21
+  },
   "checks": [
-    "sequential page numbers",
+    "sequential page numbers and topic ranges",
     "fixed opening preserved",
+    "topic follow-up framing preserved",
+    "Liang inference attributed; policy-advocacy donation distinct",
+    "NVIDIA section directly followed by BTC and requested joke",
     "no standalone verification reminders",
-    "full-week ETF arithmetic and fund-column checks passed",
-    "equity and BTC endpoint arithmetic passed",
-    "cash-allocation arithmetic passed",
+    "granular data removed and only CPI decimal retained",
+    "rounded weekly returns checked against stored endpoints",
+    "Taiwan Friday and Quanta two-day periods retained",
+    "ETF weekly net totals and rounding checked",
+    "Strategy prior-week allocation rounding checked",
+    "all 19 pages mapped to existing sources",
     "all research JSON parsed",
-    "approved topic script compared for overlap",
-    "follow-up framing and opening-ending continuity reviewed",
-    "BTC pages 19-27 unchanged",
-    "existing numerical tokens preserved; financial-report date retained on page 18"
-  ]
+    "continuous narration and repetition reviewed"
+  ],
+  "verification_scope": "Editorial revision using existing research. No fresh market/source retrieval; no Canva or Google Doc changes."
 }
