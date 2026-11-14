@@ -1,0 +1,141 @@
+{
+  "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/4979.TWO?period1=1793923200&period2=1794614400&interval=1d",
+  "retrieved_date": "2026-11-14",
+  "raw": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "TWD",
+            "symbol": "4979.TWO",
+            "exchangeName": "TWO",
+            "fullExchangeName": "Taipei Exchange",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1323651600,
+            "regularMarketTime": 1794547825,
+            "hasPrePostMarketData": false,
+            "gmtoffset": 28800,
+            "timezone": "CST",
+            "exchangeTimezoneName": "Asia/Taipei",
+            "regularMarketPrice": 379.0,
+            "regularMarketChangePercent": 1.067,
+            "fulldayPrice": 379.0,
+            "fulldayChange": 4.0,
+            "fulldayChangePercent": 1.067,
+            "fiftyTwoWeekHigh": 762.0,
+            "fiftyTwoWeekLow": 186.5,
+            "regularMarketDayHigh": 396.0,
+            "regularMarketDayLow": 376.0,
+            "regularMarketVolume": 5286151,
+            "longName": "LuxNet Corporation",
+            "shortName": "LUXNET CORPORATION",
+            "chartPreviousClose": 346.5,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "CST",
+                "start": 1794531600,
+                "end": 1794531600,
+                "gmtoffset": 28800
+              },
+              "regular": {
+                "timezone": "CST",
+                "start": 1794531600,
+                "end": 1794547800,
+                "gmtoffset": 28800
+              },
+              "post": {
+                "timezone": "CST",
+                "start": 1794547800,
+                "end": 1794547800,
+                "gmtoffset": 28800
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1793926800,
+            1794186000,
+            1794272400,
+            1794358800,
+            1794445200,
+            1794531600
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "close": [
+                  317.0,
+                  348.5,
+                  383.0,
+                  396.0,
+                  375.0,
+                  379.0
+                ],
+                "low": [
+                  312.0,
+                  325.0,
+                  368.0,
+                  370.5,
+                  371.5,
+                  376.0
+                ],
+                "high": [
+                  325.0,
+                  348.5,
+                  383.0,
+                  396.0,
+                  410.5,
+                  396.0
+                ],
+                "volume": [
+                  4856363,
+                  2146086,
+                  5030268,
+                  8528579,
+                  9541774,
+                  5197607
+                ],
+                "open": [
+                  312.0,
+                  329.0,
+                  369.5,
+                  385.5,
+                  400.0,
+                  384.5
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  317.0,
+                  348.5,
+                  383.0,
+                  396.0,
+                  375.0,
+                  379.0
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  }
+}

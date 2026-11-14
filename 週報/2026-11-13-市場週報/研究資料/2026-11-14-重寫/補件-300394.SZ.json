@@ -1,0 +1,141 @@
+{
+  "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/300394.SZ?period1=1793923200&period2=1794614400&interval=1d",
+  "retrieved_date": "2026-11-14",
+  "raw": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "CNY",
+            "symbol": "300394.SZ",
+            "exchangeName": "SHZ",
+            "fullExchangeName": "Shenzhen",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1424136600,
+            "regularMarketTime": 1794553456,
+            "hasPrePostMarketData": false,
+            "gmtoffset": 28800,
+            "timezone": "CST",
+            "exchangeTimezoneName": "Asia/Shanghai",
+            "regularMarketPrice": 124.99,
+            "regularMarketChangePercent": -10.938,
+            "fulldayPrice": 124.99,
+            "fulldayChange": -15.35,
+            "fulldayChangePercent": -10.938,
+            "fiftyTwoWeekHigh": 375.0,
+            "fiftyTwoWeekLow": 100.814,
+            "regularMarketDayHigh": 143.58,
+            "regularMarketDayLow": 123.55,
+            "regularMarketVolume": 78284810,
+            "longName": "Suzhou TFC Optical Communication Co., Ltd.",
+            "shortName": "TFC",
+            "chartPreviousClose": 129.5,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "CST",
+                "end": 1794533400,
+                "start": 1794533400,
+                "gmtoffset": 28800
+              },
+              "regular": {
+                "timezone": "CST",
+                "end": 1794553200,
+                "start": 1794533400,
+                "gmtoffset": 28800
+              },
+              "post": {
+                "timezone": "CST",
+                "end": 1794553200,
+                "start": 1794553200,
+                "gmtoffset": 28800
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1793928600,
+            1794187800,
+            1794274200,
+            1794360600,
+            1794447000,
+            1794533400
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "high": [
+                  125.86000061035156,
+                  127.5,
+                  131.32000732421875,
+                  144.61000061035156,
+                  152.1699981689453,
+                  143.5800018310547
+                ],
+                "volume": [
+                  53260970,
+                  38446949,
+                  40626372,
+                  74914264,
+                  67191972,
+                  78258848
+                ],
+                "low": [
+                  113.36000061035156,
+                  119.5,
+                  126.16999816894531,
+                  128.0,
+                  140.0,
+                  123.55000305175781
+                ],
+                "open": [
+                  116.27999877929688,
+                  124.01000213623047,
+                  130.0,
+                  129.08999633789062,
+                  143.5,
+                  141.38999938964844
+                ],
+                "close": [
+                  122.0,
+                  122.81999969482422,
+                  126.41000366210938,
+                  144.05999755859375,
+                  140.33999633789062,
+                  124.98999786376953
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  122.0,
+                  122.81999969482422,
+                  126.41000366210938,
+                  144.05999755859375,
+                  140.33999633789062,
+                  124.98999786376953
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  }
+}

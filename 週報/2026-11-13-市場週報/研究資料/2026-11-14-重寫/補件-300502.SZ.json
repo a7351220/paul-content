@@ -1,0 +1,141 @@
+{
+  "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/300502.SZ?period1=1793923200&period2=1794614400&interval=1d",
+  "retrieved_date": "2026-11-14",
+  "raw": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "CNY",
+            "symbol": "300502.SZ",
+            "exchangeName": "SHZ",
+            "fullExchangeName": "Shenzhen",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1456968600,
+            "regularMarketTime": 1794553453,
+            "hasPrePostMarketData": false,
+            "gmtoffset": 28800,
+            "timezone": "CST",
+            "exchangeTimezoneName": "Asia/Shanghai",
+            "regularMarketPrice": 187.58,
+            "regularMarketChangePercent": -8.756,
+            "fulldayPrice": 187.58,
+            "fulldayChange": -18.0,
+            "fulldayChangePercent": -8.756,
+            "fiftyTwoWeekHigh": 618.87,
+            "fiftyTwoWeekLow": 161.16,
+            "regularMarketDayHigh": 212.5,
+            "regularMarketDayLow": 186.0,
+            "regularMarketVolume": 100787666,
+            "longName": "Eoptolink Technology Inc., Ltd.",
+            "shortName": "EOPTOLINK",
+            "chartPreviousClose": 185.61,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "CST",
+                "end": 1794533400,
+                "start": 1794533400,
+                "gmtoffset": 28800
+              },
+              "regular": {
+                "timezone": "CST",
+                "end": 1794553200,
+                "start": 1794533400,
+                "gmtoffset": 28800
+              },
+              "post": {
+                "timezone": "CST",
+                "end": 1794553200,
+                "start": 1794553200,
+                "gmtoffset": 28800
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1793928600,
+            1794187800,
+            1794274200,
+            1794360600,
+            1794447000,
+            1794533400
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  166.0,
+                  175.0,
+                  188.00999450683594,
+                  187.3000030517578,
+                  212.5,
+                  209.9600067138672
+                ],
+                "volume": [
+                  90448902,
+                  77422027,
+                  87125641,
+                  124929658,
+                  119244107,
+                  100763222
+                ],
+                "close": [
+                  172.10000610351562,
+                  176.0,
+                  183.8000030517578,
+                  215.0,
+                  205.5800018310547,
+                  187.5800018310547
+                ],
+                "high": [
+                  178.0,
+                  184.1199951171875,
+                  191.50999450683594,
+                  216.35000610351562,
+                  225.0,
+                  212.5
+                ],
+                "low": [
+                  161.16000366210938,
+                  169.00999450683594,
+                  183.0399932861328,
+                  187.3000030517578,
+                  204.89999389648438,
+                  186.0
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  172.10000610351562,
+                  176.0,
+                  183.8000030517578,
+                  215.0,
+                  205.5800018310547,
+                  187.5800018310547
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  }
+}

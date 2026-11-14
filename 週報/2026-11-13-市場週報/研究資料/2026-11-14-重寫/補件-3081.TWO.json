@@ -1,0 +1,141 @@
+{
+  "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/3081.TWO?period1=1793923200&period2=1794614400&interval=1d",
+  "retrieved_date": "2026-11-14",
+  "raw": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "TWD",
+            "symbol": "3081.TWO",
+            "exchangeName": "TWO",
+            "fullExchangeName": "Taipei Exchange",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1405386000,
+            "regularMarketTime": 1794547824,
+            "hasPrePostMarketData": false,
+            "gmtoffset": 28800,
+            "timezone": "CST",
+            "exchangeTimezoneName": "Asia/Taipei",
+            "regularMarketPrice": 2110.0,
+            "regularMarketChangePercent": 0.476,
+            "fulldayPrice": 2110.0,
+            "fulldayChange": 10.0,
+            "fulldayChangePercent": 0.476,
+            "fiftyTwoWeekHigh": 3600.0,
+            "fiftyTwoWeekLow": 366.364,
+            "regularMarketDayHigh": 2220.0,
+            "regularMarketDayLow": 2065.0,
+            "regularMarketVolume": 4992147,
+            "longName": "LandMark Optoelectronics Corporation",
+            "shortName": "LAND MARK OPTOELECTRONICS CORP",
+            "chartPreviousClose": 1890.0,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "CST",
+                "end": 1794531600,
+                "start": 1794531600,
+                "gmtoffset": 28800
+              },
+              "regular": {
+                "timezone": "CST",
+                "end": 1794547800,
+                "start": 1794531600,
+                "gmtoffset": 28800
+              },
+              "post": {
+                "timezone": "CST",
+                "end": 1794547800,
+                "start": 1794547800,
+                "gmtoffset": 28800
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1793926800,
+            1794186000,
+            1794272400,
+            1794358800,
+            1794445200,
+            1794531600
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "low": [
+                  1705.0,
+                  1825.0,
+                  2115.0,
+                  2115.0,
+                  2075.0,
+                  2065.0
+                ],
+                "volume": [
+                  3708638,
+                  998422,
+                  822488,
+                  3737507,
+                  3586312,
+                  4827825
+                ],
+                "open": [
+                  1705.0,
+                  1870.0,
+                  2115.0,
+                  2135.0,
+                  2255.0,
+                  2125.0
+                ],
+                "close": [
+                  1750.0,
+                  1925.0,
+                  2115.0,
+                  2215.0,
+                  2100.0,
+                  2110.0
+                ],
+                "high": [
+                  1795.0,
+                  1925.0,
+                  2115.0,
+                  2215.0,
+                  2320.0,
+                  2220.0
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  1750.0,
+                  1925.0,
+                  2115.0,
+                  2215.0,
+                  2100.0,
+                  2110.0
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  }
+}

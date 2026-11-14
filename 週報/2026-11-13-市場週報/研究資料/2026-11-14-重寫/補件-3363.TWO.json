@@ -1,0 +1,141 @@
+{
+  "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/3363.TWO?period1=1793923200&period2=1794614400&interval=1d",
+  "retrieved_date": "2026-11-14",
+  "raw": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "TWD",
+            "symbol": "3363.TWO",
+            "exchangeName": "TWO",
+            "fullExchangeName": "Taipei Exchange",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1199062800,
+            "regularMarketTime": 1794547803,
+            "hasPrePostMarketData": false,
+            "gmtoffset": 28800,
+            "timezone": "CST",
+            "exchangeTimezoneName": "Asia/Taipei",
+            "regularMarketPrice": 376.5,
+            "regularMarketChangePercent": -1.697,
+            "fulldayPrice": 376.5,
+            "fulldayChange": -6.5,
+            "fulldayChangePercent": -1.697,
+            "fiftyTwoWeekHigh": 1065.0,
+            "fiftyTwoWeekLow": 328.0,
+            "regularMarketDayHigh": 402.0,
+            "regularMarketDayLow": 371.0,
+            "regularMarketVolume": 4560777,
+            "longName": "FOCI Fiber Optic Communications, Inc.",
+            "shortName": "FOCI FIBER OPTIC COMMUNICATIONS",
+            "chartPreviousClose": 400.5,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "CST",
+                "start": 1794531600,
+                "end": 1794531600,
+                "gmtoffset": 28800
+              },
+              "regular": {
+                "timezone": "CST",
+                "start": 1794531600,
+                "end": 1794547800,
+                "gmtoffset": 28800
+              },
+              "post": {
+                "timezone": "CST",
+                "start": 1794547800,
+                "end": 1794547800,
+                "gmtoffset": 28800
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1793926800,
+            1794186000,
+            1794272400,
+            1794358800,
+            1794445200,
+            1794531600
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  360.5,
+                  367.0,
+                  400.0,
+                  412.0,
+                  414.5,
+                  388.0
+                ],
+                "close": [
+                  360.5,
+                  377.5,
+                  411.0,
+                  410.0,
+                  383.0,
+                  376.5
+                ],
+                "low": [
+                  360.5,
+                  357.0,
+                  393.0,
+                  395.5,
+                  376.0,
+                  371.0
+                ],
+                "volume": [
+                  2985717,
+                  7551562,
+                  2798311,
+                  3190700,
+                  4862479,
+                  4461001
+                ],
+                "high": [
+                  378.5,
+                  384.0,
+                  415.0,
+                  413.0,
+                  421.5,
+                  402.0
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  360.5,
+                  377.5,
+                  411.0,
+                  410.0,
+                  383.0,
+                  376.5
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  }
+}

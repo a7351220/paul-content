@@ -1,0 +1,37 @@
+{
+  "retrieved_date": "2026-11-14",
+  "status": "Names and titles are self-reported on an independent petition; not independent identity verification or evidence of shareholding size.",
+  "queries": [
+    {
+      "source_url": "https://standwithjensen.com/api/signatures?page=1&search=Andreessen",
+      "query": "Andreessen",
+      "matching_count": 0,
+      "public_entries": []
+    },
+    {
+      "source_url": "https://standwithjensen.com/api/signatures?page=1&search=Horowitz",
+      "query": "Horowitz",
+      "matching_count": 0,
+      "public_entries": []
+    },
+    {
+      "source_url": "https://standwithjensen.com/api/signatures?page=1&search=Elon+Musk",
+      "query": "Elon Musk",
+      "matching_count": 2,
+      "public_entries": [
+        {
+          "name": "Elon Musk",
+          "title": "Space X Tesla CEO",
+          "affiliation": "shareholder",
+          "createdAt": "2026-11-13T22:30:53.441Z"
+        },
+        {
+          "name": "Elon Musk(SpaceXSI)",
+          "title": "SpaceXSI",
+          "affiliation": "shareholder",
+          "createdAt": "2026-11-14T04:40:08.365Z"
+        }
+      ]
+    }
+  ]
+}

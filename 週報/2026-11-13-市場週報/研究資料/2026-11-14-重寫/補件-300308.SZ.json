@@ -1,0 +1,141 @@
+{
+  "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/300308.SZ?period1=1793923200&period2=1794614400&interval=1d",
+  "retrieved_date": "2026-11-14",
+  "raw": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "CNY",
+            "symbol": "300308.SZ",
+            "exchangeName": "SHZ",
+            "fullExchangeName": "Shenzhen",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1334021400,
+            "regularMarketTime": 1794553486,
+            "hasPrePostMarketData": false,
+            "gmtoffset": 28800,
+            "timezone": "CST",
+            "exchangeTimezoneName": "Asia/Shanghai",
+            "regularMarketPrice": 466.2,
+            "regularMarketChangePercent": -8.391,
+            "fulldayPrice": 466.2,
+            "fulldayChange": -42.7,
+            "fulldayChangePercent": -8.391,
+            "fiftyTwoWeekHigh": 1416.88,
+            "fiftyTwoWeekLow": 427.34,
+            "regularMarketDayHigh": 525.0,
+            "regularMarketDayLow": 461.71,
+            "regularMarketVolume": 53633814,
+            "longName": "Zhongji Innolight Co., Ltd.",
+            "shortName": "ZHONGJI INNOLIGHT",
+            "chartPreviousClose": 493.33,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "CST",
+                "start": 1794533400,
+                "end": 1794533400,
+                "gmtoffset": 28800
+              },
+              "regular": {
+                "timezone": "CST",
+                "start": 1794533400,
+                "end": 1794553200,
+                "gmtoffset": 28800
+              },
+              "post": {
+                "timezone": "CST",
+                "start": 1794553200,
+                "end": 1794553200,
+                "gmtoffset": 28800
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1793928600,
+            1794187800,
+            1794274200,
+            1794360600,
+            1794447000,
+            1794533400
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "low": [
+                  427.3399963378906,
+                  430.1000061035156,
+                  469.5799865722656,
+                  480.4200134277344,
+                  506.3900146484375,
+                  461.7099914550781
+                ],
+                "open": [
+                  433.5,
+                  451.0,
+                  480.0,
+                  480.4200134277344,
+                  532.739990234375,
+                  520.0
+                ],
+                "close": [
+                  448.0,
+                  452.0299987792969,
+                  471.0,
+                  542.0,
+                  508.8999938964844,
+                  466.20001220703125
+                ],
+                "volume": [
+                  54110132,
+                  47602447,
+                  38864530,
+                  60735000,
+                  62696700,
+                  53609714
+                ],
+                "high": [
+                  463.3299865722656,
+                  475.7099914550781,
+                  488.0,
+                  547.7899780273438,
+                  567.8900146484375,
+                  525.0
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  448.0,
+                  452.0299987792969,
+                  471.0,
+                  542.0,
+                  508.8999938964844,
+                  466.20001220703125
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  }
+}

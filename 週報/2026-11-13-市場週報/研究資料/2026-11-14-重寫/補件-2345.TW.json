@@ -1,0 +1,141 @@
+{
+  "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/2345.TW?period1=1793923200&period2=1794614400&interval=1d",
+  "retrieved_date": "2026-11-14",
+  "raw": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "TWD",
+            "symbol": "2345.TW",
+            "exchangeName": "TAI",
+            "fullExchangeName": "Taiwan",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 946947600,
+            "regularMarketTime": 1794547813,
+            "hasPrePostMarketData": false,
+            "gmtoffset": 28800,
+            "timezone": "CST",
+            "exchangeTimezoneName": "Asia/Taipei",
+            "regularMarketPrice": 1520.0,
+            "regularMarketChangePercent": -0.328,
+            "fulldayPrice": 1520.0,
+            "fulldayChange": -5.0,
+            "fulldayChangePercent": -0.328,
+            "fiftyTwoWeekHigh": 2825.0,
+            "fiftyTwoWeekLow": 888.0,
+            "regularMarketDayHigh": 1615.0,
+            "regularMarketDayLow": 1505.0,
+            "regularMarketVolume": 4945822,
+            "longName": "Accton Technology Corporation",
+            "shortName": "ACCTON TECHNOLOGY CORP",
+            "chartPreviousClose": 1380.0,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "CST",
+                "start": 1794531600,
+                "end": 1794531600,
+                "gmtoffset": 28800
+              },
+              "regular": {
+                "timezone": "CST",
+                "start": 1794531600,
+                "end": 1794547800,
+                "gmtoffset": 28800
+              },
+              "post": {
+                "timezone": "CST",
+                "start": 1794547800,
+                "end": 1794547800,
+                "gmtoffset": 28800
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1793926800,
+            1794186000,
+            1794272400,
+            1794358800,
+            1794445200,
+            1794531600
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "volume": [
+                  5707236,
+                  2115491,
+                  6418363,
+                  4721891,
+                  4228469,
+                  4807239
+                ],
+                "high": [
+                  1300.0,
+                  1405.0,
+                  1545.0,
+                  1585.0,
+                  1665.0,
+                  1615.0
+                ],
+                "low": [
+                  1245.0,
+                  1330.0,
+                  1485.0,
+                  1500.0,
+                  1515.0,
+                  1505.0
+                ],
+                "close": [
+                  1280.0,
+                  1405.0,
+                  1545.0,
+                  1575.0,
+                  1525.0,
+                  1520.0
+                ],
+                "open": [
+                  1245.0,
+                  1360.0,
+                  1540.0,
+                  1560.0,
+                  1645.0,
+                  1555.0
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  1280.0,
+                  1405.0,
+                  1545.0,
+                  1575.0,
+                  1525.0,
+                  1520.0
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  }
+}

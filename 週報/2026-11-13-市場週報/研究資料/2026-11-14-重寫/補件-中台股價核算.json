@@ -1,0 +1,112 @@
+{
+  "formula": "(end/start-1)*100",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "symbol": "300308.SZ",
+      "currency": "CNY",
+      "price_type": "unadjusted daily close",
+      "start": {
+        "date": "2026-11-12",
+        "close": 508.8999938964844
+      },
+      "end": {
+        "date": "2026-11-13",
+        "close": 466.20001220703125
+      },
+      "pct": -8.390642995004383,
+      "source_file": "補件-300308.SZ.json"
+    },
+    {
+      "symbol": "300502.SZ",
+      "currency": "CNY",
+      "price_type": "unadjusted daily close",
+      "start": {
+        "date": "2026-11-12",
+        "close": 205.5800018310547
+      },
+      "end": {
+        "date": "2026-11-13",
+        "close": 187.5800018310547
+      },
+      "pct": -8.755715458545609,
+      "source_file": "補件-300502.SZ.json"
+    },
+    {
+      "symbol": "300394.SZ",
+      "currency": "CNY",
+      "price_type": "unadjusted daily close",
+      "start": {
+        "date": "2026-11-12",
+        "close": 140.33999633789062
+      },
+      "end": {
+        "date": "2026-11-13",
+        "close": 124.98999786376953
+      },
+      "pct": -10.937721871649163,
+      "source_file": "補件-300394.SZ.json"
+    },
+    {
+      "symbol": "2345.TW",
+      "currency": "TWD",
+      "price_type": "unadjusted daily close",
+      "start": {
+        "date": "2026-11-12",
+        "close": 1525.0
+      },
+      "end": {
+        "date": "2026-11-13",
+        "close": 1520.0
+      },
+      "pct": -0.3278688524590123,
+      "source_file": "補件-2345.TW.json"
+    },
+    {
+      "symbol": "3363.TWO",
+      "currency": "TWD",
+      "price_type": "unadjusted daily close",
+      "start": {
+        "date": "2026-11-12",
+        "close": 383.0
+      },
+      "end": {
+        "date": "2026-11-13",
+        "close": 376.5
+      },
+      "pct": -1.6971279373368175,
+      "source_file": "補件-3363.TWO.json"
+    },
+    {
+      "symbol": "3081.TWO",
+      "currency": "TWD",
+      "price_type": "unadjusted daily close",
+      "start": {
+        "date": "2026-11-12",
+        "close": 2100.0
+      },
+      "end": {
+        "date": "2026-11-13",
+        "close": 2110.0
+      },
+      "pct": 0.4761904761904745,
+      "source_file": "補件-3081.TWO.json"
+    },
+    {
+      "symbol": "4979.TWO",
+      "currency": "TWD",
+      "price_type": "unadjusted daily close",
+      "start": {
+        "date": "2026-11-12",
+        "close": 375.0
+      },
+      "end": {
+        "date": "2026-11-13",
+        "close": 379.0
+      },
+      "pct": 1.0666666666666602,
+      "source_file": "補件-4979.TWO.json"
+    }
+  ],
+  "interpretation": "Different-platform repricing and conditional procurement shift; prices do not verify actual order transfers. Taiwan optical/network names had mixed returns."
+}

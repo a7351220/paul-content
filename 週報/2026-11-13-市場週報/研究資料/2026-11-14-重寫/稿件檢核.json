@@ -1,11 +1,11 @@
 {
-  "pages": 19,
-  "total_han_characters": 2437,
+  "pages": 22,
+  "total_han_characters": 2874,
   "page_counts": [
     {
       "page": 1,
-      "han_characters": 301,
-      "nonspace_characters": 344
+      "han_characters": 318,
+      "nonspace_characters": 362
     },
     {
       "page": 2,
@@ -19,108 +19,122 @@
     },
     {
       "page": 4,
-      "han_characters": 134,
-      "nonspace_characters": 155
+      "han_characters": 138,
+      "nonspace_characters": 171
     },
     {
       "page": 5,
-      "han_characters": 129,
-      "nonspace_characters": 140
+      "han_characters": 96,
+      "nonspace_characters": 106
     },
     {
       "page": 6,
+      "han_characters": 138,
+      "nonspace_characters": 154
+    },
+    {
+      "page": 7,
+      "han_characters": 142,
+      "nonspace_characters": 163
+    },
+    {
+      "page": 8,
       "han_characters": 145,
       "nonspace_characters": 165
     },
     {
-      "page": 7,
+      "page": 9,
       "han_characters": 106,
       "nonspace_characters": 130
     },
     {
-      "page": 8,
-      "han_characters": 117,
-      "nonspace_characters": 142
-    },
-    {
-      "page": 9,
-      "han_characters": 129,
-      "nonspace_characters": 142
-    },
-    {
       "page": 10,
+      "han_characters": 78,
+      "nonspace_characters": 99
+    },
+    {
+      "page": 11,
+      "han_characters": 163,
+      "nonspace_characters": 182
+    },
+    {
+      "page": 12,
+      "han_characters": 150,
+      "nonspace_characters": 164
+    },
+    {
+      "page": 13,
       "han_characters": 101,
       "nonspace_characters": 119
     },
     {
-      "page": 11,
+      "page": 14,
       "han_characters": 139,
       "nonspace_characters": 222
     },
     {
-      "page": 12,
+      "page": 15,
       "han_characters": 122,
       "nonspace_characters": 138
     },
     {
-      "page": 13,
+      "page": 16,
       "han_characters": 110,
       "nonspace_characters": 125
     },
     {
-      "page": 14,
+      "page": 17,
       "han_characters": 88,
       "nonspace_characters": 104
     },
     {
-      "page": 15,
+      "page": 18,
       "han_characters": 117,
       "nonspace_characters": 134
     },
     {
-      "page": 16,
+      "page": 19,
       "han_characters": 109,
       "nonspace_characters": 135
     },
     {
-      "page": 17,
+      "page": 20,
       "han_characters": 127,
       "nonspace_characters": 155
     },
     {
-      "page": 18,
+      "page": 21,
       "han_characters": 92,
       "nonspace_characters": 128
     },
     {
-      "page": 19,
-      "han_characters": 151,
-      "nonspace_characters": 173
+      "page": 22,
+      "han_characters": 175,
+      "nonspace_characters": 199
     }
   ],
   "revision": {
     "date": "2026-11-14",
-    "purpose": "Weekly overview using directional data; remove topic-video-level detail",
-    "previous_pages": 28,
-    "previous_han_characters": 4384,
-    "narration_numeric_tokens_before": 123,
-    "narration_numeric_tokens_after": 21
+    "purpose": "Add CEO-return petition, Trump/Cook succession discussion and China/Taiwan supply-chain contrast while retaining weekly direction",
+    "previous_pages": 19,
+    "previous_han_characters": 2437
   },
   "checks": [
-    "sequential page numbers and topic ranges",
+    "sequential page numbers and updated topic ranges",
     "fixed opening preserved",
-    "topic follow-up framing preserved",
-    "Liang inference attributed; policy-advocacy donation distinct",
-    "NVIDIA section directly followed by BTC and requested joke",
-    "no standalone verification reminders",
-    "granular data removed and only CPI decimal retained",
-    "rounded weekly returns checked against stored endpoints",
-    "Taiwan Friday and Quanta two-day periods retained",
-    "ETF weekly net totals and rounding checked",
-    "Strategy prior-week allocation rounding checked",
-    "all 19 pages mapped to existing sources",
+    "BTC narration unchanged and follows NVIDIA directly",
+    "Musk support attributed; no unsupported large-shareholder title",
+    "a16z founders absent from queried public list and excluded pending source",
+    "Cook appointment kept hypothetical; margin scenario attributed",
+    "three China stock moves calculated from Nov 12-13 closes",
+    "mixed Taiwan optical moves checked; no blanket all-Taiwan rally claim",
+    "procurement shift conditional; not equated with actual order transfers",
+    "all 22 pages mapped to sources",
     "all research JSON parsed",
-    "continuous narration and repetition reviewed"
+    "narrative transitions and repeated conclusions reviewed"
   ],
-  "verification_scope": "Editorial revision using existing research. No fresh market/source retrieval; no Canva or Google Doc changes."
+  "pending": [
+    "User source for a16z founder participation in another petition or public support"
+  ],
+  "verification_scope": "New public sources and seven equity series checked; existing BTC research and narration retained. No Canva or Google Doc changes."
 }
