@@ -152,20 +152,20 @@
 - 梁一夢，X 帳號 @Dream1984Tube。
 - Jack Clark，Anthropic 共同創辦人、政策事務負責人；曾向 AnthroPAC 捐款。
 - Chris Coons、Kevin Cramer、Brian Mast：後來公開主張調查或要求黃仁勳辭職、或領銜聯名函的國會議員。
-- Chris McGuire：前美國國安會職員；當時上司是 Tarun Chhabra，Chhabra 後來擔任 Anthropic 國家安全政策負責人。
+- Chris McGuire：公開履歷曾任美國國安會科技與國安職務（Director，後為 Deputy Senior Director）。Tarun Chhabra 曾任國安會科技與國安 Coordinator（2021–2025），後來擔任 Anthropic 國家安全政策負責人。兩人時期重疊、職銜上 Chhabra 較高，但沒有一手文件寫死「當時的上司」；口白若用上下屬，須歸給梁一夢。
 - Public First Action：Anthropic 捐款的 501(c)(4) 團體；同體系另有超級 PAC Public First。
 
 **第 8 頁硬事實（錢與人，要具體）**
 
 1. 梁一夢在 X 發文，認為針對黃仁勳的輿論與國會壓力，源頭指向競爭對手 Anthropic。
 2. Jack Clark 本人向 AnthroPAC 捐 5,000 美元。AnthroPAC 接著捐給 Chris Coons 競選委員會 2,500 美元、Kevin Cramer 1,000 美元、Brian Mast 2,500 美元。這三人後來分別主張國會調查、公開要求辭職、領銜 11/4 聯名函。來源：FEC／OpenSecrets 彙整；議員發言見 NPR、The Hill、眾院中國問題特別委員會。
-3. 公司層級：Anthropic 今年 2 月與 7 月各向 Public First Action 宣布捐 2,000 萬，合計 4,000 萬。7/21 公司稿寫這筆錢「cannot be used to influence the election of any candidate」，並寫支持收緊先進晶片與半導體設備出口管制。來源：https://www.anthropic.com/news/donation-public-first-action
-4. Dario Amodei 5 月以個人名義向同體系超級 PAC 捐 100 萬美元（Politico 等）。公司 501(c)(4) 與超級 PAC 是兩條帳戶，口白不要合成「公司拿 4,100 萬去買選舉」。
+3. 公司層級：Anthropic 今年 2 月與 7 月各向 Public First Action 宣布捐 2,000 萬，合計 4,000 萬。7/21 公司稿寫兩筆捐款「exclusively to support Public First Action’s public education and policy mission, and cannot be used to influence the election of any candidate」。出口管制是同一篇稿後半 Anthropic 自己的政策立場，不是這 4,000 萬的指定用途。來源：https://www.anthropic.com/news/donation-public-first-action
+4. Dario Amodei 5 月以個人名義向同體系超級 PAC Public First 捐 100 萬美元，Politico 寫該 PAC 支持主張強制 AI 安全規範的候選人。公司 501(c)(4) 與超級 PAC 是兩條帳戶，口白不要合成「公司拿 4,100 萬去買選舉」。https://www.politico.com/news/2026/07/16/anthropics-ceo-gives-1-million-to-super-pac-amid-feud-of-ai-big-money-groups-01000461
 
 **第 9 頁硬事實（為什麼這跟輝達的股價故事有關）**
 
-1. Chris McGuire 一則批評黃仁勳的貼文播放約 939 萬次。他曾任國安會職員，當時的主管 Tarun Chhabra，後來是 Anthropic 國家安全政策負責人。這是職涯重疊，梁一夢拿它當人事線的證據。
-2. 新加坡內政部（MHA）：10/31 說黃仁勳當時的伴侶申請準證時申報為已婚；11/12 再說，依目前掌握，其準證申請並未涉及違法。兩次都要點到，不要只取一句。不要重講外遇細節。
+1. Chris McGuire 一則批評黃仁勳的貼文播放約 939 萬次。公開履歷查得到他曾任國安會科技與國安職務，Chhabra 後來任 Anthropic 國安政策負責人；「當時的上司」沒有一手文件寫死，口白歸給梁一夢。
+2. 新加坡內政部（MHA）必須用一手聲明，不要寫「準證申報已婚／未涉及違法」。10/31：澄清沒有針對她進行「因與黃仁勳關係、或被指為中國情報來源」這類調查。https://www.mha.gov.sg/media-room/newsroom/clarification-statement-on-wall-street-journals-article/  11/12：她因 Megaspeed 相關事項受查，「was not investigated for espionage」；相關不實申報證據不足，但因向警方提供不實資料被警告並禁止再入境。https://www.mha.gov.sg/media-room/newsroom/singapore-investigations-into-alice-huang-huang-le-and-megaspeed-international-pte-ltd/ 兩次都要點到。不要重講外遇細節。
 3. 梁一夢的收束（歸給他）：出口管制是黃仁勳與 Anthropic 最對立的戰場；在他看來，這些資金與人事重疊，讓施壓鏈條指向同場即將掛牌的對手。
 4. 可選一句、不要長：AnthroPAC 捐款是兩黨都有（The Hill 寫第三季約一半對一半）；截稿前 Anthropic 尚未公開回應。
 
