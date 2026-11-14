@@ -1,278 +1,267 @@
 {
-  "pages": 31,
+  "pages": 30,
   "total_han_characters": 3884,
   "page_counts": [
     {
       "page": 1,
-      "han_characters": 179,
-      "nonspace_characters": 195
+      "han_characters": 280,
+      "nonspace_characters": 313
     },
     {
       "page": 2,
-      "han_characters": 101,
-      "nonspace_characters": 118
-    },
-    {
-      "page": 3,
       "han_characters": 127,
       "nonspace_characters": 160
     },
     {
-      "page": 4,
+      "page": 3,
       "han_characters": 114,
       "nonspace_characters": 137
     },
     {
-      "page": 5,
+      "page": 4,
       "han_characters": 157,
       "nonspace_characters": 192
     },
     {
-      "page": 6,
+      "page": 5,
       "han_characters": 135,
       "nonspace_characters": 149
     },
     {
-      "page": 7,
+      "page": 6,
       "han_characters": 156,
       "nonspace_characters": 173
     },
     {
-      "page": 8,
+      "page": 7,
       "han_characters": 127,
       "nonspace_characters": 169
     },
     {
-      "page": 9,
+      "page": 8,
       "han_characters": 83,
       "nonspace_characters": 96
     },
     {
-      "page": 10,
+      "page": 9,
       "han_characters": 85,
       "nonspace_characters": 97
     },
     {
-      "page": 11,
+      "page": 10,
       "han_characters": 95,
       "nonspace_characters": 105
     },
     {
-      "page": 12,
+      "page": 11,
       "han_characters": 138,
       "nonspace_characters": 165
     },
     {
-      "page": 13,
+      "page": 12,
       "han_characters": 122,
       "nonspace_characters": 145
     },
     {
-      "page": 14,
+      "page": 13,
       "han_characters": 111,
       "nonspace_characters": 126
     },
     {
-      "page": 15,
+      "page": 14,
       "han_characters": 72,
       "nonspace_characters": 80
     },
     {
-      "page": 16,
+      "page": 15,
       "han_characters": 164,
       "nonspace_characters": 180
     },
     {
-      "page": 17,
+      "page": 16,
       "han_characters": 134,
       "nonspace_characters": 154
     },
     {
-      "page": 18,
+      "page": 17,
       "han_characters": 80,
       "nonspace_characters": 146
     },
     {
-      "page": 19,
+      "page": 18,
       "han_characters": 86,
       "nonspace_characters": 106
     },
     {
-      "page": 20,
+      "page": 19,
       "han_characters": 141,
       "nonspace_characters": 164
     },
     {
-      "page": 21,
+      "page": 20,
       "han_characters": 128,
       "nonspace_characters": 148
     },
     {
-      "page": 22,
+      "page": 21,
       "han_characters": 128,
       "nonspace_characters": 147
     },
     {
-      "page": 23,
+      "page": 22,
       "han_characters": 133,
       "nonspace_characters": 152
     },
     {
-      "page": 24,
+      "page": 23,
       "han_characters": 152,
       "nonspace_characters": 194
     },
     {
-      "page": 25,
+      "page": 24,
       "han_characters": 135,
       "nonspace_characters": 177
     },
     {
-      "page": 26,
+      "page": 25,
       "han_characters": 129,
       "nonspace_characters": 163
     },
     {
-      "page": 27,
+      "page": 26,
       "han_characters": 139,
       "nonspace_characters": 166
     },
     {
-      "page": 28,
+      "page": 27,
       "han_characters": 131,
       "nonspace_characters": 174
     },
     {
-      "page": 29,
+      "page": 28,
       "han_characters": 146,
       "nonspace_characters": 162
     },
     {
-      "page": 30,
+      "page": 29,
       "han_characters": 108,
       "nonspace_characters": 129
     },
     {
-      "page": 31,
+      "page": 30,
       "han_characters": 148,
       "nonspace_characters": 169
     }
   ],
   "revision": {
     "date": "2026-11-14",
-    "purpose": "Split dense narration at story turns, rewrite the weekly preview, and add the approved US inflation topic",
-    "previous_pages": 22,
-    "previous_han_characters": 3551
+    "purpose": "Merge weekly outline and fixed opening on page 1; renumber remaining pages without changing narration",
+    "previous_pages": 31,
+    "previous_han_characters": 3884
   },
   "old_to_new_pages": {
     "1": [
-      1,
-      2
+      1
     ],
     "2": [
-      3
+      2
     ],
     "3": [
-      4
+      3
     ],
     "4": [
-      5
+      4
     ],
     "5": [
-      6
+      5
     ],
     "6": [
-      7
+      6
     ],
     "7": [
-      8,
-      9
+      7,
+      8
     ],
     "8": [
-      10,
-      11
+      9,
+      10
     ],
     "9": [
-      12
+      11
     ],
     "10": [
-      13
+      12
     ],
     "11": [
-      14,
-      15
+      13,
+      14
     ],
     "12": [
-      16
+      15
     ],
     "13": [
-      17
+      16
     ],
     "14": [
-      18,
-      19
+      17,
+      18
     ],
     "15": [
-      20
+      19
     ],
     "16": [
-      21
+      20
     ],
     "17": [
-      22
+      21
     ],
     "18": [
-      23
+      22
     ],
     "20": [
-      24
+      23
     ],
     "21": [
-      25
+      24
     ],
     "19": [
-      26
+      25
     ],
     "22": [
-      30,
-      31
+      29,
+      30
     ]
   },
   "topic_ranges": [
     {
       "first_page": 1,
       "last_page": 1,
-      "title": "本週大綱"
+      "title": "本週大綱與開場"
     },
     {
       "first_page": 2,
-      "last_page": 2,
-      "title": "開場提醒"
-    },
-    {
-      "first_page": 3,
-      "last_page": 20,
+      "last_page": 19,
       "title": "黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"
     },
     {
-      "first_page": 21,
-      "last_page": 25,
+      "first_page": 20,
+      "last_page": 24,
       "title": "比特幣跌破七萬，賣壓從哪裡來？"
     },
     {
-      "first_page": 26,
-      "last_page": 29,
+      "first_page": 25,
+      "last_page": 28,
       "title": "美國通膨降不下來，升息壓力會影響哪些投資？"
     },
     {
-      "first_page": 30,
-      "last_page": 31,
+      "first_page": 29,
+      "last_page": 30,
       "title": "本週總結"
     }
   ],
   "checks": [
-    "31 sequential page headings and topic ranges match",
-    "fixed self-introduction and promotional paragraph preserved verbatim on separate pages",
+    "30 sequential page headings and topic ranges match",
+    "fixed self-introduction, outline and promotional paragraph combined on page 1; wording preserved",
     "old pages 7, 8, 11 and 14 split with no narration removed",
     "unaffected Huang and Bitcoin narration compared verbatim with the 22-page baseline",
     "Huang to Bitcoin transition and soup metaphor preserved",
@@ -280,20 +269,22 @@
     "CPI and PPI periods, monthly/yearly bases and release dates verified against BLS",
     "Waller speech precedes CPI release; 25/50 basis-point statements attributed to him rather than FOMC",
     "opening previews the three adopted topics; ending answers the same topics",
-    "Microsoft outage and Singles Day excluded per user direction"
+    "Microsoft outage and Singles Day excluded per user direction",
+    "previous pages 3–31 preserved verbatim and renumbered 2–30; total narration Han count unchanged"
   ],
   "pending": [
     "User source for a16z founder participation in another petition or public support"
   ],
-  "verification_scope": "US inflation claims verified from BLS releases and Waller speech. Existing Huang/BTC factual research retained, not fully rechecked. Google Doc readback confirms 31 HEADING_1 narration sections, title, opening, investment examples, inflation and closing; local UTF-16 length is 5890 and online content ends at 5891 with one native trailing paragraph. No Canva, PPTX, image or PDF layout work.",
+  "verification_scope": "Opening merge and page renumbering only. Existing narration preserved verbatim, with page 1 combining former pages 1 and 2. Google Doc full-text readback confirms the merged opening, 30 sequential page labels and topic ranges; a follow-up style readback confirms page 1 is HEADING_1 and promotional text remains NORMAL_TEXT. Local UTF-16 length 5872 matches online end index 5873 plus native trailing paragraph. No research refresh or Canva/PPTX/PDF work.",
   "google_doc": {
     "url": "https://docs.google.com/document/d/1s4oD45g-gqbPQQldn1eW2zT1iMzI9zRI8hElRnwebtY/edit",
     "tab_id": "t.0",
-    "revision_id": "AHj4eMSZTRNIUx6MepV-1C-0ppSxjYor2LYxhCJUM82MWerYjI5ZmBpRA9A4TnDP1XUAkKq-meF21Ar717hZmM8oKeE-q2se0Rw8G3IxfAA",
-    "readback_headings": 31,
-    "local_utf16_length": 5890,
-    "content_end_index": 5891,
-    "physical_page_count_checked": false
+    "revision_id": "AHj4eMTraJOZVZWDdwgV0Eevt_df8Iemugm6noaMTNG-LS9Bot-LBL_U5JJwdTHGMYstU13eFpLywyGwk_wp2iYV3kxixNISOnLBgey_nSE",
+    "readback_headings": 30,
+    "local_utf16_length": 5872,
+    "content_end_index": 5873,
+    "physical_page_count_checked": false,
+    "synchronization_status": "verified opening merge and page renumbering"
   },
-  "manuscript_sha256": "0dbe7860ecef77a86d2b1cf68f69082b1f12f5c509660d10aecdfe22d872d288"
+  "manuscript_sha256": "520f784643afde6318d926d7ced1a5dc2bbd2a64a52dcc49e0c2b3419529e048"
 }
