@@ -1,14 +1,22 @@
 {
-  "pages": 27,
-  "user_deleted_old_pages": [
+  "pages": 29,
+  "previous_pages": 27,
+  "added_pages": 2,
+  "changed_previous_page_bodies": [
+    15,
+    16
+  ],
+  "expanded_section_pages": [
     15,
     16,
-    22
+    17,
+    18
   ],
-  "changed_old_page_bodies": [
-    21,
-    23,
-    24
+  "section_progression": [
+    "AnthroPAC donation list",
+    "Public First Action policy donation",
+    "Liang theory linking donations and pressure",
+    "Suspected objective and transition to new management"
   ],
   "all_other_user_page_bodies_preserved": true,
   "page_number_mapping": {
@@ -26,24 +34,26 @@
     "12": 12,
     "13": 13,
     "14": 14,
-    "17": 15,
-    "18": 16,
-    "19": 17,
-    "20": 18,
-    "21": 19,
-    "23": 20,
-    "24": 21,
-    "25": 22,
-    "26": 23,
-    "27": 24,
-    "28": 25,
-    "29": 26,
-    "30": 27
+    "15": 15,
+    "16": 16,
+    "17": 19,
+    "18": 20,
+    "19": 21,
+    "20": 22,
+    "21": 23,
+    "22": 24,
+    "23": 25,
+    "24": 26,
+    "25": 27,
+    "26": 28,
+    "27": 29
   },
-  "strategy_btc_purchases_usdm": 81.9,
-  "etf_net_flow_usdm": -1281.7,
-  "etf_outflow_to_strategy_purchases_ratio": 15.649572649572649,
-  "total_han_characters": 3321,
+  "google_doc_full_text_matches_local": true,
+  "google_doc_heading_1_count": 29,
+  "new_heading_font_pt": 18,
+  "google_doc_body_text_normal_style_verified": true,
+  "google_doc_revision_id": "AHj4eMTvd7vHw2WjE3ThQdI041z8du8xd79x24SHhZw_Cb9LaOeFoZY8ti5DfKKFp2nZLRezJS0OHYMjSdxBySxojW9HyyhpQ_2la_brXTw",
+  "total_han_characters": 3492,
   "page_counts": [
     {
       "page": 1,
@@ -117,76 +127,89 @@
     },
     {
       "page": 15,
-      "han_characters": 77,
-      "nonspace_characters": 143
+      "han_characters": 59,
+      "nonspace_characters": 91
     },
     {
       "page": 16,
-      "han_characters": 86,
-      "nonspace_characters": 106
+      "han_characters": 81,
+      "nonspace_characters": 120
     },
     {
       "page": 17,
+      "han_characters": 73,
+      "nonspace_characters": 90
+    },
+    {
+      "page": 18,
+      "han_characters": 121,
+      "nonspace_characters": 135
+    },
+    {
+      "page": 19,
       "han_characters": 141,
       "nonspace_characters": 164
     },
     {
-      "page": 18,
+      "page": 20,
       "han_characters": 128,
       "nonspace_characters": 148
     },
     {
-      "page": 19,
+      "page": 21,
       "han_characters": 80,
       "nonspace_characters": 105
     },
     {
-      "page": 20,
+      "page": 22,
       "han_characters": 114,
       "nonspace_characters": 172
     },
     {
-      "page": 21,
+      "page": 23,
       "han_characters": 93,
       "nonspace_characters": 130
     },
     {
-      "page": 22,
+      "page": 24,
       "han_characters": 129,
       "nonspace_characters": 163
     },
     {
-      "page": 23,
+      "page": 25,
       "han_characters": 139,
       "nonspace_characters": 166
     },
     {
-      "page": 24,
+      "page": 26,
       "han_characters": 131,
       "nonspace_characters": 174
     },
     {
-      "page": 25,
+      "page": 27,
       "han_characters": 146,
       "nonspace_characters": 162
     },
     {
-      "page": 26,
+      "page": 28,
       "han_characters": 108,
       "nonspace_characters": 129
     },
     {
-      "page": 27,
+      "page": 29,
       "han_characters": 148,
       "nonspace_characters": 169
     }
   ],
-  "google_doc_full_text_matches_local": true,
-  "google_doc_heading_1_count": 27,
-  "google_doc_body_text_normal_style_verified": true,
-  "google_doc_revision_id": "AHj4eMSw7PudwP0murffx3fO7oQvVxda0hx8BEnRPQvZKzFEzKdvUCgeveioTRWqNDdzHTOXTDssf_vj1ZaCxiDBUGYs_v9K7gL3t2eHZbs",
+  "data_changes": false,
+  "new_factual_claims_added": false,
+  "previous_btc_comparison": {
+    "strategy_btc_purchases_usdm": 81.9,
+    "etf_net_flow_usdm": -1281.7,
+    "etf_outflow_to_strategy_purchases_ratio": 15.649572649572649,
+    "comparison_period": "2026-11-02 through 2026-11-08; ETF trading days November 2-6",
+    "data_verification": "Computed from previously saved Farside rows and Strategy SEC cash allocation; live source retrieval returned no content or HTTP 403."
+  },
   "canva_updated": false,
-  "pdf_layout_checked": false,
-  "comparison_period": "2026-11-02 through 2026-11-08; ETF trading days November 2-6",
-  "data_verification": "Computed from previously saved Farside rows and Strategy SEC cash allocation; live source retrieval returned no content or HTTP 403."
+  "pdf_layout_checked": false
 }
