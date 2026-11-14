@@ -1,0 +1,174 @@
+{"kind":"slide","id":"sl/y90nupkv","slideIndex":0,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"本週大綱","textShapes":2,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/547294r6","slideIndex":0,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/65g3298r","slideIndex":0,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/ts7md4r2","slideIndex":0,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"本週大綱","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"textbox","id":"sh/sryl4zqx","slideIndex":0,"position":{"left":100,"top":260,"width":1320,"height":235.2},"name":"TextBox 7","text":"黃仁勳辭職，AI訂單與利潤怎麼分？\n比特幣跌破七萬，原本的買盤去哪了？\n美國通膨，升息壓力影響哪些投資？","geometry":"rect","style":{"fontSize":52,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"notes","id":"nt/y90nupkv","slideIndex":0,"text":"嗨大家，歡迎來到保羅投資基地，我是保羅\n今天這一集是我們的投資週報\n每週日我都會幫大家整理最新的投資資訊\n把市場在發生什麼事情，用白話拆解給你聽\n讓你更全面掌握幣圈、美股，甚至是整個全球市場的變化\n\n這週先接著前幾天的主題片，談老黃辭職之後，AI 的訂單和利潤會怎麼分，台廠還能不能跟著賺錢。接著看比特幣跌破七萬，原本的買盤去了哪裡。最後回到美國通膨，看看最新的物價數據，升息壓力又會怎麼影響我們的投資。\n\n在開始之前，請先幫我按讚訂閱，想在幣圈學投資交易的朋友，下方布告欄有保羅LINE官方好友連結，點進去有交易VIP群可以加，免費加入免費學習，每週都有課程、分析，我也會不定時在群裡發紅包給群友們。如果是舊用戶想要換邀請碼也請私訊官方好友。"}
+{"kind":"slide","id":"sl/tdzu3y","slideIndex":1,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/6hsb6tov","slideIndex":1,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/ho3a587i","slideIndex":1,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/ulcbator","slideIndex":1,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/e18zmdcn","slideIndex":1,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第2頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/tdzu3y","slideIndex":1,"text":"11 月 12 日，輝達正式宣布，黃仁勳辭去總裁、執行長和董事，即時生效。暫代執行長的是財務長 Colette Kress，董事會也開始尋找接班人。\n輝達強調，對客戶的承諾和產品開發計畫，都會照常推進。不過，已經談好的合作繼續做，和未來要把錢投在哪裡，是兩回事。接下來由誰決定投資方向、怎麼跟客戶和供應商合作，才是市場最在意的變化。"}
+{"kind":"slide","id":"sl/ysiqe1","slideIndex":2,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/tojupw7q","slideIndex":2,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/epsbi18b","slideIndex":2,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/1s3utw72","slideIndex":2,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/hone1wby","slideIndex":2,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第3頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/ysiqe1","slideIndex":2,"text":"輝達全週跌了將近 13%，同一週，AMD 和博通卻都漲超過 18%，標普和那斯達克也上漲。\n這個對照，比只看輝達跌多少更值得注意。如果投資人擔心的是整個 AI 產業沒有生意，競爭對手也很難有這樣的表現。\n從這週資金的選擇來看，市場開始押注：老黃離開以後，客戶會不會把更多訂單交給其他公司。"}
+{"kind":"slide","id":"sl/f7hr8n","slideIndex":3,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/g36xojid","slideIndex":3,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/7yxwruhg","slideIndex":3,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/sz6xkzi1","slideIndex":3,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/w36xk7q5","slideIndex":3,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第4頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/f7hr8n","slideIndex":3,"text":"但也有人希望把老黃找回來，繼續帶領輝達。馬斯克就在 X 表態，說自己正在簽署支持老黃回歸的連署。「Stand with Jensen」網站上，也有員工、股東和支持者要求董事會重新考慮。\n我覺得這些反應背後，有一個市場可能低估的問題。老黃過去做的，不只是帶領團隊開發晶片。他還要說服客戶投入資金，讓供應商願意提前擴產，把大家的計畫配合起來。新團隊接手後，要怎麼延續這些合作，並不是換個名字就能解決。"}
+{"kind":"slide","id":"sl/c68iua","slideIndex":4,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/xwz65kna","slideIndex":4,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/25on65on","slideIndex":4,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/p8z61kne","slideIndex":4,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/tkzi5sva","slideIndex":4,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第5頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/c68iua","slideIndex":4,"text":"川普則在老黃辭職後，點名蘋果前執行長庫克，認為他最有資格接掌輝達。\n庫克過去最讓人印象深刻的，就是把蘋果的營運和供應鏈管得很緊。假如真的由他接手，大家關心的就不只是他懂不懂 AI，還有他會怎麼跟供應商談價錢。\n因為對台廠來說，輝達繼續下訂單當然重要，但這些訂單最後能留下多少利潤，也可能隨著管理方式改變。"}
+{"kind":"slide","id":"sl/bdokh3","slideIndex":5,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/qd8zm5g7","slideIndex":5,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/pczit0fm","slideIndex":5,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/298zi5gv","slideIndex":5,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/apo3m5gz","slideIndex":5,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第6頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/bdokh3","slideIndex":5,"text":"天風證券分析師郭明錤認為，庫克最能發揮的長處是成本管理。但台廠擔心的，也正是他太會管成本。\n台新經濟學家李鎮宇也分析，老黃過去不斷提高產品規格，供應商跟著開發更高階的設備和零組件，也就有機會賺到更多錢。假如改由庫克掌舵，把重點放在壓低採購成本，台廠即使接到一樣多的訂單，能留下的利潤也可能變少。\n大家怕的是，又回到替蘋果供貨的那種處境：訂單接了很多，最後卻只能分到湯，吃不到肉。"}
+{"kind":"slide","id":"sl/bh9rxf","slideIndex":6,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/ozy5wfat","slideIndex":6,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/bm9o7u9k","slideIndex":6,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/cni50za5","slideIndex":6,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/8ja5gjit","slideIndex":6,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第7頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/bh9rxf","slideIndex":6,"text":"庫克目前還只是川普提出的接班人選。真正接手的 Kress，則讓市場開始注意另一件事：輝達以後還願不願意出錢，支持客戶擴張？\n老黃過去支持客戶，是真的出錢投資。光是今年，輝達就投資 CoreWeave 20 億美元， Nebius 也拿到輝達 20 億美元的投資。輝達出資，讓客戶有更多資金擴大算力，自己也有機會賣出更多設備。"}
+{"kind":"slide","id":"sl/gr5n5n","slideIndex":7,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/al0vqpwj","slideIndex":7,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/9krehkvy","slideIndex":7,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/mh0vm5w7","slideIndex":7,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/2dkzulgn","slideIndex":7,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第8頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/gr5n5n","slideIndex":7,"text":"但路透訪問的消息人士說，Kress 過去曾反對輝達一些大額、高風險的融資安排。如果新團隊把資金管得更緊，客戶就得尋找其他資金來源。籌錢的時間一旦拉長，設備採購也可能跟著延後，影響台廠出貨的問題。"}
+{"kind":"slide","id":"sl/6bsiwy","slideIndex":8,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/103m9wjm","slideIndex":8,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/69s3uhkz","slideIndex":8,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/twjm5cja","slideIndex":8,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/5kb2hk3u","slideIndex":8,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第9頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/6bsiwy","slideIndex":8,"text":"不過，這些未來可能發生的改變，還沒有反映在台廠目前拿到的訂單上。這週供應商給的回應，並沒有市場想得那麼悲觀。\n技嘉第三季營收比去年同期接近翻倍，明年仍準備增加資本支出，需求能見度看到 2027 年底。"}
+{"kind":"slide","id":"sl/s4bkhg","slideIndex":9,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/2hgfat8r","slideIndex":9,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/1g7e1o76","slideIndex":9,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/etgf6t8f","slideIndex":9,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/ypc3mpwf","slideIndex":9,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第10頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/s4bkhg","slideIndex":9,"text":"技嘉也說，跟輝達的合作已經深入各個團隊，不會因為換了一個人，就全部重來。中央社訪問的供應鏈主管，同樣表示明年訂單沒有改變。\n眼前的出貨計畫還在推進。真正可能出現差別的，是客戶準備再蓋下一座機房時，會選擇誰的設備。"}
+{"kind":"slide","id":"sl/9scaeh","slideIndex":10,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/i9wvmlwb","slideIndex":10,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/t07e10vy","slideIndex":10,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/6xgvq5w7","slideIndex":10,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/uloja1oz","slideIndex":10,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第11頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/9scaeh","slideIndex":10,"text":"談到下一輪設備採購，郭明錤認為，輝達接班的不確定性，會增加 Google 自研晶片 TPU 的機會，博通、聯發科這些合作夥伴有望受惠。客戶如果想把採購分散給不同公司，AMD 也是選擇之一。\n這就能解釋，為什麼老黃離開，對台灣廠商的影響會不一樣。有些公司的成長主要跟著輝達走，有些則參與了其他平台。客戶換了晶片，訂單也可能跟著流向不同的供應商。"}
+{"kind":"slide","id":"sl/qrkq5g","slideIndex":11,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/cna1srq5","slideIndex":11,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/zq1kn6pw","slideIndex":11,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/kra1wbqh","slideIndex":11,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/wjmdsb6d","slideIndex":11,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第12頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/qrkq5g","slideIndex":11,"text":"這週台股已經先反映出不同平台的差別。週五聯發科漲了大約 7%，創意和世芯都漲超過 9%；廣達則在週四、週五兩天，合計跌了大約 7%。\n郭明錤認為，換帥對產品競爭力的影響，可能要到 2028 年才浮現。這些影響要反映到實際生意上，還需要時間，投資人卻已經開始選擇，哪些公司可能在下一輪競爭中接到更多生意。"}
+{"kind":"slide","id":"sl/18s00m","slideIndex":12,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/69cf69wf","slideIndex":12,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/583ex4vu","slideIndex":12,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/i5sv2pwj","slideIndex":12,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/i9gfu5kr","slideIndex":12,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第13頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/18s00m","slideIndex":12,"text":"除了客戶選哪一種晶片，供應商位在哪裡，也成了這週市場在意的差別。同一個週五，中國的中際旭創和新易盛都跌超過 8%，天孚通信則跌了將近 11%。\n市場主要擔心老黃離開後，輝達會調整對中國光通訊供應商的採購，美國也可能加強限制中國光通訊設備進入市場。"}
+{"kind":"slide","id":"sl/xbiutv","slideIndex":13,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/fmxkrml4","slideIndex":13,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/ob6l4b2l","slideIndex":13,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/naxkv6l0","slideIndex":13,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/z2x47u98","slideIndex":13,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第14頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/xbiutv","slideIndex":13,"text":"如果美國客戶為了降低風險，把部分採購轉向台灣，台灣相關供應商就可能多接一些訂單。對中國這些廠商來說，即使 AI 設備的需求繼續成長，也得先面對能不能繼續供貨的問題。"}
+{"kind":"slide","id":"sl/xfnjp6","slideIndex":14,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/t47atw7e","slideIndex":14,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/u5grm1oz","slideIndex":14,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/h87axwnq","slideIndex":14,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/tszelwbe","slideIndex":14,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第15頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/xfnjp6","slideIndex":14,"text":"接著看一些市場傳聞，X 上的梁一夢，這週把矛頭指向 Claude 背後的 Anthropic。\n他整理 AnthroPAC 的捐款名單，發現部分收到捐款的議員，後來也參與要求調查，或對黃仁勳施壓。"}
+{"kind":"slide","id":"sl/6j6h4e","slideIndex":15,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/uxgn6dwz","slideIndex":15,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/twnmx8fe","slideIndex":15,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/6twn2dw3","slideIndex":15,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/254j2p4b","slideIndex":15,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第16頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/6j6h4e","slideIndex":15,"text":"除了議員的捐款名單，梁一夢也追到政策組織這一邊。Anthropic 今年向 Public First Action 捐款，累計達到 4,000 萬美元。\n他關心的是，這家公司願意投入這麼多錢支持政策倡議，想推動的規則，會不會剛好也讓老黃面對更大的政治壓力。"}
+{"kind":"slide","id":"sl/h5xr9g","slideIndex":16,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/mtsri14f","slideIndex":16,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/lsza9wnu","slideIndex":16,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/yp8reh43","slideIndex":16,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/id8nut0v","slideIndex":16,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第17頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/h5xr9g","slideIndex":16,"text":"梁一夢懷疑，這些捐款和議員施壓，背後可能是同一盤棋。照他的推論，Anthropic 透過捐款擴大政治影響力，再讓立場接近的議員出面，把限制中國取得晶片的議題，變成要求調查老黃的壓力。"}
+{"kind":"slide","id":"sl/foq27p","slideIndex":17,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/0buls3it","slideIndex":17,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/nelkni1k","slideIndex":17,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/8felwni5","slideIndex":17,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/cjmt4vqh","slideIndex":17,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第18頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/foq27p","slideIndex":17,"text":"如果照這個方向看，想要達到的目的，就不只是擋住中國的算力，而是連一直替中國市場說話的老黃，也一起拉下來。\n現在老黃已經離開，接下來誰能買到輝達的晶片、輝達還要不要爭取中國市場，就得看新團隊怎麼表態。梁一夢眼中的這場角力，爭的就是誰能影響這些決定，再影響 AI 生意最後怎麼分。"}
+{"kind":"slide","id":"sl/gc44qt","slideIndex":18,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/ov2xkrih","slideIndex":18,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/bydgfmh8","slideIndex":18,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/wzmhorit","slideIndex":18,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"黃仁勳正式辭職，AI訂單與利潤怎麼分？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/crih0b6h","slideIndex":18,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第19頁：黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"}
+{"kind":"notes","id":"nt/gc44qt","slideIndex":18,"text":"回到輝達本身，11 月 17 日的財報，就是新團隊說明方向的重要機會。\n我會特別留意，Kress 怎麼談客戶投資和下一代產品。如果對客戶的資金支持變少，擴建計畫會不會延後？如果產品開發仍然照原定計畫推進，供應商又能不能繼續靠規格升級提高獲利？\n這些答案，才能讓我們進一步判斷，台廠接單的時間會不會往後延，以及接到訂單之後，還能留下多少利潤。"}
+{"kind":"slide","id":"sl/z69zhy","slideIndex":19,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"比特幣跌破七萬，賣壓從哪裡來？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/dw7m5c72","slideIndex":19,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/yxg3ehon","slideIndex":19,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/l0rm9c7y","slideIndex":19,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"比特幣跌破七萬，賣壓從哪裡來？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/tof6t0n2","slideIndex":19,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第20頁：比特幣跌破七萬，賣壓從哪裡來？"}
+{"kind":"notes","id":"nt/z69zhy","slideIndex":19,"text":"黃仁勳這邊震撼彈一顆接一顆，比特幣也跌破了七萬美元。跌成這樣，不知道的人還以為出軌的是中本聰。\n比特幣這週從七萬五千多美元，跌到六萬八千美元附近，全週跌了將近 10%。同一週美股上漲，它卻沒有跟上。\n要理解這個差別，就得回頭看幣圈自己的買盤。過去透過 ETF 進場、支撐行情的那批資金，這週還有沒有繼續買？"}
+{"kind":"slide","id":"sl/5eg9xe","slideIndex":20,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"比特幣跌破七萬，賣壓從哪裡來？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/2d0zu90v","slideIndex":20,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/d4bytozi","slideIndex":20,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/qhkzyt07","slideIndex":20,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"比特幣跌破七萬，賣壓從哪裡來？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/i1sbqto7","slideIndex":20,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第21頁：比特幣跌破七萬，賣壓從哪裡來？"}
+{"kind":"notes","id":"nt/5eg9xe","slideIndex":20,"text":"美國比特幣現貨 ETF，這週五個交易日全部淨流出，合計接近 11 億美元。加上前一週，兩週已經流出超過 23 億美元。\n而且，這波撤資不是集中在某一天。從 11 月 2 日到 13 日，十個交易日有九天淨流出，只有 11 月 4 日短暫轉正。"}
+{"kind":"slide","id":"sl/zheqqq","slideIndex":21,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"比特幣跌破七萬，賣壓從哪裡來？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/72lkfut8","slideIndex":21,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/kza14fuh","slideIndex":21,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/jy1kbatc","slideIndex":21,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"比特幣跌破七萬，賣壓從哪裡來？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/bydwfepo","slideIndex":21,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第22頁：比特幣跌破七萬，賣壓從哪裡來？"}
+{"kind":"notes","id":"nt/zheqqq","slideIndex":21,"text":"ETF 撤出的資金，乾爹有沒有補上？Strategy 11 月 2 日到 8 日，買幣花了約 8,200 萬美元；同一週，美國比特幣現貨 ETF 淨流出接近 13 億美元，規模差了大約十六倍。\n而且，Strategy 前一週募到約 2.8 億美元，拿來買幣的不到三成，約三分之二用來回購特別股。這週 MSCI 又宣布，將在月底把它移出指數，股價全週跌了大約 13%。"}
+{"kind":"slide","id":"sl/w8ktvo","slideIndex":22,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"比特幣跌破七萬，賣壓從哪裡來？","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/gfidsj25","slideIndex":22,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/329cnylg","slideIndex":22,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/43idw321","slideIndex":22,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"比特幣跌破七萬，賣壓從哪裡來？","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/g7ydkbex","slideIndex":22,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第23頁：比特幣跌破七萬，賣壓從哪裡來？"}
+{"kind":"notes","id":"nt/w8ktvo","slideIndex":22,"text":"至於短線行情，BitMEX 共同創辦人 Arthur Hayes 這週說，他押注下週 Anthropic 上市會帶動市場情緒，因此小幅增加加密貨幣部位，持倉規模維持在小到中等。\n我會看 ETF 的淨流出有沒有縮小，以及企業買家有沒有增加實際買幣的金額，觀察這些資金是否開始回來。"}
+{"kind":"slide","id":"sl/2nknkj","slideIndex":23,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"美國通膨與升息壓力","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/xczqtcf2","slideIndex":23,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/id87mhwn","slideIndex":23,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/5gzqxwfe","slideIndex":23,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"美國通膨與升息壓力","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/5cbetgji","slideIndex":23,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第24頁：美國通膨降不下來，升息壓力會影響哪些投資？"}
+{"kind":"notes","id":"nt/2nknkj","slideIndex":23,"text":"要讓資金願意重新進場，除了幣圈自己的賣壓，還得看美國的利率。這也是本週另一件值得獨立來看的事：通膨還沒有明顯退下來。\n11 月 10 日公布的美國 10 月 CPI，比前一個月上漲 0.4%；扣掉食品和能源的核心 CPI，月增 0.3%，已經連續三個月維持這個速度。\n換句話說，即使先不看波動比較大的食品和能源，其他商品和服務的價格，仍然持續上漲。"}
+{"kind":"slide","id":"sl/o1tl7o","slideIndex":24,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"美國通膨與升息壓力","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/3yl47y9c","slideIndex":24,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/gvalc3q1","slideIndex":24,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/fu1k3y9g","slideIndex":24,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"美國通膨與升息壓力","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/by9wnado","slideIndex":24,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第25頁：美國通膨降不下來，升息壓力會影響哪些投資？"}
+{"kind":"notes","id":"nt/o1tl7o","slideIndex":24,"text":"到了週五，反映生產者售價的 PPI 也公布了。10 月比前一個月上漲 0.3%，漲幅雖然放慢，但比去年同期仍高出 6.5%。\n這兩個數字要一起看：最近一個月沒有漲得那麼快，不代表過去一年累積的價格壓力已經消失。對企業來說，進貨成本如果繼續上升，要嘛提高售價，要嘛自己少賺一點。\n所以通膨除了影響聯準會怎麼決定利率，也會影響公司最後能留下多少利潤。"}
+{"kind":"slide","id":"sl/x0lamb","slideIndex":25,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"美國通膨與升息壓力","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/t8nmpg3y","slideIndex":25,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/ihc3a14b","slideIndex":25,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/54n2lg3m","slideIndex":25,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"美國通膨與升息壓力","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/lkn29o3i","slideIndex":25,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第26頁：美國通膨降不下來，升息壓力會影響哪些投資？"}
+{"kind":"notes","id":"nt/x0lamb","slideIndex":25,"text":"聯準會理事 Waller 在週二、CPI 公布之前，就先把自己的立場說得很清楚：即使通膨改善，他仍傾向支持 12 月升息一碼；如果核心 CPI 月增還在 0.3% 左右或更高，就應該考慮升息兩碼。\n後來公布的數字，正好還是 0.3%。按照 Waller 的判斷，這樣的通膨數字，還不足以讓他放心。\n接下來要看的是，這個主張會不會獲得更多決策官員支持，讓升息壓力進一步影響市場。"}
+{"kind":"slide","id":"sl/sf16fx","slideIndex":26,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"美國通膨與升息壓力","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/lonq5sve","slideIndex":26,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/mpwryxwz","slideIndex":26,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/9snq9sva","slideIndex":26,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"美國通膨與升息壓力","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/xcny947i","slideIndex":26,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第27頁：美國通膨降不下來，升息壓力會影響哪些投資？"}
+{"kind":"notes","id":"nt/sf16fx","slideIndex":26,"text":"如果利率再往上走，對投資會有兩層影響。第一，公司借錢擴張會變貴，同樣一個投資計畫，就得賺更多錢才划算。\n第二，投資人把錢留在美元存款或短期債券，就可能拿到更高的利息。要說服他們承擔股票和加密貨幣的風險，就得有更有吸引力的報酬。\n所以接下來看市場，除了問公司有沒有成長，也要問：在更高的資金成本之下，這個成長還值不值得現在的價格？"}
+{"kind":"slide","id":"sl/3gh73d","slideIndex":27,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"本週總結","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/hgfqhwzi","slideIndex":27,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/69472h0v","slideIndex":27,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/tcvqdczm","slideIndex":27,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"本週總結","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/9onatsne","slideIndex":27,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第28頁：本週總結"}
+{"kind":"notes","id":"nt/3gh73d","slideIndex":27,"text":"回到開頭，台廠還能不能跟著輝達一起賺錢？目前供應商說，明年的訂單沒有改變；但下一輪採購，可能有更多流向 Google、AMD 等其他平台，中國供應商受限也可能帶來轉單。台廠能不能受惠，要看自己接得到哪些客戶；能不能繼續吃到肉，則要看新團隊怎麼跟供應商談採購條件。"}
+{"kind":"slide","id":"sl/op7dc6","slideIndex":28,"layout":{"id":"ly/07y1cjyt","name":"Blank"},"title":"本週總結","textShapes":1,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"shape","id":"sh/ulg7qdsb","slideIndex":28,"position":{"left":0,"top":0,"width":1920,"height":1080},"name":"Freeform 2","geometry":"custom"}
+{"kind":"shape","id":"sh/tk7qx8bq","slideIndex":28,"position":{"left":1640,"top":35,"width":220,"height":205.28},"name":"Freeform 5","geometry":"custom"}
+{"kind":"textbox","id":"sh/6hg7mtsf","slideIndex":28,"position":{"left":60,"top":45,"width":1490,"height":78.39},"name":"TextBox 6","text":"本週總結","geometry":"rect","style":{"fontSize":56,"typeface":"可画榜书","color":"#0C1B2F","alignment":"left"}}
+{"kind":"image","id":"im/a5gryd0r","slideIndex":28,"position":{"left":60,"top":180,"width":1380,"height":777},"fit":"contain","name":"","alt":"第29頁：本週總結"}
+{"kind":"notes","id":"nt/op7dc6","slideIndex":28,"text":"比特幣這邊，ETF 資金還在流出，企業買家也沒有把募到的錢全部拿來買幣。反彈能不能延續，要看這些買盤是否回來。\n美國通膨則提醒我們，資金成本還可能上升。就算看好產業的長期成長，也要留意升息會不會影響公司的擴張，以及市場願意給它的價格。\n你比較在意 AI 供應鏈的變化、比特幣這波下殺，還是接下來的升息壓力？留言跟我說，記得按讚訂閱，我們下週繼續追。"}

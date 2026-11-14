@@ -1,0 +1,153 @@
+{
+  "date": "2026-11-14",
+  "generator": "built-in image_gen",
+  "style": "暖象牙紙感、深藍工程墨線與排線、少量赭橘色；繁體中文重點與數據依 slides.json；沿用既有核准風格參考圖。",
+  "prompt_record_note": "本檔為生成要求摘要及輸出對照；非逐字提示詞備份。",
+  "reference_images": [
+    "已確認-紙感工程-俯視協作.png",
+    "已確認-競爭比較主圖.png"
+  ],
+  "page_map": "slides.json",
+  "images": [
+    {
+      "page": 2,
+      "asset": "../視覺素材/slide_02.png",
+      "generation_output": "call_H7H1UYvtExQ21MgMPOqB9Jql.png"
+    },
+    {
+      "page": 3,
+      "asset": "../視覺素材/slide_03.png",
+      "generation_output": "call_CtDnVpqUtJxbnjdawmniCfo1.png"
+    },
+    {
+      "page": 4,
+      "asset": "../視覺素材/slide_04.png",
+      "generation_output": "call_aCTlQIiDymdgUV7b5v5AZtxX.png"
+    },
+    {
+      "page": 5,
+      "asset": "../視覺素材/slide_05.png",
+      "generation_output": "call_qNzTVMEiZfgYMqUfYbGFM3Tg.png"
+    },
+    {
+      "page": 6,
+      "asset": "../視覺素材/slide_06.png",
+      "generation_output": "call_w22q6x5Kya86mP1QymDTaG46.png"
+    },
+    {
+      "page": 7,
+      "asset": "../視覺素材/slide_07.png",
+      "generation_output": "call_ZE7qJvTZUw2JXkbe7iGeceV9.png"
+    },
+    {
+      "page": 8,
+      "asset": "../視覺素材/slide_08.png",
+      "generation_output": "call_gH1WzUCYsHAzPPZAsc3wHRqG.png"
+    },
+    {
+      "page": 9,
+      "asset": "../視覺素材/slide_09.png",
+      "generation_output": "call_Rw4FJkXHh1ZhHuiZmvSp4tuU.png"
+    },
+    {
+      "page": 10,
+      "asset": "../視覺素材/slide_10.png",
+      "generation_output": "call_b1JpLONAWrUdWzw7KpFtJN4E.png"
+    },
+    {
+      "page": 11,
+      "asset": "../視覺素材/slide_11.png",
+      "generation_output": "call_HPD7PAOJ9dV1n1X6IrPxoeuq.png"
+    },
+    {
+      "page": 12,
+      "asset": "../視覺素材/slide_12.png",
+      "generation_output": "call_6oa5iTa6GrmYwoYO3zxWQXjG.png"
+    },
+    {
+      "page": 13,
+      "asset": "../視覺素材/slide_13.png",
+      "generation_output": "call_oOxs8VuSTuk51pzU9Cr7CrWG.png"
+    },
+    {
+      "page": 14,
+      "asset": "../視覺素材/slide_14.png",
+      "generation_output": "call_JJm3j1ALUw2K3SwzBmRfxll7.png"
+    },
+    {
+      "page": 15,
+      "asset": "../視覺素材/slide_15.png",
+      "generation_output": "call_wNC1VFV4Mmkhs9tMzkPDe8Wn.png"
+    },
+    {
+      "page": 16,
+      "asset": "../視覺素材/slide_16.png",
+      "generation_output": "call_nPfyUeKfQPu7hMjIlS0Vhvr9.png"
+    },
+    {
+      "page": 17,
+      "asset": "../視覺素材/slide_17.png",
+      "generation_output": "call_QIlUOCWeYAwqsiZeKkfQOrYI.png"
+    },
+    {
+      "page": 18,
+      "asset": "../視覺素材/slide_18.png",
+      "generation_output": "call_s5iax3yX4gmXm6UFaWcGqohL.png"
+    },
+    {
+      "page": 19,
+      "asset": "../視覺素材/slide_19.png",
+      "generation_output": "call_TfLfv0aklbhqqO7zqCnzyTWT.png"
+    },
+    {
+      "page": 20,
+      "asset": "../視覺素材/slide_20.png",
+      "generation_output": "call_iSODSTSVLBNqVmR2E90hBrPN.png"
+    },
+    {
+      "page": 21,
+      "asset": "../視覺素材/slide_21.png",
+      "generation_output": "call_rLUA1kDS5BiUPhg8JessdEuz.png"
+    },
+    {
+      "page": 22,
+      "asset": "../視覺素材/slide_22.png",
+      "generation_output": "call_KVSESvqIM2wGY5d0Hg2ZcmFO.png"
+    },
+    {
+      "page": 23,
+      "asset": "../視覺素材/slide_23.png",
+      "generation_output": "call_yOQcOdsvBCFZwLcPMr352hw9.png"
+    },
+    {
+      "page": 24,
+      "asset": "../視覺素材/slide_24.png",
+      "generation_output": "call_UwSSv7XWKdaBGTZ5X3SrCziN.png"
+    },
+    {
+      "page": 25,
+      "asset": "../視覺素材/slide_25.png",
+      "generation_output": "call_ssH5KDjndVYBcWcpmMyru9Wb.png"
+    },
+    {
+      "page": 26,
+      "asset": "../視覺素材/slide_26.png",
+      "generation_output": "call_JFoYJ6XyOuREryfceWhN2Ydw.png"
+    },
+    {
+      "page": 27,
+      "asset": "../視覺素材/slide_27.png",
+      "generation_output": "call_0r1YhtVm5y5MPzzB003usn3n.png"
+    },
+    {
+      "page": 28,
+      "asset": "../視覺素材/slide_28.png",
+      "generation_output": "call_UiTtuusPjX9LCVdktNAyzqJj.png"
+    },
+    {
+      "page": 29,
+      "asset": "../視覺素材/slide_29.png",
+      "generation_output": "call_pXHerXjmuhxMXfRNLLqnDMv8.png"
+    }
+  ]
+}
