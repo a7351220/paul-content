@@ -1,136 +1,299 @@
 {
-  "pages": 22,
-  "total_han_characters": 3551,
+  "pages": 31,
+  "total_han_characters": 3884,
   "page_counts": [
     {
       "page": 1,
-      "han_characters": 379,
-      "nonspace_characters": 429
+      "han_characters": 179,
+      "nonspace_characters": 195
     },
     {
       "page": 2,
+      "han_characters": 101,
+      "nonspace_characters": 118
+    },
+    {
+      "page": 3,
       "han_characters": 127,
       "nonspace_characters": 160
     },
     {
-      "page": 3,
+      "page": 4,
       "han_characters": 114,
       "nonspace_characters": 137
     },
     {
-      "page": 4,
+      "page": 5,
       "han_characters": 157,
       "nonspace_characters": 192
     },
     {
-      "page": 5,
+      "page": 6,
       "han_characters": 135,
       "nonspace_characters": 149
     },
     {
-      "page": 6,
+      "page": 7,
       "han_characters": 156,
       "nonspace_characters": 173
     },
     {
-      "page": 7,
-      "han_characters": 210,
-      "nonspace_characters": 265
-    },
-    {
       "page": 8,
-      "han_characters": 180,
-      "nonspace_characters": 202
+      "han_characters": 127,
+      "nonspace_characters": 169
     },
     {
       "page": 9,
+      "han_characters": 83,
+      "nonspace_characters": 96
+    },
+    {
+      "page": 10,
+      "han_characters": 85,
+      "nonspace_characters": 97
+    },
+    {
+      "page": 11,
+      "han_characters": 95,
+      "nonspace_characters": 105
+    },
+    {
+      "page": 12,
       "han_characters": 138,
       "nonspace_characters": 165
     },
     {
-      "page": 10,
+      "page": 13,
       "han_characters": 122,
       "nonspace_characters": 145
     },
     {
-      "page": 11,
-      "han_characters": 183,
-      "nonspace_characters": 206
+      "page": 14,
+      "han_characters": 111,
+      "nonspace_characters": 126
     },
     {
-      "page": 12,
+      "page": 15,
+      "han_characters": 72,
+      "nonspace_characters": 80
+    },
+    {
+      "page": 16,
       "han_characters": 164,
       "nonspace_characters": 180
     },
     {
-      "page": 13,
+      "page": 17,
       "han_characters": 134,
       "nonspace_characters": 154
     },
     {
-      "page": 14,
-      "han_characters": 166,
-      "nonspace_characters": 252
+      "page": 18,
+      "han_characters": 80,
+      "nonspace_characters": 146
     },
     {
-      "page": 15,
+      "page": 19,
+      "han_characters": 86,
+      "nonspace_characters": 106
+    },
+    {
+      "page": 20,
       "han_characters": 141,
       "nonspace_characters": 164
     },
     {
-      "page": 16,
+      "page": 21,
       "han_characters": 128,
       "nonspace_characters": 148
     },
     {
-      "page": 17,
+      "page": 22,
       "han_characters": 128,
       "nonspace_characters": 147
     },
     {
-      "page": 18,
+      "page": 23,
       "han_characters": 133,
       "nonspace_characters": 152
     },
     {
-      "page": 19,
-      "han_characters": 144,
-      "nonspace_characters": 174
-    },
-    {
-      "page": 20,
+      "page": 24,
       "han_characters": 152,
       "nonspace_characters": 194
     },
     {
-      "page": 21,
+      "page": 25,
       "han_characters": 135,
       "nonspace_characters": 177
     },
     {
-      "page": 22,
-      "han_characters": 225,
-      "nonspace_characters": 264
+      "page": 26,
+      "han_characters": 129,
+      "nonspace_characters": 163
+    },
+    {
+      "page": 27,
+      "han_characters": 139,
+      "nonspace_characters": 166
+    },
+    {
+      "page": 28,
+      "han_characters": 131,
+      "nonspace_characters": 174
+    },
+    {
+      "page": 29,
+      "han_characters": 146,
+      "nonspace_characters": 162
+    },
+    {
+      "page": 30,
+      "han_characters": 108,
+      "nonspace_characters": 129
+    },
+    {
+      "page": 31,
+      "han_characters": 148,
+      "nonspace_characters": 169
     }
   ],
   "revision": {
     "date": "2026-11-14",
-    "purpose": "Add two verified customer equity-investment examples to page 7 while preserving surrounding narration",
+    "purpose": "Split dense narration at story turns, rewrite the weekly preview, and add the approved US inflation topic",
     "previous_pages": 22,
-    "previous_han_characters": 3515
+    "previous_han_characters": 3551
   },
+  "old_to_new_pages": {
+    "1": [
+      1,
+      2
+    ],
+    "2": [
+      3
+    ],
+    "3": [
+      4
+    ],
+    "4": [
+      5
+    ],
+    "5": [
+      6
+    ],
+    "6": [
+      7
+    ],
+    "7": [
+      8,
+      9
+    ],
+    "8": [
+      10,
+      11
+    ],
+    "9": [
+      12
+    ],
+    "10": [
+      13
+    ],
+    "11": [
+      14,
+      15
+    ],
+    "12": [
+      16
+    ],
+    "13": [
+      17
+    ],
+    "14": [
+      18,
+      19
+    ],
+    "15": [
+      20
+    ],
+    "16": [
+      21
+    ],
+    "17": [
+      22
+    ],
+    "18": [
+      23
+    ],
+    "20": [
+      24
+    ],
+    "21": [
+      25
+    ],
+    "19": [
+      26
+    ],
+    "22": [
+      30,
+      31
+    ]
+  },
+  "topic_ranges": [
+    {
+      "first_page": 1,
+      "last_page": 1,
+      "title": "本週大綱"
+    },
+    {
+      "first_page": 2,
+      "last_page": 2,
+      "title": "開場提醒"
+    },
+    {
+      "first_page": 3,
+      "last_page": 20,
+      "title": "黃仁勳正式辭職，誰拿走 AI 的訂單和利潤？"
+    },
+    {
+      "first_page": 21,
+      "last_page": 25,
+      "title": "比特幣跌破七萬，賣壓從哪裡來？"
+    },
+    {
+      "first_page": 26,
+      "last_page": 29,
+      "title": "美國通膨降不下來，升息壓力會影響哪些投資？"
+    },
+    {
+      "first_page": 30,
+      "last_page": 31,
+      "title": "本週總結"
+    }
+  ],
   "checks": [
-    "22 sequential pages and existing topic ranges preserved",
-    "fixed opening preserved verbatim",
-    "only page 7 narration changed; other 21 pages compared verbatim with prior commit",
-    "CoreWeave USD 2 billion equity investment verified from NVIDIA company announcement",
-    "Nebius USD 2 billion equity investment verified from announcement and Q1 2026 shareholder letter",
-    "investment amounts distinguished from services contracts, full funding rounds and lifetime totals",
-    "page 7 links customer funding to procurement timing; page 8 retains current-order evidence",
-    "previous opening-ending correspondence and soup metaphor preserved"
+    "31 sequential page headings and topic ranges match",
+    "fixed self-introduction and promotional paragraph preserved verbatim on separate pages",
+    "old pages 7, 8, 11 and 14 split with no narration removed",
+    "unaffected Huang and Bitcoin narration compared verbatim with the 22-page baseline",
+    "Huang to Bitcoin transition and soup metaphor preserved",
+    "old inflation page relocated into one standalone topic; no duplicate inflation section",
+    "CPI and PPI periods, monthly/yearly bases and release dates verified against BLS",
+    "Waller speech precedes CPI release; 25/50 basis-point statements attributed to him rather than FOMC",
+    "opening previews the three adopted topics; ending answers the same topics",
+    "Microsoft outage and Singles Day excluded per user direction"
   ],
   "pending": [
     "User source for a16z founder participation in another petition or public support"
   ],
-  "verification_scope": "Targeted verification of two investment examples using public company HTML and Nebius shareholder-letter PDF. Search tool returned no usable results; direct HTTP provided source text. Other research not rechecked. No Canva or Google Doc changes."
+  "verification_scope": "US inflation claims verified from BLS releases and Waller speech. Existing Huang/BTC factual research retained, not fully rechecked. Google Doc readback confirms 31 HEADING_1 narration sections, title, opening, investment examples, inflation and closing; local UTF-16 length is 5890 and online content ends at 5891 with one native trailing paragraph. No Canva, PPTX, image or PDF layout work.",
+  "google_doc": {
+    "url": "https://docs.google.com/document/d/1s4oD45g-gqbPQQldn1eW2zT1iMzI9zRI8hElRnwebtY/edit",
+    "tab_id": "t.0",
+    "revision_id": "AHj4eMSZTRNIUx6MepV-1C-0ppSxjYor2LYxhCJUM82MWerYjI5ZmBpRA9A4TnDP1XUAkKq-meF21Ar717hZmM8oKeE-q2se0Rw8G3IxfAA",
+    "readback_headings": 31,
+    "local_utf16_length": 5890,
+    "content_end_index": 5891,
+    "physical_page_count_checked": false
+  },
+  "manuscript_sha256": "0dbe7860ecef77a86d2b1cf68f69082b1f12f5c509660d10aecdfe22d872d288"
 }
