@@ -1,6 +1,6 @@
 {
   "pages": 22,
-  "total_han_characters": 3515,
+  "total_han_characters": 3551,
   "page_counts": [
     {
       "page": 1,
@@ -34,8 +34,8 @@
     },
     {
       "page": 7,
-      "han_characters": 174,
-      "nonspace_characters": 203
+      "han_characters": 210,
+      "nonspace_characters": 265
     },
     {
       "page": 8,
@@ -115,25 +115,22 @@
   ],
   "revision": {
     "date": "2026-11-14",
-    "purpose": "Correct soup metaphor and revise all pages for complete spoken sentences, connected narrative and opening-ending correspondence",
+    "purpose": "Add two verified customer equity-investment examples to page 7 while preserving surrounding narration",
     "previous_pages": 22,
-    "previous_han_characters": 2874
+    "previous_han_characters": 3515
   },
   "checks": [
-    "22 sequential page numbers and matching topic ranges",
+    "22 sequential pages and existing topic ranges preserved",
     "fixed opening preserved verbatim",
-    "all numeric tokens unchanged page by page from previous committed narration",
-    "soup metaphor corrected in narration and source records",
-    "NVIDIA followed directly by BTC; Satoshi joke preserved",
-    "Musk support attributed; no large-shareholder title or a16z participation added",
-    "Cook succession and procurement shifts remain conditional",
-    "Liang Yimeng inference remains attributed",
-    "existing per-page source mapping retained; no new numerical claims",
-    "all 22 pages read consecutively for transitions and repeated conclusions",
-    "closing answers opening questions on supplier profits and BTC buying flows"
+    "only page 7 narration changed; other 21 pages compared verbatim with prior commit",
+    "CoreWeave USD 2 billion equity investment verified from NVIDIA company announcement",
+    "Nebius USD 2 billion equity investment verified from announcement and Q1 2026 shareholder letter",
+    "investment amounts distinguished from services contracts, full funding rounds and lifetime totals",
+    "page 7 links customer funding to procurement timing; page 8 retains current-order evidence",
+    "previous opening-ending correspondence and soup metaphor preserved"
   ],
   "pending": [
     "User source for a16z founder participation in another petition or public support"
   ],
-  "verification_scope": "Writing-only revision using existing research; no fresh external fact or price verification. Numeric tokens compared page by page with HEAD; page format and fixed opening checked. No Canva or Google Doc changes."
+  "verification_scope": "Targeted verification of two investment examples using public company HTML and Nebius shareholder-letter PDF. Search tool returned no usable results; direct HTTP provided source text. Other research not rechecked. No Canva or Google Doc changes."
 }
