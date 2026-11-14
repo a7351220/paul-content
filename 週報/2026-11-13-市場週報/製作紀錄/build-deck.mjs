@@ -8,7 +8,7 @@ const workspace=path.resolve(root,'../..');
 const template=path.join(workspace,'.agents/skills/market-video-story/assets/template.pptx');
 const skill='/Users/xieminghua/.codex/plugins/cache/openai-primary-runtime/presentations/26.1104.22356/skills/presentations';
 const slides=JSON.parse(await fs.readFile(path.join(root,'製作紀錄/slides.json'),'utf8'));
-if(slides.length!==29||slides.some((s,i)=>s.index!==i+1))throw Error('Page mapping must be 1–29');
+if(slides.length!==30||slides.some((s,i)=>s.index!==i+1))throw Error('Page mapping must be 1–30');
 const p=await PresentationFile.importPptx(await FileBlob.load(template));
 const inspect=async()=> (await p.inspect({kind:'slide,shape,textbox,image',maxChars:200000})).ndjson.split('\n').filter(Boolean).map(JSON.parse);
 let objects=await inspect();
@@ -53,5 +53,5 @@ for(let i=0;i<slides.length;i++){
 }
 await fs.writeFile(path.join(root,'製作紀錄/版面物件.json'),(await p.inspect({kind:'slide,textbox,shape,image,notes',maxChars:300000})).ndjson);
 const {finalizePresentation}=await import(path.join(skill,'container_tools/artifact_tool_utils.mjs'));
-const result=await finalizePresentation({workspaceDir:root,candidatePath:candidate,finalPath:path.join(root,'輸出/2026-11-13市場週報-29頁.pptx'),explicitTotalSlideCount:29,requiredNativeTableOwnerSlides:[],requiredNativeChartOwnerSlides:[],pythonExecutable:'/Users/xieminghua/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3',integrityValidatorPath:path.join(skill,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(skill,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','18288000,10287000'],fontPolicy:{basis:'reference',families:['可画榜书'],referencePath:template,referenceSha256:createHash('sha256').update(await fs.readFile(template)).digest('hex')},verifyArtifactToolImport:true,receiptPath:path.join(root,'製作紀錄/validation.json')});
+const result=await finalizePresentation({workspaceDir:root,candidatePath:candidate,finalPath:path.join(root,'輸出/2026-11-13市場週報-30頁.pptx'),explicitTotalSlideCount:30,requiredNativeTableOwnerSlides:[],requiredNativeChartOwnerSlides:[],pythonExecutable:'/Users/xieminghua/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3',integrityValidatorPath:path.join(skill,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(skill,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','18288000,10287000'],fontPolicy:{basis:'reference',families:['可画榜书'],referencePath:template,referenceSha256:createHash('sha256').update(await fs.readFile(template)).digest('hex')},verifyArtifactToolImport:true,receiptPath:path.join(root,'製作紀錄/validation.json')});
 console.log(JSON.stringify(result));
