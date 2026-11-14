@@ -1,0 +1,111 @@
+{
+  "source": "https://farside.co.uk/bitcoin-etf-flow-all-data/",
+  "retrieved_date": "2026-11-14",
+  "retrieval_method": "Manually transcribed from web.run rendered table, lines 752-756; direct Python HTTP returned 403.",
+  "unit": "USD million",
+  "rows": [
+    {
+      "Date": "09 Nov 2026",
+      "IBIT": -213.2,
+      "FBTC": 0,
+      "BITB": 0,
+      "ARKB": -9.9,
+      "BTCO": 0,
+      "EZBC": 0,
+      "BRRR": 0,
+      "HODL": 0,
+      "BTCW": 0,
+      "MSBT": 22.1,
+      "GBTC": 0,
+      "BTC": 0,
+      "Total": -201.0
+    },
+    {
+      "Date": "10 Nov 2026",
+      "IBIT": -78.2,
+      "FBTC": -36.8,
+      "BITB": 0,
+      "ARKB": 0,
+      "BTCO": 0,
+      "EZBC": 0,
+      "BRRR": 0,
+      "HODL": 0,
+      "BTCW": 0,
+      "MSBT": 20.0,
+      "GBTC": 0,
+      "BTC": 0,
+      "Total": -95.0
+    },
+    {
+      "Date": "11 Nov 2026",
+      "IBIT": -269.7,
+      "FBTC": 0,
+      "BITB": 0,
+      "ARKB": 0,
+      "BTCO": 0,
+      "EZBC": 0,
+      "BRRR": 0,
+      "HODL": 0,
+      "BTCW": 0,
+      "MSBT": 9.0,
+      "GBTC": -39.1,
+      "BTC": 0,
+      "Total": -299.8
+    },
+    {
+      "Date": "12 Nov 2026",
+      "IBIT": -203.8,
+      "FBTC": -32.6,
+      "BITB": -26.4,
+      "ARKB": -18.5,
+      "BTCO": 0,
+      "EZBC": 0,
+      "BRRR": 0,
+      "HODL": -6.1,
+      "BTCW": 0,
+      "MSBT": 3.3,
+      "GBTC": 0,
+      "BTC": 0,
+      "Total": -284.1
+    },
+    {
+      "Date": "13 Nov 2026",
+      "IBIT": -143.5,
+      "FBTC": -41.9,
+      "BITB": 0,
+      "ARKB": 0,
+      "BTCO": 0,
+      "EZBC": 0,
+      "BRRR": 0,
+      "HODL": 0,
+      "BTCW": 0,
+      "MSBT": 0,
+      "GBTC": 0,
+      "BTC": 0,
+      "Total": -185.4
+    }
+  ],
+  "prior_week_dates": [
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-06"
+  ],
+  "prior_week_daily_totals": [
+    -398.6,
+    -115.6,
+    74.6,
+    -430.2,
+    -411.9
+  ],
+  "calculations": {
+    "week_total": -1065.3,
+    "prior_week_total": -1281.7,
+    "two_weeks_total": -2347.0,
+    "IBIT_week": -908.4,
+    "IBIT_relative_to_aggregate_net_outflow_pct": 85.27175443537031,
+    "FBTC_week": -111.3,
+    "MSBT_week": 54.4
+  }
+}

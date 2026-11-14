@@ -1,0 +1,141 @@
+{
+  "source": "https://query1.finance.yahoo.com/v8/finance/chart/3443.TW?period1=1793923200&period2=1794614400&interval=1d",
+  "retrieved_date": "2026-11-14",
+  "payload": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "TWD",
+            "symbol": "3443.TW",
+            "exchangeName": "TAI",
+            "fullExchangeName": "Taiwan",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1162515600,
+            "regularMarketTime": 1794547807,
+            "hasPrePostMarketData": false,
+            "gmtoffset": 28800,
+            "timezone": "CST",
+            "exchangeTimezoneName": "Asia/Taipei",
+            "regularMarketPrice": 8610.0,
+            "regularMarketChangePercent": 9.542,
+            "fulldayPrice": 8610.0,
+            "fulldayChange": 750.0,
+            "fulldayChangePercent": 9.542,
+            "fiftyTwoWeekHigh": 8750.0,
+            "fiftyTwoWeekLow": 1815.0,
+            "regularMarketDayHigh": 8645.0,
+            "regularMarketDayLow": 8350.0,
+            "regularMarketVolume": 2699251,
+            "longName": "Global Unichip Corp.",
+            "shortName": "GLOBAL UNICHIP CORP.",
+            "chartPreviousClose": 6405.0,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "CST",
+                "end": 1794531600,
+                "start": 1794531600,
+                "gmtoffset": 28800
+              },
+              "regular": {
+                "timezone": "CST",
+                "end": 1794547800,
+                "start": 1794531600,
+                "gmtoffset": 28800
+              },
+              "post": {
+                "timezone": "CST",
+                "end": 1794547800,
+                "start": 1794547800,
+                "gmtoffset": 28800
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1793926800,
+            1794186000,
+            1794272400,
+            1794358800,
+            1794445200,
+            1794531600
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "high": [
+                  6460.0,
+                  6825.0,
+                  7375.0,
+                  7885.0,
+                  8555.0,
+                  8645.0
+                ],
+                "close": [
+                  6205.0,
+                  6705.0,
+                  7170.0,
+                  7885.0,
+                  7860.0,
+                  8610.0
+                ],
+                "low": [
+                  5765.0,
+                  6285.0,
+                  6900.0,
+                  7260.0,
+                  7850.0,
+                  8350.0
+                ],
+                "open": [
+                  5765.0,
+                  6420.0,
+                  7000.0,
+                  7265.0,
+                  8005.0,
+                  8645.0
+                ],
+                "volume": [
+                  4179802,
+                  4091644,
+                  3836860,
+                  2146867,
+                  3367230,
+                  2495125
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  6205.0,
+                  6705.0,
+                  7170.0,
+                  7885.0,
+                  7860.0,
+                  8610.0
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  }
+}

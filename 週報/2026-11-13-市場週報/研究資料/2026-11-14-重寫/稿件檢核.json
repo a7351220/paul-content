@@ -1,0 +1,155 @@
+{
+  "pages": 28,
+  "total_han_characters": 4254,
+  "page_counts": [
+    {
+      "page": 1,
+      "han_characters": 307,
+      "nonspace_characters": 353
+    },
+    {
+      "page": 2,
+      "han_characters": 145,
+      "nonspace_characters": 205
+    },
+    {
+      "page": 3,
+      "han_characters": 115,
+      "nonspace_characters": 185
+    },
+    {
+      "page": 4,
+      "han_characters": 152,
+      "nonspace_characters": 199
+    },
+    {
+      "page": 5,
+      "han_characters": 163,
+      "nonspace_characters": 209
+    },
+    {
+      "page": 6,
+      "han_characters": 147,
+      "nonspace_characters": 185
+    },
+    {
+      "page": 7,
+      "han_characters": 169,
+      "nonspace_characters": 186
+    },
+    {
+      "page": 8,
+      "han_characters": 140,
+      "nonspace_characters": 184
+    },
+    {
+      "page": 9,
+      "han_characters": 139,
+      "nonspace_characters": 179
+    },
+    {
+      "page": 10,
+      "han_characters": 141,
+      "nonspace_characters": 170
+    },
+    {
+      "page": 11,
+      "han_characters": 157,
+      "nonspace_characters": 185
+    },
+    {
+      "page": 12,
+      "han_characters": 135,
+      "nonspace_characters": 180
+    },
+    {
+      "page": 13,
+      "han_characters": 155,
+      "nonspace_characters": 178
+    },
+    {
+      "page": 14,
+      "han_characters": 167,
+      "nonspace_characters": 190
+    },
+    {
+      "page": 15,
+      "han_characters": 162,
+      "nonspace_characters": 180
+    },
+    {
+      "page": 16,
+      "han_characters": 129,
+      "nonspace_characters": 221
+    },
+    {
+      "page": 17,
+      "han_characters": 150,
+      "nonspace_characters": 247
+    },
+    {
+      "page": 18,
+      "han_characters": 148,
+      "nonspace_characters": 168
+    },
+    {
+      "page": 19,
+      "han_characters": 136,
+      "nonspace_characters": 175
+    },
+    {
+      "page": 20,
+      "han_characters": 126,
+      "nonspace_characters": 170
+    },
+    {
+      "page": 21,
+      "han_characters": 126,
+      "nonspace_characters": 173
+    },
+    {
+      "page": 22,
+      "han_characters": 127,
+      "nonspace_characters": 190
+    },
+    {
+      "page": 23,
+      "han_characters": 134,
+      "nonspace_characters": 200
+    },
+    {
+      "page": 24,
+      "han_characters": 141,
+      "nonspace_characters": 210
+    },
+    {
+      "page": 25,
+      "han_characters": 123,
+      "nonspace_characters": 189
+    },
+    {
+      "page": 26,
+      "han_characters": 164,
+      "nonspace_characters": 210
+    },
+    {
+      "page": 27,
+      "han_characters": 149,
+      "nonspace_characters": 220
+    },
+    {
+      "page": 28,
+      "han_characters": 207,
+      "nonspace_characters": 233
+    }
+  ],
+  "checks": [
+    "sequential page numbers",
+    "fixed opening preserved",
+    "no standalone verification reminders",
+    "full-week ETF arithmetic and fund-column checks passed",
+    "equity and BTC endpoint arithmetic passed",
+    "cash-allocation arithmetic passed",
+    "all research JSON parsed"
+  ]
+}

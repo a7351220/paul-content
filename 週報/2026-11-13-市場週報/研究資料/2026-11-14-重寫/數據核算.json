@@ -1,0 +1,214 @@
+{
+  "formula": "(end_close/start_close-1)*100",
+  "equity_period": [
+    "2026-11-06",
+    "2026-11-13"
+  ],
+  "equity_price_type": "unadjusted daily close; US equities USD, Taiwan securities TWD",
+  "prices": {
+    "3443.TW": {
+      "start": {
+        "date": "2026-11-06",
+        "open": 5765.0,
+        "low": 5765.0,
+        "close": 6205.0
+      },
+      "end": {
+        "date": "2026-11-13",
+        "open": 8645.0,
+        "low": 8350.0,
+        "close": 8610.0
+      },
+      "weekly_pct": 38.75906526994359,
+      "friday_pct": 9.541984732824439
+    },
+    "AMD": {
+      "start": {
+        "date": "2026-11-06",
+        "open": 444.42999267578125,
+        "low": 433.29998779296875,
+        "close": 449.0400085449219
+      },
+      "end": {
+        "date": "2026-11-13",
+        "open": 566.7899780273438,
+        "low": 520.010009765625,
+        "close": 534.0599975585938
+      },
+      "weekly_pct": 18.933722473677193,
+      "friday_pct": -8.754483393650691
+    },
+    "^GSPC": {
+      "start": {
+        "date": "2026-11-06",
+        "open": 7377.64990234375,
+        "low": 7369.5498046875,
+        "close": 7376.85986328125
+      },
+      "end": {
+        "date": "2026-11-13",
+        "open": 7616.85009765625,
+        "low": 7499.39990234375,
+        "close": 7561.669921875
+      },
+      "weekly_pct": 2.5052673091114697,
+      "friday_pct": -0.40474660007389085
+    },
+    "2454.TW": {
+      "start": {
+        "date": "2026-11-06",
+        "open": 3115.0,
+        "low": 3115.0,
+        "close": 3390.0
+      },
+      "end": {
+        "date": "2026-11-13",
+        "open": 4235.0,
+        "low": 4060.0,
+        "close": 4120.0
+      },
+      "weekly_pct": 21.53392330383481,
+      "friday_pct": 7.012987012987004
+    },
+    "3661.TW": {
+      "start": {
+        "date": "2026-11-06",
+        "open": 2665.0,
+        "low": 2665.0,
+        "close": 2830.0
+      },
+      "end": {
+        "date": "2026-11-13",
+        "open": 4040.0,
+        "low": 3900.0,
+        "close": 4020.0
+      },
+      "weekly_pct": 42.04946996466432,
+      "friday_pct": 9.387755102040817
+    },
+    "^IXIC": {
+      "start": {
+        "date": "2026-11-06",
+        "open": 24602.48046875,
+        "low": 24507.630859375,
+        "close": 24579.4296875
+      },
+      "end": {
+        "date": "2026-11-13",
+        "open": 25408.0,
+        "low": 24872.41015625,
+        "close": 25136.26953125
+      },
+      "weekly_pct": 2.2654709683243235,
+      "friday_pct": -0.9060139497874764
+    },
+    "MSTR": {
+      "start": {
+        "date": "2026-11-06",
+        "open": 127.83000183105469,
+        "low": 125.58999633789062,
+        "close": 128.92999267578125
+      },
+      "end": {
+        "date": "2026-11-13",
+        "open": 112.05000305175781,
+        "low": 108.25,
+        "close": 111.62000274658203
+      },
+      "weekly_pct": -13.425882969472003,
+      "friday_pct": -2.4385987468081405
+    },
+    "2382.TW": {
+      "start": {
+        "date": "2026-11-06",
+        "open": 275.0,
+        "low": 272.0,
+        "close": 290.5
+      },
+      "end": {
+        "date": "2026-11-13",
+        "open": 282.5,
+        "low": 276.5,
+        "close": 276.5
+      },
+      "weekly_pct": -4.81927710843374,
+      "friday_pct": -0.7181328545781018
+    },
+    "^TWII": {
+      "start": {
+        "date": "2026-11-06",
+        "open": 38915.76171875,
+        "low": 37837.05078125,
+        "close": 39701.640625
+      },
+      "end": {
+        "date": "2026-11-13",
+        "open": 43719.75,
+        "low": 43534.12109375,
+        "close": 43675.12109375
+      },
+      "weekly_pct": 10.008353322930219,
+      "friday_pct": 1.3535035383613003
+    },
+    "AVGO": {
+      "start": {
+        "date": "2026-11-06",
+        "open": 311.1300048828125,
+        "low": 289.7699890136719,
+        "close": 293.69000244140625
+      },
+      "end": {
+        "date": "2026-11-13",
+        "open": 356.5400085449219,
+        "low": 337.6700134277344,
+        "close": 347.010009765625
+      },
+      "weekly_pct": 18.155200000332506,
+      "friday_pct": -4.761767560506658
+    },
+    "NVDA": {
+      "start": {
+        "date": "2026-11-06",
+        "open": 191.10000610351562,
+        "low": 185.22000122070312,
+        "close": 186.63999938964844
+      },
+      "end": {
+        "date": "2026-11-13",
+        "open": 169.91000366210938,
+        "low": 158.38999938964844,
+        "close": 162.85000610351562
+      },
+      "weekly_pct": -12.746460224995193,
+      "friday_pct": -2.009745645841854
+    }
+  },
+  "QUANTA_11_11_to_13_pct": -7.214765100671139,
+  "NVDA_11_12": {
+    "previous_close": 173.72999572753906,
+    "open": 151.00999450683594,
+    "low": 148.8000030517578,
+    "open_pct": -13.077765371234406,
+    "low_pct": -14.34984935755077
+  },
+  "BTC": {
+    "source": "https://www.coinglass.com/currencies/BTC/historical-data/2026",
+    "retrieval_method": "Manually transcribed web.run table, Nov 6 and Nov 13 rows",
+    "time_base": "UTC daily candles, Friday close to Friday close",
+    "start_date": "2026-11-06",
+    "start_close": 75746.9,
+    "end_date": "2026-11-13",
+    "end_close": 68249.3,
+    "nov13_low": 67653.1,
+    "weekly_pct": -9.898226858128833,
+    "unused_source_note": "Yahoo Nov 13 candle was null; Coinbase TLS validation failed; neither used as final BTC price evidence."
+  },
+  "Strategy_cash_allocation": {
+    "net_proceeds_USD_m": 283.8,
+    "btc_purchase_USD_m": 81.9,
+    "STRC_repurchase_USD_m": 188.3,
+    "cash_USD_m": 13.6,
+    "btc_pct": 28.858350951374206,
+    "STRC_pct": 66.34954193093728
+  }
+}

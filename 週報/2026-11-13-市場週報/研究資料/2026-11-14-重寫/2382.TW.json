@@ -1,0 +1,141 @@
+{
+  "source": "https://query1.finance.yahoo.com/v8/finance/chart/2382.TW?period1=1793923200&period2=1794614400&interval=1d",
+  "retrieved_date": "2026-11-14",
+  "payload": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "TWD",
+            "symbol": "2382.TW",
+            "exchangeName": "TAI",
+            "fullExchangeName": "Taiwan",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 946947600,
+            "regularMarketTime": 1794547809,
+            "hasPrePostMarketData": false,
+            "gmtoffset": 28800,
+            "timezone": "CST",
+            "exchangeTimezoneName": "Asia/Taipei",
+            "regularMarketPrice": 276.5,
+            "regularMarketChangePercent": -0.718,
+            "fulldayPrice": 276.5,
+            "fulldayChange": -2.0,
+            "fulldayChangePercent": -0.718,
+            "fiftyTwoWeekHigh": 438.0,
+            "fiftyTwoWeekLow": 260.0,
+            "regularMarketDayHigh": 283.5,
+            "regularMarketDayLow": 276.5,
+            "regularMarketVolume": 13711208,
+            "longName": "Quanta Computer Inc.",
+            "shortName": "QUANTA COMPUTER",
+            "chartPreviousClose": 300.0,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "CST",
+                "start": 1794531600,
+                "end": 1794531600,
+                "gmtoffset": 28800
+              },
+              "regular": {
+                "timezone": "CST",
+                "start": 1794531600,
+                "end": 1794547800,
+                "gmtoffset": 28800
+              },
+              "post": {
+                "timezone": "CST",
+                "start": 1794547800,
+                "end": 1794547800,
+                "gmtoffset": 28800
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1793926800,
+            1794186000,
+            1794272400,
+            1794358800,
+            1794445200,
+            1794531600
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "low": [
+                  272.0,
+                  290.0,
+                  293.5,
+                  290.0,
+                  278.5,
+                  276.5
+                ],
+                "close": [
+                  290.5,
+                  296.5,
+                  298.5,
+                  298.0,
+                  278.5,
+                  276.5
+                ],
+                "volume": [
+                  36787521,
+                  18942129,
+                  13966572,
+                  11846868,
+                  31454145,
+                  13309951
+                ],
+                "open": [
+                  275.0,
+                  290.0,
+                  298.0,
+                  296.0,
+                  294.0,
+                  282.5
+                ],
+                "high": [
+                  294.5,
+                  304.0,
+                  304.0,
+                  299.5,
+                  296.0,
+                  283.5
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  290.5,
+                  296.5,
+                  298.5,
+                  298.0,
+                  278.5,
+                  276.5
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  }
+}

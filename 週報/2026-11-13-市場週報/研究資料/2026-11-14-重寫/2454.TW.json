@@ -1,0 +1,141 @@
+{
+  "source": "https://query1.finance.yahoo.com/v8/finance/chart/2454.TW?period1=1793923200&period2=1794614400&interval=1d",
+  "retrieved_date": "2026-11-14",
+  "payload": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "TWD",
+            "symbol": "2454.TW",
+            "exchangeName": "TAI",
+            "fullExchangeName": "Taiwan",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 995850000,
+            "regularMarketTime": 1794547803,
+            "hasPrePostMarketData": false,
+            "gmtoffset": 28800,
+            "timezone": "CST",
+            "exchangeTimezoneName": "Asia/Taipei",
+            "regularMarketPrice": 4120.0,
+            "regularMarketChangePercent": 7.013,
+            "fulldayPrice": 4120.0,
+            "fulldayChange": 270.0,
+            "fulldayChangePercent": 7.013,
+            "fiftyTwoWeekHigh": 5480.0,
+            "fiftyTwoWeekLow": 1130.0,
+            "regularMarketDayHigh": 4235.0,
+            "regularMarketDayLow": 4060.0,
+            "regularMarketVolume": 15475403,
+            "longName": "MediaTek Inc.",
+            "shortName": "MEDIATEK INC",
+            "chartPreviousClose": 3460.0,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "CST",
+                "end": 1794531600,
+                "start": 1794531600,
+                "gmtoffset": 28800
+              },
+              "regular": {
+                "timezone": "CST",
+                "end": 1794547800,
+                "start": 1794531600,
+                "gmtoffset": 28800
+              },
+              "post": {
+                "timezone": "CST",
+                "end": 1794547800,
+                "start": 1794547800,
+                "gmtoffset": 28800
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1793926800,
+            1794186000,
+            1794272400,
+            1794358800,
+            1794445200,
+            1794531600
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  3115.0,
+                  3535.0,
+                  3940.0,
+                  3840.0,
+                  4050.0,
+                  4235.0
+                ],
+                "close": [
+                  3390.0,
+                  3725.0,
+                  3830.0,
+                  3990.0,
+                  3850.0,
+                  4120.0
+                ],
+                "low": [
+                  3115.0,
+                  3450.0,
+                  3745.0,
+                  3780.0,
+                  3805.0,
+                  4060.0
+                ],
+                "high": [
+                  3480.0,
+                  3725.0,
+                  4065.0,
+                  3990.0,
+                  4120.0,
+                  4235.0
+                ],
+                "volume": [
+                  21324422,
+                  9200218,
+                  18469745,
+                  10000212,
+                  12024444,
+                  13615725
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  3390.0,
+                  3725.0,
+                  3830.0,
+                  3990.0,
+                  3850.0,
+                  4120.0
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  }
+}
