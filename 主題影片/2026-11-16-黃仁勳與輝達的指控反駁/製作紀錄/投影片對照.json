@@ -1,15 +1,15 @@
 {
   "title": "黃仁勳風波的七大疑點：為什麼大家仍希望老黃回來？",
   "script": "逐字稿.md",
-  "script_sha256": "a4f5e1b07c6fadf33235e32aa3faf1bddfa2efd66d631b20b392d3c90612f06c",
+  "script_sha256": "38e45344556e83e6353cf79dd3ef634820fd569c3edbfcde9e50818a1de2c600",
   "pages": [
     {
       "id": "nv-rebuttal-01",
       "page": 1,
       "title": "七大疑點與盼望老黃回歸",
       "narration": "一場出軌風波，最後卻讓黃仁勳背上了多少罪名？跟中國間諜有關係、偷偷把晶片賣給中國，甚至危害美國國家安全。每一個指控都比前一個更重，連《經濟學人》都要求他下台。\n\n今天，我們會拆開這場風波的七大疑點，從選後引爆的時機、間諜指控、晶片禁售紀錄，一路看到媒體、政治和 AI 公司的利益。那些把老黃推下台的理由，究竟站不站得住腳？\n\n最後，我們也會談談，為什麼老黃離開之後，從馬斯克、CZ 到艾克曼，還有這麼多人希望他回來。有人甚至主張透過股東的力量，讓董事會改變決定，把老黃找回來，繼續帶領輝達往前走。",
-      "asset": "視覺素材/slide_01.png",
-      "asset_sha256": "c8139bf67f759d7a26ea8bd7caebc35edabceb92da3789fc56b6a5c84454d175",
+      "asset": "視覺素材/slide_01-七大疑點與回歸-2026-11-18.png",
+      "asset_sha256": "2e5777a97426d87624f0a112cc62863b06187dd62ba2c843e52d93b6d6014d25",
       "visual_type": "AI-generated conceptual illustration; not source screenshot",
       "canva_page_id": "PBJ2b6byn4v7TjJq"
     },
@@ -17,7 +17,7 @@
       "id": "nv-rebuttal-02",
       "page": 2,
       "title": "33年與全球AI、台灣供應鏈",
-      "narration": "我們就把這些指控一條一條拆開。黃樂是不是間諜？晶片轉運的責任，怎麼算到黃仁勳頭上？\n\n這些事情要放回原本的時間和背景，才能看清楚。黃仁勳花了三十三年建立輝達，推動全世界 AI 的高速發展，也讓台灣的半導體和伺服器產業迎來龐大的成長機會。如今要把他說成危害國安的人，總不能靠幾個聳動的標籤，就把這一切全部推翻。",
+      "narration": "黃仁勳花了三十三年建立輝達，推動全世界 AI 的高速發展，也讓台灣的半導體和伺服器產業迎來龐大的成長機會。\n\n如今，一場出軌風波，卻讓這些貢獻都被蓋過去了。外遇的責任，他自己要面對；但危害國安、協助晶片走私，這些指控總得拿出具體事實。尤其這場風波爆發的時間，就很不尋常。",
       "asset": "視覺素材/slide_02.png",
       "asset_sha256": "77fce154a3208397fcfd7c28f643d2fbbec23ce511830f73fd83d3d1961ca9ca",
       "visual_type": "AI-generated conceptual illustration; not source screenshot",
@@ -310,5 +310,5 @@
   "google_doc": "https://docs.google.com/document/d/1Hr7Z3ou864Qmw19SmsoqHqsZe31EkbBUR_ndvkv6uTw",
   "canva": "https://www.canva.com/design/DAHbMe8rGrM/YaB6BOcg3oKSEDWmWePlhQ/edit",
   "latest_pptx": "輸出/黃仁勳風波的七大疑點-30頁-Canva同步版.pptx",
-  "sync_basis": "2026-11-18 Canva current notes, preserving user edits; closing page 30 added"
+  "sync_basis": "2026-11-18 保留Canva人工修訂；新標題、第1頁新圖及第2頁口白同步"
 }

@@ -5,18 +5,17 @@
   "mime_type": "application/vnd.google-apps.document",
   "folder_id": "170PsNenJ96o6KkSzp0uB10GuoKdORt_l",
   "script_pages": 30,
-  "narration_non_whitespace_chars": 6045,
+  "narration_non_whitespace_chars": 6026,
   "source_file": "逐字稿.md",
-  "inserted_text_sha256": "e73459f6e5e965c9d2b0f0051f3dc00ecde0934d752eda2ca549d4e0551c8274",
-  "inserted_text_utf16_length": 6518,
-  "readback_last_narration_end_index": 6544,
+  "inserted_text_utf16_length": 6499,
+  "readback_last_narration_end_index": 6525,
   "verified_tab_id": "t.0",
   "verified_structure": "30 HEADING_1 page labels; pageBreakBefore on labels 2-30; current Canva user edits and new closing page preserved",
   "sharing_changed": false,
   "canva_changed": true,
   "pdf_layout_reviewed": false,
   "sync_basis": "Canva live notes readback 2026-11-18",
-  "readback_revision": "AHj4eMROZfLlOQQf66-rpBXDo41k3th2-llsNwheg9jFndLkoXbmznszrBl9Tiu7sWecAyAkSFSe5xZOhWsOqU8Oi-ApUZisy6LjJ2GNn2g",
+  "readback_revision": "AHj4eMQ6B0BBNDqWn9gVmOV2YBcvk_7K1B-dj4KXYwXsmNVQHAABWOf2y5kCnhftoHJgBJiM8LRikYAmcMSpuVAPnz61yhSTx-cXFkruXcU",
   "title": "黃仁勳風波的七大疑點：為什麼大家仍希望老黃回來？",
-  "latest_change": "僅更新文件標題、主標題與第一頁口白；其他人工刪改保留"
+  "latest_change": "新標題及第1頁預告已同步；第2頁刪除重複大綱，改接貢獻與時機"
 }

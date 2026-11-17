@@ -3,11 +3,14 @@
   "designId": "DAHbMe8rGrM",
   "editUrl": "https://www.canva.com/design/DAHbMe8rGrM/YaB6BOcg3oKSEDWmWePlhQ/edit",
   "pages": 30,
-  "font": "無法在 Canva 確認；封面標題選取時呈現為圖片控制項，未見可編輯字型欄位，因此未更動",
+  "font": "第1頁標題沿用目前Canva原生文字字體；調整為32點以容納新標題，其他頁未改",
   "savedStatus": "Canva 編輯器顯示已儲存所有變更",
   "latest_pptx": "輸出/黃仁勳風波的七大疑點-30頁-Canva同步版.pptx",
   "ending": "第30頁回扣三十三年，感謝AI發展與台灣供應鏈",
   "notes_sync": "全部現有備註已讀回，人工刪改保留；新增第30頁已由Canva連接器讀回確認",
   "google_doc_sync": "已同步30頁口白與頁碼，Google Docs讀回確認",
-  "opening": "第一頁帶出七大疑點，並預告支持老黃回歸的股東行動"
+  "opening": "第一頁帶出七大疑點，並預告支持老黃回歸的股東行動",
+  "opening_asset": "視覺素材/slide_01-七大疑點與回歸-2026-11-18.png",
+  "cover_verified": "新插圖已在原設計第1頁替換；編輯器已儲存，封面標題完整單行、原版貓頭鷹及右下留白保留",
+  "page_2": "刪除重複預告；從33年貢獻接到風波時機，官方連接器備註讀回確認"
 }
