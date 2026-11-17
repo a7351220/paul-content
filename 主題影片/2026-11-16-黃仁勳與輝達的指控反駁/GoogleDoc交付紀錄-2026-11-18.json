@@ -10,12 +10,12 @@
   "inserted_text_utf16_length": 6499,
   "readback_last_narration_end_index": 6525,
   "verified_tab_id": "t.0",
-  "verified_structure": "30 HEADING_1 page labels; pageBreakBefore on labels 2-30; current Canva user edits and new closing page preserved",
+  "verified_structure": "30 HEADING_1 page labels; pageBreakBefore disabled for continuous layout; slide numbering retained",
   "sharing_changed": false,
   "canva_changed": true,
   "pdf_layout_reviewed": false,
   "sync_basis": "Canva live notes readback 2026-11-18",
-  "readback_revision": "AHj4eMQ6B0BBNDqWn9gVmOV2YBcvk_7K1B-dj4KXYwXsmNVQHAABWOf2y5kCnhftoHJgBJiM8LRikYAmcMSpuVAPnz61yhSTx-cXFkruXcU",
+  "readback_revision": "AHj4eMQ1VTg0mS_hsvjJnyFSSKe1qRzo2A-9ovgW95qoeFdeTXoHSijizTq1NgkSRNKQNmz2LPEK7PpSGnNlWDFJ2tntrvvDtJy-1nLf9ew",
   "title": "黃仁勳風波的七大疑點：為什麼大家仍希望老黃回來？",
-  "latest_change": "新標題及第1頁預告已同步；第2頁刪除重複大綱，改接貢獻與時機"
+  "latest_change": "取消強制分頁；第24頁同步 Canva 使用者刪減；Canva 版面尚待修正"
 }
