@@ -1,7 +1,7 @@
 {
   "title": "黃仁勳風波的七大疑點：為什麼大家仍希望老黃回來？",
   "script": "逐字稿.md",
-  "script_sha256": "5bb41a236da9f7a95e51a938097458f5efff39127df0298e86c5a3d21ef42bc0",
+  "script_sha256": "8ae660ae244c5f9d5ab8e4278982eb82d3046e3b0670b48e74cd5ca3ef7df301",
   "pages": [
     {
       "id": "nv-rebuttal-01",
@@ -265,7 +265,7 @@
       "id": "nv-rebuttal-26",
       "page": 26,
       "title": "支持回任與董事會態度",
-      "narration": "但老黃離開之後，支持他的聲音並沒有停。馬斯克公開支持讓他回任，幣安創辦人 CZ 也直接說：「讓黃仁勳辭職，是輝達的錯誤。」\n\n這些人自己創辦、經營過大型科技公司，知道一個創辦人的價值，不是換一張執行長的名片，就有人能接得起來。董事會卻傳出，目前不考慮讓黃仁勳回來。調查還在進行，為什麼已經急著把回歸的大門關上？",
+      "narration": "七個疑點講到這裡，我們的結論是：老黃該為自己的私事負責，但不能因為他辭職了，就把那些國安指控當成事實。\n\n老黃離開之後，支持他的聲音並沒有停。馬斯克公開支持讓他回任，幣安創辦人 CZ 也直接說：「讓黃仁勳辭職，是輝達的錯誤。」\n\n這些人自己創辦、經營過大型科技公司，知道一個創辦人的價值，不是換一張執行長的名片，就有人能接得起來。董事會卻傳出，目前不考慮讓黃仁勳回來。調查還在進行，為什麼已經急著把回歸的大門關上？",
       "asset": "視覺素材/slide_26.png",
       "asset_sha256": "568494d75e1821f88dcf34bc8c30701e28479a8d961cadaff6b424800c0dad10",
       "visual_type": "AI-generated conceptual illustration; not source screenshot",
@@ -318,5 +318,5 @@
   "google_doc": "https://docs.google.com/document/d/1Hr7Z3ou864Qmw19SmsoqHqsZe31EkbBUR_ndvkv6uTw",
   "canva": "https://www.canva.com/design/DAHbMe8rGrM/YaB6BOcg3oKSEDWmWePlhQ/edit",
   "latest_pptx": "輸出/黃仁勳風波的七大疑點-30頁-Canva同步版.pptx",
-  "sync_basis": "第25頁以台北101點燈與和碩董事長童子賢公開聲援，回應網路上的切割說法。"
+  "sync_basis": "第26頁先收束七個疑點，再接老黃離開後的公開聲援。"
 }
