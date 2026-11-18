@@ -7,12 +7,13 @@
   "savedStatus": "Canva 編輯器顯示已儲存所有變更",
   "latest_pptx": "輸出/黃仁勳風波的七大疑點-30頁-Canva同步版.pptx",
   "ending": "第30頁回扣三十三年，感謝AI發展與台灣供應鏈",
-  "notes_sync": "重排前後讀回比對，30 頁原頁序及全部備註相同；第24頁人工刪減保留。",
-  "google_doc_sync": "30頁逐字稿維持連續排版，本次口白修訂已讀回。",
+  "notes_sync": "第 6 頁保留 Google Doc 人工刪減，第 11–14 頁換新版；全部 30 頁讀回同文。",
+  "google_doc_sync": "Google Doc 人工刪減優先；第四疑點更新後與 Canva 30 頁逐一比對",
   "opening": "第一頁帶出七大疑點，並預告支持老黃回歸的股東行動",
   "opening_asset": "視覺素材/slide_01-七大疑點與回歸-2026-11-18.png",
   "cover_verified": "既有可編輯標題左 60、上 45，與主圖左緣對齊。Canva 正式編輯器讀回完整單行、原圖及錄影留白。",
   "page_2": "刪除重複預告；從33年貢獻接到風波時機，官方連接器備註讀回確認",
   "recording_layout": "以已交付主題片《輝達的中國難題》實際 Canva（DAHacdEndtM）為同類參考。30 頁主圖等比寬 1380 px，左 60、上 170；原 Logo 等比寬 384 px，左 1476、上 54；右下留作錄影。",
-  "pptx_sync": "本次只調整 Canva 版面；本地 PPTX 保留前次版本。"
+  "pptx_sync": "本次同步 Google Doc 與 Canva；本地 PPTX 保留舊版。",
+  "page_14": "原框替換為《老黃離任，頭條還在追》，素材 MAHbOHM54XY；Logo 與右下留白保留。"
 }
