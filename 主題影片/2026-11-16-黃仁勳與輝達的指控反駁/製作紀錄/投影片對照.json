@@ -1,7 +1,7 @@
 {
   "title": "黃仁勳風波的七大疑點：為什麼大家仍希望老黃回來？",
   "script": "逐字稿.md",
-  "script_sha256": "73bb1fb5fc7d89cb1a63c881ac8a089180bb275ff38c8f875076d30f618a6a8a",
+  "script_sha256": "6382a3975dbb982ab00ddc619a03c8608432a9e7f0b343ecabd4057c843cf501",
   "pages": [
     {
       "id": "nv-rebuttal-01",
@@ -158,7 +158,7 @@
       "id": "nv-rebuttal-16",
       "page": 16,
       "title": "內外部接班選擇",
-      "narration": "貝森特說，輝達需要「大幅整頓」，下一任執行長應該從公司外面找。\n\n但輝達原本的安排是，財務長克瑞斯先暫代，正式接班人由董事會從公司內外一起找。\n\n董事會連名單都還沒公布，貝森特為什麼這麼肯定，非得找外面的人？他心裡是不是已經有人選？",
+      "narration": "貝森特在訪問裡說，看看輝達內部發生的事，公司需要大幅整頓，下一任執行長應該從外面找。他把公司內部的問題，直接變成了挑接班人的條件。\n\n但輝達原本的安排是，財務長克瑞斯先暫代，正式接班人從公司內外一起找。十一月十三日，《金融時報》報導，董事會已經接觸安謀執行長雷內・哈斯。董事會當時的回應是，他們還在選獵頭公司，沒有正式接觸任何候選人。\n\n你看，董事會連找人的程序都還在起步，財政部長就先公開說，內部的人不該接。這才是問題：輝達的下一任執行長，到底由誰來決定？",
       "asset": "視覺素材/slide_16.png",
       "asset_sha256": "4baf21aa17865c15a42ede10c1d9222bfeb43550b7a207f540c54cd6aea16e12",
       "visual_type": "AI-generated conceptual illustration; not source screenshot",
@@ -312,5 +312,5 @@
   "google_doc": "https://docs.google.com/document/d/1Hr7Z3ou864Qmw19SmsoqHqsZe31EkbBUR_ndvkv6uTw",
   "canva": "https://www.canva.com/design/DAHbMe8rGrM/YaB6BOcg3oKSEDWmWePlhQ/edit",
   "latest_pptx": "輸出/黃仁勳風波的七大疑點-30頁-Canva同步版.pptx",
-  "sync_basis": "第17頁改以貝森特公開施壓商務部，以及盧比歐支持財政部和國安會推動晶片新規銜接第18頁。"
+  "sync_basis": "第16頁補入貝森特對接班的主張、金融時報報導的安謀執行長人選與輝達董事會回應；第17頁保留。"
 }
