@@ -1,7 +1,7 @@
 {
   "title": "黃仁勳風波的七大疑點：為什麼大家仍希望老黃回來？",
   "script": "逐字稿.md",
-  "script_sha256": "8ae660ae244c5f9d5ab8e4278982eb82d3046e3b0670b48e74cd5ca3ef7df301",
+  "script_sha256": "04c96b7fc20e6d8f780349409d306b9df05651eadfed95337de0be1a8c3b2755",
   "pages": [
     {
       "id": "nv-rebuttal-01",
@@ -265,7 +265,7 @@
       "id": "nv-rebuttal-26",
       "page": 26,
       "title": "支持回任與董事會態度",
-      "narration": "七個疑點講到這裡，我們的結論是：老黃該為自己的私事負責，但不能因為他辭職了，就把那些國安指控當成事實。\n\n老黃離開之後，支持他的聲音並沒有停。馬斯克公開支持讓他回任，幣安創辦人 CZ 也直接說：「讓黃仁勳辭職，是輝達的錯誤。」\n\n這些人自己創辦、經營過大型科技公司，知道一個創辦人的價值，不是換一張執行長的名片，就有人能接得起來。董事會卻傳出，目前不考慮讓黃仁勳回來。調查還在進行，為什麼已經急著把回歸的大門關上？",
+      "narration": "七個疑點講到這裡，我們的結論是：老黃該為自己的私事負責，但不能因為他辭職了，就把那些國安指控當成事實。\n\n老黃離開之後，支持他的聲音並沒有停。馬斯克公開支持讓他回任，幣安創辦人 CZ 也直接說：「讓黃仁勳辭職，是輝達的錯誤。」\n\n這兩個人都創辦過大型科技公司，知道換掉創辦人，會牽動公司接下來的方向。可是輝達董事會傳出，目前不考慮讓老黃回來。那他留下來的工作，誰來接？",
       "asset": "視覺素材/slide_26.png",
       "asset_sha256": "568494d75e1821f88dcf34bc8c30701e28479a8d961cadaff6b424800c0dad10",
       "visual_type": "AI-generated conceptual illustration; not source screenshot",
@@ -275,7 +275,7 @@
       "id": "nv-rebuttal-27",
       "page": 27,
       "title": "董事背景與技術決策",
-      "narration": "再看董事會，其中有前百事可樂北美執行長，也有前 Taco Bell 國際事業總裁。經營飲料和餐飲，跟黃仁勳設計晶片、建立運算平台的技術背景，差得實在太多。\n\n輝達下一代晶片要往哪裡走，客戶需要什麼，供應鏈要提前幾年準備，這些都是老黃長年親自參與的決策。董事會如果堅持不要他回來，就應該回答：誰能接下這些工作？又憑什麼認為，換掉他會讓輝達更好？",
+      "narration": "輝達下一代晶片要往哪裡走、客戶真正需要什麼、供應鏈要提前幾年準備，這些都是老黃長年親自參與的決策。\n\n負責選接班人的董事會，裡頭有人當過百事可樂北美執行長，也有人當過 Taco Bell 國際事業總裁。做飲料和餐飲，跟老黃設計晶片、建立運算平台，需要的經驗差太多了。既然要換人，董事會就得講清楚：他們用什麼標準，判斷下一任執行長能帶著輝達繼續往前走？",
       "asset": "視覺素材/slide_27.png",
       "asset_sha256": "485fb2983bf05459ec0eb33eb920d5b65ad5c2c68f5851bca3e0f3506b71102e",
       "visual_type": "AI-generated conceptual illustration; not source screenshot",
@@ -318,5 +318,5 @@
   "google_doc": "https://docs.google.com/document/d/1Hr7Z3ou864Qmw19SmsoqHqsZe31EkbBUR_ndvkv6uTw",
   "canva": "https://www.canva.com/design/DAHbMe8rGrM/YaB6BOcg3oKSEDWmWePlhQ/edit",
   "latest_pptx": "輸出/黃仁勳風波的七大疑點-30頁-Canva同步版.pptx",
-  "sync_basis": "第26頁先收束七個疑點，再接老黃離開後的公開聲援。"
+  "sync_basis": "第26至27頁從公開聲援接到輝達的接班問題，再對照董事的背景與老黃的工作。"
 }
