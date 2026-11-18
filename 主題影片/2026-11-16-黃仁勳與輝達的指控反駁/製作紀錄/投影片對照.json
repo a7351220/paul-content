@@ -1,7 +1,7 @@
 {
   "title": "黃仁勳風波的七大疑點：為什麼大家仍希望老黃回來？",
   "script": "逐字稿.md",
-  "script_sha256": "315fc84b106ea7fa9c60267189e5b05b656ad47c5710d7fa43e1e8d917b4f6eb",
+  "script_sha256": "73bb1fb5fc7d89cb1a63c881ac8a089180bb275ff38c8f875076d30f618a6a8a",
   "pages": [
     {
       "id": "nv-rebuttal-01",
@@ -167,13 +167,13 @@
     {
       "id": "nv-rebuttal-17",
       "page": 17,
-      "title": "貝森特心裡已經有人選？",
-      "narration": "我懷疑，華盛頓那些想收緊對中管制的人，要的是一個更聽話的執行長。\n\n以前美國要限制晶片出口，老黃會公開站出來，替輝達爭取中國市場。要是換上來的人，華盛頓一開口就乖乖照做，美國下一次想收緊管制，就少了輝達這個有分量的反對聲音。\n\n而希望輝達在這件事上安靜下來的，恐怕也不只有華盛頓。",
-      "asset": "視覺素材/slide_17-貝森特心裡已經有人選-2026-11-18.png",
-      "asset_sha256": "35fc640d8716b9a7dbf05506cc094ccf9920c876156204f515029377984084fa",
+      "title": "貝森特、盧比歐推動收緊晶片管制",
+      "narration": "貝森特施壓的對象，還有商務部。早在十一月十三日，他就在 CNBC 點名：財政部副部長已經推了幾個月，希望限制 Megaspeed，其他部門也提過疑慮，但最後能不能把它列進黑名單，決定權在商務部。\n\n三天後，商務部公布新規，把中國企業透過部分海外資料中心遠端使用美國高階晶片的管道，也納入管制。公告直接寫明，這套規則由財政部和白宮國安會主導。Politico 報導，貝森特是推手，國務卿盧比歐也支持。\n\n老黃走了，貝森特一邊要求輝達從外部找接班人，一邊推著政府收緊晶片管制。而想把這條路堵住的，也不只政府官員。",
+      "asset": "視覺素材/slide_17-貝森特盧比歐晶片新規-2026-11-18.png",
+      "asset_sha256": "f6ad5564e6668073dcfb4f1e162790159a6f2dd4a4b9acca75e48c9c9a82b9f0",
       "visual_type": "AI-generated conceptual illustration; not source screenshot",
       "canva_page_id": "PBSlRF7qjsPh9zNM",
-      "canva_media_id": "MAHbOVY-UcM"
+      "canva_media_id": "MAHbOVLLuB0"
     },
     {
       "id": "nv-rebuttal-18",
@@ -312,5 +312,5 @@
   "google_doc": "https://docs.google.com/document/d/1Hr7Z3ou864Qmw19SmsoqHqsZe31EkbBUR_ndvkv6uTw",
   "canva": "https://www.canva.com/design/DAHbMe8rGrM/YaB6BOcg3oKSEDWmWePlhQ/edit",
   "latest_pptx": "輸出/黃仁勳風波的七大疑點-30頁-Canva同步版.pptx",
-  "sync_basis": "第16頁交代外部接班疑問；第17頁改講華盛頓想要更聽話的執行長，以及對中出口立場。"
+  "sync_basis": "第17頁改以貝森特公開施壓商務部，以及盧比歐支持財政部和國安會推動晶片新規銜接第18頁。"
 }
