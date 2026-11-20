@@ -9,9 +9,9 @@ description: Research weekly market candidates and validate claims, sources, pri
 
 ## 取得材料
 
-先讀指定材料、最新人工稿與已選題目；比對近期已做內容，舊題有新事實或新問題才延續。不重跑已完成的候選搜尋，也不固定市場配額或題數。
+使用者提供 Google Drive 資料夾、筆記或附件時，先開指定資料夾及當期子資料夾，讀完本期相關筆記正文、內嵌圖表、附件和來源連結。以指定素材與最新人工稿為起點，同集後續沿用已讀內容和研究紀錄，有新檔、人工改稿或資料更新才讀回對應部分。比對近期已做內容，舊題有新事實或新問題才延續。
 
-找候選優先使用工作台 `https://weekly-research-workbench.pages.dev` 及 API `https://weekly-rss.zeabur.app` 的 `/weekly`、`/sources`、`/source-context`；後者可能回傳 `articles` 陣列。`bundle` 找主題關係，`cluster` 查事件，`raw` 補遺漏材料。服務不可用或原文不足時記錄限制，改補原始資料，不把手動選題稱為系統排名。
+指定素材已能盤點時，外部查詢限於核對、更新及補具體缺口；只有還需要找候選時才使用工作台 `https://weekly-research-workbench.pages.dev` 及 API `https://weekly-rss.zeabur.app` 的 `/weekly`、`/sources`、`/source-context`；後者可能回傳 `articles` 陣列。`bundle` 找主題關係，`cluster` 查事件，`raw` 補遺漏材料。服務不可用或原文不足時記錄限制，改補原始資料，不把手動選題稱為系統排名。
 
 排序考量來源、證據、交叉驗證、當週重要性與市場反應。分數只輔助決策；需解讀時讀 [scoring-v2.md](references/scoring-v2.md)，實作問題對照系統原始碼。查證或補件直接處理指定主張，不經候選排名。
 
@@ -25,7 +25,7 @@ description: Research weekly market candidates and validate claims, sources, pri
 
 證據須支持主張的實際範圍與因果，不把個案推成全體，不把指標或轉帳當成它未證明的行為。方法、固定門檻或交易規則須有來源或可重現推導。分歧保留雙方口徑；只暫停使用未受支持的主張。
 
-查原圖是否可取得及其標題、圖例、座標、期間與單位。文字已證實不代表有可交付原圖；擷取與保存由製作階段依視覺參考處理。
+盤點時逐一看與採用主張直接相關的原圖，確認是否能取得原圖或底層數據，記錄檔名／來源位置、指標、座標、期間、單位、圖例及必要註腳。能讀到筆記正文而讀不到嵌圖時，追到附件或筆記已附的原始連結。遇缺件再記錄缺口，擷取與保存由製作階段依視覺參考處理。
 
 ## 輸出與完成
 
