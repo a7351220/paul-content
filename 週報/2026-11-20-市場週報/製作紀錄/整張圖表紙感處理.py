@@ -15,7 +15,6 @@ ITEMS={
   19:('detrick.jpg','light'),
   20:('vix.jpg','light'),
   22:('goldman.jpg','light'),
-  23:('bofa.jpg','light'),
 }
 INK=(14,28,48)
 RUST=(161,70,39)
