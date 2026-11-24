@@ -1,4 +1,4 @@
 interface:
-  display_name: "Weekly Market Research"
-  short_description: "Research weekly stories, verify sources, and update market data."
-  default_prompt: "Use $weekly-market-research to research this week's market stories from the fixed-source workbench and API."
+  display_name: "市場影片圖表來源查核"
+  short_description: "核對指定頁的原始圖表、資料期間與單位，供保羅市場影片製圖"
+  default_prompt: "使用 $weekly-market-research，補查這一頁配圖需要的原圖或原始數據。"

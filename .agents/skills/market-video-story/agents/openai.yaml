@@ -1,4 +1,4 @@
 interface:
-  display_name: "保羅市場影片製作"
-  short_description: "市場影片來源圖、紙感墨線製圖、套版與 Canva 交付"
-  default_prompt: "使用 $market-video-story，依目前授權範圍製作或更新保羅的市場影片視覺與交付物，保留最新人工內容。"
+  display_name: "保羅市場影片製圖與 Canva"
+  short_description: "依 Google Doc 定稿與紙感墨線範本製圖，放入 Canva 交付"
+  default_prompt: "使用 $market-video-story，讀我提供的 Google Doc 定稿，依範本逐頁做圖並放進 Canva。"

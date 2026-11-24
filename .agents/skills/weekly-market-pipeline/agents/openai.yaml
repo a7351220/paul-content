@@ -1,4 +1,4 @@
 interface:
-  display_name: "Weekly Market Pipeline"
-  short_description: "Route weekly market tasks across research and writing."
-  default_prompt: "Use $weekly-market-pipeline to route this weekly market task through the correct workflow."
+  display_name: "保羅週報製圖流程"
+  short_description: "從 Google Doc 定稿開始，銜接週報逐頁製圖與 Canva 套版"
+  default_prompt: "使用 $weekly-market-pipeline，依我提供的 Google Doc 製作週報配圖並放入 Canva。"

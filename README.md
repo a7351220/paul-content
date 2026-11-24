@@ -9,7 +9,7 @@
 - [IG貼文](IG貼文/)：IG 圖文範本與已發布貼文。
 - [共用素材](共用素材/)：範本、視覺格式與管理紀錄。
 - [參考研究](參考研究/)：跨題參考資料。
-- [Skills](.agents/skills/)：路由、研究、寫作與製作交付四個 skills；敘事規則統一放在 [共用框架](.agents/skills/market-video-story/references/story-framework.md)。
+- [市場影片製作](.agents/skills/market-video-story/SKILL.md)：依使用者提供的 Google Doc 定稿做圖、套版與交付 Canva。
 
 各專案的歷史稿放在「歷史版本」，正式稿、素材和輸出分開保存。研究文件、樣稿及製作紀錄具有各自的資料日期，不作為即時行情。
 
